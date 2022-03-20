@@ -52,6 +52,13 @@
 #define TIMER_RB_STATUS_ BIT(4)
 #define TIMER_RB_SEL(n)  BIT((n) + 1)
 
+/* TIMER STATUS */
+
+#define TIMER_STATUS_INIT (BIT(4) | BIT(5)) /**< @brief Initialization mode */
+#define TIMER_STATUS_MODE (BIT(1) | BIT(2) | BIT(3)) /**< @brief Counting mode */
+#define TIMER_STATUS_BASE (BIT(0)) /**< @brief Counting base */
+
+
 /**@}*/
 
 #endif /* _LCOM_I8254_H */
