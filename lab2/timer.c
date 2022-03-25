@@ -32,7 +32,6 @@ void (timer_int_handler)() {
 }
 
 int (timer_get_conf)(uint8_t timer, uint8_t *st) {
-    /* To be implemented by the students */
 
     printf("timer_get_conf\n");
 
@@ -44,7 +43,7 @@ int (timer_get_conf)(uint8_t timer, uint8_t *st) {
     if (timer < 0 || timer > 1)
         return 1;
 
-    uint8_t rb_command = TIMER_RB_CMD | TIMER_RB_COUNT_ | TIMER_RB_SEL(timer);
+    uint8_t rb_command = TIMER_RB_CMD  | TIMER_RB_SEL(timer)| TIMER_RB_COUNT_;
 
     if (sys_outb(TIMER_CTRL, rb_command))
         return 1;
@@ -59,8 +58,6 @@ int (timer_get_conf)(uint8_t timer, uint8_t *st) {
 
 int (timer_display_conf)(uint8_t timer, uint8_t st,
                          enum timer_status_field field) {
-    /* To be implemented by the students */
-
     printf("timer_display_conf\n");
 
     if (timer != 0 && timer != 1 && timer != 2) {
