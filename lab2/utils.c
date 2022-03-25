@@ -27,7 +27,7 @@ int(util_sys_inb)(int port, uint8_t *value) {
   if (value == NULL)
     return 1;
 
-  uint32_t temp = 0x0;
+  uint32_t temp;
 
   if (sys_inb(port, &temp))
     return 1;
