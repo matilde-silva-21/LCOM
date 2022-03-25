@@ -58,6 +58,7 @@ int (timer_set_frequency)(uint8_t timer, uint32_t freq) {
 
   if(sys_outb(timer_reg, lsb))
     return 1;
+
   if(sys_outb(timer_reg, msb))
     return 1;
 
@@ -87,42 +88,41 @@ void (timer_int_handler)() {
 
 int (timer_get_conf)(uint8_t timer, uint8_t *st) {
 
-  printf("timer_get_conf\n");
-
   if (st == NULL)
     return 1;
 
   if (timer < 0 || timer > 2)
     return 1;
 
-  uint8_t rb_command = TIMER_RB_CMD | TIMER_RB_SEL(timer)| TIMER_RB_COUNT_ ;
+  uint8_t rb_command = TIMER_RB_CMD | TIMER_RB_SEL(timer) | TIMER_RB_COUNT_;
 
   if (sys_outb(TIMER_CTRL, rb_command))
     return 1;
 
-  switch (timer) {
+  uint8_t timer_reg = TIMER_0;
+
+  switch(timer){
     case 0:
-      if (util_sys_inb(TIMER_0, st))
-        return 1;
+      timer_reg = TIMER_0;
       break;
     case 1:
-      if(util_sys_inb(TIMER_1, st))
-        return 1;
+      timer_reg = TIMER_1;
       break;
     case 2:
-      if(util_sys_inb(TIMER_2, st))
-        return 1;
+      timer_reg = TIMER_2;
       break;
     default:
-      printf("ERROR: sys_inb failed\n");
+      break;
   }
+
+  if (util_sys_inb(timer_reg, st))
+    return 1;
+
   return 0;
 }
 
 int (timer_display_conf)(uint8_t timer, uint8_t st,
                         enum timer_status_field field) {
-
-  printf("timer_display_conf\n");
 
   if (timer != 0 && timer != 1 && timer != 2) {
     return 1;
@@ -154,6 +154,9 @@ int (timer_display_conf)(uint8_t timer, uint8_t st,
     default:
       break;
   }
-  timer_print_config(timer, field, val);
+
+  if (timer_print_config(timer, field, val))
+    return 1;
+
   return 0;
 }
