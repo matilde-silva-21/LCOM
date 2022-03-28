@@ -5,7 +5,14 @@
 
 #include "i8254.h"
 
+<<<<<<< HEAD
 int counter=0;
+=======
+int hook_id = 0;
+int counter = 0;
+
+int (timer_set_frequency)(uint8_t timer, uint32_t freq) {
+>>>>>>> 20d4a02bc3da231b2b6727baed539f2efd601e32
 
 int(timer_set_frequency)(uint8_t timer, uint32_t freq) {
 
@@ -64,6 +71,7 @@ int(timer_set_frequency)(uint8_t timer, uint32_t freq) {
   return 0;
 }
 
+<<<<<<< HEAD
 int(timer_subscribe_int)(uint8_t *bit_no) {
 
 	sys_irqsetpolicy(IRQ_ENABLE,t,bit_no);
@@ -73,6 +81,27 @@ int(timer_subscribe_int)(uint8_t *bit_no) {
 
 void(timer_int_handler)() {
 	counter++;
+=======
+int (timer_subscribe_int)(uint8_t *bit_no) {
+  *bit_no = hook_id;
+
+  if(sys_irqsetpolicy(TIMER0_IRQ, IRQ_REENABLE, &hook_id))
+    return 1;
+
+  return 0;
+}
+
+int (timer_unsubscribe_int)() {
+
+  if(sys_irqrmpolicy(&hook_id))
+    return 1;
+
+  return 0;
+}
+
+void (timer_int_handler)() {
+  counter++;
+>>>>>>> 20d4a02bc3da231b2b6727baed539f2efd601e32
 }
 
 int(timer_get_conf)(uint8_t timer, uint8_t *st) {
@@ -142,7 +171,9 @@ int(timer_display_conf)(uint8_t timer, uint8_t st, enum timer_status_field field
     default:
       break;
   }
+
   if (timer_print_config(timer, field, val))
     return 1;
+
   return 0;
 }
