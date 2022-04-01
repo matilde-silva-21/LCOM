@@ -53,10 +53,6 @@ int(timer_test_time_base)(uint8_t timer, uint32_t freq) {
   return 0;
 }
 
-<<<<<<< HEAD
-int (timer_test_int)(uint8_t time) {
-    printf("%s is not yet implemented!\n", __func__);
-=======
 int(timer_test_int)(uint8_t time) {
   uint8_t irq_set;
 
@@ -88,7 +84,6 @@ int(timer_test_int)(uint8_t time) {
 
     }
   }
->>>>>>> 20d4a02bc3da231b2b6727baed539f2efd601e32
 
   if(timer_unsubscribe_int())
     return 1;
