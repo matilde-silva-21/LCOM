@@ -5,6 +5,12 @@
 #include <stdbool.h>
 #include <stdint.h>
 
+#include <kbc.c>
+
+extern int cnt;
+extern int hook_id;
+extern uint8_t scancode, statuscode;
+
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
   lcf_set_language("EN-US");
@@ -32,8 +38,52 @@ int main(int argc, char *argv[]) {
 int(kbd_test_scan)() {
   /* To be completed by the students */
   printf("%s is not yet implemented!\n", __func__);
-  
-  return 1;
+  if(keyboard_subscribe(&hook_id))
+    return 1;
+
+  int ipc_status, r;
+  message msg;
+
+
+  while(scancode != ESC_BREAK_CODE){
+    /* Get request message. */
+    if((r = driver_receive(ANY, &msg, &ipc_status)) != 0){
+      printf("driver_receive failed with: %d", r);
+      continue;
+    }
+    if(is_ipc_notify(ipc_status)){
+      switch(_ENDPOINT_P(msg.m_source)){
+        case HARDWARE:
+          if(msg.m_notify.interrupts & BIT(irq_set)){
+            if(util_sys_inb(STRATEG, &statuscode))
+              return 1;
+            counter ++;
+          }
+          break;
+      }
+    }
+    else {}
+
+    kbc_ih();
+  }
+
+  if(sys_outb(OUT_BUF, 0x01))
+    return 1;
+
+  if(keyboard_unsubscribe())
+    return 1;
+
+  uint8_t make = (scancode & MAKE_BIT) >> 7;
+
+  if(make == 0)
+    kbd_print_scancode(true, 1, scancode);
+  if(make == 1)
+    kbd_print_scancode(false, 1, scancode);
+
+  if(kbd_print_no_scancode(cnt))
+    return 1;
+
+  return 0;
 }
 
 int(kbd_test_poll)() {
