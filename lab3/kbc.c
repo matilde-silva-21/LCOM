@@ -5,6 +5,7 @@
 
 int hook_id = 0;
 int cnt = 0;
+uint8_t scancode, statuscode;
 
 int(keyboard_subscribe)(uint8_t *bit_no){
   *bit_no = hook_id;
@@ -42,5 +43,15 @@ int(util_sys_inb)(int port, uint8_t *value) {
 }
 
 void(kbc_ih)(){
+  //esta funcao le o status register e o out_buf e mediante o valor do SR ignora ou nao o out_buf
+  //All communication with other code must be done via global variables, static if possible.
 
+  if(util_sys_inb(STRATEG, statuscode) || util_sys_inb(OUT_BUF, scancode)){return 1;} //verificar se util_sys funcionou direito
+
+  //agora verificar se SR levantou algum erro
+
+  if((statuscode & (1 << 6)) || (statuscode & (1 << 7))){
+      scancode = 0x00; // se o SR der erro entao eu apago o que esta no OUT_BUF
+  }
+  return 0;
 }

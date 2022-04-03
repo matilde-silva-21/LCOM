@@ -36,8 +36,6 @@ int main(int argc, char *argv[]) {
 }
 
 int(kbd_test_scan)() {
-  /* To be completed by the students */
-  printf("%s is not yet implemented!\n", __func__);
   if(keyboard_subscribe(&hook_id))
     return 1;
 
@@ -55,10 +53,13 @@ int(kbd_test_scan)() {
       switch(_ENDPOINT_P(msg.m_source)){
         case HARDWARE:
           if(msg.m_notify.interrupts & BIT(irq_set)){
+            //esta linha de codigo nao devia ser exclusiva ao IH?
             if(util_sys_inb(STRATEG, &statuscode))
               return 1;
-            counter ++;
+            cnt++;
           }
+          break;
+        default:
           break;
       }
     }
@@ -67,6 +68,7 @@ int(kbd_test_scan)() {
     kbc_ih();
   }
 
+  //aqui nao era suposto verificar se o buffer esta full antes de poder escrever (slide 18)
   if(sys_outb(OUT_BUF, 0x01))
     return 1;
 
