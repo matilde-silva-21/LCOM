@@ -42,8 +42,13 @@ int(kbd_test_scan)() {
   int ipc_status, r;
   message msg;
 
+  uint8_t size; // nº de bytes no scancode
+  uint8_t bytes[2]; // 1 byte por posição (pode ter 1 ou 2)
+  bool twoBytes = false;
+  bool make;
 
   while(scancode != ESC_BREAK_CODE){
+    size = 0;
     /* Get request message. */
     if((r = driver_receive(ANY, &msg, &ipc_status)) != 0){
       printf("driver_receive failed with: %d", r);
@@ -53,10 +58,39 @@ int(kbd_test_scan)() {
       switch(_ENDPOINT_P(msg.m_source)){
         case HARDWARE:
           if(msg.m_notify.interrupts & BIT(irq_set)){
-            //esta linha de codigo nao devia ser exclusiva ao IH?
-            if(util_sys_inb(STRATEG, &statuscode))
+            //esta linha de codigo nao devia ser exclusiva ao IH?-acho que sim
+            /*
+            if(util_sys_inb(STATREG, &statuscode))
               return 1;
-            cnt++;
+              */
+            kbc_ih();
+            if(twoBytes){
+              bytes[0] = 0xE0;
+              bytes[1] = scancode;
+              size = 2;
+              twoBytes = false; // para a próxima iteração
+              if((scancode & MAKE_BIT) >> 7)
+                make = false;
+              else
+                make = true;
+            }
+            else {
+              if (scancode == 0xE0) {
+                twoBytes = true;
+                bytes[1] = 0xE0;
+                size = 2;
+                continue; // como se lê o scancode byte a byte, fazemos continue para ir buscar o LSB
+              }
+              else{
+                bytes[0] = scancode;
+                size = 1;
+                twoBytes = false;
+                if((scancode & MAKE_BIT) >> 7)
+                  make = false;
+                else
+                  make = true;
+              }
+            }
           }
           break;
         default:
@@ -64,23 +98,17 @@ int(kbd_test_scan)() {
       }
     }
     else {}
-
-    kbc_ih();
   }
 
   //aqui nao era suposto verificar se o buffer esta full antes de poder escrever (slide 18)
+  //acho que não é preciso porque estás a dar flush e já não interessa o que possa estar lá(not sure tho)
   if(sys_outb(OUT_BUF, 0x01))
     return 1;
 
   if(keyboard_unsubscribe())
     return 1;
 
-  uint8_t make = (scancode & MAKE_BIT) >> 7;
-
-  if(make == 0)
-    kbd_print_scancode(true, 1, scancode);
-  if(make == 1)
-    kbd_print_scancode(false, 1, scancode);
+  kbd_print_scancode(make, size, bytes);
 
   if(kbd_print_no_scancode(cnt))
     return 1;
