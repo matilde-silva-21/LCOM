@@ -5,11 +5,13 @@
 #include <stdbool.h>
 #include <stdint.h>
 
-#include <kbc.c>
+#include "i8042.h"
+#include "kbc.h"
 
 extern int cnt;
 extern int hook_id;
 extern uint8_t scancode, statuscode;
+extern bool kbc_iherr;
 
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
@@ -46,6 +48,7 @@ int(kbd_test_scan)() {
   uint8_t bytes[2]; // 1 byte por posição (pode ter 1 ou 2)
   bool twoBytes = false;
   bool make;
+  uint8_t irq_set = 0;
 
   while(scancode != ESC_BREAK_CODE){
     size = 0;
@@ -57,13 +60,16 @@ int(kbd_test_scan)() {
     if(is_ipc_notify(ipc_status)){
       switch(_ENDPOINT_P(msg.m_source)){
         case HARDWARE:
-          if(msg.m_notify.interrupts & BIT(irq_set)){
+          //if(msg.m_notify.interrupts & BIT(irq_set)){
+          if(msg.m_notify.interrupts & irq_set){
             //esta linha de codigo nao devia ser exclusiva ao IH?-acho que sim
             /*
             if(util_sys_inb(STATREG, &statuscode))
               return 1;
               */
             kbc_ih();
+            if(kbc_iherr)
+              continue;
             if(twoBytes){
               bytes[0] = 0xE0;
               bytes[1] = scancode;
@@ -90,6 +96,7 @@ int(kbd_test_scan)() {
                 else
                   make = true;
               }
+              kbd_print_scancode(make, size, bytes);
             }
           }
           break;
@@ -108,9 +115,7 @@ int(kbd_test_scan)() {
   if(keyboard_unsubscribe())
     return 1;
 
-  kbd_print_scancode(make, size, bytes);
-
-  if(kbd_print_no_scancode(cnt))
+  if(kbd_print_no_sysinb(cnt))
     return 1;
 
   return 0;
