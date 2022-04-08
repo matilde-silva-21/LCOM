@@ -58,7 +58,7 @@ void(kbc_ih)(void){
 
   util_sys_inb(STATREG, &statuscode); // primeiro vamos buscar o statuscode e só quando soubermos que nao ha erros - OBF, PARITY e TIMEOUTERR - é que vamos buscar o scancode
 
-  if(((statuscode & TIMEOUTERR) >> 5) || ((statuscode & PARITYERR) >> 6) || (statuscode & OBF)){
+  if(((statuscode & TIMEOUTERR) >> 6) || ((statuscode & PARITYERR) >> 7)){
     scancode = 0x00; // se o SR der erro entao eu apago o que esta no OUT_BUF
     kbc_iherr = true;
     return;
