@@ -55,7 +55,7 @@ int(timer_test_time_base)(uint8_t timer, uint32_t freq) {
 }
 
 int(timer_test_int)(uint8_t time) {
-  uint8_t irq_set;
+  uint8_t irq_set = BIT(hook_id);
 
   if(timer_subscribe_int(&irq_set))
     return 1;
@@ -90,4 +90,3 @@ int(timer_test_int)(uint8_t time) {
     return 1;
   return 0;
 }
-
