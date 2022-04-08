@@ -13,5 +13,7 @@
 
 #define PARITYERR BIT(7)
 #define TIMEOUTERR BIT(6)
+#define MOUSEDATA BIT(5)
+#define OBF BIT(0)
 
 #endif // LAB3_I8042_H
