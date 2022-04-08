@@ -5,6 +5,7 @@
 #include <stdint.h>
 
 extern int counter;
+extern int hook_id;
 
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
@@ -89,3 +90,4 @@ int(timer_test_int)(uint8_t time) {
     return 1;
   return 0;
 }
+s

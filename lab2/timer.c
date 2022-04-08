@@ -10,15 +10,17 @@ int counter = 0;
 
 int (timer_set_frequency)(uint8_t timer, uint32_t freq) {
 
-  if(freq < 19 || freq > TIMER_FREQ)
+int(timer_set_frequency)(uint8_t timer, uint32_t freq) {
+
+  if (freq < 19 || freq > TIMER_FREQ)
     return 1;
 
-  if(timer < 0 || timer > 2)
+  if (timer < 0 || timer > 2)
     return 1;
 
   uint8_t st;
 
-  if(timer_get_conf(timer, &st))
+  if (timer_get_conf(timer, &st))
     return 1;
 
   st = (st & (TIMER_STATUS_MODE | TIMER_STATUS_BASE));
@@ -29,7 +31,7 @@ int (timer_set_frequency)(uint8_t timer, uint32_t freq) {
 
   uint8_t timer_reg = TIMER_0;
 
-  switch(timer){
+  switch (timer) {
     case 0:
       controlword |= TIMER_SEL0;
       break;
@@ -45,21 +47,21 @@ int (timer_set_frequency)(uint8_t timer, uint32_t freq) {
       return 1;
   }
 
-  if(sys_outb(TIMER_CTRL, controlword))
+  if (sys_outb(TIMER_CTRL, controlword))
     return 1;
 
   uint8_t lsb, msb;
 
-  if(util_get_LSB(value, &lsb))
+  if (util_get_LSB(value, &lsb))
     return 1;
 
-  if(util_get_MSB(value, &msb))
+  if (util_get_MSB(value, &msb))
     return 1;
 
-  if(sys_outb(timer_reg, lsb))
+  if (sys_outb(timer_reg, lsb))
     return 1;
 
-  if(sys_outb(timer_reg, msb))
+  if (sys_outb(timer_reg, msb))
     return 1;
 
   return 0;
@@ -86,7 +88,7 @@ void (timer_int_handler)() {
   counter++;
 }
 
-int (timer_get_conf)(uint8_t timer, uint8_t *st) {
+int(timer_get_conf)(uint8_t timer, uint8_t *st) {
 
   if (st == NULL)
     return 1;
@@ -101,7 +103,7 @@ int (timer_get_conf)(uint8_t timer, uint8_t *st) {
 
   uint8_t timer_reg = TIMER_0;
 
-  switch(timer){
+  switch (timer) {
     case 0:
       timer_reg = TIMER_0;
       break;
@@ -121,8 +123,7 @@ int (timer_get_conf)(uint8_t timer, uint8_t *st) {
   return 0;
 }
 
-int (timer_display_conf)(uint8_t timer, uint8_t st,
-                        enum timer_status_field field) {
+int(timer_display_conf)(uint8_t timer, uint8_t st, enum timer_status_field field) {
 
   if (timer != 0 && timer != 1 && timer != 2) {
     return 1;

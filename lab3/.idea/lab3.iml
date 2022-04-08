@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <module type="CPP_MODULE" version="4">
+=======
+<module external.linked.project.id="lab3" external.linked.project.path="$MODULE_DIR$" external.root.project.path="$MODULE_DIR$" external.system.id="Makefile" type="CPP_MODULE" version="4">
+>>>>>>> 7d58389db389c004419024bf008a93cdaa266bf5
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
