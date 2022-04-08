@@ -1,0 +1,9 @@
+--ler o request e escrever no ecra de acordo, silenciar a VRAM do minix
+
+video card configuration tem de ser feito antes de todas as funcoes
+
+O REGISTO É DE 2 BYTES E O PRIMEIRO BYTE E PARA AH (sempre 4F?) E O SEGUNDO PARA AL (a funcao mas acho que so preciso de saber a 02)
+
+INT neste caso é 10h porque sao os interrupts referentes ao video card, imagino que seja para subscrever os interrupts
+
+nao faco ideia o que faz bx slide 22
