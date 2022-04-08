@@ -40,10 +40,12 @@ int main(int argc, char *argv[]) {
 int(kbd_test_scan)() {
   //hook_id = 0;
 
-  uint8_t irq_set = BIT(hook_id);
+  uint8_t bit_no;
 
-  if(keyboard_subscribe(&irq_set))
+  if(keyboard_subscribe(&bit_no)) {
     return 1;
+  }
+  uint8_t irq_set = BIT(bit_no);
 
   /*
   if (keyboard_subscribe(&hook_id))
@@ -68,7 +70,7 @@ int(kbd_test_scan)() {
     if (is_ipc_notify(ipc_status)) {
       switch (_ENDPOINT_P(msg.m_source)) {
         case HARDWARE:
-          if(msg.m_notify.interrupts & BIT(irq_set)){
+          if(msg.m_notify.interrupts & irq_set){
           //if (msg.m_notify.interrupts & irq_set) {
             // esta linha de codigo nao devia ser exclusiva ao IH?-acho que sim
             /*
@@ -98,8 +100,10 @@ int(kbd_test_scan)() {
                 kbc_iherr = false;
                 continue;
               }
-              if (scancode == 0xE0)
+              if (scancode == 0xE0) {
+                twoBytes = true;
                 continue; // como se lê o scancode byte a byte, fazemos continue para ir buscar o LSB
+              }
               else { // só tem 1 byte, colocamos no array bytes, o size fica a 1 e twoBytes fica a falso
                 bytes[0] = scancode;
                 size = 1;
