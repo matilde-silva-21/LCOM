@@ -136,13 +136,16 @@ int(kbd_test_scan)() {
 }
 
 int(kbd_test_poll)() {
-  /*
+  bool twoBytes = false, make;
   statuscode = 0x00;
   kbc_iherr = false;
+  uint8_t size;
+
+  uint8_t bytes[2];
   while(scancode != ESC_BREAK_CODE){
-    if(util_sys_inb(STATREG, &statuscode))
-      return 1;
-    if((statuscode & (OBF | MOUSEDATA | PARITYERR | TIMEOUTERR)) != 0){
+      tickdelay(micros_to_ticks(DELAY_US));
+      if(util_sys_inb(STATREG, &statuscode)) {return 1;}
+      if((statuscode & (OBF | MOUSEDATA | PARITYERR | TIMEOUTERR)) != 0){
       return 1;
     }
     kbc_ih();
@@ -153,10 +156,6 @@ int(kbd_test_poll)() {
       bytes[1] = scancode;
       size = 2;
       twoBytes = false; // para a próxima iteração
-      if((scancode & MAKE_BIT) >> 7)
-        make = false;
-      else
-        make = true;
     }
     else {
       if (scancode == 0xE0) {
@@ -169,15 +168,18 @@ int(kbd_test_poll)() {
         bytes[0] = scancode;
         size = 1;
         twoBytes = false;
-        if((scancode & MAKE_BIT) >> 7)
-          make = false;
-        else
-          make = true;
       }
-      kbd_print_scancode(make, size, bytes);
     }
     kbd_print_scancode(make, size, bytes);
-  }*/
+  }
+  if (sys_outb(OUT_BUF, 0x01))
+    return 1;
+
+  if (keyboard_unsubscribe())
+    return 1;
+
+  if (kbd_print_no_sysinb(cnt))
+    return 1;
   return 1;
 }
 

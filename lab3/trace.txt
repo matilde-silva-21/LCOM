@@ -1,22 +1,3066 @@
 @lcflib.a:2019, lcf_start
-  kbd_test_scan()
-  @kbc.c:15, keyboard_subscribe
-    sys_irqsetpolicy(IRQ_KBD, IRQ_REENABLE | IRQ_EXCLUSIVE, &hook_id)
-  > sys_irqsetpolicy(1, 3, addr: 0x822d378 [0])
-  < sys_irqsetpolicy(1, 3, addr: 0x822d378 [10]) -> (ret: 0)
-  @lab3.c:66, kbd_test_scan
-    driver_receive(ANY, &msg, &ipc_status)
-  > driver_receive(ANY, addr: 0xeffff710, addr: 0xeffff754)
-  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000001]>)
-  @lab3.c:74, kbd_test_scan
-    printf("aaa")
-    "aaa"
-  @lab3.c:98, kbd_test_scan
+  kbd_test_poll()
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
     kbc_ih()
     @kbc.c:35, util_sys_inb
       sys_inb(port, &temp)
-    > sys_inb(0x64, addr: 0xeffff648)
-    < sys_inb(0x64, addr: 0xeffff648 [0x1d = 0b00011101])
-  @lab3.c:66, kbd_test_scan
-    driver_receive(ANY, &msg, &ipc_status)
-  > driver_receive(ANY, addr: 0xeffff710, addr: 0xeffff754)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1c = 0b00011100])
+  @lab3.c:151, kbd_test_poll
+    kbc_ih()
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x64, addr: 0xeffff6a8)
+    < sys_inb(0x64, addr: 0xeffff6a8 [0x1c = 0b00011100])
+    @kbc.c:35, util_sys_inb
+      sys_inb(port, &temp)
+    > sys_inb(0x60, addr: 0xeffff6ac)
+    < sys_inb(0x60, addr: 0xeffff6ac [0xfa = 0b11111010])
+  @lab3.c:152, kbd_test_poll
+    micros_to_ticks(DELAY_US)
+  @lab3.c:152, kbd_test_poll
+    tickdelay(micros_to_ticks(DELAY_US))
+  > tickdelay(1 [16.7 ms])
+  @lab3.c:182, kbd_test_poll
+    kbd_print_scancode(make, size, bytes)
+    "Breakcode: 0xfa"
+  < kbd_print_scancode(false, 1, addr: 0xeffff76e [0xfa]) -> (ret: 0)
+  @kbc.c:35, util_sys_inb
+    sys_inb(port, &temp)
+  > sys_inb(0x64, addr: 0xeffff73c)
+  < sys_inb(0x64, addr: 0xeffff73c [0x1d = 0b00011101])
+< kbd_test_poll() -> (ret: 1)
