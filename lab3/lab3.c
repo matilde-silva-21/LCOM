@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
 int(kbd_test_scan)() {
   // hook_id = 0;
 
-  uint8_t bit_no;
+  uint8_t bit_no = hook_id;
 
   if (keyboard_subscribe(&bit_no)) {
     return 1;
@@ -121,40 +121,31 @@ int(kbd_test_scan)() {
   return 0;
 }
 
-int(kbd_test_poll)() {
 
+int(kbd_test_poll)() {
   uint8_t size;     // nº de bytes no scancode
   uint8_t bytes[2]; // 1 byte por posição (pode ter 1 ou 2)
-  bool twoBytes = false, make;
+  bool twoBytes = false;
   statuscode = 0x00;
   kbc_iherr = false;
 
   while (scancode != ESC_BREAK_CODE) {
-
+    util_sys_inb(STATREG, &statuscode);
+    if ((statuscode & (OBF | MOUSEDATA)) != 0) {
+        kbc_iherr = true;
+    }
+    kbc_ih();
+    if (kbc_iherr)
+      continue;
     if (twoBytes) { // se o scancode tiver 2 bytes(na iteração anterior scancode = 0xE0)
                     // pomos no array bytes os dois, o size fica a dois e
                     // vemos se é make ou break code.
-      kbc_ih();
-      if ((statuscode & (OBF | MOUSEDATA)) != 0) {
-        kbc_iherr = true;
-      }
-      if (kbc_iherr)
-        continue;
       bytes[1] = 0xE0;
       bytes[0] = scancode;
       size = 2;
       twoBytes = false; // para a próxima iteração
-      kbd_print_scancode(kbc_makecode(scancode), size, bytes);
     }
     else { // se for a primeira iteração, verifica se o scancode tem dois ou um byte
-      kbc_ih();
-
-      if ((statuscode & (OBF | MOUSEDATA)) != 0) {
-        kbc_iherr = true;
-      }
-
-      if (kbc_iherr)
-        continue;
 
       if (scancode == 0xE0) {
         twoBytes = true;
@@ -164,14 +155,15 @@ int(kbd_test_poll)() {
         bytes[0] = scancode;
         size = 1;
         twoBytes = false;
-        kbd_print_scancode(kbc_makecode(scancode), size, bytes);
+        
       }
     }
-    kbd_print_scancode(make, size, bytes);
+    kbd_print_scancode(kbc_makecode(scancode), size, bytes);
+    tickdelay(micros_to_ticks(DELAY_US));
+    
   }
-
-  if (keyboard_unsubscribe())
-    return 1;
+  if (sys_outb(OUT_BUF, 0x01))
+      return 1;
 
   if (kbd_print_no_sysinb(cnt))
     return 1;
