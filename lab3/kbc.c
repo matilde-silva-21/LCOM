@@ -4,42 +4,22 @@
 #include "i8042.h"
 #include "kbc.h"
 
-int hook_id = 0;
-int cnt = 0;
+int kbd_hookid = 0;
 uint8_t scancode = 0x00, statuscode = 0x00;
 bool kbc_iherr = false;
 
 int(keyboard_subscribe)(uint8_t *bit_no){
-  *bit_no = hook_id;
+  *bit_no = kbd_hookid;
 
-  if(sys_irqsetpolicy(IRQ_KBD, IRQ_REENABLE | IRQ_EXCLUSIVE, &hook_id))
+  if(sys_irqsetpolicy(IRQ_KBD, IRQ_REENABLE | IRQ_EXCLUSIVE, &kbd_hookid))
     return 1;
 
   return 0;
 }
 
 int(keyboard_unsubscribe)(){
-  if(sys_irqrmpolicy(&hook_id))
+  if(sys_irqrmpolicy(&kbd_hookid))
     return 1;
-
-  return 0;
-}
-
-int(util_sys_inb)(int port, uint8_t *value) {
-
-  if (value == NULL)
-    return 1;
-
-  uint32_t temp;
-
-  if (sys_inb(port, &temp))
-    return 1;
-
-  *value = (uint8_t) temp;
-
-  #ifdef LAB3
-    cnt++;
-  #endif
 
   return 0;
 }
