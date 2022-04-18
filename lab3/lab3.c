@@ -172,59 +172,42 @@ int(kbd_test_poll)() {
 }
 
 int(kbd_test_timed_scan)(uint8_t n) {
-
-  uint8_t kbd_bit_no = kbd_hookid;
+  uint8_t kbc_bit_no = BIT(kbc_hookid); // nao sei bem o que fazemos aqui ?????????????????????
   uint8_t timer0_bit_no = BIT(timer0_hookid);
 
-  if (keyboard_subscribe(&kbd_bit_no)) {
+  if (kbc_subscribe_int(&kbc_bit_no))
     return 1;
-  }
 
-  if (timer_subscribe_int(&timer0_bit_no)) {
+  if(timer_subscribe_int(&timer0_bit_no))
     return 1;
-  }
 
-  uint8_t kbd_int_bit = BIT(kbd_bit_no);
-  uint8_t timer0_int_bit = BIT(timer0_bit_no);
-
-  int ipc_status, r;
+  uint8_t aux_counter = 0; // para quando nao se recebe scancodes
+  uint8_t bytes[2];
+  int ipc_status, r, size = 1;
   message msg;
-
-  uint8_t size;          // nº de bytes no scancode
-  uint8_t bytes[2];      // 1 byte por posição (pode ter 1 ou 2)
-  bool twoBytes = false; // make;
-
-  while ((scancode != ESC_BREAK_CODE) && (timer_counter < n * 60)) {
+  while (scancode != ESC_BREAK_CODE && timer_counter <= n) { // loops until the scancode is the esc break code (release of the esc hey)
+    /* Get a request message. */
     if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
       printf("driver_receive failed with: %d", r);
       continue;
     }
-    if (is_ipc_notify(ipc_status)) {
+    if (is_ipc_notify(ipc_status)) { /* received notification */
       switch (_ENDPOINT_P(msg.m_source)) {
-        case HARDWARE:
-          if (msg.m_notify.interrupts & kbd_int_bit) {
+        case HARDWARE:                                     /* hardware interrupt notification */
+          if (msg.m_notify.interrupts & BIT(kbc_bit_no)) { /* subscribe*/
+            kbc_ih();
+            if (kbc_iherr)
+              continue;
             if (twoBytes) { // se o scancode tiver 2 bytes(na iteração anterior scancode = 0xE0)
                             // pomos no array bytes os dois, o size fica a dois e
                             // vemos se é make ou break code.
-              kbc_ih();
-
-              if (kbc_iherr) {
-                kbc_iherr = false;
-                continue;
-              }
               bytes[1] = 0xE0;
               bytes[0] = scancode;
               size = 2;
               twoBytes = false; // para a próxima iteração
-              kbd_print_scancode(kbc_makecode(scancode), size, bytes);
             }
             else { // se for a primeira iteração, verifica se o scancode tem dois ou um byte
-              kbc_ih();
 
-              if (kbc_iherr) {
-                kbc_iherr = false;
-                continue;
-              }
               if (scancode == 0xE0) {
                 twoBytes = true;
                 continue; // como se lê o scancode byte a byte, fazemos continue para ir buscar o LSB
@@ -233,14 +216,19 @@ int(kbd_test_timed_scan)(uint8_t n) {
                 bytes[0] = scancode;
                 size = 1;
                 twoBytes = false;
-                kbd_print_scancode(kbc_makecode(scancode), size, bytes);
               }
             }
+            kbd_print_scancode(kbc_makecode(scancode), size, bytes);
+            timer_counter = 0;
+            aux_counter = 0;
           }
-          if (msg.m_notify.interrupts & timer0_int_bit) {
+          if(msg.m_notify.interrupts & BIT(timer0_bit_no)){
             timer_int_handler();
+            if (timer_counter % (int)sys_hz() == 0) //se passar um segundo, incrementamos o aux_counter
+            {
+              aux_counter ++;
+            }
           }
-          break;
         default:
           break;
       }
@@ -248,19 +236,17 @@ int(kbd_test_timed_scan)(uint8_t n) {
     else {
     }
   }
-  // aqui nao era suposto verificar se o buffer esta full antes de poder escrever (slide 18)
-  // acho que não é preciso porque estás a dar flush e já não interessa o que possa estar lá(not sure tho)
-  if (sys_outb(OUT_BUF, 0x01))
+
+  if(timer_unsubscribe_int())
     return 1;
 
-  if (keyboard_unsubscribe())
+  if (kbc_unsubscribe_int())
     return 1;
 
-  if (timer_unsubscribe_int())
-    return 1;
-
-  if (kbd_print_no_sysinb(timer_counter))
-    return 1;
-
+  // estava a dar erro de tempo
+  /*
+    if (kbd_print_no_sysinb(sys_counter))
+      return 1;
+  */
   return 0;
 }
