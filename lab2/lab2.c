@@ -48,17 +48,11 @@ int(timer_test_read_config)(uint8_t timer, enum timer_status_field field) {
 }
 
 int(timer_test_time_base)(uint8_t timer, uint32_t freq) {
-  if (timer_set_frequency(timer, freq))
-    return 1;
-
   return 0;
 }
 
 int(timer_test_int)(uint8_t time) {
-  uint8_t irq_set = BIT(hook_id);
-
-  if(timer_subscribe_int(&irq_set))
-    return 1;
+  uint8_t irq_set = ;
 
   int ipc_status, r;
   message msg;
@@ -73,20 +67,11 @@ int(timer_test_int)(uint8_t time) {
       switch(_ENDPOINT_P(msg.m_source)){
         case HARDWARE:
           if(msg.m_notify.interrupts & BIT(irq_set)){
-            timer_int_handler();
-            if(counter%(int)sys_hz() == 0){
-              timer_print_elapsed_time();
-            }
+
           }
           break;
       }
     }
-    else {
-
-    }
   }
-
-  if(timer_unsubscribe_int())
-    return 1;
   return 0;
 }

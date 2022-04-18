@@ -48,16 +48,6 @@ void(kbc_ih)(void){
   //esta funcao le o status register e o out_buf e mediante o valor do SR ignora ou nao o out_buf
   //All communication with other code must be done via global variables, static if possible.
 
-  /*
-  if(util_sys_inb(STATREG, &statuscode) || util_sys_inb(OUT_BUF, &scancode)){
-    kbc_iherr = true;
-  }//verificar se util_sys funcionou direito
-
-  //agora verificar se SR levantou algum erro
-*/
-
-  util_sys_inb(STATREG, &statuscode); // primeiro vamos buscar o statuscode e só quando soubermos que nao ha erros - OBF, PARITY e TIMEOUTERR - é que vamos buscar o scancode
-
   if(((statuscode & TIMEOUTERR) >> 6) || ((statuscode & PARITYERR) >> 7)){
     scancode = 0x00; // se o SR der erro entao eu apago o que esta no OUT_BUF
     kbc_iherr = true;
