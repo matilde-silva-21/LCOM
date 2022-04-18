@@ -6,12 +6,16 @@
 #include <stdint.h>
 
 #include "i8042.h"
+#include "i8254.h"
 #include "kbc.h"
+#include "timer.h"
+#include "utils.h"
 
 extern int cnt;
-extern int hook_id;
+extern int kbd_hookid, timer0_hookid;
 extern uint8_t scancode, statuscode;
 extern bool kbc_iherr;
+extern int timer_counter;
 
 
 int main(int argc, char *argv[]) {
@@ -39,12 +43,22 @@ int main(int argc, char *argv[]) {
 }
 
 int(kbd_test_scan)() {
+<<<<<<< HEAD
   uint8_t bit_no;
 
   if (keyboard_subscribe(&bit_no))
     return 1;
 
   uint8_t irq_set = BIT(bit_no);
+=======
+
+  uint8_t kbd_bit_no = kbd_hookid;
+
+  if (keyboard_subscribe(&kbd_bit_no)) {
+    return 1;
+  }
+  uint8_t irq_set = BIT(kbd_bit_no);
+>>>>>>> b1d81682f73acc9dcacd3be9a734af0e74a9cedf
 
   int ipc_status, r;
   message msg;
@@ -63,9 +77,12 @@ int(kbd_test_scan)() {
       switch (_ENDPOINT_P(msg.m_source)) {
         case HARDWARE:
           if (msg.m_notify.interrupts & irq_set) {
+<<<<<<< HEAD
 
             util_sys_inb(STATREG, &statuscode); // primeiro vamos buscar o statuscode e só quando soubermos que nao ha erros - OBF, PARITY e TIMEOUTERR - é que vamos buscar o scancode
 
+=======
+>>>>>>> b1d81682f73acc9dcacd3be9a734af0e74a9cedf
             if (twoBytes) { // se o scancode tiver 2 bytes(na iteração anterior scancode = 0xE0)
                             // pomos no array bytes os dois, o size fica a dois e
                             // vemos se é make ou break code.
@@ -124,6 +141,7 @@ int(kbd_test_scan)() {
 }
 
 int(kbd_test_poll)() {
+<<<<<<< HEAD
   bool twoBytes = false;
   statuscode = 0x00;
   kbc_iherr = false;
@@ -135,9 +153,22 @@ int(kbd_test_poll)() {
 
     if ((statuscode & (OBF | MOUSEDATA)) != 0) {
       return 1;
+=======
+  uint8_t size;     // nº de bytes no scancode
+  uint8_t bytes[2]; // 1 byte por posição (pode ter 1 ou 2)
+  bool twoBytes = false;
+  statuscode = 0x00;
+  kbc_iherr = false;
+
+  while (scancode != ESC_BREAK_CODE) {
+    util_sys_inb(STATREG, &statuscode);
+    if ((statuscode & (OBF | MOUSEDATA)) != 0) {
+      kbc_iherr = true;
+>>>>>>> b1d81682f73acc9dcacd3be9a734af0e74a9cedf
     }
 
     kbc_ih();
+<<<<<<< HEAD
 
     if (kbc_iherr)
       return 1;
@@ -150,10 +181,18 @@ int(kbd_test_poll)() {
         kbc_iherr = false;
         continue;
       }
+=======
+    if (kbc_iherr)
+      continue;
+    if (twoBytes) { // se o scancode tiver 2 bytes(na iteração anterior scancode = 0xE0)
+                    // pomos no array bytes os dois, o size fica a dois e
+                    // vemos se é make ou break code.
+>>>>>>> b1d81682f73acc9dcacd3be9a734af0e74a9cedf
       bytes[1] = 0xE0;
       bytes[0] = scancode;
       size = 2;
       twoBytes = false; // para a próxima iteração
+<<<<<<< HEAD
       kbd_print_scancode(kbc_makecode(scancode), size, bytes);
     }
     else { // se for a primeira iteração, verifica se o scancode tem dois ou um byte
@@ -163,6 +202,11 @@ int(kbd_test_poll)() {
         kbc_iherr = false;
         continue;
       }
+=======
+    }
+    else { // se for a primeira iteração, verifica se o scancode tem dois ou um byte
+
+>>>>>>> b1d81682f73acc9dcacd3be9a734af0e74a9cedf
       if (scancode == 0xE0) {
         twoBytes = true;
         continue; // como se lê o scancode byte a byte, fazemos continue para ir buscar o LSB
@@ -171,6 +215,7 @@ int(kbd_test_poll)() {
         bytes[0] = scancode;
         size = 1;
         twoBytes = false;
+<<<<<<< HEAD
         kbd_print_scancode(kbc_makecode(scancode), size, bytes);
       }
     }
@@ -183,6 +228,16 @@ int(kbd_test_poll)() {
   if (keyboard_unsubscribe())
     return 1;
 
+=======
+      }
+    }
+    kbd_print_scancode(kbc_makecode(scancode), size, bytes);
+    tickdelay(micros_to_ticks(DELAY_US));
+  }
+  if (sys_outb(OUT_BUF, 0x01))
+    return 1;
+
+>>>>>>> b1d81682f73acc9dcacd3be9a734af0e74a9cedf
   if (kbd_print_no_sysinb(cnt))
     return 1;
 
@@ -190,8 +245,95 @@ int(kbd_test_poll)() {
 }
 
 int(kbd_test_timed_scan)(uint8_t n) {
-  /* To be completed by the students */
-  printf("%s is not yet implemented!\n", __func__);
 
-  return 1;
+  uint8_t kbd_bit_no = kbd_hookid;
+  uint8_t timer0_bit_no = BIT(timer0_hookid);
+
+  if (keyboard_subscribe(&kbd_bit_no)) {
+    return 1;
+  }
+
+  if (timer_subscribe_int(&timer0_bit_no)) {
+    return 1;
+  }
+
+  uint8_t kbd_int_bit = BIT(kbd_bit_no);
+  uint8_t timer0_int_bit = BIT(timer0_bit_no);
+
+  int ipc_status, r;
+  message msg;
+
+  uint8_t size;          // nº de bytes no scancode
+  uint8_t bytes[2];      // 1 byte por posição (pode ter 1 ou 2)
+  bool twoBytes = false; // make;
+
+  while ((scancode != ESC_BREAK_CODE) && (timer_counter < n * 60)) {
+    if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
+      printf("driver_receive failed with: %d", r);
+      continue;
+    }
+    if (is_ipc_notify(ipc_status)) {
+      switch (_ENDPOINT_P(msg.m_source)) {
+        case HARDWARE:
+          if (msg.m_notify.interrupts & kbd_int_bit) {
+            if (twoBytes) { // se o scancode tiver 2 bytes(na iteração anterior scancode = 0xE0)
+                            // pomos no array bytes os dois, o size fica a dois e
+                            // vemos se é make ou break code.
+              kbc_ih();
+
+              if (kbc_iherr) {
+                kbc_iherr = false;
+                continue;
+              }
+              bytes[1] = 0xE0;
+              bytes[0] = scancode;
+              size = 2;
+              twoBytes = false; // para a próxima iteração
+              kbd_print_scancode(kbc_makecode(scancode), size, bytes);
+            }
+            else { // se for a primeira iteração, verifica se o scancode tem dois ou um byte
+              kbc_ih();
+
+              if (kbc_iherr) {
+                kbc_iherr = false;
+                continue;
+              }
+              if (scancode == 0xE0) {
+                twoBytes = true;
+                continue; // como se lê o scancode byte a byte, fazemos continue para ir buscar o LSB
+              }
+              else { // só tem 1 byte, colocamos no array bytes, o size fica a 1 e twoBytes fica a falso
+                bytes[0] = scancode;
+                size = 1;
+                twoBytes = false;
+                kbd_print_scancode(kbc_makecode(scancode), size, bytes);
+              }
+            }
+          }
+          if (msg.m_notify.interrupts & timer0_int_bit) {
+            timer_int_handler();
+          }
+          break;
+        default:
+          break;
+      }
+    }
+    else {
+    }
+  }
+  // aqui nao era suposto verificar se o buffer esta full antes de poder escrever (slide 18)
+  // acho que não é preciso porque estás a dar flush e já não interessa o que possa estar lá(not sure tho)
+  if (sys_outb(OUT_BUF, 0x01))
+    return 1;
+
+  if (keyboard_unsubscribe())
+    return 1;
+
+  if (timer_unsubscribe_int())
+    return 1;
+
+  if (kbd_print_no_sysinb(timer_counter))
+    return 1;
+
+  return 0;
 }

@@ -5,7 +5,11 @@ int(keyboard_subscribe)(uint8_t *bit_no);
 
 int(keyboard_unsubscribe)();
 
-int(util_sys_inb)(int port, uint8_t *value);
+int(read_command)(uint8_t* command);
+
+int(write_command)(uint8_t* command);
+
+int(kbc_reenable_int)();
 
 void(kbc_ih)(void);
 

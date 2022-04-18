@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @lcflib.a:2019, lcf_start
   kbd_test_poll()
   @kbc.c:35, util_sys_inb
@@ -30,3 +31,5 @@
   > sys_inb(0x64, addr: 0xeffff738)
   < sys_inb(0x64, addr: 0xeffff738 [0x1d = 0b00011101])
 < kbd_test_poll() -> (ret: 1)
+=======
+>>>>>>> b1d81682f73acc9dcacd3be9a734af0e74a9cedf
