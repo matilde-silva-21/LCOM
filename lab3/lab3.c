@@ -43,6 +43,7 @@ int main(int argc, char *argv[]) {
 
 int(kbd_test_scan)() {
 
+// nesta funcao como é que eu sei que se o scancode tiver de facto 2 bytes, vêm oS MSB antes dos LSB?
   uint8_t kbd_bit_no = kbd_hookid;
 
   if (keyboard_subscribe(&kbd_bit_no)) {
@@ -67,46 +68,41 @@ int(kbd_test_scan)() {
       switch (_ENDPOINT_P(msg.m_source)) {
         case HARDWARE:
           if (msg.m_notify.interrupts & irq_set) {
-            if (twoBytes) { // se o scancode tiver 2 bytes(na iteração anterior scancode = 0xE0)
-                            // pomos no array bytes os dois, o size fica a dois e
-                            // vemos se é make ou break code.
-              kbc_ih();
+            kbc_ih();
 
-              if (kbc_iherr) {
-                kbc_iherr = false;
-                continue;
-              }
-              bytes[1] = 0xE0;
-              bytes[0] = scancode;
-              size = 2;
-              twoBytes = false; // para a próxima iteração
+            if (kbc_iherr) {
+              kbc_iherr = false;
+              continue;
+            }
+            if (twoBytes) { // se o scancode tiver 2 bytes(na iteração anterior scancode = 0xE0)
+                          // pomos no array bytes os dois, o size fica a dois e
+                          // vemos se é make ou break code.
+            
+            bytes[1] = 0xE0;
+            bytes[0] = scancode;
+            size = 2;
+            twoBytes = false; // para a próxima iteração
+            kbd_print_scancode(kbc_makecode(scancode), size, bytes);
+          }
+          else { // se for a primeira iteração, verifica se o scancode tem dois ou um byte
+            
+            if (scancode == 0xE0) {
+              twoBytes = true;
+              continue; // como se lê o scancode byte a byte, fazemos continue para ir buscar o LSB
+            }
+            else { // só tem 1 byte, colocamos no array bytes, o size fica a 1 e twoBytes fica a falso
+              bytes[0] = scancode; //aqui nao deviamos colocar bytes[1] a 0 em vez de deixar a 0xE0?
+              size = 1;
+              twoBytes = false;
               kbd_print_scancode(kbc_makecode(scancode), size, bytes);
             }
-            else { // se for a primeira iteração, verifica se o scancode tem dois ou um byte
-              kbc_ih();
-
-              if (kbc_iherr) {
-                kbc_iherr = false;
-                continue;
-              }
-              if (scancode == 0xE0) {
-                twoBytes = true;
-                continue; // como se lê o scancode byte a byte, fazemos continue para ir buscar o LSB
-              }
-              else { // só tem 1 byte, colocamos no array bytes, o size fica a 1 e twoBytes fica a falso
-                bytes[0] = scancode;
-                size = 1;
-                twoBytes = false;
-                kbd_print_scancode(kbc_makecode(scancode), size, bytes);
-              }
-            }
           }
-          break;
+        }
+        break;
+        
         default:
           break;
       }
-    }
-    else {
     }
   }
 
@@ -132,10 +128,13 @@ int(kbd_test_poll)() {
   kbc_iherr = false;
 
   while (scancode != ESC_BREAK_CODE) {
+    //esta parte aqui é meio inutil porque quando chamo kbc_ih ja verifico estes erros
     util_sys_inb(STATREG, &statuscode);
     if ((statuscode & (OBF | MOUSEDATA)) != 0) {
       kbc_iherr = true;
     }
+
+
     kbc_ih();
     if (kbc_iherr)
       continue;
@@ -172,6 +171,8 @@ int(kbd_test_poll)() {
 }
 
 int(kbd_test_timed_scan)(uint8_t n) {
+  //acho que estas 2 linhas de codigo sao para escrever depois do subscribe, para ver se foi subscrito corretamente
+
   uint8_t kbc_bit_no = BIT(kbc_hookid); // nao sei bem o que fazemos aqui ?????????????????????
   uint8_t timer0_bit_no = BIT(timer0_hookid);
 
