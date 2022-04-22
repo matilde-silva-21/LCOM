@@ -4,12 +4,12 @@
 #include <stdbool.h>
 #include <stdint.h>
 
-extern int counter;
-extern int hook_id;
+
+extern int hookid;
+extern int timer_counter;
 
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
-
   lcf_set_language("EN-US");
 
   // enables to log function invocations that are being "wrapped" by LCF
@@ -33,16 +33,13 @@ int main(int argc, char *argv[]) {
 }
 
 int(timer_test_read_config)(uint8_t timer, enum timer_status_field field) {
-  uint8_t st;
-  if (timer_get_conf(timer, &st)) {
-    printf("ERROR: timer_get_config failed.\n");
-    return 1;
-  }
+  uint8_t status;
 
-  if (timer_display_conf(timer, st, field)) {
-    printf("ERROR: timer_display_conf failed.\n");
+  if (timer_get_conf(timer, &status))
     return 1;
-  }
+
+  if (timer_display_conf(timer, status, field))
+    return 1;
 
   return 0;
 }
@@ -50,43 +47,43 @@ int(timer_test_read_config)(uint8_t timer, enum timer_status_field field) {
 int(timer_test_time_base)(uint8_t timer, uint32_t freq) {
   if (timer_set_frequency(timer, freq))
     return 1;
-
   return 0;
 }
 
 int(timer_test_int)(uint8_t time) {
-  uint8_t irq_set = BIT(hook_id);
 
-  if(timer_subscribe_int(&irq_set))
+  uint8_t bit_no = BIT(hookid);
+
+  if (timer_subscribe_int(&bit_no))
     return 1;
 
   int ipc_status, r;
   message msg;
-
-  while(counter < time * (int)sys_hz()){
-    /* Get request message. */
-    if((r = driver_receive(ANY, &msg, &ipc_status)) != 0){
+  while (timer_counter < time * (int)sys_hz()) { /* You may want to use a different condition */
+    /* Get a request message. */
+    if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
       printf("driver_receive failed with: %d", r);
       continue;
     }
-    if(is_ipc_notify(ipc_status)){
-      switch(_ENDPOINT_P(msg.m_source)){
-        case HARDWARE:
-          if(msg.m_notify.interrupts & BIT(irq_set)){
+    if (is_ipc_notify(ipc_status)) { /* received notification */
+      switch (_ENDPOINT_P(msg.m_source)) {
+        case HARDWARE:                            /* hardware interrupt notification */
+          if (msg.m_notify.interrupts & BIT(bit_no)) { /* subscribe*/
             timer_int_handler();
-            if(counter%(int)sys_hz() == 0){
+            if (timer_counter % (int)sys_hz() == 0)
               timer_print_elapsed_time();
-            }
           }
+          break;
+        default:
           break;
       }
     }
     else {
-
     }
   }
 
-  if(timer_unsubscribe_int())
+  if (timer_unsubscribe_int())
     return 1;
+
   return 0;
 }
