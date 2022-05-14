@@ -1,27 +1,27 @@
 #ifndef LAB3_I8042_H
 #define LAB3_I8042_H
 
-/* I/O port addresses */
+#define KBD_IRQ 1
 
-#define OUT_BUF 0x60 //output buffer, leitura de valores de retorno
-#define STATREG 0x64 //status register
-#define IN_ARGS 0x60 //para receber argumentos
-#define IN_BUF 0x64 //para receber comandos
+//registos
+#define OUT_BUF 0x60
+#define STAT_REG 0x64
+#define ARGS_REG 0x60
 
-#define DELAY_US    20000
-#define ESC_BREAK_CODE 0x81
-#define IRQ_KBD 1
+//scancodes
+#define ESC_BREAK 0x81
+
+//bits statuscode
+#define PARITY_BIT BIT(7)
+#define TIMEOUT_BIT BIT(6)
+#define AUX_BIT BIT(5)
+#define OBF_BIT BIT(0)
+#define IBF_BIT BIT(1)
 #define MAKE_BIT BIT(7)
 
-#define PARITYERR BIT(7)
-#define TIMEOUTERR BIT(6)
-#define MOUSEDATA BIT(5)
-#define OBF BIT(0)
-#define IBF BIT(1)
+//command byte
+#define READ_COMMAND 0x20
+#define WRITE_COMMAND 0X60
+#define ENABLE_KBD BIT(0)
 
-#define READ_CMBYTE 0x20
-#define WRITE_CMBYTE 0x60
-
-#define ENABLE_INT_KBD BIT(0)
-
-#endif // LAB3_I8042_H
+#endif

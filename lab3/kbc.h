@@ -1,18 +1,28 @@
 #ifndef LAB3_KBC_H
 #define LAB3_KBC_H
 
-int(keyboard_subscribe)(uint8_t *bit_no);
+#include <lcom/lcf.h>
 
-int(keyboard_unsubscribe)();
+#include <stdbool.h>
+#include <stdint.h>
 
-int(read_command)(uint8_t* command);
+#include "i8042.h"
+#include "utils.h"
 
-int(write_command)(uint8_t* command);
+int (kbd_subscribe_int)(uint8_t *bit_no);
 
-int(kbc_reenable_int)();
+int (kbd_unsubscribe_int)();
 
-void(kbc_ih)(void);
+void (kbc_ih)();
 
-bool(kbc_makecode)(uint8_t scancode);
+int (twoBytes)(uint8_t scan_code);
 
-#endif // LAB3_KBC_H
+bool (makecode)(uint8_t scan_code);
+
+int (readcommand)(uint8_t* commandbyte);
+
+int (writecommand)(uint8_t commandbyte);
+
+int (kbd_reenable_int)();
+
+#endif //LAB3_KBC_H
