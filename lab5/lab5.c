@@ -4,6 +4,8 @@
 #include <stdbool.h>
 #include <stdint.h>
 
+#include "vg.h"
+
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
   lcf_set_language("EN-US");
@@ -30,31 +32,17 @@ int main(int argc, char *argv[]) {
 
 int(video_test_init)(uint16_t mode, uint8_t delay) {
 
-  printf("start\n");
-
-  if (mode != 0x105 && mode != 0x110 && mode != 0x115 && mode != 0x11A && mode != 0x14C) {
+  //vai buscar a informação do mode e mapear a memória necessária
+  vbe_mode_info_t info;
+  if(vg_get_mode_info(&mode, &info)){
     return 1;
   }
 
-  reg86_t aux;
-  memset(&aux, 0, sizeof(aux));
-
-  aux.intno = 0x10;
-  aux.ah = 0x4F;
-  aux.al = 0x02; // function 0x02 = set VBE mode
-
-  /* Make the BIOS call */
-  if (sys_int86(&aux) != OK) {
-    printf("\tvideo_test_init(): sys_int86() failed \n");
+  if(vg_setmode(&mode))
     return 1;
-  }
-
-  if (!(aux.ah == 0x00 && aux.al == 0x4F))
-    return 1;
-
-  aux.bx = BIT(14) | mode;
 
   sleep(delay);
+
   if (vg_exit() != 0)
     return 1;
 
