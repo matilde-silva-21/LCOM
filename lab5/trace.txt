@@ -1,0 +1,8 @@
+@lcflib.a:2019, lcf_start
+  video_test_pattern(mode, no_rect, first, step)
+> video_test_pattern(0x004, 3, 0x00ff0000 [16711680], 3)
+  @vg.c:25, vg_get_mode_info
+    vbe_get_mode_info(*mode, info)
+  > vbe_get_mode_info(0x004, addr: 0xeffff550)
+  < vbe_get_mode_info(0x004, addr: 0xeffff550 [0x0824e037, 61439x19904, Indexed (0 BPP) <0 bytes>]) -> (ret: 3)
+< video_test_pattern(0x004, 3, 0x00ff0000 [16711680], 3) -> (ret: 1)
