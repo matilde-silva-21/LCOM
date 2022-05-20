@@ -34,3 +34,6 @@ typedef struct {
 uint8_t *(xpm_load) (xpm_map_t map, enum xpm_image_type type, xpm_image_t *img);
 
 uint32_t(xpm_transparency_color)(enum xpm_image_type type);
+
+int draw_xpm(uint16_t x, uint16_t y, xpm_image_t img);
+

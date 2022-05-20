@@ -23,4 +23,6 @@ int wait_esckey();
 
 int vg_drawpattern(uint8_t no_rectangles, uint32_t first, uint8_t step);
 
+int draw_xpm(uint16_t x, uint16_t y, xpm_image_t img);
+
 #endif // LAB5_VG_H

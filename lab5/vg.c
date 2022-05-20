@@ -205,3 +205,18 @@ int vg_drawpattern(uint8_t no_rectangles, uint32_t first, uint8_t step){
   }
   return 0;
 }
+
+int draw_xpm(uint16_t x, uint16_t y, xpm_image_t img){ 
+
+  int counter=0;
+
+  for(int i=y; i<img.height+y; i++){
+    for(int j=x; j<img.width+x; j++){
+      vg_drawpixel(j,i, img.bytes[counter++]);
+    }
+  }
+  
+
+  return 0;
+}
+

@@ -8,6 +8,7 @@
 #include "kbc.h"
 #include "vbemacros.h"
 
+
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
   lcf_set_language("EN-US");
@@ -94,6 +95,29 @@ int(video_test_pattern)(uint16_t mode, uint8_t no_rectangles, uint32_t first, ui
 }
 
 int(video_test_xpm)(xpm_map_t xpm, uint16_t x, uint16_t y) {
+
+  uint16_t mode = 0x105;
+
+  vbe_mode_info_t info;
+  if(vg_get_mode_info(&mode, &info)){
+    return 1;
+  }
+
+  if(vg_setmode(&mode))
+    return 1;
+
+  xpm_image_t img;
+
+  xpm_load(xpm, XPM_INDEXED , &img);
+
+  draw_xpm(x, y, img);
+  
+  if(wait_esckey())
+    return 1;
+
+  if(vg_exit() != 0)
+    return 1;
+
   return 0;
 }
 
