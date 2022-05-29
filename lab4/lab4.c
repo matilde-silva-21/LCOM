@@ -11,6 +11,8 @@
 extern int mouse_hookid;
 extern uint8_t scancode, statuscode;
 extern int ih_error;
+
+
 int main(int argc, char *argv[]) {
   // sets the language of LCF messages (can be either EN-US or PT-PT)
   lcf_set_language("EN-US");
