@@ -78,7 +78,7 @@ int (mouseStatus)(uint8_t* st){
   return 0;
 }
 
-int (enable_mouse)(uint8_t cmd){
+int (send_mouse_command)(uint8_t cmd){
   if(sys_irqdisable(&mouse_hookid))
     return 1;
   uint8_t ack, st;
@@ -111,45 +111,6 @@ int (enable_mouse)(uint8_t cmd){
   return 0;
 }
 
-int (disable_mouse)(uint8_t cmd){
-  sys_outb(STAT_REG, WRITE_COMMAND);
-  sys_outb(ARGS_REG, cmd);
-  return 0;
-}
 
-/*
-int write_command(uint8_t port, uint8_t cmd) {
-  int tries = 10;
-  while (tries > 0) {
-    if (util_sys_inb(STAT_REG, &statuscode))
-      return 1;
-    if (statuscode & IBF_BIT)
-      continue;
-    if (sys_outb(port, cmd))
-      return 1;
 
-    tickdelay(20000);
 
-    tries--;
-  }
-  return 0;
-}
-
-int sendCommand(uint8_t cmd) {
-  uint8_t ack;
-  do {
-    if (write_command(STAT_REG, MOUSE_COMMAND))
-      return 1;
-    if (write_command(OUT_BUF, cmd))
-      return 1;
-
-    if (util_sys_inb(OUT_BUF, &ack))
-      return 1;
-
-    if (ack == ACK_ERROR)
-      return 1;
-
-  } while (ack == NACK);
-  return 0;
-}
-*/
