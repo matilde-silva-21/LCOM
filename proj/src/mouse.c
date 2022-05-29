@@ -75,10 +75,10 @@ void(getMousePacket)(struct packet *pp, uint8_t bytes[3]) {
 
 
 int (send_mouse_command)(uint8_t cmd){
-    /*
+
     if(sys_irqdisable(&mouse_hookid))
         return 1;
-        */
+     
     uint8_t ack;
     do{
         if(util_sys_inb(STAT_REG, &mouse_statuscode))
@@ -104,9 +104,9 @@ int (send_mouse_command)(uint8_t cmd){
             return 1;
 
     }while(ack != ACK);
-    /*
+    
     if(sys_irqenable(&mouse_hookid))
         return 1;
-        */
+        
     return 0;
 }
