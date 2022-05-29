@@ -1,7 +1,7 @@
 #include "keyboard.h"
 
 int kbd_hookid = 1;
-uint8_t scancode = 0, statuscode = 0;
+uint8_t keyboard_scancode = 0, keyboard_statuscode = 0;
 
 int (kbd_subscribe_int) (uint8_t *bit_no){
 
@@ -23,16 +23,16 @@ int (kbd_unsubscribe_int) (){
 
 void (kbc_ih) (){
 
-    uint8_t statuscode;
+    uint8_t keyboard_statuscode;
 
-    util_sys_inb(STAT_REG, &statuscode);
+    util_sys_inb(STAT_REG, &keyboard_statuscode);
 
-    if((statuscode & (PARITY_BIT | TIMEOUT_BIT)) != 0) {
-        scancode = 0;
+    if((keyboard_statuscode & (PARITY_BIT | TIMEOUT_BIT)) != 0) {
+        keyboard_scancode = 0;
         return;
     }
 
-    util_sys_inb(OUT_BUF, &scancode);
+    util_sys_inb(OUT_BUF, &keyboard_scancode);
 }
 
 int (twoBytes) (uint8_t scan_code){

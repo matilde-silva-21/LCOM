@@ -7,6 +7,7 @@
 #include <stdint.h>
 
 #include "i8042.h"
+#include "utils.h"
 
 typedef struct{
     uint16_t x, y;

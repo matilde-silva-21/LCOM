@@ -40,5 +40,6 @@
 #define NACK 0xFE
 #define ACK_ERROR 0xFC
 #define MOUSE_COMMAND 0xD4
+#define MOUSE_IRQ 12
 
 #endif

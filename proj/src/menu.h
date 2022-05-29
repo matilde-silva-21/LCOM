@@ -7,7 +7,7 @@
 #include <stdint.h>
 
 #include "graphic.h"
-#include "resources/menu2.xpm"
+#include "resources.h"
 #include "mouse.h"
 
 /*
@@ -45,7 +45,7 @@ typedef enum{
     InstructionsButton,
     HallOfFameButton,
     ExitButton,
-    Invalid;
+    Invalid
 } Button;
 
 int drawMenu();

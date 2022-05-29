@@ -1,7 +1,8 @@
 #include "mouse.h"
+#include "utils.h"
 
-int mouse_hookid = 12;
-uint8_t scancode = 0, statuscode = 0;
+int mouse_hookid = 0;
+uint8_t mouse_scancode = 0, mouse_statuscode = 0;
 int ih_error = 0;
 
 int(mouse_subscribe_int)(int *bit_no) {
@@ -21,13 +22,13 @@ int(mouse_unsubscribe_int)() {
 }
 
 void(mouse_ih)() {
-    util_sys_inb(STAT_REG, &statuscode);
+    util_sys_inb(STAT_REG, &mouse_statuscode);
 
-    if ((statuscode & (PARITY_BIT | TIMEOUT_BIT)) == 0 && (statuscode & OBF_BIT)) {
-        util_sys_inb(OUT_BUF, &scancode);
+    if ((mouse_statuscode & (PARITY_BIT | TIMEOUT_BIT)) == 0 && (mouse_statuscode & OBF_BIT)) {
+        util_sys_inb(OUT_BUF, &mouse_scancode);
         ih_error = 0;
     }else ih_error = 1;
-    util_sys_inb(OUT_BUF, &scancode);
+    util_sys_inb(OUT_BUF, &mouse_scancode);
 
 }
 
@@ -80,21 +81,21 @@ int (send_mouse_command)(uint8_t cmd){
         */
     uint8_t ack;
     do{
-        if(util_sys_inb(STAT_REG, &statuscode))
+        if(util_sys_inb(STAT_REG, &mouse_statuscode))
             return 1;
-        if (st & IBF_BIT) // checks if we can write
+        if (mouse_statuscode & IBF_BIT) // checks if we can write
             continue;
         if(sys_outb(STAT_REG, MOUSE_COMMAND))
             return 1;
 
-        if(util_sys_inb(STAT_REG, &statuscode))
+        if(util_sys_inb(STAT_REG, &mouse_statuscode))
             return 1;
-        if (statuscode & IBF_BIT) // checks if we can write
+        if (mouse_statuscode & IBF_BIT) // checks if we can write
             continue;
         if(sys_outb(ARGS_REG, cmd))
             return 1;
 
-        tickdelay(micros_to_delay(20000));
+        //tickdelay(micros_to_delay(20000));
 
         if(util_sys_inb(OUT_BUF, &ack))
             return 1;

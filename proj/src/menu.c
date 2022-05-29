@@ -1,4 +1,5 @@
 #include "menu.h"
+#include "resources.h"
 
 xpm_image_t menu;
 

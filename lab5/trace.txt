@@ -153,3 +153,36 @@
   @vg.c:125, wait_esckey
     driver_receive(ANY, &msg, &ipc_status)
   > driver_receive(ANY, addr: 0xeffff4c0, addr: 0xeffff504)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000010]>)
+  @vg.c:133, wait_esckey
+    kbc_ih()
+    @utils.c:7, util_sys_inb
+      sys_inb(port, &aux)
+    > sys_inb(0x64, addr: 0xeffff3e8)
+    < sys_inb(0x64, addr: 0xeffff3e8 [0x1d = 0b00011101])
+    @utils.c:7, util_sys_inb
+      sys_inb(port, &aux)
+    > sys_inb(0x60, addr: 0xeffff3e8)
+    < sys_inb(0x60, addr: 0xeffff3e8 [0x01 = 0b00000001])
+  @vg.c:125, wait_esckey
+    driver_receive(ANY, &msg, &ipc_status)
+  > driver_receive(ANY, addr: 0xeffff4c0, addr: 0xeffff504)
+  < driver_receive(<[HARDWARE: 0b0000000000000000000000000000000000000000000000000000000000000010]>)
+  @vg.c:133, wait_esckey
+    kbc_ih()
+    @utils.c:7, util_sys_inb
+      sys_inb(port, &aux)
+    > sys_inb(0x64, addr: 0xeffff3e8)
+    < sys_inb(0x64, addr: 0xeffff3e8 [0x1d = 0b00011101])
+    @utils.c:7, util_sys_inb
+      sys_inb(port, &aux)
+    > sys_inb(0x60, addr: 0xeffff3e8)
+    < sys_inb(0x60, addr: 0xeffff3e8 [0x81 = 0b10000001])
+  @kbc.c:18, kbd_unsubscribe_int
+    sys_irqrmpolicy(&kbd_hookid)
+  > sys_irqrmpolicy(addr: 0x822e934 [10])
+  < sys_irqrmpolicy(addr: 0x822e934 [10]) -> (ret: 0)
+  @lab5.c:122, video_test_xpm
+    vg_exit()
+  < vg_exit() -> (ret: 0)
+< video_test_xpm(0x81e1d34, 40, 40) -> (ret: 0)
