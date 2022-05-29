@@ -63,7 +63,7 @@ int vg_get_mode_info(uint16_t *mode, vbe_mode_info_t* info){
   return 0;
 }
 
-int vg_setmode(uint16_t *mode) {
+int vg_set_mode(uint16_t *mode) {
   //nao sei se isto é necessário
   if (*mode != 0x105 && *mode != 0x110 && *mode != 0x115 && *mode != 0x11A && *mode != 0x14C) {
     return 1;
@@ -216,6 +216,39 @@ int draw_xpm(uint16_t x, uint16_t y, xpm_image_t img){
     }
   }
   
+
+  return 0;
+}
+
+
+int vg_initialize(uint16_t mode){
+  vbe_mode_info_t info;
+  if(vg_get_mode_info(&mode, &info))
+    return 1;
+
+  if(vg_set_mode(&mode))
+    return 1;
+
+  return 0;
+}
+
+
+int draw_next_xpm(xpm_map_t xpm, uint16_t xi, uint16_t yi, uint16_t xf, uint16_t yf) {
+
+  xpm_image_t img;
+  uint8_t* map;
+
+  map = xpm_load(xpm, XPM_INDEXED, &img);
+
+  // "Apagar" a imagem anterior
+  if(vg_drawrectangle(xi, yi, img.width, img.height, 0))
+    return 1;
+
+  xpm_load(xpm, XPM_INDEXED, &img);
+
+  //desenha a nova imagem
+  if (draw_xpm(xf, yf, img))
+    return 1;
 
   return 0;
 }

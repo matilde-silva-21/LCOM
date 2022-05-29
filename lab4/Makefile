@@ -1,12 +1,12 @@
 # name of the program (Minix service)
-PROG=lab5
+PROG=lab4
 
 # source code files to be compiled
-SRCS = lab5.c liblm.c vbe.c video_gr.c xpm.c vg.c kbc.c utils.c timer.c
+SRCS = lab4.c mouse.c utils.c
 
 # additional compilation flags
 # "-Wall -Wextra -Werror -I . -std=c11 -Wno-unused-parameter" are already set
-CPPFLAGS += -pedantic -DLAB5
+CPPFLAGS += -pedantic -DLAB4
 
 # list of library dependencies (for Lab 2, only LCF library)
 DPADD += ${LIBLCF}
