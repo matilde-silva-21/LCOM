@@ -115,9 +115,6 @@ int(video_test_xpm)(xpm_map_t xpm, uint16_t x, uint16_t y) {
 
   draw_xpm(x, y, img);
 
-  if (vg_drawrectangle(x, y, img.width, img.height, 0))
-    return 1;
-
   if (wait_esckey())
     return 1;
 
@@ -136,6 +133,8 @@ int(video_test_move)(xpm_map_t xpm, uint16_t xi, uint16_t yi, uint16_t xf, uint1
   int mov_x = 0, mov_y = 0;
 
   bool negative_mov = false; // if the pos is smaller than the current one (xf<xi || yf<yi)
+
+  if(xi!=xf && yi!=yf){return 1;}
 
   if (speed < 0) {
     ipf = ipf * (-speed);
