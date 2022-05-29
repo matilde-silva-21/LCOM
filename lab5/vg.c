@@ -86,7 +86,6 @@ int vg_set_mode(uint16_t *mode) {
     return 1;
   }
 
-  //tambem acho que nao é preciso esta parte
   if (!(aux.ah == 0x00 && aux.al == 0x4F))
     return 1;
 
@@ -215,7 +214,6 @@ int draw_xpm(uint16_t x, uint16_t y, xpm_image_t img){
       vg_drawpixel(j,i, img.bytes[counter++]);
     }
   }
-  
 
   return 0;
 }
