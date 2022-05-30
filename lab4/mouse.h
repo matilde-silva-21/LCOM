@@ -31,7 +31,7 @@ void (getMousePacket)(struct packet* pp, uint8_t bytes[3]);
 
 int (mouseStatus)(uint8_t* st);
 
-int (enable_mouse)(uint8_t cmd);
+int (send_mouse_command)(uint8_t cmd);
 
 void mouse_check_pattern(struct mouse_ev evt, int tolerance, int lineXLen);
 

@@ -85,7 +85,10 @@ int(mouseStatus)(uint8_t *st) {
   return 0;
 }
 
-int(enable_mouse)(uint8_t cmd) {
+
+int (send_mouse_command)(uint8_t cmd){
+  if(sys_irqdisable(&mouse_hookid))
+    return 1;
   uint8_t ack, st;
   do {
     if (util_sys_inb(STAT_REG, &st))

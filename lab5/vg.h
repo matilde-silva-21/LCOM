@@ -9,7 +9,7 @@
 #include "utils.h"
 #include "vbemacros.h"
 
-int vg_setmode(uint16_t *mode);
+int vg_set_mode(uint16_t *mode);
 
 int vg_get_mode_info(uint16_t *mode, vbe_mode_info_t* info);
 
@@ -24,5 +24,9 @@ int wait_esckey();
 int vg_drawpattern(uint8_t no_rectangles, uint32_t first, uint8_t step);
 
 int draw_xpm(uint16_t x, uint16_t y, xpm_image_t img);
+
+int vg_initialize(uint16_t mode);
+
+int draw_next_xpm(xpm_map_t xpm, uint16_t xi, uint16_t yi, uint16_t xf, uint16_t yf);
 
 #endif // LAB5_VG_H
