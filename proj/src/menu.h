@@ -9,6 +9,7 @@
 #include "graphic.h"
 #include "resources.h"
 #include "mouse.h"
+#include "resources.h"
 
 /*
 typedef struct{
@@ -45,9 +46,11 @@ typedef enum{
     InstructionsButton,
     HallOfFameButton,
     ExitButton,
-    Invalid
+    Initial
 } Button;
 
-int drawMenu();
+int drawMenu(Button button);
+
+Button getButton(uint16_t x, uint16_t y);
 
 #endif //PROJ_MENU_H

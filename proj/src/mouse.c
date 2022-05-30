@@ -5,6 +5,8 @@ int mouse_hookid = 0;
 uint8_t mouse_scancode = 0, mouse_statuscode = 0;
 int ih_error = 0;
 
+Mouse* mouse;
+
 int(mouse_subscribe_int)(int *bit_no) {
     *bit_no = mouse_hookid;
 
@@ -109,4 +111,9 @@ int (send_mouse_command)(uint8_t cmd){
         return 1;
         
     return 0;
+}
+
+void (updateMouseCoordinates)(struct packet* pp){
+    mouse->x += pp->delta_x;
+    mouse->y += pp->delta_y;
 }
