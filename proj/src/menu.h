@@ -10,6 +10,12 @@
 #include "resources.h"
 #include "mouse.h"
 
+#include "resources/menu2.xpm"
+#include "resources/menu_start.xpm"
+#include "resources/menu_instructions.xpm"
+#include "resources/menu_hallOfFame_1.xpm"
+#include "resources/menu_exit.xpm"
+
 /*
 typedef struct{
     uint16_t xi;
@@ -45,9 +51,11 @@ typedef enum{
     InstructionsButton,
     HallOfFameButton,
     ExitButton,
-    Invalid
+    Initial
 } Button;
 
-int drawMenu();
+int drawMenu(Button button);
+
+Button getButton(uint16_t x, uint16_t y);
 
 #endif //PROJ_MENU_H

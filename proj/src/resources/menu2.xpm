@@ -1,9 +1,9 @@
 /* XPM */
-static char *_2456bd022364bbabb4533423b3cd26dkHS34Tia34TdSilt[] = {
+static xpm_row_t const menu2[] = {
 /* columns rows colors chars-per-pixel */
-"1024 768 2 1 ",
-"  c black",
-". c white",
+"1024 768 2",
+"  None",
+". 63",
 /* pixels */
 "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ",
 "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ",

@@ -2,7 +2,7 @@
   
 #include <stddef.h>
 
-static xpm_row_t const menu2[] = {
+static xpm_row_t const menu[] = {
 /* columns rows colors chars-per-pixel */
 "1024 768 2 1 ",
 "     c None",

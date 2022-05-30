@@ -1,23 +1,10 @@
 #include "menu.h"
 #include "resources.h"
 
-xpm_image_t menu;
-
 extern Mouse * mouse;
-//Button button;
-
-int drawMenu(){
-
-    menu = loadXpm(menu2);
-    if(drawXpm(0, 0, menu)){
-        return 1;
-    }
-
-    return 0;
-}
 
 //chamar quando o botao esquerdo e carregado no menu
-Button getPressedButton(uint16_t x, uint16_t y){
+Button getButton(uint16_t x, uint16_t y){
     if(x > 392 && x < 632 && y > 288 && y < 345){
         return StartButton;
     }
@@ -31,8 +18,32 @@ Button getPressedButton(uint16_t x, uint16_t y){
         return ExitButton;
     }
     else{
-        return Invalid;
+        return Initial;
     }
 }
 
-
+//draws menu according to the mouse's position
+int drawMenu(Button button){
+    xpm_image_t menu;
+    switch(button){
+        case StartButton:
+            menu = loadXpm(menu_start);
+            break;
+        case InstructionsButton:
+            menu = loadXpm(menu_instructions);
+            break;
+        case HallOfFameButton:
+            menu = loadXpm(menu_hallOfFame_1);
+            break;
+        case ExitButton:
+            menu = loadXpm(menu_exit);
+            break;
+        default:
+            menu = loadXpm(menu2);
+            break;
+    }
+    if(drawXpm(0, 0, menu)){
+        return 1;
+    }
+    return 0;
+}
