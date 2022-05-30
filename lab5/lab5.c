@@ -8,6 +8,7 @@
 #include "timer.h"
 #include "vbemacros.h"
 #include "vg.h"
+#include "myxpm.h"
 
 extern int timer_counter;
 extern uint8_t scancode;
@@ -99,7 +100,7 @@ int(video_test_pattern)(uint16_t mode, uint8_t no_rectangles, uint32_t first, ui
 
 int(video_test_xpm)(xpm_map_t xpm, uint16_t x, uint16_t y) {
 
-  uint16_t mode = 0x105;
+  uint16_t mode = 0x14C;
 
   vbe_mode_info_t info;
   if (vg_get_mode_info(&mode, &info)) {
@@ -111,7 +112,7 @@ int(video_test_xpm)(xpm_map_t xpm, uint16_t x, uint16_t y) {
 
   xpm_image_t img;
 
-  xpm_load(xpm, XPM_INDEXED, &img);
+  xpm_load(alien1, XPM_8_8_8_8, &img);
 
   draw_xpm(x, y, img);
 
