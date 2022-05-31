@@ -1,6 +1,8 @@
 #include "menu.h"
 #include "resources.h"
 
+#include "resources/pixil-frame-0.xpm"
+
 extern Mouse * mouse;
 
 //chamar quando o botao esquerdo e carregado no menu
@@ -39,7 +41,7 @@ int drawMenu(Button button){
             menu = loadXpm(menu_exit);
             break;
         default:
-            menu = loadXpm(menu2);
+            menu = loadXpm(mouse);
             break;
     }
     if(drawXpm(0, 0, menu)){

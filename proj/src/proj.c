@@ -12,6 +12,8 @@
 #include "i8042.h"
 #include "utils.h"
 
+#include "resources/pixil-frame-0.xpm"
+
 extern int mouse_hookid;
 extern uint8_t keyboard_scancode, keyboard_statuscode;
 extern uint8_t mouse_scancode, mouse_statuscode;
