@@ -55,7 +55,6 @@
 #define TIMER_STATUS_MODE (BIT(1) | BIT(2) | BIT(3)) /**< @brief Counting mode */
 #define TIMER_STATUS_BASE (BIT(0)) /**< @brief Counting base */
 
-
 /**@}*/
 
 #endif /* _LCOM_I8254_H */

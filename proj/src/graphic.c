@@ -1,6 +1,6 @@
 #include "graphic.h"
 
-static uint16_t Xres; // horizontal resolution
+extern uint16_t Xres; // horizontal resolution
 static uint16_t Yres; // vertical resolution
 static int bitsPerPixel;
 
@@ -93,7 +93,7 @@ int vg_set_mode(uint16_t *mode) {
 xpm_image_t (loadXpm)(xpm_map_t xpm) {
     xpm_image_t img;
 
-    xpm_load(xpm, XPM_8_8_8_8, &img);
+    xpm_load(xpm, XPM_INDEXED, &img);
 
     return img;
 }

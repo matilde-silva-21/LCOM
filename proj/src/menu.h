@@ -8,43 +8,7 @@
 
 #include "graphic.h"
 #include "resources.h"
-#include "mouse.h"
-
-#include "resources/menu2.xpm"
-#include "resources/menu_start.xpm"
-#include "resources/menu_instructions.xpm"
-#include "resources/menu_hallOfFame_1.xpm"
-#include "resources/menu_exit.xpm"
-
-/*
-typedef struct{
-    uint16_t xi;
-    uint16_t yi;
-    uint16_t xf;
-    uint16_t yf;
-} StartButton;
-
-typedef struct{
-    uint16_t xi;
-    uint16_t yi;
-    uint16_t xf;
-    uint16_t yf;
-} InstructionsButton;
-
-typedef struct{
-    uint16_t xi;
-    uint16_t yi;
-    uint16_t xf;
-    uint16_t yf;
-} HallOfFameButton;
-
-typedef struct{
-    uint16_t xi;
-    uint16_t yi;
-    uint16_t xf;
-    uint16_t yf;
-} ExitButton;
-*/
+//#include "mouse.h"
 
 typedef enum{
     StartButton,

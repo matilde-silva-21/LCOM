@@ -5,7 +5,11 @@ int mouse_hookid = 0;
 uint8_t mouse_scancode = 0, mouse_statuscode = 0;
 int ih_error = 0;
 
+xpm_image_t menu;
+
 Mouse* mouse;
+
+uint16_t Xres;
 
 int(mouse_subscribe_int)(int *bit_no) {
     *bit_no = mouse_hookid;
@@ -77,10 +81,10 @@ void(getMousePacket)(struct packet *pp, uint8_t bytes[3]) {
 
 
 int (send_mouse_command)(uint8_t cmd){
-    /*
+
     if(sys_irqdisable(&mouse_hookid))
         return 1;
-        */
+     
     uint8_t ack;
     do{
         if(util_sys_inb(STAT_REG, &mouse_statuscode))
@@ -106,14 +110,39 @@ int (send_mouse_command)(uint8_t cmd){
             return 1;
 
     }while(ack != ACK);
-    /*
+    
     if(sys_irqenable(&mouse_hookid))
         return 1;
-        */
+        
     return 0;
 }
 
-void (updateMouseCoordinates)(struct packet* pp){
-    mouse->x += pp->delta_x;
-    mouse->y += pp->delta_y;
+void (updateMouseCoordinates)(struct packet* pp, Mouse* mouse){
+    mouse->x = pp->delta_x;
+    mouse->y = pp->delta_y;
+}
+
+void (eraseMouse)(Mouse * mouse){
+
+    uint32_t* map = (uint32_t*) menu.bytes;
+
+    for (int i = mouse->x; i < mouse->x + mouse->img.width + 1; i++) {
+        for (int j = mouse->y; j < mouse->y + mouse->img.height + 1; j++) {
+            drawPixel(i, j, *(map + i + (j * Xres)));
+        }
+    }
+}
+
+void (drawMouse)(Mouse * mouse){
+    //drawXpm(mouse->x, mouse->y, mouse->img);
+
+    uint32_t* map = (uint32_t*) mouse->img.bytes;
+
+    for(int i = 0; i < mouse->img.width; i++) {
+        for (int j = 0; j < mouse->img.height; j++) {
+            if (*(map + i + j*mouse->img.width) != xpm_transparency_color(XPM_8_8_8_8))
+                drawPixel(mouse->x+i,mouse->y+j,*(map + i + j*mouse->img.width));
+        }
+    }
+
 }
