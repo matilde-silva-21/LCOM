@@ -32,10 +32,7 @@ int (game_loop)(){
 
     if (kbd_subscribe_int(&kbd_bit_no))
         return 1;
-
-    if (kbd_subscribe_int(&kbd_bit_no))
-        return 1;
-
+    
     int ipc_status, r; //, pack_count = 0;
     message msg;
     struct packet pp;

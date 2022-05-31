@@ -31,7 +31,7 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-int proj_main_loop() {
+int (proj_main_loop)(int argc, char *argv[]) {
 
     if(game_loop())
         return 1;
