@@ -113,7 +113,7 @@ int (send_mouse_command)(uint8_t cmd){
     return 0;
 }
 
-void (updateMouseCoordinates)(struct packet* pp){
-    mouse->x += pp->delta_x;
-    mouse->y += pp->delta_y;
+void (updateMouseCoordinates)(struct packet* pp, Mouse* mouse){
+    mouse->x = pp->delta_x;
+    mouse->y = pp->delta_y;
 }

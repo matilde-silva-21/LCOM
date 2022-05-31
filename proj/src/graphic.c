@@ -93,7 +93,7 @@ int vg_set_mode(uint16_t *mode) {
 xpm_image_t (loadXpm)(xpm_map_t xpm) {
     xpm_image_t img;
 
-    xpm_load(xpm, XPM_INDEXED, &img);
+    xpm_load(xpm, XPM_8_8_8_8, &img);
 
     return img;
 }

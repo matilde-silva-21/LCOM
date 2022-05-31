@@ -8,8 +8,7 @@
 
 #include "graphic.h"
 #include "resources.h"
-#include "mouse.h"
-#include "resources.h"
+//#include "mouse.h"
 
 /*
 typedef struct{

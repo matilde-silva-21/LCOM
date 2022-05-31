@@ -23,5 +23,5 @@ void(getMousePacket)(struct packet *pp, uint8_t bytes[3]);
 
 int (send_mouse_command)(uint8_t cmd);
 
-void (updateMouseCoordinates)(struct packet* pp);
+void (updateMouseCoordinates)(struct packet* pp, Mouse * mouse);
 #endif //PROJ_MOUSE_H
