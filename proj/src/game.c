@@ -11,6 +11,8 @@ int (game_loop)(){
     //mouse->x = 0; mouse->y = 0;
     uint16_t mode = 0x105;
 
+    initMenuXpm();
+
     vbe_mode_info_t info;
     if (vg_get_mode_info(&mode, &info)) {
         return 1;
@@ -48,7 +50,7 @@ int (game_loop)(){
 
     xpm_image_t mouse_img = loadXpm(mouse_xpm);
 
-    Mouse mouse = {0, 0, mouse_img};
+    Mouse mouse = {50, 50, mouse_img};
 
     drawMouse(&mouse);
 
@@ -80,14 +82,15 @@ int (game_loop)(){
                             mouseBytes[2] = mouse_scancode;
                             getMousePacket(&pp, mouseBytes);
                             mouse_print_packet(&pp);
-                            eraseMouse(&mouse);
+                            //eraseMouse(&mouse);
                             updateMouseCoordinates(&pp, &mouse);
-                            printf("x = %d     y = %d", mouse.x, mouse.y);
-                            drawMouse(&mouse);
+                            fprintf(stderr, "x = %d     y = %d\n", mouse.x, mouse.y);
                             button = getButton(mouse.x, mouse.y);
                             printf("%d", button);
-                            if (drawMenu(button))
+                            if (drawMenu(button)) {
                                 return 1;
+                            }
+                            drawMouse(&mouse);
                             if (pp.lb && button != Initial) {
 
                             }

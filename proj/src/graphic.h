@@ -14,6 +14,8 @@ void drawPixel(uint16_t x, uint16_t y, uint32_t color);
 
 xpm_image_t (loadXpm)(xpm_map_t xpm);
 
+void drawBackground(xpm_image_t img);
+
 int drawXpm(uint16_t x, uint16_t y, xpm_image_t img);
 
 #endif //PROJ_GRAPHIC_H

@@ -18,6 +18,8 @@ typedef enum{
     Initial
 } Button;
 
+void initMenuXpm();
+
 int drawMenu(Button button);
 
 Button getButton(uint16_t x, uint16_t y);

@@ -4,6 +4,19 @@
 
 extern xpm_image_t menu;
 
+xpm_image_t menu_start_xpm;
+xpm_image_t menu_instructions_xpm;
+xpm_image_t menu_hallOfFame_xpm;
+xpm_image_t menu_exit_xpm ;
+xpm_image_t menu_xpm;
+
+void initMenuXpm(){
+    menu_start_xpm = loadXpm(menu_start);
+    menu_instructions_xpm = loadXpm(menu_instructions);
+    menu_hallOfFame_xpm = loadXpm(menu_hallOfFame_1);
+    menu_exit_xpm = loadXpm(menu_exit);
+    menu_xpm = loadXpm(menu2);
+}
 
 //verificar a posiçao do rato no ecra do menu
 Button getButton(uint16_t x, uint16_t y) {
@@ -22,25 +35,25 @@ Button getButton(uint16_t x, uint16_t y) {
 
 //draws menu according to the mouse's position
 int drawMenu(Button button) {
+    xpm_image_t menu;
+
     switch (button) {
         case StartButton:
-            menu = loadXpm(menu_start);
+            menu = menu_start_xpm;
             break;
         case InstructionsButton:
-            menu = loadXpm(menu_instructions);
+            menu = menu_instructions_xpm;
             break;
         case HallOfFameButton:
-            menu = loadXpm(menu_hallOfFame_1);
+            menu = menu_hallOfFame_xpm;
             break;
         case ExitButton:
-            menu = loadXpm(menu_exit);
+            menu = menu_exit_xpm;
             break;
         default:
-            menu = loadXpm(menu2);
+            menu = menu_xpm;
             break;
     }
-    if (drawXpm(0, 0, menu)) {
-        return 1;
-    }
+    drawBackground(menu);
     return 0;
 }

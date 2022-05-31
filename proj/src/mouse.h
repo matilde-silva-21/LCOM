@@ -11,13 +11,15 @@
 #include "graphic.h"
 
 typedef struct{
-    uint16_t x, y;
+    int x, y;
     xpm_image_t img;
 } Mouse;
 
 int(mouse_subscribe_int)(int *bit_no);
 
 int(mouse_unsubscribe_int)();
+
+int vg_drawrectangle(int x, int y, int width, int height);
 
 void(mouse_ih)();
 

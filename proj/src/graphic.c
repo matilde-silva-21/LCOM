@@ -105,6 +105,10 @@ void drawPixel(uint16_t x, uint16_t y, uint32_t color){
     memcpy(aux, &color, n); //copia n bytes da color para aux
 }
 
+void drawBackground(xpm_image_t img){
+    memcpy(video_mem, img.bytes, img.height*img.width);
+}
+
 int drawXpm(uint16_t x, uint16_t y, xpm_image_t img){
     int counter=0;
 
