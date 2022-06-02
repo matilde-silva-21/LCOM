@@ -123,21 +123,8 @@ static int clamp(int min, int max, int value) {
 }
 
 void (updateMouseCoordinates)(struct packet *pp, Mouse *mouse) {
-    mouse->x = clamp(0, 1024 - mouse->img.width - 1, mouse->x + pp->delta_x/5);
-    mouse->y = clamp(0, 768 - mouse->img.height - 1, mouse->y - pp->delta_y/5);
-}
-
-void (eraseMouse)(Mouse *mouse) {
-    vg_drawrectangle(mouse->x, mouse->y, mouse->img.width, mouse->img.height);
-    /*
-    uint32_t *map = (uint32_t *) menu.bytes;
-
-    for (int i = mouse->x; i < mouse->x + mouse->img.width + 1; i++) {
-        for (int j = mouse->y; j < mouse->y + mouse->img.height + 1; j++) {
-            drawPixel(i, j, *(map + i + (j * Xres)));
-        }
-    }
-     */
+    mouse->x = clamp(0, X_RES - mouse->img.width - 1, mouse->x + pp->delta_x/5);
+    mouse->y = clamp(0, Y_RES - mouse->img.height - 1, mouse->y + pp->delta_y/5);
 }
 
 int vg_drawrectangle(int x, int y, int width, int height){

@@ -14,8 +14,9 @@
 #include "menu.h"
 #include "utils.h"
 #include "mouse.h"
+#include "ship.h"
 
-#include "resources/pixil-frame-0.xpm"
+#include "macros.h"
 
 int (game_loop)();
 

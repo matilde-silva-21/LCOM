@@ -9,6 +9,7 @@
 #include "i8042.h"
 #include "utils.h"
 #include "graphic.h"
+#include "macros.h"
 
 typedef struct{
     int x, y;
@@ -28,8 +29,6 @@ void(getMousePacket)(struct packet *pp, uint8_t bytes[3]);
 int (send_mouse_command)(uint8_t cmd);
 
 void (updateMouseCoordinates)(struct packet* pp, Mouse * mouse);
-
-void (eraseMouse)(Mouse * mouse);
 
 void (drawMouse)(Mouse * mouse);
 

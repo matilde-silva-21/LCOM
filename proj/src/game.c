@@ -7,22 +7,33 @@ extern int ih_error;
 extern int kbd_hookid; //, hookid, timer_counter;
 //extern Mouse *mouse;
 
-int (game_loop)(){
+extern void *video_mem;
+extern void *display_mem;
+
+//extern Ship *ship;
+extern int shipYPosition;
+
+bool menuDisplay = false;
+bool gameOver = false;
+
+int (game_loop)() {
+
+    bool exit = false;
     //mouse->x = 0; mouse->y = 0;
     uint16_t mode = 0x105;
-
     initMenuXpm();
 
+    int mouse_bit_no;
+    uint8_t kbd_bit_no;
     vbe_mode_info_t info;
+
     if (vg_get_mode_info(&mode, &info)) {
         return 1;
     }
 
-    if (vg_set_mode(&mode))
+    if (vg_set_mode(&mode)) {
         return 1;
-
-    int mouse_bit_no;
-    uint8_t kbd_bit_no;
+    }
 
     if (mouse_subscribe_int(&mouse_bit_no)) {
         return 1;
@@ -34,7 +45,7 @@ int (game_loop)(){
 
     if (kbd_subscribe_int(&kbd_bit_no))
         return 1;
-    
+
     int ipc_status, r; //, pack_count = 0;
     message msg;
     struct packet pp;
@@ -44,7 +55,7 @@ int (game_loop)(){
     uint8_t kbdBytes[2];
 
     Button button = Initial;
-
+/*
     if (drawMenu(button))
         return 1;
 
@@ -53,8 +64,24 @@ int (game_loop)(){
     Mouse mouse = {50, 50, mouse_img};
 
     drawMouse(&mouse);
+*/
+    xpm_image_t mouse_img = loadXpm(mouse_xpm);
+    xpm_image_t background = loadBackground();
 
-    while (keyboard_scancode != ESC_BREAK) {
+    Mouse mouse = {50, 50, mouse_img};
+
+    KeyActivity key;
+
+    Ship *ship = createShip(512, SHIP_YPOS, 10);
+
+    drawShip(ship);
+    //drawXpm(ship->x, ship->y, ship->img);
+
+    while (keyboard_scancode != ESC_BREAK && !exit) {
+        displayScreen();
+        if(!menuDisplay){
+            drawShip(ship);
+        }
         if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
             printf("driver_receive failed with: %d", r);
             continue;
@@ -81,19 +108,39 @@ int (game_loop)(){
                             currentByte = 1;
                             mouseBytes[2] = mouse_scancode;
                             getMousePacket(&pp, mouseBytes);
-                            mouse_print_packet(&pp);
+                            //mouse_print_packet(&pp);
+                            printf("x = %d     y = %d\n", mouse.x, mouse.y);
                             //eraseMouse(&mouse);
-                            updateMouseCoordinates(&pp, &mouse);
-                            fprintf(stderr, "x = %d     y = %d\n", mouse.x, mouse.y);
-                            button = getButton(mouse.x, mouse.y);
-                            printf("%d", button);
-                            if (drawMenu(button)) {
-                                return 1;
+                            ///====================MENU====================
+                            if (menuDisplay) {
+                                updateMouseCoordinates(&pp, &mouse);
+                                //fprintf(stderr, "x = %d     y = %d\n", mouse.x, mouse.y);
+                                button = getButton(mouse.x, mouse.y);
+                                printf("%d", button);
+                                if (drawMenu(button)) {
+                                    return 1;
+                                }
+                                drawMouse(&mouse);
+                                if (pp.lb) {
+                                    switch (button) {
+                                        case StartButton:
+                                            //start game
+                                            menuDisplay = false;
+                                            break;
+                                        case InstructionsButton:
+                                            displayInstructions();
+                                            break;
+                                        case HallOfFameButton:
+                                            break;
+                                        case ExitButton:
+                                            exit = true;
+                                            break;
+                                        case Initial:
+                                            break;
+                                    }
+                                }
                             }
-                            drawMouse(&mouse);
-                            if (pp.lb && button != Initial) {
-
-                            }
+                            ///=============================================
                         }
                     }
                     if (msg.m_notify.interrupts & BIT(kbd_bit_no)) {
@@ -109,6 +156,28 @@ int (game_loop)(){
                             kbdBytes[1] = keyboard_scancode;
                         }
                         size = 1;
+                        if (!menuDisplay) {
+                            switch (keyboard_scancode) {
+                                case 0x1E:
+                                    key = A_Pressed;
+                                    break;
+                                case 0x9E:
+                                    key = A_Released;
+                                    break;
+                                case 0x20:
+                                    key = D_Pressed;
+                                    break;
+                                case 0xAE:
+                                    key = D_Released;
+                                    break;
+                                default:
+                                    key = Invalid_key;
+                                    break;
+                            }
+                            ship = updateShipPosition(ship, key);
+                            drawBackground(background);
+                            drawShip(ship);
+                        }
                     }
                     break;
                 default:
