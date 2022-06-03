@@ -33,8 +33,9 @@ void (mouse_ih)() {
     if ((mouse_statuscode & (PARITY_BIT | TIMEOUT_BIT)) == 0 && (mouse_statuscode & OBF_BIT)) {
         util_sys_inb(OUT_BUF, &mouse_scancode);
         ih_error = 0;
-    } else
+    }else
         ih_error = 1;
+
     util_sys_inb(OUT_BUF, &mouse_scancode);
 }
 
@@ -45,6 +46,7 @@ void (getMousePacket)(struct packet *pp, uint8_t bytes[3]) {
     pp->bytes[2] = bytes[2];
 
     // buttons
+    /*
     if (bytes[0] & RIGHT)
         pp->rb = true;
     else
@@ -57,8 +59,13 @@ void (getMousePacket)(struct packet *pp, uint8_t bytes[3]) {
         pp->mb = true;
     else
         pp->mb = false;
+*/
+    pp->lb = bytes[0] & LEFT;
+    pp->rb = (bytes[0] & RIGHT) >> 1;
+    pp->mb = (bytes[0] & MIDDLE) >> 2;
 
     // x and y displacement
+
     if (bytes[0] & X_SIGN)
         pp->delta_x = bytes[1] | FILLMSB;
     else
@@ -69,6 +76,7 @@ void (getMousePacket)(struct packet *pp, uint8_t bytes[3]) {
         pp->delta_y = (uint16_t) bytes[2];
 
     // x and y overflow
+    /*
     if (bytes[0] & X_OVFL)
         pp->x_ov = true;
     else
@@ -77,6 +85,9 @@ void (getMousePacket)(struct packet *pp, uint8_t bytes[3]) {
         pp->y_ov = true;
     else
         pp->y_ov = false;
+        */
+    pp->x_ov = (bytes[0] & X_OVFL) >> 6;
+    pp->y_ov = (bytes[0] & Y_OVFL) >> 7;
 }
 
 int (send_mouse_command)(uint8_t cmd) {
@@ -124,7 +135,7 @@ static int clamp(int min, int max, int value) {
 
 void (updateMouseCoordinates)(struct packet *pp, Mouse *mouse) {
     mouse->x = clamp(0, X_RES - mouse->img.width - 1, mouse->x + pp->delta_x/5);
-    mouse->y = clamp(0, Y_RES - mouse->img.height - 1, mouse->y + pp->delta_y/5);
+    mouse->y = clamp(0, Y_RES - mouse->img.height - 1, mouse->y - pp->delta_y/5);
 }
 
 int vg_drawrectangle(int x, int y, int width, int height){

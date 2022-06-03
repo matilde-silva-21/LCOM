@@ -14,7 +14,7 @@ extern void *display_mem;
 //extern Ship *ship;
 extern int shipYPosition;
 
-bool menuDisplay = false;
+bool menuDisplay = true;
 bool gameOver = false;
 
 int (game_loop)() {
@@ -45,11 +45,11 @@ int (game_loop)() {
         return 1;
     }
 
-    if (kbd_subscribe_int(&kbd_bit_no)){
+    if (kbd_subscribe_int(&kbd_bit_no)) {
         return 1;
     }
 
-    if(timer_subscribe_int(&timer_bit_no)){
+    if (timer_subscribe_int(&timer_bit_no)) {
         return 1;
     }
 
@@ -62,31 +62,23 @@ int (game_loop)() {
     uint8_t kbdBytes[2];
 
     Button button = Initial;
-/*
-    if (drawMenu(button))
-        return 1;
-
-    xpm_image_t mouse_img = loadXpm(mouse_xpm);
-
+    xpm_image_t mouse_img;
+    xpm_load(mouse_xpm, XPM_INDEXED, &mouse_img);
     Mouse mouse = {50, 50, mouse_img};
 
-    drawMouse(&mouse);
-*/
-    xpm_image_t mouse_img = loadXpm(mouse_xpm);
     xpm_image_t background = loadBackground();
-
-    Mouse mouse = {50, 50, mouse_img};
 
     KeyActivity key;
 
     Ship *ship = createShip(512, SHIP_YPOS, 15);
+    if (drawMenu(button))
+        return 1;
 
-    drawShip(ship);
-    //drawXpm(ship->x, ship->y, ship->img);
+    drawMouse(&mouse);
 
     while (keyboard_scancode != ESC_BREAK && !exit) {
         displayScreen();
-        if(!menuDisplay){
+        if (!menuDisplay) {
             drawShip(ship);
         }
         if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
@@ -100,7 +92,6 @@ int (game_loop)() {
                         mouse_ih(); // read 1 byte per interrupt -> a packet has 3 bytes
                         if (ih_error)
                             continue;
-
                         if (currentByte == 1) {
                             // 1º byte do packet
                             if ((mouse_scancode & BIT(3)) == 0) {
@@ -115,7 +106,7 @@ int (game_loop)() {
                             currentByte = 1;
                             mouseBytes[2] = mouse_scancode;
                             getMousePacket(&pp, mouseBytes);
-                            //mouse_print_packet(&pp);
+                            mouse_print_packet(&pp);
                             printf("x = %d     y = %d\n", mouse.x, mouse.y);
                             //eraseMouse(&mouse);
                             ///====================MENU====================
@@ -131,8 +122,10 @@ int (game_loop)() {
                                 if (pp.lb) {
                                     switch (button) {
                                         case StartButton:
-                                            //start game
+                                            ///start game
                                             menuDisplay = false;
+                                            drawBackground(background);
+                                            drawShip(ship);
                                             break;
                                         case InstructionsButton:
                                             displayInstructions();
@@ -149,6 +142,10 @@ int (game_loop)() {
                             }
                             ///=============================================
                         }
+                    }
+                    else if(mouse_statuscode & OBF_BIT){
+                        util_sys_inb(OUT_BUF, &mouse_scancode);
+                        ih_error = 0;
                     }
                     if (msg.m_notify.interrupts & BIT(kbd_bit_no)) {
                         kbc_ih();
@@ -193,8 +190,7 @@ int (game_loop)() {
         }
     }
 
-
-    if(timer_unsubscribe_int()){
+    if (timer_unsubscribe_int()) {
         return 1;
     }
 
