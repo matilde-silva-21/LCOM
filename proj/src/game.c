@@ -1,10 +1,11 @@
 #include "game.h"
 
-extern int mouse_hookid;
+extern int mouse_hookid, timer_hookid;
 extern uint8_t keyboard_scancode, keyboard_statuscode;
 extern uint8_t mouse_scancode, mouse_statuscode;
 extern int ih_error;
 extern int kbd_hookid; //, hookid, timer_counter;
+extern int timer_counter;
 //extern Mouse *mouse;
 
 extern void *video_mem;
@@ -25,6 +26,7 @@ int (game_loop)() {
 
     int mouse_bit_no;
     uint8_t kbd_bit_no;
+    uint8_t timer_bit_no;
     vbe_mode_info_t info;
 
     if (vg_get_mode_info(&mode, &info)) {
@@ -43,8 +45,13 @@ int (game_loop)() {
         return 1;
     }
 
-    if (kbd_subscribe_int(&kbd_bit_no))
+    if (kbd_subscribe_int(&kbd_bit_no)){
         return 1;
+    }
+
+    if(timer_subscribe_int(&timer_bit_no)){
+        return 1;
+    }
 
     int ipc_status, r; //, pack_count = 0;
     message msg;
@@ -72,7 +79,7 @@ int (game_loop)() {
 
     KeyActivity key;
 
-    Ship *ship = createShip(512, SHIP_YPOS, 10);
+    Ship *ship = createShip(512, SHIP_YPOS, 15);
 
     drawShip(ship);
     //drawXpm(ship->x, ship->y, ship->img);
@@ -184,6 +191,11 @@ int (game_loop)() {
                     break;
             }
         }
+    }
+
+
+    if(timer_unsubscribe_int()){
+        return 1;
     }
 
     if (send_mouse_command(DISABLE_MOUSE))

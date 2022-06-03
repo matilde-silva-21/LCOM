@@ -13,6 +13,7 @@ typedef struct {
     int x, y;
     int speed;
     xpm_image_t img;
+    bool moving;
 } ShipBullet;
 
 typedef struct {

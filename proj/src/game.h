@@ -15,6 +15,7 @@
 #include "utils.h"
 #include "mouse.h"
 #include "ship.h"
+#include "timer.h"
 
 #include "macros.h"
 
