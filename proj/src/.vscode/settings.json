@@ -9,4 +9,5 @@
   "files.associations": {
     "*.xpm": "c"
   },
+  "C_Cpp.dimInactiveRegions": false,
 }

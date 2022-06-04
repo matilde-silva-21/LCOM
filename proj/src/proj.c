@@ -1,6 +1,5 @@
 #include <lcom/lcf.h>
 #include <lcom/proj.h>
-#include <proj.h>
 
 #include <stdbool.h>
 #include <stdint.h>
@@ -33,8 +32,17 @@ int main(int argc, char *argv[]) {
 
 int (proj_main_loop)(int argc, char *argv[]) {
 
-    if(game_loop())
+
+
+    Alien aliens[]={
+        createAlien(24, 20, alien1, alien1_m),
+        createAlien(300, 20, alien2, alien2_m),
+        createAlien(600, 20, alien3, alien3_m)
+    };
+
+    if(alien_movement(aliens, 3))
         return 1;
+
 
     return 0;
 }

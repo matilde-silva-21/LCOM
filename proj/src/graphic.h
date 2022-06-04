@@ -1,10 +1,9 @@
-#ifndef PROJ_GRAPHIC_H
-#define PROJ_GRAPHIC_H
-
+#pragma once
 #include <lcom/lcf.h>
 
 #include <stdbool.h>
 #include <stdint.h>
+#include "alien.h"
 
 int vg_get_mode_info(uint16_t *mode, vbe_mode_info_t* info);
 
@@ -18,4 +17,6 @@ void drawBackground(xpm_image_t img);
 
 int drawXpm(uint16_t x, uint16_t y, xpm_image_t img);
 
-#endif //PROJ_GRAPHIC_H
+int drawAlien(Alien *a1, bool mov);
+
+

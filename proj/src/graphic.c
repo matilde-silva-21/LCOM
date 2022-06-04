@@ -120,3 +120,25 @@ int drawXpm(uint16_t x, uint16_t y, xpm_image_t img){
 
     return 0;
 }
+
+int drawAlien(Alien *a1, bool mov){
+
+
+  if(mov){
+    xpm_image_t img = loadXpm(a1->img_mov);
+    a1->width = img.width;
+    a1->height = img.height;
+    return drawXpm(a1->x, a1->y, img);
+  }
+  
+  else {
+    xpm_image_t img = loadXpm(a1->img);
+    a1->width = img.width;
+    a1->height = img.height;
+    return drawXpm(a1->x, a1->y, img);
+  }
+
+
+}
+
+
