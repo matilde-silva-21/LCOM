@@ -17,6 +17,7 @@
 #include "ship.h"
 #include "timer.h"
 #include "bullet.h"
+#include "alien.h"
 
 #include "macros.h"
 

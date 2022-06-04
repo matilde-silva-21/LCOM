@@ -15,4 +15,11 @@
 
 #define SHIP_BULLET_SPEED 15
 
+#define sizeOfAliens 3
+
+#define x_left_border 20
+#define x_right_border 1004
+
+#define territory 668
+
 #endif //PROJ_MACROS_H

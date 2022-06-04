@@ -6,6 +6,8 @@
 #include <stdbool.h>
 #include <stdint.h>
 
+#include "alien.h"
+
 #include "resources/background.xpm"
 
 int vg_get_mode_info(uint16_t *mode, vbe_mode_info_t* info);
@@ -25,5 +27,7 @@ xpm_image_t loadBackground();
 void drawBackground();
 
 void displayScreen();
+
+int drawAlien(Alien *a1, bool mov);
 
 #endif //PROJ_GRAPHIC_H
