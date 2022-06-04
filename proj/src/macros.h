@@ -11,4 +11,8 @@
 #define X_RES 1024
 #define Y_RES 768
 
+#define MAX_SHIP_BULLETS 10
+
+#define SHIP_BULLET_SPEED 15
+
 #endif //PROJ_MACROS_H

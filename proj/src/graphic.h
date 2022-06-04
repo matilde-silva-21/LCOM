@@ -18,7 +18,7 @@ xpm_image_t (loadXpm)(xpm_map_t xpm);
 
 void drawBackground(xpm_image_t img);
 
-int drawXpm(uint16_t x, uint16_t y, xpm_image_t img);
+int drawXpm(int x, int y, xpm_image_t img);
 
 xpm_image_t loadBackground();
 

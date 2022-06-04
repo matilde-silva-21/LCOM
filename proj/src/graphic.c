@@ -117,7 +117,7 @@ void drawBackground(xpm_image_t img) {
     memcpy(video_mem, img.bytes, img.height * img.width);
 }
 
-int drawXpm(uint16_t x, uint16_t y, xpm_image_t img) {
+int drawXpm(int x, int y, xpm_image_t img) {
     int counter = 0;
 
     for (int i = y; i < img.height + y; i++) {

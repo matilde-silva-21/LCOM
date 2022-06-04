@@ -105,7 +105,7 @@ int (mouse_test_packet)(uint32_t cnt) {
 
   if (send_mouse_command(DISABLE_MOUSE))
     return 1;
-  }
+  
 
   if(mouse_unsubscribe_int())
     return 1;

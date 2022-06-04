@@ -16,6 +16,7 @@
 #include "mouse.h"
 #include "ship.h"
 #include "timer.h"
+#include "bullet.h"
 
 #include "macros.h"
 

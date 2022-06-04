@@ -6,12 +6,10 @@ extern uint8_t mouse_scancode, mouse_statuscode;
 extern int ih_error;
 extern int kbd_hookid; //, hookid, timer_counter;
 extern int timer_counter;
-//extern Mouse *mouse;
 
 extern void *video_mem;
 extern void *display_mem;
 
-//extern Ship *ship;
 extern int shipYPosition;
 
 bool menuDisplay = true;
@@ -20,7 +18,6 @@ bool gameOver = false;
 int (game_loop)() {
 
     bool exit = false;
-    //mouse->x = 0; mouse->y = 0;
     uint16_t mode = 0x105;
     initMenuXpm();
 
@@ -62,23 +59,26 @@ int (game_loop)() {
     uint8_t kbdBytes[2];
 
     Button button = Initial;
-    xpm_image_t mouse_img;
-    xpm_load(mouse_xpm, XPM_INDEXED, &mouse_img);
-    Mouse mouse = {50, 50, mouse_img};
 
     xpm_image_t background = loadBackground();
+    //xpm_image_t shipBullet_img = loadShipBulletXpm();
 
     KeyActivity key;
 
+    Mouse *mouse = createMouse(50, 50);
     Ship *ship = createShip(512, SHIP_YPOS, 15);
+    ShipBullet *shipBullets[MAX_SHIP_BULLETS]; // array with all the ship bullets in action
+    initShipBullets(shipBullets);
+
     if (drawMenu(button))
         return 1;
 
-    drawMouse(&mouse);
+    drawMouse(mouse);
 
     while (keyboard_scancode != ESC_BREAK && !exit) {
         displayScreen();
         if (!menuDisplay) {
+            drawBackground(background);
             drawShip(ship);
         }
         if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
@@ -106,20 +106,17 @@ int (game_loop)() {
                             currentByte = 1;
                             mouseBytes[2] = mouse_scancode;
                             getMousePacket(&pp, mouseBytes);
-                            mouse_print_packet(&pp);
-                            printf("x = %d     y = %d\n", mouse.x, mouse.y);
-                            //eraseMouse(&mouse);
+                            //mouse_print_packet(&pp);
+                            printf("x = %d     y = %d\n", mouse->x, mouse->y);
                             ///====================MENU====================
+                            updateMouse(&pp, mouse); // updates mouse coordinates and rb_pressed variable according to the given packet
                             if (menuDisplay) {
-                                updateMouseCoordinates(&pp, &mouse);
-                                //fprintf(stderr, "x = %d     y = %d\n", mouse.x, mouse.y);
-                                button = getButton(mouse.x, mouse.y);
-                                printf("%d", button);
+                                button = getButton(mouse->x, mouse->y);
                                 if (drawMenu(button)) {
                                     return 1;
                                 }
-                                drawMouse(&mouse);
-                                if (pp.lb) {
+                                drawMouse(mouse);
+                                if (mouse->lb_pressed) {
                                     switch (button) {
                                         case StartButton:
                                             ///start game
@@ -140,12 +137,19 @@ int (game_loop)() {
                                     }
                                 }
                             }
-                            ///=============================================
+                            ///====================SHIP SHOOT====================
+                            /*
+                            else {
+                                if (mouse->lb_pressed && ship->canShoot) {
+                                    ShipBullet *shipBullet = createShipBullet(ship->x + ship->img.width / 2, ship->y,
+                                                                              SHIP_BULLET_SPEED, shipBullet_img);
+                                    shipShoot(shipBullets, shipBullet);
+                                    ship->canShoot = false;
+                                    drawShipBullets(shipBullets);
+                                }
+                            }
+                             */
                         }
-                    }
-                    else if(mouse_statuscode & OBF_BIT){
-                        util_sys_inb(OUT_BUF, &mouse_scancode);
-                        ih_error = 0;
                     }
                     if (msg.m_notify.interrupts & BIT(kbd_bit_no)) {
                         kbc_ih();
@@ -179,9 +183,22 @@ int (game_loop)() {
                                     break;
                             }
                             ship = updateShipPosition(ship, key);
-                            drawBackground(background);
-                            drawShip(ship);
+                            //drawBackground(background);
+                            //drawShip(ship);
                         }
+                    }
+                    if (msg.m_notify.interrupts & BIT(timer_bit_no)) {
+                        //mouse->lb_pressed = false;
+                        if (timer_counter % 30 == 0) {
+                            ship->canShoot = true;
+                        }
+                        timer_int_handler();
+                        /*
+                        if (!menuDisplay) {
+                            drawShipBullets(shipBullets);
+                            updateShipBulletPosition(shipBullets);
+                        }
+                         */
                     }
                     break;
                 default:
@@ -189,6 +206,9 @@ int (game_loop)() {
             }
         }
     }
+
+    destroyMouse(mouse);
+    destroyShip(ship);
 
     if (timer_unsubscribe_int()) {
         return 1;
