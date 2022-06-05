@@ -10,7 +10,7 @@
 #include "resources.h"
 //#include "mouse.h"
 
-typedef enum{
+typedef enum {
     StartButton,
     InstructionsButton,
     HallOfFameButton,
@@ -23,5 +23,7 @@ void initMenuXpm();
 int drawMenu(Button button);
 
 Button getButton(uint16_t x, uint16_t y);
+
+void displayInstructions();
 
 #endif //PROJ_MENU_H

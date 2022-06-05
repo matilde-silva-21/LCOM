@@ -33,8 +33,9 @@ void (mouse_ih)() {
     if ((mouse_statuscode & (PARITY_BIT | TIMEOUT_BIT)) == 0 && (mouse_statuscode & OBF_BIT)) {
         util_sys_inb(OUT_BUF, &mouse_scancode);
         ih_error = 0;
-    } else
+    }else
         ih_error = 1;
+
     util_sys_inb(OUT_BUF, &mouse_scancode);
 }
 
@@ -45,20 +46,12 @@ void (getMousePacket)(struct packet *pp, uint8_t bytes[3]) {
     pp->bytes[2] = bytes[2];
 
     // buttons
-    if (bytes[0] & RIGHT)
-        pp->rb = true;
-    else
-        pp->rb = false;
-    if (bytes[0] & LEFT)
-        pp->lb = true;
-    else
-        pp->lb = false;
-    if (bytes[0] & MIDDLE)
-        pp->mb = true;
-    else
-        pp->mb = false;
+    pp->lb = bytes[0] & LEFT;
+    pp->rb = bytes[0] & RIGHT;
+    pp->mb = bytes[0] & MIDDLE;
 
     // x and y displacement
+
     if (bytes[0] & X_SIGN)
         pp->delta_x = bytes[1] | FILLMSB;
     else
@@ -69,14 +62,8 @@ void (getMousePacket)(struct packet *pp, uint8_t bytes[3]) {
         pp->delta_y = (uint16_t) bytes[2];
 
     // x and y overflow
-    if (bytes[0] & X_OVFL)
-        pp->x_ov = true;
-    else
-        pp->x_ov = false;
-    if (bytes[0] & Y_OVFL)
-        pp->y_ov = true;
-    else
-        pp->y_ov = false;
+    pp->x_ov = bytes[0] & X_OVFL;
+    pp->y_ov = bytes[0] & Y_OVFL;
 }
 
 int (send_mouse_command)(uint8_t cmd) {
@@ -100,7 +87,7 @@ int (send_mouse_command)(uint8_t cmd) {
         if (sys_outb(ARGS_REG, cmd))
             return 1;
 
-        // tickdelay(micros_to_delay(20000));
+        tickdelay(micros_to_ticks(20000));
 
         if (util_sys_inb(OUT_BUF, &ack))
             return 1;
@@ -122,22 +109,10 @@ static int clamp(int min, int max, int value) {
     return value;
 }
 
-void (updateMouseCoordinates)(struct packet *pp, Mouse *mouse) {
-    mouse->x = clamp(0, 1024 - mouse->img.width - 1, mouse->x + pp->delta_x/5);
-    mouse->y = clamp(0, 768 - mouse->img.height - 1, mouse->y - pp->delta_y/5);
-}
-
-void (eraseMouse)(Mouse *mouse) {
-    vg_drawrectangle(mouse->x, mouse->y, mouse->img.width, mouse->img.height);
-    /*
-    uint32_t *map = (uint32_t *) menu.bytes;
-
-    for (int i = mouse->x; i < mouse->x + mouse->img.width + 1; i++) {
-        for (int j = mouse->y; j < mouse->y + mouse->img.height + 1; j++) {
-            drawPixel(i, j, *(map + i + (j * Xres)));
-        }
-    }
-     */
+void (updateMouse)(struct packet *pp, Mouse *mouse) {
+    mouse->x = clamp(0, X_RES - mouse->img.width - 1, mouse->x + pp->delta_x/5);
+    mouse->y = clamp(0, Y_RES - mouse->img.height - 1, mouse->y - pp->delta_y/5);
+    mouse->lb_pressed = pp->lb;
 }
 
 int vg_drawrectangle(int x, int y, int width, int height){
@@ -147,6 +122,21 @@ int vg_drawrectangle(int x, int y, int width, int height){
         }
     }
     return 0;
+}
+
+Mouse *(createMouse)(int x, int y){
+    Mouse *mouse = (Mouse *) malloc(sizeof(Mouse));
+
+    mouse->x = x;
+    mouse->y = y;
+    mouse->lb_pressed = false;
+
+    xpm_image_t mouse_img;
+    xpm_load(mouse_xpm, XPM_INDEXED, &mouse_img);
+
+    mouse->img = mouse_img;
+
+    return mouse;
 }
 
 void (drawMouse)(Mouse *mouse) {
@@ -161,4 +151,11 @@ void (drawMouse)(Mouse *mouse) {
         }
     }
     */
+}
+
+void (destroyMouse)(Mouse *mouse){
+    if (mouse == NULL)
+        return;
+    free(mouse);
+    mouse = NULL;
 }

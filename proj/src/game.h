@@ -12,21 +12,15 @@
 #include "i8254.h"
 #include "keyboard.h"
 #include "menu.h"
-#include "mouse.h"
-#include "timer.h"
 #include "utils.h"
-#include "resources/pixil-frame-0.xpm"
-#include "resources.h"
+#include "mouse.h"
+#include "ship.h"
+#include "timer.h"
+#include "bullet.h"
+#include "alien.h"
 
-#define x_left_border 20
-#define x_right_border 1004
+#include "macros.h"
 
-#define territory 668
+int (game_loop)();
 
-
-int(game_loop)();
-
-int(alien_movement)(Alien aliens[], int sizeOfAliens);
-
-
-#endif // PROJ_GAME_H
+#endif //PROJ_GAME_H

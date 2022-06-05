@@ -11,11 +11,19 @@ xpm_image_t menu_exit_xpm ;
 xpm_image_t menu_xpm;
 
 void initMenuXpm(){
+    xpm_load(menu_start, XPM_INDEXED, &menu_start_xpm);
+    xpm_load(menu_instructions, XPM_INDEXED, &menu_instructions_xpm);
+    xpm_load(menu_hallOfFame_1, XPM_INDEXED, &menu_hallOfFame_xpm);
+    xpm_load(menu_exit, XPM_INDEXED, &menu_exit_xpm);
+    xpm_load(menu2, XPM_INDEXED, &menu_xpm);
+
+    /*
     menu_start_xpm = loadXpm(menu_start);
     menu_instructions_xpm = loadXpm(menu_instructions);
     menu_hallOfFame_xpm = loadXpm(menu_hallOfFame_1);
     menu_exit_xpm = loadXpm(menu_exit);
     menu_xpm = loadXpm(menu2);
+     */
 }
 
 //verificar a posiçao do rato no ecra do menu
@@ -56,4 +64,8 @@ int drawMenu(Button button) {
     }
     drawBackground(menu);
     return 0;
+}
+
+void displayInstructions(){
+
 }
