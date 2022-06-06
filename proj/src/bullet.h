@@ -15,6 +15,7 @@ typedef struct {
     int speed;
     xpm_image_t img;
     bool moving;
+    int id;
 } ShipBullet;
 
 typedef struct {
@@ -27,7 +28,8 @@ xpm_image_t loadShipBulletXpm();
 
 xpm_image_t loadAlienBulletXpm();
 
-ShipBullet *createShipBullet(int x, int y, int speed, xpm_image_t img);
+//ShipBullet *createShipBullet(int x, int y, int speed, xpm_image_t img);
+void createShipBullet(ShipBullet *shipBullets[], int x, int y, int speed, xpm_image_t img);
 
 AlienBullet *createAlienBullet(int x, int y, int speed, xpm_image_t img);
 
