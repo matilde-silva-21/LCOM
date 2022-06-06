@@ -117,7 +117,7 @@ void drawBackground(xpm_image_t img) {
     memcpy(video_mem, img.bytes, img.height * img.width);
 }
 
-int drawXpm(uint16_t x, uint16_t y, xpm_image_t img) {
+int drawXpm(int x, int y, xpm_image_t img) {
     int counter = 0;
 
     for (int i = y; i < img.height + y; i++) {
@@ -133,4 +133,18 @@ int drawXpm(uint16_t x, uint16_t y, xpm_image_t img) {
 void displayScreen() {
     int bytes = (bitsPerPixel + 7) >> 3;
     memcpy(display_mem, video_mem, Yres * Xres * bytes);
+}
+
+int drawAlien(Alien *a1, bool mov) {
+    if (mov) {
+        //xpm_image_t img = loadXpm(a1->img_mov);
+        a1->width = a1->img_mov.width;
+        a1->height = a1->img_mov.height;
+        return drawXpm(a1->x, a1->y, a1->img_mov);
+    } else {
+        //xpm_image_t img = loadXpm(a1->img);
+        a1->width = a1->img.width;
+        a1->height = a1->img.height;
+        return drawXpm(a1->x, a1->y, a1->img);
+    }
 }

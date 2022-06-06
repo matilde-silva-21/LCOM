@@ -12,7 +12,7 @@ Ship *createShip(int x, int y, int speed) {
     ship->y = y;
     ship->lives = NUMLIVES;
     ship->isShot = false;
-    ship->shooting = false;
+    ship->canShoot = true;
     ship->speed = speed;
 
     xpm_image_t ship_xpm;
