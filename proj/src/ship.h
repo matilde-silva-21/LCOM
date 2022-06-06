@@ -19,7 +19,7 @@ typedef struct {
     int speed;
     xpm_image_t img;
     int lives;
-    bool canShoot, isShot;
+    //bool canShoot, isShot;
 } Ship;
 
 typedef enum {
@@ -34,7 +34,7 @@ Ship *createShip(int x, int y, int speed);
 
 void drawShip(Ship *ship);
 
-void eraseShip(Ship *ship);
+//void eraseShip(Ship *ship);
 
 Ship *updateShipPosition(Ship *ship, KeyActivity key);
 

@@ -60,7 +60,22 @@ void (getMousePacket)(struct packet *pp, uint8_t bytes[3]) {
     pp->x_ov = bytes[0] & X_OVFL;
     pp->y_ov = bytes[0] & Y_OVFL;
 }
-
+/*
+int (write_command)(int port, uint8_t cmd){
+    int tries = 10;
+    do {
+        if (util_sys_inb(STAT_REG, &mouse_statuscode))
+            return 1;
+        if (mouse_statuscode & IBF_BIT) { // checks if we can write
+            tries--;
+            continue;
+        }
+        if (sys_outb(STAT_REG, MOUSE_COMMAND))
+            return 1;
+    }while(tries > 0);
+}
+*/
+/*
 int (send_mouse_command)(uint8_t cmd) {
 
     if (sys_irqdisable(&mouse_hookid))
@@ -97,45 +112,50 @@ int (send_mouse_command)(uint8_t cmd) {
 
     return 0;
 }
-/*
+*/
+
+int (send_mouse_command)(uint8_t cmd){
+    uint8_t ack;
+    do{
+        if(util_sys_inb(STAT_REG, &mouse_statuscode))
+            return 1;
+        if (mouse_statuscode & IBF_BIT) // checks if we can write
+            continue;
+        if(sys_outb(STAT_REG, MOUSE_COMMAND))
+            return 1;
+
+        if(util_sys_inb(STAT_REG, &mouse_statuscode))
+            return 1;
+        if (mouse_statuscode & IBF_BIT) // checks if we can write
+            continue;
+        if(sys_outb(ARGS_REG, cmd))
+            return 1;
+
+        tickdelay(micros_to_ticks(20000));
+
+        if(util_sys_inb(OUT_BUF, &ack))
+            return 1;
+
+        if(ack == ACK_ERROR)
+            return 1;
+
+    }while(ack != ACK);
+
+    return 0;
+}
+
 static int clamp(int min, int max, int value) {
     if (value < min) return min;
     if (value > max) return max;
     return value;
 }
-*/
+
 void (updateMouse)(struct packet *pp, Mouse *mouse) {
-    /*
+
     mouse->x = clamp(0, X_RES - mouse->img.width - 1, mouse->x + pp->delta_x/5);
     mouse->y = clamp(0, Y_RES - mouse->img.height - 1, mouse->y - pp->delta_y/5);
 
     mouse->lb_pressed = pp->lb;
-*/
-
-    if (pp->delta_x > 0) {
-        if (mouse->x + pp->delta_x > X_RES - mouse->img.width)
-            mouse->x = X_RES - mouse->img.width;
-        else
-            mouse->x += pp->delta_x;
-    }
-    else if (pp->delta_x < 0) {
-        if (mouse->x + pp->delta_x < 0)
-            mouse->x = 0;
-        else
-            mouse->x += pp->delta_x;
-    }
-    if (pp->delta_y < 0) {
-        if (mouse->y + mouse->img.height - pp->delta_y > Y_RES)
-            mouse->y = Y_RES - mouse->img.height;
-        else
-            mouse->y -= pp->delta_y;
-    }
-    else if (pp->delta_y > 0) {
-        if (mouse->y - pp->delta_y < 0)
-            mouse->y = 0;
-        else
-            mouse->y -= pp->delta_y;
-    }
 }
 
 int vg_drawrectangle(int x, int y, int width, int height){

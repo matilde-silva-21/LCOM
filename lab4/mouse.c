@@ -85,7 +85,6 @@ int(mouseStatus)(uint8_t *st) {
   return 0;
 }
 
-
 int (send_mouse_command)(uint8_t cmd){
   if(sys_irqdisable(&mouse_hookid))
     return 1;

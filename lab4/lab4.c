@@ -122,7 +122,7 @@ if (mouse_subscribe_int(&mouse_hookid)) {
   return 1;
 }
 
-if(enable_mouse(ENABLE_MOUSE)) {
+if(send_mouse_command(ENABLE_MOUSE)) {
   return 1;
 }
 
@@ -190,7 +190,7 @@ while (aux_counter <= idle_time) { /* You may want to use a different condition 
 if (timer_unsubscribe_int())
   return 1;
 
-if(enable_mouse(DISABLE_MOUSE)) {
+if(send_mouse_command(DISABLE_MOUSE)) {
   return 1;
 }
 
@@ -208,7 +208,7 @@ int (mouse_test_gesture)(uint8_t lineXLen, uint8_t tolerance) {
       return 1;
     }
 
-    if(enable_mouse(ENABLE_MOUSE)) {
+    if(send_mouse_command(ENABLE_MOUSE)) {
       return 1;
     }
 
@@ -267,7 +267,7 @@ int (mouse_test_gesture)(uint8_t lineXLen, uint8_t tolerance) {
         mouse_check_pattern(event, tolerance, lineXLen);
     }
 
-    if(enable_mouse(DISABLE_MOUSE)) {
+    if(send_mouse_command(DISABLE_MOUSE)) {
       return 1;
     }
 
