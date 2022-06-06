@@ -11,15 +11,18 @@
 #define X_RES 1024
 #define Y_RES 768
 
-#define MAX_SHIP_BULLETS 10
+#define MAX_SHIP_BULLETS 7
 
-#define SHIP_BULLET_SPEED 15
+#define SHIP_BULLET_SPEED 3
 
 #define sizeOfAliens 3
 
 #define x_left_border 20
 #define x_right_border 1004
 
-#define territory 668
+#define territory 500//668
+
+#define ROW_ALIENS 3
+#define COL_ALIENS 7
 
 #endif //PROJ_MACROS_H

@@ -11,8 +11,8 @@ Ship *createShip(int x, int y, int speed) {
     ship->x = x;
     ship->y = y;
     ship->lives = NUMLIVES;
-    ship->isShot = false;
-    ship->canShoot = true;
+    //ship->isShot = false;
+    //ship->canShoot = true;
     ship->speed = speed;
 
     xpm_image_t ship_xpm;
@@ -26,12 +26,12 @@ Ship *createShip(int x, int y, int speed) {
 void drawShip(Ship *ship) {
     drawXpm(ship->x, ship->y, ship->img);
 }
-
+/*
 ///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 void eraseShip(Ship *ship) {
     vg_draw_rectangle(ship->x, ship->y, ship->img.width, ship->img.height, 0);
 }
-
+*/
 static int clamp(int min, int max, int value) {
     if (value < min) return min;
     if (value > max) return max;

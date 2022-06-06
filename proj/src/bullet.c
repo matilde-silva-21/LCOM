@@ -1,5 +1,7 @@
 #include "bullet.h"
 
+ShipBullet *shipBullets[MAX_SHIP_BULLETS];
+
 xpm_image_t loadShipBulletXpm() {
     xpm_image_t shipBullet_xpm;
     xpm_load(bullet, XPM_INDEXED, &shipBullet_xpm);
@@ -12,7 +14,9 @@ xpm_image_t loadAlienBulletXpm() {
     return alienBullet_xpm;
 }
 
-ShipBullet *createShipBullet(int x, int y, int speed, xpm_image_t img) {
+void createShipBullet(int x, int y, int speed, xpm_image_t img) {
+
+    bool found = false;
     ShipBullet *shipBullet = (ShipBullet *) malloc(sizeof(ShipBullet));
 
     shipBullet->x = x;
@@ -20,7 +24,66 @@ ShipBullet *createShipBullet(int x, int y, int speed, xpm_image_t img) {
     shipBullet->speed = speed;
     shipBullet->img = img;
 
-    return shipBullet;
+    for (int i = 0; i < MAX_SHIP_BULLETS; i++) {
+        if (shipBullets[i] == NULL) {
+            //printf("created bullet->index = %d, x = %d, y = %d\n", i, shipBullet->x, shipBullet->y);
+            shipBullets[i] = shipBullet;
+            found = true;
+            //shipBullets[i]->id = i;
+        }
+    }
+
+    if(!found) {
+        //destroyShipBullet(shipBullet);
+        free(shipBullet);
+        shipBullet = NULL;
+    }
+}
+
+void updateShipBulletPosition() {
+    for (int i = 0; i < MAX_SHIP_BULLETS; i++) {
+        if (shipBullets[i] != NULL) {
+            if(shipBullets[i]->y - shipBullets[i]->speed >= 0) {
+                shipBullets[i]->y = shipBullets[i]->y - shipBullets[i]->speed;
+                //printf("[%d] new y = %d\n", i, shipBullets[i]->y);
+            }
+
+            else{
+                //printf("deleted bullet -> index = %d\n", i);
+                removeShipBulletbyIndex(i);
+            }
+
+        }
+    }
+}
+
+void drawShipBullets() {
+    //printf("draw bullet\n");
+    for (int i = 0; i < MAX_SHIP_BULLETS; i++) {
+//        printf("AAAAAAAAAAAAAAAAA\n");
+        if (shipBullets[i] != NULL) {
+            //printf("Nao null\n");
+            if(drawShipBullet(shipBullets[i])) {
+                //printf("nao desenhou\n");
+                return;
+            } else{
+//                printf("BURRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRo\n");
+            }
+            //drawXpm(shipBullets[i]->x, shipBullets[i]->y, shipBullets[i]->img);
+            //printf("draw bullet: x = %d, y = %d\n", shipBullets[i]->x, shipBullets[i]->y);
+        } else {
+//            printf("Can't draw bullet %d\n", i);
+        }
+    }
+}
+
+int drawShipBullet(ShipBullet* shipBullet){
+    return drawXpm(shipBullet->x, shipBullet->y, shipBullet->img);
+}
+
+void removeShipBulletbyIndex(int ind){
+    //free(shipBullets[ind]);
+    shipBullets[ind] = NULL;
 }
 
 AlienBullet *createAlienBullet(int x, int y, int speed, xpm_image_t img) {
@@ -34,55 +97,43 @@ AlienBullet *createAlienBullet(int x, int y, int speed, xpm_image_t img) {
     return alienBullet;
 }
 
-void updateShipBulletPosition(ShipBullet *shipBullet[]) {
-    for (int i = 0; i < MAX_SHIP_BULLETS; i++) {
-        if (shipBullet[i] != NULL) {
-            if(shipBullet[i]->y - shipBullet[i]->speed <= 0)
-                shipBullet[i]->y = shipBullet[i]->y - shipBullet[i]->speed;
-            else destroyShipBullet(shipBullet[i]);
-        }
-    }
-}
-
 void updateAlienBulletPosition(AlienBullet *alienBullet) {
     alienBullet->y = alienBullet->y - alienBullet->speed;
 }
 
-void initShipBullets(ShipBullet *shipBullets[]) {
+void initShipBullets() {
     for (int i = 0; i < MAX_SHIP_BULLETS; i++) {
         shipBullets[i] = NULL;
     }
 }
 
-void shipShoot(ShipBullet *shipBullets[], ShipBullet *shipBullet) {
+/*
+void shipShoot(ShipBullet *shipBullet) {
     for (int i = 0; i < MAX_SHIP_BULLETS; i++) {
         if (shipBullets[i] == NULL) {
             shipBullets[i] = shipBullet;
             return;
         }
     }
-    destroyShipBullet(shipBullet);
+    free(shipBullet);
+    //shipBullet = NULL;
 }
+*/
 
-void drawShipBullets(ShipBullet *shipBullets[]) {
-    for (int i = 0; i < MAX_SHIP_BULLETS; i++) {
-        if (shipBullets[i] != NULL) {
-            drawXpm(shipBullets[i]->x, shipBullets[i]->y, shipBullets[i]->img);
-            printf("bullet: x = %d, y = %d\n", shipBullets[i]->x, shipBullets[i]->y);
-        }
-    }
-}
-
+/*
 void destroyShipBullet(ShipBullet *shipBullet) {
     if (shipBullet == NULL)
         return;
     free(shipBullet);
     shipBullet = NULL;
 }
+*/
 
 void destroyAlienBullet(AlienBullet *alienBullet) {
-    if (alienBullet == NULL)
+
+    if(alienBullet == NULL)
         return;
     free(alienBullet);
+
     alienBullet = NULL;
 }

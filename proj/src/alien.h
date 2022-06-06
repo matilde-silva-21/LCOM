@@ -6,6 +6,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
+#include "macros.h"
 
 typedef struct{
   int x;
@@ -37,3 +38,5 @@ int alien_get_width(Alien *a1);
 int alien_get_height(Alien* a1);
 
 void change_all_y(Alien aliens[], int yf, int size_array);
+
+//Alien [] createAliens();

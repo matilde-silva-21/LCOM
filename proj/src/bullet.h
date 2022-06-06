@@ -14,7 +14,8 @@ typedef struct {
     int x, y;
     int speed;
     xpm_image_t img;
-    bool moving;
+    //bool moving;
+    //int id;
 } ShipBullet;
 
 typedef struct {
@@ -25,23 +26,28 @@ typedef struct {
 
 xpm_image_t loadShipBulletXpm();
 
-xpm_image_t loadAlienBulletXpm();
+//ShipBullet *createShipBullet(int x, int y, int speed, xpm_image_t img);
+void createShipBullet(int x, int y, int speed, xpm_image_t img);
 
-ShipBullet *createShipBullet(int x, int y, int speed, xpm_image_t img);
+int drawShipBullet(ShipBullet* shipBullet);
+
+void drawShipBullets();
+
+void updateShipBulletPosition();
+
+void initShipBullets();
+
+void shipShoot(ShipBullet *shipBullet);
+
+void removeShipBulletbyIndex(int ind);
+
+//void destroyShipBullet(ShipBullet* shipBullet);
+
+xpm_image_t loadAlienBulletXpm();
 
 AlienBullet *createAlienBullet(int x, int y, int speed, xpm_image_t img);
 
 void updateAlienBulletPosition(AlienBullet *alienBullet);
-
-void updateShipBulletPosition(ShipBullet *shipBullet[]);
-
-void initShipBullets(ShipBullet *shipBullets[]);
-
-void shipShoot(ShipBullet *shipBullets[], ShipBullet *shipBullet);
-
-void drawShipBullets(ShipBullet *shipBullets[]);
-
-void destroyShipBullet(ShipBullet* shipBullet);
 
 void destroyAlienBullet(AlienBullet* alienBullet);
 
