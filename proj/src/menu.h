@@ -8,40 +8,9 @@
 
 #include "graphic.h"
 #include "resources.h"
-#include "mouse.h"
-#include "resources.h"
+//#include "mouse.h"
 
-/*
-typedef struct{
-    uint16_t xi;
-    uint16_t yi;
-    uint16_t xf;
-    uint16_t yf;
-} StartButton;
-
-typedef struct{
-    uint16_t xi;
-    uint16_t yi;
-    uint16_t xf;
-    uint16_t yf;
-} InstructionsButton;
-
-typedef struct{
-    uint16_t xi;
-    uint16_t yi;
-    uint16_t xf;
-    uint16_t yf;
-} HallOfFameButton;
-
-typedef struct{
-    uint16_t xi;
-    uint16_t yi;
-    uint16_t xf;
-    uint16_t yf;
-} ExitButton;
-*/
-
-typedef enum{
+typedef enum {
     StartButton,
     InstructionsButton,
     HallOfFameButton,
@@ -49,8 +18,12 @@ typedef enum{
     Initial
 } Button;
 
+void initMenuXpm();
+
 int drawMenu(Button button);
 
 Button getButton(uint16_t x, uint16_t y);
+
+void displayInstructions();
 
 #endif //PROJ_MENU_H
