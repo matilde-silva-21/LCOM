@@ -15,7 +15,7 @@
 
 #define SHIP_BULLET_SPEED 3
 
-#define sizeOfAliens 3
+#define sizeOfAliens 21
 
 #define x_left_border 20
 #define x_right_border 1004

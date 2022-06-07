@@ -1,0 +1,1528 @@
+<<<<<<< HEAD
+=======
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+
+kill count: 0
+kill count: 0Not in menu plz help
+Creating bullet
+
+kill count: 0
+>>>>>>> 33a1315592c7943c95815c9fe2e2a28a7f7c0040
