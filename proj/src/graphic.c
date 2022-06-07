@@ -136,6 +136,8 @@ void displayScreen() {
 }
 
 int drawAlien(Alien *a1, bool mov) {
+    if(a1 == NULL)
+        return 0;
     if (mov) {
         //xpm_image_t img = loadXpm(a1->img_mov);
         a1->width = a1->img_mov.width;

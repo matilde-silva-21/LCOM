@@ -33,7 +33,7 @@ void createShipBullet(int x, int y, int speed, xpm_image_t img) {
         }
     }
 
-    if(!found) {
+    if (!found) {
         //destroyShipBullet(shipBullet);
         free(shipBullet);
         shipBullet = NULL;
@@ -43,12 +43,10 @@ void createShipBullet(int x, int y, int speed, xpm_image_t img) {
 void updateShipBulletPosition() {
     for (int i = 0; i < MAX_SHIP_BULLETS; i++) {
         if (shipBullets[i] != NULL) {
-            if(shipBullets[i]->y - shipBullets[i]->speed >= 0) {
+            if (shipBullets[i]->y - shipBullets[i]->speed >= 0) {
                 shipBullets[i]->y = shipBullets[i]->y - shipBullets[i]->speed;
                 //printf("[%d] new y = %d\n", i, shipBullets[i]->y);
-            }
-
-            else{
+            } else {
                 //printf("deleted bullet -> index = %d\n", i);
                 removeShipBulletbyIndex(i);
             }
@@ -63,10 +61,10 @@ void drawShipBullets() {
 //        printf("AAAAAAAAAAAAAAAAA\n");
         if (shipBullets[i] != NULL) {
             //printf("Nao null\n");
-            if(drawShipBullet(shipBullets[i])) {
+            if (drawShipBullet(shipBullets[i])) {
                 //printf("nao desenhou\n");
                 return;
-            } else{
+            } else {
 //                printf("BURRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRo\n");
             }
             //drawXpm(shipBullets[i]->x, shipBullets[i]->y, shipBullets[i]->img);
@@ -77,11 +75,11 @@ void drawShipBullets() {
     }
 }
 
-int drawShipBullet(ShipBullet* shipBullet){
+int drawShipBullet(ShipBullet *shipBullet) {
     return drawXpm(shipBullet->x, shipBullet->y, shipBullet->img);
 }
 
-void removeShipBulletbyIndex(int ind){
+void removeShipBulletbyIndex(int ind) {
     //free(shipBullets[ind]);
     shipBullets[ind] = NULL;
 }
@@ -131,9 +129,24 @@ void destroyShipBullet(ShipBullet *shipBullet) {
 
 void destroyAlienBullet(AlienBullet *alienBullet) {
 
-    if(alienBullet == NULL)
+    if (alienBullet == NULL)
         return;
     free(alienBullet);
 
     alienBullet = NULL;
+}
+
+void checkShipBulletCollision(Alien *aliens[]) {
+    for (int i = 0; i < MAX_SHIP_BULLETS; i++) {
+        for (int j = 0; j < sizeOfAliens; j++) {
+            if (shipBullets[i] != NULL && aliens[j] != NULL) {
+                //check if the bullet and the alien collide
+                if (shipBullets[i]->x > aliens[j]->x && shipBullets[i]->x < aliens[j]->x + aliens[j]->width &&
+                    shipBullets[i]->y == aliens[j]->y + aliens[j]->height) {
+                    aliens[j] = NULL;
+                    shipBullets[i] = NULL;
+                }
+            }
+        }
+    }
 }

@@ -51,6 +51,8 @@ void updateAlienBulletPosition(AlienBullet *alienBullet);
 
 void destroyAlienBullet(AlienBullet* alienBullet);
 
+void checkShipBulletCollision(Alien *aliens[]);
+
 //void checkCollisions
 
 #endif //PROJ_BULLET_H
