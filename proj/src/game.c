@@ -11,7 +11,7 @@ extern int timer_counter;
 extern void *video_mem;
 extern void *display_mem;
 
-bool menuDisplay = false;
+bool menuDisplay = true;
 bool instructionDisplay = false;
 extern ShipBullet *shipBullets[MAX_SHIP_BULLETS];
 //extern Alien *aliens[ROW_ALIENS * COL_ALIENS];
@@ -53,6 +53,7 @@ int (game_loop)() {
     }
 */
     mouse_enable_data_reporting();
+
     if (kbd_subscribe_int(&kbd_bit_no)) {
         return 1;
     }
@@ -297,9 +298,9 @@ int (game_loop)() {
                 for (int i = 0; i < sizeOfAliens; i++) {
                     Alien *a = &aliens[i];
                     if(!a->alive) {killCount++;continue;}
+                    verifyAlienAndBulletCollision(a);
                     if (right_mov) {
                         change_alien_x_coordinates(a, speed);
-                        verifyAlienAndBulletCollision(a);
                         drawAlien(a, mov_img);
                         if ((a->x + a->width) >= x_right_border) {
                             right_mov = false;
@@ -311,7 +312,6 @@ int (game_loop)() {
                         }
                     } else {
                         change_alien_x_coordinates(a, -speed);
-                        verifyAlienAndBulletCollision(a);
                         drawAlien(a, mov_img);
                         if (a->x <= x_left_border) {
                             change_all_y(aliens, 20, sizeOfAliens);
