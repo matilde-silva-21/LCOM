@@ -13,7 +13,7 @@ Alien createAlien(int xi, int yi, xpm_map_t img, xpm_map_t img_mov) {
     xpm_load(img_mov, XPM_INDEXED, &alien_xpm_mov);
     xpm_image_t alien_xpm;
     xpm_load(img, XPM_INDEXED, &alien_xpm);
-    return (Alien) {.x = xi, .y = yi, .img = alien_xpm, .img_mov = alien_xpm_mov, .width=60, .height=40};
+    return (Alien) {.x = xi, .y = yi, .img = alien_xpm, .img_mov = alien_xpm_mov, .width=60, .height=40, .alive = true};
 }
 
 void decrement_alien_x_coordinates(Alien *a1) {
@@ -75,3 +75,5 @@ Alien * createAliens() {
     };
 }
 */
+
+

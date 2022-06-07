@@ -259,16 +259,23 @@ int (game_loop)() {
         if (!gameOver && !menuDisplay && !instructionDisplay) {
             //displayScreen();
             if (timer_counter >= ipf) {
+
+                int killCount = 0;
+
                 updateShipBulletPosition();
                 frame_counter++;
                 drawBackground(background);
                 drawShip(ship);
                 drawShipBullets();
 
+                printf("\nkill count: %d", killCount);
+
                 for (int i = 0; i < sizeOfAliens; i++) {
                     Alien *a = &aliens[i];
+                    if(!a->alive) {killCount++;}
                     if (right_mov) {
                         change_alien_x_coordinates(a, speed);
+                        verifyAlienAndBulletCollision(a);
                         drawAlien(a, mov_img);
                         if ((a->x + a->width) >= x_right_border) {
                             right_mov = false;
@@ -280,6 +287,7 @@ int (game_loop)() {
                         }
                     } else {
                         change_alien_x_coordinates(a, -speed);
+                        verifyAlienAndBulletCollision(a);
                         drawAlien(a, mov_img);
                         if (a->x <= x_left_border) {
                             change_all_y(aliens, 20, sizeOfAliens);
@@ -291,15 +299,15 @@ int (game_loop)() {
                         }
                     }
                     row++;
-                    if ((a->y + a->height) >= territory) {
+                    if ((a->y + a->height) >= territory || killCount == sizeOfAliens) {
                         gameOver = true;
                         //drawBackground(img);
                     }
                 }
+                
                 timer_counter = 0;
                 if (frame_counter >= frames_per_state) {
-                    if (mov_img) { mov_img = false; }
-                    else { mov_img = true; }
+                    mov_img = !mov_img;
                     frame_counter = 0;
                 }
             }
@@ -327,3 +335,6 @@ int (game_loop)() {
         return 1;
     return 0;
 }
+
+
+

@@ -1,6062 +1,1256 @@
-<<<<<<< HEAD
-B1=0xfa B2=0x28 B3=0x00 LB=0 MB=0 RB=1 XOV=1 X=-216 YOV=1 Y=-256
-B1=0xfa B2=0x28 B3=0x00 LB=0 MB=0 RB=1 XOV=1 X=-216 YOV=1 Y=-256
-B1=0xfc B2=0x28 B3=0x00 LB=0 MB=1 RB=0 XOV=1 X=-216 YOV=1 Y=-256
-B1=0xfe B2=0x28 B3=0x00 LB=0 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-256
-B1=0xfe B2=0x00 B3=0xfe LB=0 MB=1 RB=1 XOV=1 X=-256 YOV=1 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0xff B2=0x28 B3=0x01 LB=1 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-255
-created bullet->index = 0, x = 549, y = 630
-created bullet->index = 1, x = 549, y = 630
-created bullet->index = 2, x = 549, y = 630
-created bullet->index = 3, x = 549, y = 630
-created bullet->index = 4, x = 549, y = 630
-created bullet->index = 5, x = 549, y = 630
-created bullet->index = 6, x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-[0] new y = 629
-[1] new y = 628
-[2] new y = 627
-[3] new y = 626
-[4] new y = 625
-[5] new y = 624
-[6] new y = 623
-[0] new y = 622
-[1] new y = 621
-[2] new y = 620
-[3] new y = 619
-[4] new y = 618
-[5] new y = 617
-[6] new y = 616
-B1=0xff B2=0x28 B3=0x00 LB=1 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-256
-[0] new y = 615
-[1] new y = 614
-[2] new y = 613
-[3] new y = 612
-[4] new y = 611
-[5] new y = 610
-[6] new y = 609
-B1=0xff B2=0x08 B3=0x01 LB=1 MB=1 RB=1 XOV=1 X=-248 YOV=1 Y=-255
-[0] new y = 608
-[1] new y = 607
-[2] new y = 606
-[3] new y = 605
-[4] new y = 604
-[5] new y = 603
-[6] new y = 602
-[0] new y = 601
-[1] new y = 600
-[2] new y = 599
-[3] new y = 598
-[4] new y = 597
-[5] new y = 596
-[6] new y = 595
-[0] new y = 594
-[1] new y = 593
-[2] new y = 592
-[3] new y = 591
-[4] new y = 590
-[5] new y = 589
-[6] new y = 588
-[0] new y = 587
-[1] new y = 586
-[2] new y = 585
-[3] new y = 584
-[4] new y = 583
-[5] new y = 582
-[6] new y = 581
-[0] new y = 580
-[1] new y = 579
-[2] new y = 578
-[3] new y = 577
-[4] new y = 576
-[5] new y = 575
-[6] new y = 574
-[0] new y = 573
-[1] new y = 572
-[2] new y = 571
-[3] new y = 570
-[4] new y = 569
-[5] new y = 568
-[6] new y = 567
-[0] new y = 566
-[1] new y = 565
-[2] new y = 564
-[3] new y = 563
-[4] new y = 562
-[5] new y = 561
-[6] new y = 560
-[0] new y = 559
-[1] new y = 558
-[2] new y = 557
-[3] new y = 556
-[4] new y = 555
-[5] new y = 554
-[6] new y = 553
-[0] new y = 552
-[1] new y = 551
-[2] new y = 550
-[3] new y = 549
-[4] new y = 548
-[5] new y = 547
-[6] new y = 546
-[0] new y = 545
-[1] new y = 544
-[2] new y = 543
-[3] new y = 542
-[4] new y = 541
-[5] new y = 540
-[6] new y = 539
-[0] new y = 538
-[1] new y = 537
-[2] new y = 536
-[3] new y = 535
-[4] new y = 534
-[5] new y = 533
-[6] new y = 532
-[0] new y = 531
-[1] new y = 530
-[2] new y = 529
-[3] new y = 528
-[4] new y = 527
-[5] new y = 526
-[6] new y = 525
-[0] new y = 524
-[1] new y = 523
-[2] new y = 522
-[3] new y = 521
-[4] new y = 520
-[5] new y = 519
-[6] new y = 518
-[0] new y = 517
-[1] new y = 516
-[2] new y = 515
-[3] new y = 514
-[4] new y = 513
-[5] new y = 512
-[6] new y = 511
-[0] new y = 510
-[1] new y = 509
-[2] new y = 508
-[3] new y = 507
-[4] new y = 506
-[5] new y = 505
-[6] new y = 504
-[0] new y = 503
-[1] new y = 502
-[2] new y = 501
-[3] new y = 500
-[4] new y = 499
-[5] new y = 498
-[6] new y = 497
-[0] new y = 496
-[1] new y = 495
-[2] new y = 494
-[3] new y = 493
-[4] new y = 492
-[5] new y = 491
-[6] new y = 490
-[0] new y = 489
-[1] new y = 488
-[2] new y = 487
-[3] new y = 486
-[4] new y = 485
-[5] new y = 484
-[6] new y = 483
-[0] new y = 482
-[1] new y = 481
-[2] new y = 480
-[3] new y = 479
-[4] new y = 478
-[5] new y = 477
-[6] new y = 476
-[0] new y = 475
-[1] new y = 474
-[2] new y = 473
-[3] new y = 472
-[4] new y = 471
-[5] new y = 470
-[6] new y = 469
-[0] new y = 468
-[1] new y = 467
-[2] new y = 466
-[3] new y = 465
-[4] new y = 464
-[5] new y = 463
-[6] new y = 462
-[0] new y = 461
-[1] new y = 460
-[2] new y = 459
-[3] new y = 458
-[4] new y = 457
-[5] new y = 456
-[6] new y = 455
-[0] new y = 454
-[1] new y = 453
-[2] new y = 452
-[3] new y = 451
-[4] new y = 450
-[5] new y = 449
-[6] new y = 448
-[0] new y = 447
-[1] new y = 446
-[2] new y = 445
-[3] new y = 444
-[4] new y = 443
-[5] new y = 442
-[6] new y = 441
-[0] new y = 440
-[1] new y = 439
-[2] new y = 438
-[3] new y = 437
-[4] new y = 436
-[5] new y = 435
-[6] new y = 434
-[0] new y = 433
-[1] new y = 432
-[2] new y = 431
-[3] new y = 430
-[4] new y = 429
-[5] new y = 428
-[6] new y = 427
-[0] new y = 426
-[1] new y = 425
-[2] new y = 424
-[3] new y = 423
-[4] new y = 422
-[5] new y = 421
-[6] new y = 420
-[0] new y = 419
-[1] new y = 418
-[2] new y = 417
-[3] new y = 416
-[4] new y = 415
-[5] new y = 414
-[6] new y = 413
-[0] new y = 412
-[1] new y = 411
-[2] new y = 410
-[3] new y = 409
-[4] new y = 408
-[5] new y = 407
-[6] new y = 406
-[0] new y = 405
-[1] new y = 404
-[2] new y = 403
-[3] new y = 402
-[4] new y = 401
-[5] new y = 400
-[6] new y = 399
-[0] new y = 398
-[1] new y = 397
-[2] new y = 396
-[3] new y = 395
-[4] new y = 394
-[5] new y = 393
-[6] new y = 392
-[0] new y = 391
-[1] new y = 390
-[2] new y = 389
-[3] new y = 388
-[4] new y = 387
-[5] new y = 386
-[6] new y = 385
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-[0] new y = 384
-[1] new y = 383
-[2] new y = 382
-[3] new y = 381
-[4] new y = 380
-[5] new y = 379
-[6] new y = 378
-[0] new y = 377
-[1] new y = 376
-[2] new y = 375
-[3] new y = 374
-[4] new y = 373
-[5] new y = 372
-[6] new y = 371
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-[0] new y = 370
-[1] new y = 369
-[2] new y = 368
-[3] new y = 367
-[4] new y = 366
-[5] new y = 365
-[6] new y = 364
-B1=0x08 B2=0x02 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=3
-[0] new y = 363
-[1] new y = 362
-[2] new y = 361
-[3] new y = 360
-[4] new y = 359
-[5] new y = 358
-[6] new y = 357
-[0] new y = 356
-[1] new y = 355
-[2] new y = 354
-[3] new y = 353
-[4] new y = 352
-[5] new y = 351
-[6] new y = 350
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-[0] new y = 349
-[1] new y = 348
-[2] new y = 347
-[3] new y = 346
-[4] new y = 345
-[5] new y = 344
-[6] new y = 343
-[0] new y = 342
-[1] new y = 341
-[2] new y = 340
-[3] new y = 339
-[4] new y = 338
-[5] new y = 337
-[6] new y = 336
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-[0] new y = 335
-[1] new y = 334
-[2] new y = 333
-[3] new y = 332
-[4] new y = 331
-[5] new y = 330
-[6] new y = 329
-[0] new y = 328
-[1] new y = 327
-[2] new y = 326
-[3] new y = 325
-[4] new y = 324
-[5] new y = 323
-[6] new y = 322
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-[0] new y = 321
-[1] new y = 320
-[2] new y = 319
-[3] new y = 318
-[4] new y = 317
-[5] new y = 316
-[6] new y = 315
-[0] new y = 314
-[1] new y = 313
-[2] new y = 312
-[3] new y = 311
-[4] new y = 310
-[5] new y = 309
-[6] new y = 308
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-[0] new y = 307
-[1] new y = 306
-[2] new y = 305
-[3] new y = 304
-[4] new y = 303
-[5] new y = 302
-[6] new y = 301
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-[0] new y = 300
-[1] new y = 299
-[2] new y = 298
-[3] new y = 297
-[4] new y = 296
-[5] new y = 295
-[6] new y = 294
-[0] new y = 293
-[1] new y = 292
-[2] new y = 291
-[3] new y = 290
-[4] new y = 289
-[5] new y = 288
-[6] new y = 287
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 286
-[1] new y = 285
-[2] new y = 284
-[3] new y = 283
-[4] new y = 282
-[5] new y = 281
-[6] new y = 280
-[0] new y = 279
-[1] new y = 278
-[2] new y = 277
-[3] new y = 276
-[4] new y = 275
-[5] new y = 274
-[6] new y = 273
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-[0] new y = 272
-[1] new y = 271
-[2] new y = 270
-[3] new y = 269
-[4] new y = 268
-[5] new y = 267
-[6] new y = 266
-[0] new y = 265
-[1] new y = 264
-[2] new y = 263
-[3] new y = 262
-[4] new y = 261
-[5] new y = 260
-[6] new y = 259
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-[0] new y = 258
-[1] new y = 257
-[2] new y = 256
-[3] new y = 255
-[4] new y = 254
-[5] new y = 253
-[6] new y = 252
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-[0] new y = 251
-[1] new y = 250
-[2] new y = 249
-[3] new y = 248
-[4] new y = 247
-[5] new y = 246
-[6] new y = 245
-[0] new y = 244
-[1] new y = 243
-[2] new y = 242
-[3] new y = 241
-[4] new y = 240
-[5] new y = 239
-[6] new y = 238
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-[0] new y = 237
-[1] new y = 236
-[2] new y = 235
-[3] new y = 234
-[4] new y = 233
-[5] new y = 232
-[6] new y = 231
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-[0] new y = 230
-[1] new y = 229
-[2] new y = 228
-[3] new y = 227
-[4] new y = 226
-[5] new y = 225
-[6] new y = 224
-[0] new y = 223
-[1] new y = 222
-[2] new y = 221
-[3] new y = 220
-[4] new y = 219
-[5] new y = 218
-[6] new y = 217
-[0] new y = 216
-[1] new y = 215
-[2] new y = 214
-[3] new y = 213
-[4] new y = 212
-[5] new y = 211
-[6] new y = 210
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 209
-[1] new y = 208
-[2] new y = 207
-[3] new y = 206
-[4] new y = 205
-[5] new y = 204
-[6] new y = 203
 B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-[0] new y = 202
-[1] new y = 201
-[2] new y = 200
-[3] new y = 199
-[4] new y = 198
-[5] new y = 197
-[6] new y = 196
-[0] new y = 195
-[1] new y = 194
-[2] new y = 193
-[3] new y = 192
-[4] new y = 191
-[5] new y = 190
-[6] new y = 189
-[0] new y = 188
-[1] new y = 187
-[2] new y = 186
-[3] new y = 185
-[4] new y = 184
-[5] new y = 183
-[6] new y = 182
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-[0] new y = 181
-[1] new y = 180
-[2] new y = 179
-[3] new y = 178
-[4] new y = 177
-[5] new y = 176
-[6] new y = 175
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 174
-[1] new y = 173
-[2] new y = 172
-[3] new y = 171
-[4] new y = 170
-[5] new y = 169
-[6] new y = 168
-[0] new y = 167
-[1] new y = 166
-[2] new y = 165
-[3] new y = 164
-[4] new y = 163
-[5] new y = 162
-[6] new y = 161
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-[0] new y = 160
-[1] new y = 159
-[2] new y = 158
-[3] new y = 157
-[4] new y = 156
-[5] new y = 155
-[6] new y = 154
-[0] new y = 153
-[1] new y = 152
-[2] new y = 151
-[3] new y = 150
-[4] new y = 149
-[5] new y = 148
-[6] new y = 147
-[0] new y = 146
-[1] new y = 145
-[2] new y = 144
-[3] new y = 143
-[4] new y = 142
-[5] new y = 141
-[6] new y = 140
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-[0] new y = 139
-[1] new y = 138
-[2] new y = 137
-[3] new y = 136
-[4] new y = 135
-[5] new y = 134
-[6] new y = 133
-[0] new y = 132
-[1] new y = 131
-[2] new y = 130
-[3] new y = 129
-[4] new y = 128
-[5] new y = 127
-[6] new y = 126
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 125
-[1] new y = 124
-[2] new y = 123
-[3] new y = 122
-[4] new y = 121
-[5] new y = 120
-[6] new y = 119
-[0] new y = 118
-[1] new y = 117
-[2] new y = 116
-[3] new y = 115
-[4] new y = 114
-[5] new y = 113
-[6] new y = 112
-[0] new y = 111
-[1] new y = 110
-[2] new y = 109
-[3] new y = 108
-[4] new y = 107
-[5] new y = 106
-[6] new y = 105
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-[0] new y = 104
-[1] new y = 103
-[2] new y = 102
-[3] new y = 101
-[4] new y = 100
-[5] new y = 99
-[6] new y = 98
-[0] new y = 97
-[1] new y = 96
-[2] new y = 95
-[3] new y = 94
-[4] new y = 93
-[5] new y = 92
-[6] new y = 91
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-[0] new y = 90
-[1] new y = 89
-[2] new y = 88
-[3] new y = 87
-[4] new y = 86
-[5] new y = 85
-[6] new y = 84
-[0] new y = 83
-[1] new y = 82
-[2] new y = 81
-[3] new y = 80
-[4] new y = 79
-[5] new y = 78
-[6] new y = 77
-[0] new y = 76
-[1] new y = 75
-[2] new y = 74
-[3] new y = 73
-[4] new y = 72
-[5] new y = 71
-[6] new y = 70
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-[0] new y = 69
-[1] new y = 68
-[2] new y = 67
-[3] new y = 66
-[4] new y = 65
-[5] new y = 64
-[6] new y = 63
-[0] new y = 62
-[1] new y = 61
-[2] new y = 60
-[3] new y = 59
-[4] new y = 58
-[5] new y = 57
-[6] new y = 56
-[0] new y = 55
-[1] new y = 54
-[2] new y = 53
-[3] new y = 52
-[4] new y = 51
-[5] new y = 50
-[6] new y = 49
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 48
-[1] new y = 47
-[2] new y = 46
-[3] new y = 45
-[4] new y = 44
-[5] new y = 43
-[6] new y = 42
-[0] new y = 41
-[1] new y = 40
-[2] new y = 39
-[3] new y = 38
-[4] new y = 37
-[5] new y = 36
-[6] new y = 35
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-[0] new y = 34
-[1] new y = 33
-[2] new y = 32
-[3] new y = 31
-[4] new y = 30
-[5] new y = 29
-[6] new y = 28
-[0] new y = 27
-[1] new y = 26
-[2] new y = 25
-[3] new y = 24
-[4] new y = 23
-[5] new y = 22
-[6] new y = 21
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-[0] new y = 20
-[1] new y = 19
-[2] new y = 18
-[3] new y = 17
-[4] new y = 16
-[5] new y = 15
-[6] new y = 14
-[0] new y = 13
-[1] new y = 12
-[2] new y = 11
-[3] new y = 10
-[4] new y = 9
-[5] new y = 8
-[6] new y = 7
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 6
-[1] new y = 5
-[2] new y = 4
-[3] new y = 3
-[4] new y = 2
-[5] new y = 1
-[6] new y = 0
+door stuck
+Not in menu plz help
 B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-deleted bullet -> index = 0
-deleted bullet -> index = 1
-deleted bullet -> index = 2
-deleted bullet -> index = 3
-deleted bullet -> index = 4
-deleted bullet -> index = 5
-deleted bullet -> index = 6
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=3
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=3
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=3
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x05 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=3
+door stuck
+Not in menu plz help
 B1=0x08 B2=0x05 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=4
-B1=0x08 B2=0x06 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=3
-B1=0x08 B2=0x06 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=4
-B1=0x08 B2=0x05 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=4
-B1=0x08 B2=0x05 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=4
-B1=0x08 B2=0x07 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=4
-B1=0x08 B2=0x06 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=4
-B1=0x08 B2=0x04 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=3
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=3
-B1=0x08 B2=0x05 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x06 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=3
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x05 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=3
-B1=0x08 B2=0x06 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=3
-B1=0x08 B2=0x05 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=3
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=1
-B1=0x08 B2=0x06 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x06 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=1
-B1=0x08 B2=0x06 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=2
-B1=0x08 B2=0x06 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=0
-B1=0x08 B2=0x06 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x07 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=1
-B1=0x08 B2=0x06 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=0
-B1=0x08 B2=0x06 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x06 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x06 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x06 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=3
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x09 B3=0x08 LB=0 MB=0 RB=0 XOV=0 X=9 YOV=0 Y=8
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
-B1=0x08 B2=0x00 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x18 B2=0xff B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=3
-B1=0x08 B2=0x00 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=3
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=3
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0xff B2=0x01 B3=0x08 LB=1 MB=1 RB=1 XOV=1 X=-255 YOV=1 Y=-248
-created bullet->index = 0, x = 549, y = 630
-created bullet->index = 1, x = 549, y = 630
-created bullet->index = 2, x = 549, y = 630
-created bullet->index = 3, x = 549, y = 630
-created bullet->index = 4, x = 549, y = 630
-created bullet->index = 5, x = 549, y = 630
-created bullet->index = 6, x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 629
-[1] new y = 628
-[2] new y = 627
-[3] new y = 626
-[4] new y = 625
-[5] new y = 624
-[6] new y = 623
-[0] new y = 622
-[1] new y = 621
-[2] new y = 620
-[3] new y = 619
-[4] new y = 618
-[5] new y = 617
-[6] new y = 616
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-[0] new y = 615
-[1] new y = 614
-[2] new y = 613
-[3] new y = 612
-[4] new y = 611
-[5] new y = 610
-[6] new y = 609
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-[0] new y = 608
-[1] new y = 607
-[2] new y = 606
-[3] new y = 605
-[4] new y = 604
-[5] new y = 603
-[6] new y = 602
-[0] new y = 601
-[1] new y = 600
-[2] new y = 599
-[3] new y = 598
-[4] new y = 597
-[5] new y = 596
-[6] new y = 595
-[0] new y = 594
-[1] new y = 593
-[2] new y = 592
-[3] new y = 591
-[4] new y = 590
-[5] new y = 589
-[6] new y = 588
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-[0] new y = 587
-[1] new y = 586
-[2] new y = 585
-[3] new y = 584
-[4] new y = 583
-[5] new y = 582
-[6] new y = 581
-[0] new y = 580
-[1] new y = 579
-[2] new y = 578
-[3] new y = 577
-[4] new y = 576
-[5] new y = 575
-[6] new y = 574
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-[0] new y = 573
-[1] new y = 572
-[2] new y = 571
-[3] new y = 570
-[4] new y = 569
-[5] new y = 568
-[6] new y = 567
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-[0] new y = 566
-[1] new y = 565
-[2] new y = 564
-[3] new y = 563
-[4] new y = 562
-[5] new y = 561
-[6] new y = 560
-[0] new y = 559
-[1] new y = 558
-[2] new y = 557
-[3] new y = 556
-[4] new y = 555
-[5] new y = 554
-[6] new y = 553
-[0] new y = 552
-[1] new y = 551
-[2] new y = 550
-[3] new y = 549
-[4] new y = 548
-[5] new y = 547
-[6] new y = 546
-B1=0x08 B2=0x00 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=3
-[0] new y = 545
-[1] new y = 544
-[2] new y = 543
-[3] new y = 542
-[4] new y = 541
-[5] new y = 540
-[6] new y = 539
-[0] new y = 538
-[1] new y = 537
-[2] new y = 536
-[3] new y = 535
-[4] new y = 534
-[5] new y = 533
-[6] new y = 532
-[0] new y = 531
-[1] new y = 530
-[2] new y = 529
-[3] new y = 528
-[4] new y = 527
-[5] new y = 526
-[6] new y = 525
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-[0] new y = 524
-[1] new y = 523
-[2] new y = 522
-[3] new y = 521
-[4] new y = 520
-[5] new y = 519
-[6] new y = 518
-B1=0x18 B2=0xff B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=4
-[0] new y = 517
-[1] new y = 516
-[2] new y = 515
-[3] new y = 514
-[4] new y = 513
-[5] new y = 512
-[6] new y = 511
-[0] new y = 510
-[1] new y = 509
-[2] new y = 508
-[3] new y = 507
-[4] new y = 506
-[5] new y = 505
-[6] new y = 504
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 503
-[1] new y = 502
-[2] new y = 501
-[3] new y = 500
-[4] new y = 499
-[5] new y = 498
-[6] new y = 497
-[0] new y = 496
-[1] new y = 495
-[2] new y = 494
-[3] new y = 493
-[4] new y = 492
-[5] new y = 491
-[6] new y = 490
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-[0] new y = 489
-[1] new y = 488
-[2] new y = 487
-[3] new y = 486
-[4] new y = 485
-[5] new y = 484
-[6] new y = 483
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-[0] new y = 482
-[1] new y = 481
-[2] new y = 480
-[3] new y = 479
-[4] new y = 478
-[5] new y = 477
-[6] new y = 476
-[0] new y = 475
-[1] new y = 474
-[2] new y = 473
-[3] new y = 472
-[4] new y = 471
-[5] new y = 470
-[6] new y = 469
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-[0] new y = 468
-[1] new y = 467
-[2] new y = 466
-[3] new y = 465
-[4] new y = 464
-[5] new y = 463
-[6] new y = 462
-[0] new y = 461
-[1] new y = 460
-[2] new y = 459
-[3] new y = 458
-[4] new y = 457
-[5] new y = 456
-[6] new y = 455
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 454
-[1] new y = 453
-[2] new y = 452
-[3] new y = 451
-[4] new y = 450
-[5] new y = 449
-[6] new y = 448
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 447
-[1] new y = 446
-[2] new y = 445
-[3] new y = 444
-[4] new y = 443
-[5] new y = 442
-[6] new y = 441
-[0] new y = 440
-[1] new y = 439
-[2] new y = 438
-[3] new y = 437
-[4] new y = 436
-[5] new y = 435
-[6] new y = 434
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 433
-[1] new y = 432
-[2] new y = 431
-[3] new y = 430
-[4] new y = 429
-[5] new y = 428
-[6] new y = 427
-[0] new y = 426
-[1] new y = 425
-[2] new y = 424
-[3] new y = 423
-[4] new y = 422
-[5] new y = 421
-[6] new y = 420
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 419
-[1] new y = 418
-[2] new y = 417
-[3] new y = 416
-[4] new y = 415
-[5] new y = 414
-[6] new y = 413
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-[0] new y = 412
-[1] new y = 411
-[2] new y = 410
-[3] new y = 409
-[4] new y = 408
-[5] new y = 407
-[6] new y = 406
-[0] new y = 405
-[1] new y = 404
-[2] new y = 403
-[3] new y = 402
-[4] new y = 401
-[5] new y = 400
-[6] new y = 399
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 398
-[1] new y = 397
-[2] new y = 396
-[3] new y = 395
-[4] new y = 394
-[5] new y = 393
-[6] new y = 392
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 391
-[1] new y = 390
-[2] new y = 389
-[3] new y = 388
-[4] new y = 387
-[5] new y = 386
-[6] new y = 385
-[0] new y = 384
-[1] new y = 383
-[2] new y = 382
-[3] new y = 381
-[4] new y = 380
-[5] new y = 379
-[6] new y = 378
-[0] new y = 377
-[1] new y = 376
-[2] new y = 375
-[3] new y = 374
-[4] new y = 373
-[5] new y = 372
-[6] new y = 371
-[0] new y = 370
-[1] new y = 369
-[2] new y = 368
-[3] new y = 367
-[4] new y = 366
-[5] new y = 365
-[6] new y = 364
-[0] new y = 363
-[1] new y = 362
-[2] new y = 361
-[3] new y = 360
-[4] new y = 359
-[5] new y = 358
-[6] new y = 357
-[0] new y = 356
-[1] new y = 355
-[2] new y = 354
-[3] new y = 353
-[4] new y = 352
-[5] new y = 351
-[6] new y = 350
-[0] new y = 349
-[1] new y = 348
-[2] new y = 347
-[3] new y = 346
-[4] new y = 345
-[5] new y = 344
-[6] new y = 343
-[0] new y = 342
-[1] new y = 341
-[2] new y = 340
-[3] new y = 339
-[4] new y = 338
-[5] new y = 337
-[6] new y = 336
-[0] new y = 335
-[1] new y = 334
-[2] new y = 333
-[3] new y = 332
-[4] new y = 331
-[5] new y = 330
-[6] new y = 329
-[0] new y = 328
-[1] new y = 327
-[2] new y = 326
-[3] new y = 325
-[4] new y = 324
-[5] new y = 323
-[6] new y = 322
-[0] new y = 321
-[1] new y = 320
-[2] new y = 319
-[3] new y = 318
-[4] new y = 317
-[5] new y = 316
-[6] new y = 315
-[0] new y = 314
-[1] new y = 313
-[2] new y = 312
-[3] new y = 311
-[4] new y = 310
-[5] new y = 309
-[6] new y = 308
-[0] new y = 307
-[1] new y = 306
-[2] new y = 305
-[3] new y = 304
-[4] new y = 303
-[5] new y = 302
-[6] new y = 301
-[0] new y = 300
-[1] new y = 299
-[2] new y = 298
-[3] new y = 297
-[4] new y = 296
-[5] new y = 295
-[6] new y = 294
-[0] new y = 293
-[1] new y = 292
-[2] new y = 291
-[3] new y = 290
-[4] new y = 289
-[5] new y = 288
-[6] new y = 287
-[0] new y = 286
-[1] new y = 285
-[2] new y = 284
-[3] new y = 283
-[4] new y = 282
-[5] new y = 281
-[6] new y = 280
-[0] new y = 279
-[1] new y = 278
-[2] new y = 277
-[3] new y = 276
-[4] new y = 275
-[5] new y = 274
-[6] new y = 273
-[0] new y = 272
-[1] new y = 271
-[2] new y = 270
-[3] new y = 269
-[4] new y = 268
-[5] new y = 267
-[6] new y = 266
-[0] new y = 265
-[1] new y = 264
-[2] new y = 263
-[3] new y = 262
-[4] new y = 261
-[5] new y = 260
-[6] new y = 259
-[0] new y = 258
-[1] new y = 257
-[2] new y = 256
-[3] new y = 255
-[4] new y = 254
-[5] new y = 253
-[6] new y = 252
-[0] new y = 251
-[1] new y = 250
-[2] new y = 249
-[3] new y = 248
-[4] new y = 247
-[5] new y = 246
-[6] new y = 245
-[0] new y = 244
-[1] new y = 243
-[2] new y = 242
-[3] new y = 241
-[4] new y = 240
-[5] new y = 239
-[6] new y = 238
-[0] new y = 237
-[1] new y = 236
-[2] new y = 235
-[3] new y = 234
-[4] new y = 233
-[5] new y = 232
-[6] new y = 231
-[0] new y = 230
-[1] new y = 229
-[2] new y = 228
-[3] new y = 227
-[4] new y = 226
-[5] new y = 225
-[6] new y = 224
-[0] new y = 223
-[1] new y = 222
-[2] new y = 221
-[3] new y = 220
-[4] new y = 219
-[5] new y = 218
-[6] new y = 217
-[0] new y = 216
-[1] new y = 215
-[2] new y = 214
-[3] new y = 213
-[4] new y = 212
-[5] new y = 211
-[6] new y = 210
-[0] new y = 209
-[1] new y = 208
-[2] new y = 207
-[3] new y = 206
-[4] new y = 205
-[5] new y = 204
-[6] new y = 203
-[0] new y = 202
-[1] new y = 201
-[2] new y = 200
-[3] new y = 199
-[4] new y = 198
-[5] new y = 197
-[6] new y = 196
-[0] new y = 195
-[1] new y = 194
-[2] new y = 193
-[3] new y = 192
-[4] new y = 191
-[5] new y = 190
-[6] new y = 189
-[0] new y = 188
-[1] new y = 187
-[2] new y = 186
-[3] new y = 185
-[4] new y = 184
-[5] new y = 183
-[6] new y = 182
-[0] new y = 181
-[1] new y = 180
-[2] new y = 179
-[3] new y = 178
-[4] new y = 177
-[5] new y = 176
-[6] new y = 175
-[0] new y = 174
-[1] new y = 173
-[2] new y = 172
-[3] new y = 171
-[4] new y = 170
-[5] new y = 169
-[6] new y = 168
-[0] new y = 167
-[1] new y = 166
-[2] new y = 165
-[3] new y = 164
-[4] new y = 163
-[5] new y = 162
-[6] new y = 161
-[0] new y = 160
-[1] new y = 159
-[2] new y = 158
-[3] new y = 157
-[4] new y = 156
-[5] new y = 155
-[6] new y = 154
-[0] new y = 153
-[1] new y = 152
-[2] new y = 151
-[3] new y = 150
-[4] new y = 149
-[5] new y = 148
-[6] new y = 147
-[0] new y = 146
-[1] new y = 145
-[2] new y = 144
-[3] new y = 143
-[4] new y = 142
-[5] new y = 141
-[6] new y = 140
-[0] new y = 139
-[1] new y = 138
-[2] new y = 137
-[3] new y = 136
-[4] new y = 135
-[5] new y = 134
-[6] new y = 133
-[0] new y = 132
-[1] new y = 131
-[2] new y = 130
-[3] new y = 129
-[4] new y = 128
-[5] new y = 127
-[6] new y = 126
-[0] new y = 125
-[1] new y = 124
-[2] new y = 123
-[3] new y = 122
-[4] new y = 121
-[5] new y = 120
-[6] new y = 119
-[0] new y = 118
-[1] new y = 117
-[2] new y = 116
-[3] new y = 115
-[4] new y = 114
-[5] new y = 113
-[6] new y = 112
-[0] new y = 111
-[1] new y = 110
-[2] new y = 109
-[3] new y = 108
-[4] new y = 107
-[5] new y = 106
-[6] new y = 105
-[0] new y = 104
-[1] new y = 103
-[2] new y = 102
-[3] new y = 101
-[4] new y = 100
-[5] new y = 99
-[6] new y = 98
-[0] new y = 97
-[1] new y = 96
-[2] new y = 95
-[3] new y = 94
-[4] new y = 93
-[5] new y = 92
-[6] new y = 91
-[0] new y = 90
-[1] new y = 89
-[2] new y = 88
-[3] new y = 87
-[4] new y = 86
-[5] new y = 85
-[6] new y = 84
-[0] new y = 83
-[1] new y = 82
-[2] new y = 81
-[3] new y = 80
-[4] new y = 79
-[5] new y = 78
-[6] new y = 77
-[0] new y = 76
-[1] new y = 75
-[2] new y = 74
-[3] new y = 73
-[4] new y = 72
-[5] new y = 71
-[6] new y = 70
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 69
-[1] new y = 68
-[2] new y = 67
-[3] new y = 66
-[4] new y = 65
-[5] new y = 64
-[6] new y = 63
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x09 B3=0x07 LB=0 MB=0 RB=0 XOV=0 X=9 YOV=0 Y=7
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x0a B3=0x0b LB=0 MB=0 RB=0 XOV=0 X=10 YOV=0 Y=11
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x0d B3=0x14 LB=0 MB=0 RB=0 XOV=0 X=13 YOV=0 Y=20
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x0a B3=0x12 LB=0 MB=0 RB=0 XOV=0 X=10 YOV=0 Y=18
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x02 B3=0x07 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=7
+door stuck
+Not in menu plz help
 B1=0x08 B2=0x00 B3=0x08 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=8
-[0] new y = 62
-[1] new y = 61
-[2] new y = 60
-[3] new y = 59
-[4] new y = 58
-[5] new y = 57
-[6] new y = 56
-[0] new y = 55
-[1] new y = 54
-[2] new y = 53
-[3] new y = 52
-[4] new y = 51
-[5] new y = 50
-[6] new y = 49
-B1=0x08 B2=0x00 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=6
-[0] new y = 48
-[1] new y = 47
-[2] new y = 46
-[3] new y = 45
-[4] new y = 44
-[5] new y = 43
-[6] new y = 42
-B1=0x08 B2=0x01 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=5
-[0] new y = 41
-[1] new y = 40
-[2] new y = 39
-[3] new y = 38
-[4] new y = 37
-[5] new y = 36
-[6] new y = 35
-[0] new y = 34
-[1] new y = 33
-[2] new y = 32
-[3] new y = 31
-[4] new y = 30
-[5] new y = 29
-[6] new y = 28
-B1=0x08 B2=0x01 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=4
-[0] new y = 27
-[1] new y = 26
-[2] new y = 25
-[3] new y = 24
-[4] new y = 23
-[5] new y = 22
-[6] new y = 21
-B1=0x08 B2=0x00 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=3
-[0] new y = 20
-[1] new y = 19
-[2] new y = 18
-[3] new y = 17
-[4] new y = 16
-[5] new y = 15
-[6] new y = 14
-[0] new y = 13
-[1] new y = 12
-[2] new y = 11
-[3] new y = 10
-[4] new y = 9
-[5] new y = 8
-[6] new y = 7
-B1=0x08 B2=0x00 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=3
-[0] new y = 6
-[1] new y = 5
-[2] new y = 4
-[3] new y = 3
-[4] new y = 2
-[5] new y = 1
-[6] new y = 0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-deleted bullet -> index = 0
-deleted bullet -> index = 1
-deleted bullet -> index = 2
-deleted bullet -> index = 3
-deleted bullet -> index = 4
-deleted bullet -> index = 5
-deleted bullet -> index = 6
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
+door stuck
+Not in menu plz help
 B1=0x08 B2=0x00 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=4
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
-B1=0x08 B2=0x00 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=5
-B1=0x08 B2=0x01 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=5
-B1=0x08 B2=0x01 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=5
-B1=0x08 B2=0x00 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=4
-B1=0x08 B2=0x01 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=5
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=6
-B1=0x08 B2=0x01 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=6
-B1=0x08 B2=0x00 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=3
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=3
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
+door stuck
+Not in menu plz help
 B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=3
-B1=0x08 B2=0x04 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=3
-B1=0x08 B2=0x05 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=4
-B1=0x08 B2=0x06 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=5
-B1=0x08 B2=0x03 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=4
-B1=0x08 B2=0x05 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=4
-B1=0x08 B2=0x04 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=4
-B1=0x08 B2=0x04 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=4
-B1=0x08 B2=0x03 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=4
-B1=0x08 B2=0x04 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=5
-B1=0x08 B2=0x02 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=3
-B1=0x08 B2=0x03 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=4
-B1=0x08 B2=0x02 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=5
-B1=0x08 B2=0x03 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=5
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=4
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x0d B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=13 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x0c B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=12 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x15 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=21 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x17 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=23 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x14 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=20 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x09 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=9 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
+door stuck
+Not in menu plz help
 B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
+door stuck
+Not in menu plz help
 B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=3
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x02 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-5
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x02 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-5
-B1=0x28 B2=0x04 B3=0xf8 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-8
-B1=0x28 B2=0x02 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-5
-B1=0x28 B2=0x02 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-6
-B1=0x28 B2=0x02 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-5
-B1=0x28 B2=0x02 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-4
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x01 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-5
-B1=0x28 B2=0x03 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xf9 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-7
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x00 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-3
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
-B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
-B1=0x28 B2=0x01 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-3
-B1=0x28 B2=0x01 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-4
-B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
-B1=0x28 B2=0x01 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-4
-B1=0x28 B2=0x02 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0xff B2=0x28 B3=0x00 LB=1 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-256
-created bullet->index = 0, x = 549, y = 630
-created bullet->index = 1, x = 549, y = 630
-created bullet->index = 2, x = 549, y = 630
-created bullet->index = 3, x = 549, y = 630
-created bullet->index = 4, x = 549, y = 630
-created bullet->index = 5, x = 549, y = 630
-created bullet->index = 6, x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-[0] new y = 629
-[1] new y = 628
-[2] new y = 627
-[3] new y = 626
-[4] new y = 625
-[5] new y = 624
-[6] new y = 623
-[0] new y = 622
-[1] new y = 621
-[2] new y = 620
-[3] new y = 619
-[4] new y = 618
-[5] new y = 617
-[6] new y = 616
-[0] new y = 615
-[1] new y = 614
-[2] new y = 613
-[3] new y = 612
-[4] new y = 611
-[5] new y = 610
-[6] new y = 609
-B1=0xff B2=0x28 B3=0x00 LB=1 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-256
-[0] new y = 608
-[1] new y = 607
-[2] new y = 606
-[3] new y = 605
-[4] new y = 604
-[5] new y = 603
-[6] new y = 602
-B1=0xff B2=0x28 B3=0x01 LB=1 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-255
-[0] new y = 601
-[1] new y = 600
-[2] new y = 599
-[3] new y = 598
-[4] new y = 597
-[5] new y = 596
-[6] new y = 595
-[0] new y = 594
-[1] new y = 593
-[2] new y = 592
-[3] new y = 591
-[4] new y = 590
-[5] new y = 589
-[6] new y = 588
-B1=0xff B2=0x28 B3=0x01 LB=1 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-255
-[0] new y = 587
-[1] new y = 586
-[2] new y = 585
-[3] new y = 584
-[4] new y = 583
-[5] new y = 582
-[6] new y = 581
-[0] new y = 580
-[1] new y = 579
-[2] new y = 578
-[3] new y = 577
-[4] new y = 576
-[5] new y = 575
-[6] new y = 574
-B1=0xfd B2=0x28 B3=0x01 LB=1 MB=1 RB=0 XOV=1 X=-216 YOV=1 Y=-255
-[0] new y = 573
-[1] new y = 572
-[2] new y = 571
-[3] new y = 570
-[4] new y = 569
-[5] new y = 568
-[6] new y = 567
-[0] new y = 566
-[1] new y = 565
-[2] new y = 564
-[3] new y = 563
-[4] new y = 562
-[5] new y = 561
-[6] new y = 560
-B1=0xff B2=0x28 B3=0x00 LB=1 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-256
-[0] new y = 559
-[1] new y = 558
-[2] new y = 557
-[3] new y = 556
-[4] new y = 555
-[5] new y = 554
-[6] new y = 553
-[0] new y = 552
-[1] new y = 551
-[2] new y = 550
-[3] new y = 549
-[4] new y = 548
-[5] new y = 547
-[6] new y = 546
-B1=0xff B2=0x28 B3=0x00 LB=1 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-256
-[0] new y = 545
-[1] new y = 544
-[2] new y = 543
-[3] new y = 542
-[4] new y = 541
-[5] new y = 540
-[6] new y = 539
-B1=0xff B2=0x28 B3=0x00 LB=1 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-256
-[0] new y = 538
-[1] new y = 537
-[2] new y = 536
-[3] new y = 535
-[4] new y = 534
-[5] new y = 533
-[6] new y = 532
-B1=0xff B2=0x28 B3=0x01 LB=1 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-255
-[0] new y = 531
-[1] new y = 530
-[2] new y = 529
-[3] new y = 528
-[4] new y = 527
-[5] new y = 526
-[6] new y = 525
-[0] new y = 524
-[1] new y = 523
-[2] new y = 522
-[3] new y = 521
-[4] new y = 520
-[5] new y = 519
-[6] new y = 518
-B1=0xfe B2=0x28 B3=0x01 LB=0 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-255
-[0] new y = 517
-[1] new y = 516
-[2] new y = 515
-[3] new y = 514
-[4] new y = 513
-[5] new y = 512
-[6] new y = 511
-[0] new y = 510
-[1] new y = 509
-[2] new y = 508
-[3] new y = 507
-[4] new y = 506
-[5] new y = 505
-[6] new y = 504
-B1=0xfc B2=0x28 B3=0x00 LB=0 MB=1 RB=0 XOV=1 X=-216 YOV=1 Y=-256
-[0] new y = 503
-[1] new y = 502
-[2] new y = 501
-[3] new y = 500
-[4] new y = 499
-[5] new y = 498
-[6] new y = 497
-[0] new y = 496
-[1] new y = 495
-[2] new y = 494
-[3] new y = 493
-[4] new y = 492
-[5] new y = 491
-[6] new y = 490
-B1=0xfd B2=0x28 B3=0x00 LB=1 MB=1 RB=0 XOV=1 X=-216 YOV=1 Y=-256
-[0] new y = 489
-[1] new y = 488
-[2] new y = 487
-[3] new y = 486
-[4] new y = 485
-[5] new y = 484
-[6] new y = 483
-B1=0xfe B2=0x28 B3=0x01 LB=0 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-255
-[0] new y = 482
-[1] new y = 481
-[2] new y = 480
-[3] new y = 479
-[4] new y = 478
-[5] new y = 477
-[6] new y = 476
-[0] new y = 475
-[1] new y = 474
-[2] new y = 473
-[3] new y = 472
-[4] new y = 471
-[5] new y = 470
-[6] new y = 469
-[0] new y = 468
-[1] new y = 467
-[2] new y = 466
-[3] new y = 465
-[4] new y = 464
-[5] new y = 463
-[6] new y = 462
-[0] new y = 461
-[1] new y = 460
-[2] new y = 459
-[3] new y = 458
-[4] new y = 457
-[5] new y = 456
-[6] new y = 455
-[0] new y = 454
-[1] new y = 453
-[2] new y = 452
-[3] new y = 451
-[4] new y = 450
-[5] new y = 449
-[6] new y = 448
-[0] new y = 447
-[1] new y = 446
-[2] new y = 445
-[3] new y = 444
-[4] new y = 443
-[5] new y = 442
-[6] new y = 441
-[0] new y = 440
-[1] new y = 439
-[2] new y = 438
-[3] new y = 437
-[4] new y = 436
-[5] new y = 435
-[6] new y = 434
-[0] new y = 433
-[1] new y = 432
-[2] new y = 431
-[3] new y = 430
-[4] new y = 429
-[5] new y = 428
-[6] new y = 427
-[0] new y = 426
-[1] new y = 425
-[2] new y = 424
-[3] new y = 423
-[4] new y = 422
-[5] new y = 421
-[6] new y = 420
-[0] new y = 419
-[1] new y = 418
-[2] new y = 417
-[3] new y = 416
-[4] new y = 415
-[5] new y = 414
-[6] new y = 413
-[0] new y = 412
-[1] new y = 411
-[2] new y = 410
-[3] new y = 409
-[4] new y = 408
-[5] new y = 407
-[6] new y = 406
-[0] new y = 405
-[1] new y = 404
-[2] new y = 403
-[3] new y = 402
-[4] new y = 401
-[5] new y = 400
-[6] new y = 399
-[0] new y = 398
-[1] new y = 397
-[2] new y = 396
-[3] new y = 395
-[4] new y = 394
-[5] new y = 393
-[6] new y = 392
-[0] new y = 391
-[1] new y = 390
-[2] new y = 389
-[3] new y = 388
-[4] new y = 387
-[5] new y = 386
-[6] new y = 385
-[0] new y = 384
-[1] new y = 383
-[2] new y = 382
-[3] new y = 381
-[4] new y = 380
-[5] new y = 379
-[6] new y = 378
-B1=0xff B2=0x08 B3=0x00 LB=1 MB=1 RB=1 XOV=1 X=-248 YOV=1 Y=-256
-draw bullet: x = 549, y = 378
-draw bullet: x = 549, y = 378
-draw bullet: x = 549, y = 378
-draw bullet: x = 549, y = 378
-draw bullet: x = 549, y = 378
-draw bullet: x = 549, y = 378
-draw bullet: x = 549, y = 378
-[0] new y = 377
-[1] new y = 376
-[2] new y = 375
-[3] new y = 374
-[4] new y = 373
-[5] new y = 372
-[6] new y = 371
-[0] new y = 370
-[1] new y = 369
-[2] new y = 368
-[3] new y = 367
-[4] new y = 366
-[5] new y = 365
-[6] new y = 364
-B1=0x08 B2=0x02 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=4
-[0] new y = 363
-[1] new y = 362
-[2] new y = 361
-[3] new y = 360
-[4] new y = 359
-[5] new y = 358
-[6] new y = 357
-B1=0x08 B2=0x03 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=6
-[0] new y = 356
-[1] new y = 355
-[2] new y = 354
-[3] new y = 353
-[4] new y = 352
-[5] new y = 351
-[6] new y = 350
-[0] new y = 349
-[1] new y = 348
-[2] new y = 347
-[3] new y = 346
-[4] new y = 345
-[5] new y = 344
-[6] new y = 343
-B1=0x08 B2=0x04 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=6
-[0] new y = 342
-[1] new y = 341
-[2] new y = 340
-[3] new y = 339
-[4] new y = 338
-[5] new y = 337
-[6] new y = 336
-[0] new y = 335
-[1] new y = 334
-[2] new y = 333
-[3] new y = 332
-[4] new y = 331
-[5] new y = 330
-[6] new y = 329
-[0] new y = 328
-[1] new y = 327
-[2] new y = 326
-[3] new y = 325
-[4] new y = 324
-[5] new y = 323
-[6] new y = 322
-B1=0x08 B2=0x05 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=5
-[0] new y = 321
-[1] new y = 320
-[2] new y = 319
-[3] new y = 318
-[4] new y = 317
-[5] new y = 316
-[6] new y = 315
-[0] new y = 314
-[1] new y = 313
-[2] new y = 312
-[3] new y = 311
-[4] new y = 310
-[5] new y = 309
-[6] new y = 308
-B1=0x08 B2=0x06 B3=0x07 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=7
-[0] new y = 307
-[1] new y = 306
-[2] new y = 305
-[3] new y = 304
-[4] new y = 303
-[5] new y = 302
-[6] new y = 301
-[0] new y = 300
-[1] new y = 299
-[2] new y = 298
-[3] new y = 297
-[4] new y = 296
-[5] new y = 295
-[6] new y = 294
-[0] new y = 293
-[1] new y = 292
-[2] new y = 291
-[3] new y = 290
-[4] new y = 289
-[5] new y = 288
-[6] new y = 287
-B1=0x08 B2=0x04 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=6
-[0] new y = 286
-[1] new y = 285
-[2] new y = 284
-[3] new y = 283
-[4] new y = 282
-[5] new y = 281
-[6] new y = 280
-[0] new y = 279
-[1] new y = 278
-[2] new y = 277
-[3] new y = 276
-[4] new y = 275
-[5] new y = 274
-[6] new y = 273
-[0] new y = 272
-[1] new y = 271
-[2] new y = 270
-[3] new y = 269
-[4] new y = 268
-[5] new y = 267
-[6] new y = 266
-B1=0x08 B2=0x05 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=6
-[0] new y = 265
-[1] new y = 264
-[2] new y = 263
-[3] new y = 262
-[4] new y = 261
-[5] new y = 260
-[6] new y = 259
-B1=0x08 B2=0x04 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=6
-[0] new y = 258
-[1] new y = 257
-[2] new y = 256
-[3] new y = 255
-[4] new y = 254
-[5] new y = 253
-[6] new y = 252
-[0] new y = 251
-[1] new y = 250
-[2] new y = 249
-[3] new y = 248
-[4] new y = 247
-[5] new y = 246
-[6] new y = 245
-B1=0x08 B2=0x04 B3=0x07 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=7
-[0] new y = 244
-[1] new y = 243
-[2] new y = 242
-[3] new y = 241
-[4] new y = 240
-[5] new y = 239
-[6] new y = 238
-B1=0x08 B2=0x04 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=6
-[0] new y = 237
-[1] new y = 236
-[2] new y = 235
-[3] new y = 234
-[4] new y = 233
-[5] new y = 232
-[6] new y = 231
-[0] new y = 230
-[1] new y = 229
-[2] new y = 228
-[3] new y = 227
-[4] new y = 226
-[5] new y = 225
-[6] new y = 224
-B1=0x08 B2=0x05 B3=0x07 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=7
-[0] new y = 223
-[1] new y = 222
-[2] new y = 221
-[3] new y = 220
-[4] new y = 219
-[5] new y = 218
-[6] new y = 217
-[0] new y = 216
-[1] new y = 215
-[2] new y = 214
-[3] new y = 213
-[4] new y = 212
-[5] new y = 211
-[6] new y = 210
-[0] new y = 209
-[1] new y = 208
-[2] new y = 207
-[3] new y = 206
-[4] new y = 205
-[5] new y = 204
-[6] new y = 203
-B1=0x08 B2=0x05 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=6
-[0] new y = 202
-[1] new y = 201
-[2] new y = 200
-[3] new y = 199
-[4] new y = 198
-[5] new y = 197
-[6] new y = 196
-[0] new y = 195
-[1] new y = 194
-[2] new y = 193
-[3] new y = 192
-[4] new y = 191
-[5] new y = 190
-[6] new y = 189
-B1=0x08 B2=0x06 B3=0x08 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=8
-[0] new y = 188
-[1] new y = 187
-[2] new y = 186
-[3] new y = 185
-[4] new y = 184
-[5] new y = 183
-[6] new y = 182
-[0] new y = 181
-[1] new y = 180
-[2] new y = 179
-[3] new y = 178
-[4] new y = 177
-[5] new y = 176
-[6] new y = 175
-B1=0x08 B2=0x07 B3=0x07 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=7
-[0] new y = 174
-[1] new y = 173
-[2] new y = 172
-[3] new y = 171
-[4] new y = 170
-[5] new y = 169
-[6] new y = 168
-[0] new y = 167
-[1] new y = 166
-[2] new y = 165
-[3] new y = 164
-[4] new y = 163
-[5] new y = 162
-[6] new y = 161
-B1=0x08 B2=0x08 B3=0x07 LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=7
-[0] new y = 160
-[1] new y = 159
-[2] new y = 158
-[3] new y = 157
-[4] new y = 156
-[5] new y = 155
-[6] new y = 154
-[0] new y = 153
-[1] new y = 152
-[2] new y = 151
-[3] new y = 150
-[4] new y = 149
-[5] new y = 148
-[6] new y = 147
-[0] new y = 146
-[1] new y = 145
-[2] new y = 144
-[3] new y = 143
-[4] new y = 142
-[5] new y = 141
-[6] new y = 140
-B1=0x08 B2=0x06 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=6
-[0] new y = 139
-[1] new y = 138
-[2] new y = 137
-[3] new y = 136
-[4] new y = 135
-[5] new y = 134
-[6] new y = 133
-[0] new y = 132
-[1] new y = 131
-[2] new y = 130
-[3] new y = 129
-[4] new y = 128
-[5] new y = 127
-[6] new y = 126
-B1=0x08 B2=0x08 B3=0x07 LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=7
-[0] new y = 125
-[1] new y = 124
-[2] new y = 123
-[3] new y = 122
-[4] new y = 121
-[5] new y = 120
-[6] new y = 119
-[0] new y = 118
-[1] new y = 117
-[2] new y = 116
-[3] new y = 115
-[4] new y = 114
-[5] new y = 113
-[6] new y = 112
-B1=0x08 B2=0x08 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=6
-[0] new y = 111
-[1] new y = 110
-[2] new y = 109
-[3] new y = 108
-[4] new y = 107
-[5] new y = 106
-[6] new y = 105
-[0] new y = 104
-[1] new y = 103
-[2] new y = 102
-[3] new y = 101
-[4] new y = 100
-[5] new y = 99
-[6] new y = 98
-[0] new y = 97
-[1] new y = 96
-[2] new y = 95
-[3] new y = 94
-[4] new y = 93
-[5] new y = 92
-[6] new y = 91
-B1=0x08 B2=0x07 B3=0x07 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=7
-[0] new y = 90
-[1] new y = 89
-[2] new y = 88
-[3] new y = 87
-[4] new y = 86
-[5] new y = 85
-[6] new y = 84
-[0] new y = 83
-[1] new y = 82
-[2] new y = 81
-[3] new y = 80
-[4] new y = 79
-[5] new y = 78
-[6] new y = 77
-B1=0x08 B2=0x05 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=4
-[0] new y = 76
-[1] new y = 75
-[2] new y = 74
-[3] new y = 73
-[4] new y = 72
-[5] new y = 71
-[6] new y = 70
-[0] new y = 69
-[1] new y = 68
-[2] new y = 67
-[3] new y = 66
-[4] new y = 65
-[5] new y = 64
-[6] new y = 63
-[0] new y = 62
-[1] new y = 61
-[2] new y = 60
-[3] new y = 59
-[4] new y = 58
-[5] new y = 57
-[6] new y = 56
-B1=0x08 B2=0x05 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=6
-[0] new y = 55
-[1] new y = 54
-[2] new y = 53
-[3] new y = 52
-[4] new y = 51
-[5] new y = 50
-[6] new y = 49
-B1=0x08 B2=0x02 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=3
-[0] new y = 48
-[1] new y = 47
-[2] new y = 46
-[3] new y = 45
-[4] new y = 44
-[5] new y = 43
-[6] new y = 42
-[0] new y = 41
-[1] new y = 40
-[2] new y = 39
-[3] new y = 38
-[4] new y = 37
-[5] new y = 36
-[6] new y = 35
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-[0] new y = 34
-[1] new y = 33
-[2] new y = 32
-[3] new y = 31
-[4] new y = 30
-[5] new y = 29
-[6] new y = 28
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-[0] new y = 27
-[1] new y = 26
-[2] new y = 25
-[3] new y = 24
-[4] new y = 23
-[5] new y = 22
-[6] new y = 21
-[0] new y = 20
-[1] new y = 19
-[2] new y = 18
-[3] new y = 17
-[4] new y = 16
-[5] new y = 15
-[6] new y = 14
-[0] new y = 13
-[1] new y = 12
-[2] new y = 11
-[3] new y = 10
-[4] new y = 9
-[5] new y = 8
-[6] new y = 7
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 6
-[1] new y = 5
-[2] new y = 4
-[3] new y = 3
-[4] new y = 2
-[5] new y = 1
-[6] new y = 0
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-deleted bullet -> index = 0
-deleted bullet -> index = 1
-deleted bullet -> index = 2
-deleted bullet -> index = 3
-deleted bullet -> index = 4
-deleted bullet -> index = 5
-deleted bullet -> index = 6
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=3
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x05 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=4
-B1=0x08 B2=0x05 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=2
-B1=0x08 B2=0x06 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=5
-B1=0x08 B2=0x06 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=3
-B1=0x08 B2=0x07 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=4
-B1=0x08 B2=0x07 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=3
-B1=0x08 B2=0x08 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=5
-B1=0x08 B2=0x07 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=3
-B1=0x08 B2=0x0b B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=11 YOV=0 Y=3
-B1=0x08 B2=0x08 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=3
-B1=0x08 B2=0x0a B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=10 YOV=0 Y=3
-B1=0x08 B2=0x0d B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=13 YOV=0 Y=3
-B1=0x08 B2=0x10 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=16 YOV=0 Y=6
-B1=0x08 B2=0x0c B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=12 YOV=0 Y=3
-B1=0x08 B2=0x0d B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=13 YOV=0 Y=4
-B1=0x08 B2=0x0f B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=15 YOV=0 Y=6
-B1=0x08 B2=0x0f B3=0x08 LB=0 MB=0 RB=0 XOV=0 X=15 YOV=0 Y=8
-B1=0x08 B2=0x0f B3=0x07 LB=0 MB=0 RB=0 XOV=0 X=15 YOV=0 Y=7
-B1=0x08 B2=0x12 B3=0x08 LB=0 MB=0 RB=0 XOV=0 X=18 YOV=0 Y=8
-B1=0x08 B2=0x0d B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=13 YOV=0 Y=4
-B1=0x08 B2=0x0a B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=10 YOV=0 Y=5
-B1=0x08 B2=0x07 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=5
-B1=0x08 B2=0x05 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=5
-B1=0x08 B2=0x08 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=6
-B1=0x08 B2=0x08 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=6
-B1=0x08 B2=0x05 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=4
-B1=0x08 B2=0x05 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=4
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x05 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=4
-B1=0x08 B2=0x04 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=4
-B1=0x08 B2=0x05 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=3
-B1=0x08 B2=0x05 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=4
-B1=0x08 B2=0x06 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=5
-B1=0x08 B2=0x04 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=3
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=3
-B1=0x08 B2=0x06 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=4
-B1=0x08 B2=0x07 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=3
-B1=0x08 B2=0x05 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=3
-B1=0x08 B2=0x05 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x08 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=6
-B1=0x08 B2=0x09 B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=9 YOV=0 Y=6
-B1=0x08 B2=0x09 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=9 YOV=0 Y=4
-B1=0x08 B2=0x07 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=4
-B1=0x08 B2=0x06 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=3
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0xfe B2=0x28 B3=0x01 LB=0 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-255
-B1=0xff B2=0x28 B3=0x00 LB=1 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-256
-created bullet->index = 0, x = 549, y = 630
-created bullet->index = 1, x = 549, y = 630
-created bullet->index = 2, x = 549, y = 630
-created bullet->index = 3, x = 549, y = 630
-created bullet->index = 4, x = 549, y = 630
-created bullet->index = 5, x = 549, y = 630
-created bullet->index = 6, x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-[0] new y = 629
-[1] new y = 628
-[2] new y = 627
-[3] new y = 626
-[4] new y = 625
-[5] new y = 624
-[6] new y = 623
-B1=0xfe B2=0x28 B3=0x01 LB=0 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-255
-[0] new y = 622
-[1] new y = 621
-[2] new y = 620
-[3] new y = 619
-[4] new y = 618
-[5] new y = 617
-[6] new y = 616
-[0] new y = 615
-[1] new y = 614
-[2] new y = 613
-[3] new y = 612
-[4] new y = 611
-[5] new y = 610
-[6] new y = 609
-B1=0xfe B2=0x28 B3=0x01 LB=0 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-255
-[0] new y = 608
-[1] new y = 607
-[2] new y = 606
-[3] new y = 605
-[4] new y = 604
-[5] new y = 603
-[6] new y = 602
-[0] new y = 601
-[1] new y = 600
-[2] new y = 599
-[3] new y = 598
-[4] new y = 597
-[5] new y = 596
-[6] new y = 595
-B1=0xfe B2=0x28 B3=0x00 LB=0 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-256
-[0] new y = 594
-[1] new y = 593
-[2] new y = 592
-[3] new y = 591
-[4] new y = 590
-[5] new y = 589
-[6] new y = 588
-[0] new y = 587
-[1] new y = 586
-[2] new y = 585
-[3] new y = 584
-[4] new y = 583
-[5] new y = 582
-[6] new y = 581
-B1=0xff B2=0x28 B3=0x01 LB=1 MB=1 RB=1 XOV=1 X=-216 YOV=1 Y=-255
-[0] new y = 580
-[1] new y = 579
-[2] new y = 578
-[3] new y = 577
-[4] new y = 576
-[5] new y = 575
-[6] new y = 574
-[0] new y = 573
-[1] new y = 572
-[2] new y = 571
-[3] new y = 570
-[4] new y = 569
-[5] new y = 568
-[6] new y = 567
-B1=0xfe B2=0x08 B3=0x01 LB=0 MB=1 RB=1 XOV=1 X=-248 YOV=1 Y=-255
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-[0] new y = 566
-[1] new y = 565
-[2] new y = 564
-[3] new y = 563
-[4] new y = 562
-[5] new y = 561
-[6] new y = 560
-[0] new y = 559
-[1] new y = 558
-[2] new y = 557
-[3] new y = 556
-[4] new y = 555
-[5] new y = 554
-[6] new y = 553
-[0] new y = 552
-[1] new y = 551
-[2] new y = 550
-[3] new y = 549
-[4] new y = 548
-[5] new y = 547
-[6] new y = 546
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-[0] new y = 545
-[1] new y = 544
-[2] new y = 543
-[3] new y = 542
-[4] new y = 541
-[5] new y = 540
-[6] new y = 539
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-[0] new y = 538
-[1] new y = 537
-[2] new y = 536
-[3] new y = 535
-[4] new y = 534
-[5] new y = 533
-[6] new y = 532
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-[0] new y = 531
-[1] new y = 530
-[2] new y = 529
-[3] new y = 528
-[4] new y = 527
-[5] new y = 526
-[6] new y = 525
-[0] new y = 524
-[1] new y = 523
-[2] new y = 522
-[3] new y = 521
-[4] new y = 520
-[5] new y = 519
-[6] new y = 518
-B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
-[0] new y = 517
-[1] new y = 516
-[2] new y = 515
-[3] new y = 514
-[4] new y = 513
-[5] new y = 512
-[6] new y = 511
-[0] new y = 510
-[1] new y = 509
-[2] new y = 508
-[3] new y = 507
-[4] new y = 506
-[5] new y = 505
-[6] new y = 504
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-[0] new y = 503
-[1] new y = 502
-[2] new y = 501
-[3] new y = 500
-[4] new y = 499
-[5] new y = 498
-[6] new y = 497
-[0] new y = 496
-[1] new y = 495
-[2] new y = 494
-[3] new y = 493
-[4] new y = 492
-[5] new y = 491
-[6] new y = 490
-B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
-[0] new y = 489
-[1] new y = 488
-[2] new y = 487
-[3] new y = 486
-[4] new y = 485
-[5] new y = 484
-[6] new y = 483
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-[0] new y = 482
-[1] new y = 481
-[2] new y = 480
-[3] new y = 479
-[4] new y = 478
-[5] new y = 477
-[6] new y = 476
-[0] new y = 475
-[1] new y = 474
-[2] new y = 473
-[3] new y = 472
-[4] new y = 471
-[5] new y = 470
-[6] new y = 469
-[0] new y = 468
-[1] new y = 467
-[2] new y = 466
-[3] new y = 465
-[4] new y = 464
-[5] new y = 463
-[6] new y = 462
-[0] new y = 461
-[1] new y = 460
-[2] new y = 459
-[3] new y = 458
-[4] new y = 457
-[5] new y = 456
-[6] new y = 455
-[0] new y = 454
-[1] new y = 453
-[2] new y = 452
-[3] new y = 451
-[4] new y = 450
-[5] new y = 449
-[6] new y = 448
-[0] new y = 447
-[1] new y = 446
-[2] new y = 445
-[3] new y = 444
-[4] new y = 443
-[5] new y = 442
-[6] new y = 441
-[0] new y = 440
-[1] new y = 439
-[2] new y = 438
-[3] new y = 437
-[4] new y = 436
-[5] new y = 435
-[6] new y = 434
-[0] new y = 433
-[1] new y = 432
-[2] new y = 431
-[3] new y = 430
-[4] new y = 429
-[5] new y = 428
-[6] new y = 427
-[0] new y = 426
-[1] new y = 425
-[2] new y = 424
-[3] new y = 423
-[4] new y = 422
-[5] new y = 421
-[6] new y = 420
-[0] new y = 419
-[1] new y = 418
-[2] new y = 417
-[3] new y = 416
-[4] new y = 415
-[5] new y = 414
-[6] new y = 413
-[0] new y = 412
-[1] new y = 411
-[2] new y = 410
-[3] new y = 409
-[4] new y = 408
-[5] new y = 407
-[6] new y = 406
-[0] new y = 405
-[1] new y = 404
-[2] new y = 403
-[3] new y = 402
-[4] new y = 401
-[5] new y = 400
-[6] new y = 399
-[0] new y = 398
-[1] new y = 397
-[2] new y = 396
-[3] new y = 395
-[4] new y = 394
-[5] new y = 393
-[6] new y = 392
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-[0] new y = 391
-[1] new y = 390
-[2] new y = 389
-[3] new y = 388
-[4] new y = 387
-[5] new y = 386
-[6] new y = 385
-[0] new y = 384
-[1] new y = 383
-[2] new y = 382
-[3] new y = 381
-[4] new y = 380
-[5] new y = 379
-[6] new y = 378
-B1=0x38 B2=0xfe B3=0xf9 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=-7
-[0] new y = 377
-[1] new y = 376
-[2] new y = 375
-[3] new y = 374
-[4] new y = 373
-[5] new y = 372
-[6] new y = 371
-[0] new y = 370
-[1] new y = 369
-[2] new y = 368
-[3] new y = 367
-[4] new y = 366
-[5] new y = 365
-[6] new y = 364
-B1=0x38 B2=0xfd B3=0xe9 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=-23
-[0] new y = 363
-[1] new y = 362
-[2] new y = 361
-[3] new y = 360
-[4] new y = 359
-[5] new y = 358
-[6] new y = 357
-B1=0x38 B2=0xf9 B3=0xde LB=0 MB=0 RB=0 XOV=0 X=-7 YOV=0 Y=-34
-[0] new y = 356
-[1] new y = 355
-[2] new y = 354
-[3] new y = 353
-[4] new y = 352
-[5] new y = 351
-[6] new y = 350
-[0] new y = 349
-[1] new y = 348
-[2] new y = 347
-[3] new y = 346
-[4] new y = 345
-[5] new y = 344
-[6] new y = 343
-[0] new y = 342
-[1] new y = 341
-[2] new y = 340
-[3] new y = 339
-[4] new y = 338
-[5] new y = 337
-[6] new y = 336
-[0] new y = 335
-[1] new y = 334
-[2] new y = 333
-[3] new y = 332
-[4] new y = 331
-[5] new y = 330
-[6] new y = 329
-[0] new y = 328
-[1] new y = 327
-[2] new y = 326
-[3] new y = 325
-[4] new y = 324
-[5] new y = 323
-[6] new y = 322
-[0] new y = 321
-[1] new y = 320
-[2] new y = 319
-[3] new y = 318
-[4] new y = 317
-[5] new y = 316
-[6] new y = 315
-[0] new y = 314
-[1] new y = 313
-[2] new y = 312
-[3] new y = 311
-[4] new y = 310
-[5] new y = 309
-[6] new y = 308
-[0] new y = 307
-[1] new y = 306
-[2] new y = 305
-[3] new y = 304
-[4] new y = 303
-[5] new y = 302
-[6] new y = 301
-[0] new y = 300
-[1] new y = 299
-[2] new y = 298
-[3] new y = 297
-[4] new y = 296
-[5] new y = 295
-[6] new y = 294
-[0] new y = 293
-[1] new y = 292
-[2] new y = 291
-[3] new y = 290
-[4] new y = 289
-[5] new y = 288
-[6] new y = 287
-[0] new y = 286
-[1] new y = 285
-[2] new y = 284
-[3] new y = 283
-[4] new y = 282
-[5] new y = 281
-[6] new y = 280
-[0] new y = 279
-[1] new y = 278
-[2] new y = 277
-[3] new y = 276
-[4] new y = 275
-[5] new y = 274
-[6] new y = 273
-[0] new y = 272
-[1] new y = 271
-[2] new y = 270
-[3] new y = 269
-[4] new y = 268
-[5] new y = 267
-[6] new y = 266
-[0] new y = 265
-[1] new y = 264
-[2] new y = 263
-[3] new y = 262
-[4] new y = 261
-[5] new y = 260
-[6] new y = 259
-[0] new y = 258
-[1] new y = 257
-[2] new y = 256
-[3] new y = 255
-[4] new y = 254
-[5] new y = 253
-[6] new y = 252
-[0] new y = 251
-[1] new y = 250
-[2] new y = 249
-[3] new y = 248
-[4] new y = 247
-[5] new y = 246
-[6] new y = 245
-[0] new y = 244
-[1] new y = 243
-[2] new y = 242
-[3] new y = 241
-[4] new y = 240
-[5] new y = 239
-[6] new y = 238
-[0] new y = 237
-[1] new y = 236
-[2] new y = 235
-[3] new y = 234
-[4] new y = 233
-[5] new y = 232
-[6] new y = 231
-[0] new y = 230
-[1] new y = 229
-[2] new y = 228
-[3] new y = 227
-[4] new y = 226
-[5] new y = 225
-[6] new y = 224
-[0] new y = 223
-[1] new y = 222
-[2] new y = 221
-[3] new y = 220
-[4] new y = 219
-[5] new y = 218
-[6] new y = 217
-[0] new y = 216
-[1] new y = 215
-[2] new y = 214
-[3] new y = 213
-[4] new y = 212
-[5] new y = 211
-[6] new y = 210
-[0] new y = 209
-[1] new y = 208
-[2] new y = 207
-[3] new y = 206
-[4] new y = 205
-[5] new y = 204
-[6] new y = 203
-[0] new y = 202
-[1] new y = 201
-[2] new y = 200
-[3] new y = 199
-[4] new y = 198
-[5] new y = 197
-[6] new y = 196
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 195
-[1] new y = 194
-[2] new y = 193
-[3] new y = 192
-[4] new y = 191
-[5] new y = 190
-[6] new y = 189
-[0] new y = 188
-[1] new y = 187
-[2] new y = 186
-[3] new y = 185
-[4] new y = 184
-[5] new y = 183
-[6] new y = 182
-B1=0x18 B2=0xff B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=4
-[0] new y = 181
-[1] new y = 180
-[2] new y = 179
-[3] new y = 178
-[4] new y = 177
-[5] new y = 176
-[6] new y = 175
-[0] new y = 174
-[1] new y = 173
-[2] new y = 172
-[3] new y = 171
-[4] new y = 170
-[5] new y = 169
-[6] new y = 168
-B1=0x08 B2=0x00 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=5
-[0] new y = 167
-[1] new y = 166
-[2] new y = 165
-[3] new y = 164
-[4] new y = 163
-[5] new y = 162
-[6] new y = 161
-[0] new y = 160
-[1] new y = 159
-[2] new y = 158
-[3] new y = 157
-[4] new y = 156
-[5] new y = 155
-[6] new y = 154
-B1=0x08 B2=0x00 B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=5
-[0] new y = 153
-[1] new y = 152
-[2] new y = 151
-[3] new y = 150
-[4] new y = 149
-[5] new y = 148
-[6] new y = 147
-[0] new y = 146
-[1] new y = 145
-[2] new y = 144
-[3] new y = 143
-[4] new y = 142
-[5] new y = 141
-[6] new y = 140
-B1=0x08 B2=0x06 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=4
-[0] new y = 139
-[1] new y = 138
-[2] new y = 137
-[3] new y = 136
-[4] new y = 135
-[5] new y = 134
-[6] new y = 133
-[0] new y = 132
-[1] new y = 131
-[2] new y = 130
-[3] new y = 129
-[4] new y = 128
-[5] new y = 127
-[6] new y = 126
-B1=0x08 B2=0x0a B3=0x07 LB=0 MB=0 RB=0 XOV=0 X=10 YOV=0 Y=7
-[0] new y = 125
-[1] new y = 124
-[2] new y = 123
-[3] new y = 122
-[4] new y = 121
-[5] new y = 120
-[6] new y = 119
-B1=0x08 B2=0x04 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=3
-[0] new y = 118
-[1] new y = 117
-[2] new y = 116
-[3] new y = 115
-[4] new y = 114
-[5] new y = 113
-[6] new y = 112
-[0] new y = 111
-[1] new y = 110
-[2] new y = 109
-[3] new y = 108
-[4] new y = 107
-[5] new y = 106
-[6] new y = 105
-[0] new y = 104
-[1] new y = 103
-[2] new y = 102
-[3] new y = 101
-[4] new y = 100
-[5] new y = 99
-[6] new y = 98
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-[0] new y = 97
-[1] new y = 96
-[2] new y = 95
-[3] new y = 94
-[4] new y = 93
-[5] new y = 92
-[6] new y = 91
-[0] new y = 90
-[1] new y = 89
-[2] new y = 88
-[3] new y = 87
-[4] new y = 86
-[5] new y = 85
-[6] new y = 84
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 83
-[1] new y = 82
-[2] new y = 81
-[3] new y = 80
-[4] new y = 79
-[5] new y = 78
-[6] new y = 77
-[0] new y = 76
-[1] new y = 75
-[2] new y = 74
-[3] new y = 73
-[4] new y = 72
-[5] new y = 71
-[6] new y = 70
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 69
-[1] new y = 68
-[2] new y = 67
-[3] new y = 66
-[4] new y = 65
-[5] new y = 64
-[6] new y = 63
-[0] new y = 62
-[1] new y = 61
-[2] new y = 60
-[3] new y = 59
-[4] new y = 58
-[5] new y = 57
-[6] new y = 56
-[0] new y = 55
-[1] new y = 54
-[2] new y = 53
-[3] new y = 52
-[4] new y = 51
-[5] new y = 50
-[6] new y = 49
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-[0] new y = 48
-[1] new y = 47
-[2] new y = 46
-[3] new y = 45
-[4] new y = 44
-[5] new y = 43
-[6] new y = 42
-[0] new y = 41
-[1] new y = 40
-[2] new y = 39
-[3] new y = 38
-[4] new y = 37
-[5] new y = 36
-[6] new y = 35
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-[0] new y = 34
-[1] new y = 33
-[2] new y = 32
-[3] new y = 31
-[4] new y = 30
-[5] new y = 29
-[6] new y = 28
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-[0] new y = 27
-[1] new y = 26
-[2] new y = 25
-[3] new y = 24
-[4] new y = 23
-[5] new y = 22
-[6] new y = 21
-[0] new y = 20
-[1] new y = 19
-[2] new y = 18
-[3] new y = 17
-[4] new y = 16
-[5] new y = 15
-[6] new y = 14
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-[0] new y = 13
-[1] new y = 12
-[2] new y = 11
-[3] new y = 10
-[4] new y = 9
-[5] new y = 8
-[6] new y = 7
-[0] new y = 6
-[1] new y = 5
-[2] new y = 4
-[3] new y = 3
-[4] new y = 2
-[5] new y = 1
-[6] new y = 0
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-deleted bullet -> index = 0
-deleted bullet -> index = 1
-deleted bullet -> index = 2
-deleted bullet -> index = 3
-deleted bullet -> index = 4
-deleted bullet -> index = 5
-deleted bullet -> index = 6
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=3
-B1=0x08 B2=0x06 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=4
-B1=0x08 B2=0x05 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=3
-B1=0x08 B2=0x05 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=3
-B1=0x08 B2=0x07 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=4
-B1=0x08 B2=0x05 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=4
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=3
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x05 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x05 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x05 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=3
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=3
-B1=0x08 B2=0x05 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x05 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=3
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x05 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=3
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x05 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=3
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x05 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=3
-B1=0x08 B2=0x05 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=3
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x04 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=3
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=2
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x09 B2=0x00 B3=0x00 LB=1 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
-created bullet->index = 0, x = 549, y = 630
-created bullet->index = 1, x = 549, y = 630
-created bullet->index = 2, x = 549, y = 630
-created bullet->index = 3, x = 549, y = 630
-created bullet->index = 4, x = 549, y = 630
-created bullet->index = 5, x = 549, y = 630
-created bullet->index = 6, x = 549, y = 630
-[0] new y = 629
-[1] new y = 628
-[2] new y = 627
-[3] new y = 626
-[4] new y = 625
-[5] new y = 624
-[6] new y = 623
-[0] new y = 622
-[1] new y = 621
-[2] new y = 620
-[3] new y = 619
-[4] new y = 618
-[5] new y = 617
-[6] new y = 616
-[0] new y = 615
-[1] new y = 614
-[2] new y = 613
-[3] new y = 612
-[4] new y = 611
-[5] new y = 610
-[6] new y = 609
-[0] new y = 608
-[1] new y = 607
-[2] new y = 606
-[3] new y = 605
-[4] new y = 604
-[5] new y = 603
-[6] new y = 602
-[0] new y = 601
-[1] new y = 600
-[2] new y = 599
-[3] new y = 598
-[4] new y = 597
-[5] new y = 596
-[6] new y = 595
-[0] new y = 594
-[1] new y = 593
-[2] new y = 592
-[3] new y = 591
-[4] new y = 590
-[5] new y = 589
-[6] new y = 588
-[0] new y = 587
-[1] new y = 586
-[2] new y = 585
-[3] new y = 584
-[4] new y = 583
-[5] new y = 582
-[6] new y = 581
-B1=0x08 B2=0x00 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
-[0] new y = 580
-[1] new y = 579
-[2] new y = 578
-[3] new y = 577
-[4] new y = 576
-[5] new y = 575
-[6] new y = 574
-[0] new y = 573
-[1] new y = 572
-[2] new y = 571
-[3] new y = 570
-[4] new y = 569
-[5] new y = 568
-[6] new y = 567
-[0] new y = 566
-[1] new y = 565
-[2] new y = 564
-[3] new y = 563
-[4] new y = 562
-[5] new y = 561
-[6] new y = 560
-[0] new y = 559
-[1] new y = 558
-[2] new y = 557
-[3] new y = 556
-[4] new y = 555
-[5] new y = 554
-[6] new y = 553
-[0] new y = 552
-[1] new y = 551
-[2] new y = 550
-[3] new y = 549
-[4] new y = 548
-[5] new y = 547
-[6] new y = 546
-[0] new y = 545
-[1] new y = 544
-[2] new y = 543
-[3] new y = 542
-[4] new y = 541
-[5] new y = 540
-[6] new y = 539
-[0] new y = 538
-[1] new y = 537
-[2] new y = 536
-[3] new y = 535
-[4] new y = 534
-[5] new y = 533
-[6] new y = 532
-[0] new y = 531
-[1] new y = 530
-[2] new y = 529
-[3] new y = 528
-[4] new y = 527
-[5] new y = 526
-[6] new y = 525
-[0] new y = 524
-[1] new y = 523
-[2] new y = 522
-[3] new y = 521
-[4] new y = 520
-[5] new y = 519
-[6] new y = 518
-[0] new y = 517
-[1] new y = 516
-[2] new y = 515
-[3] new y = 514
-[4] new y = 513
-[5] new y = 512
-[6] new y = 511
-[0] new y = 510
-[1] new y = 509
-[2] new y = 508
-[3] new y = 507
-[4] new y = 506
-[5] new y = 505
-[6] new y = 504
-[0] new y = 503
-[1] new y = 502
-[2] new y = 501
-[3] new y = 500
-[4] new y = 499
-[5] new y = 498
-[6] new y = 497
-[0] new y = 496
-[1] new y = 495
-[2] new y = 494
-[3] new y = 493
-[4] new y = 492
-[5] new y = 491
-[6] new y = 490
-[0] new y = 489
-[1] new y = 488
-[2] new y = 487
-[3] new y = 486
-[4] new y = 485
-[5] new y = 484
-[6] new y = 483
-[0] new y = 482
-[1] new y = 481
-[2] new y = 480
-[3] new y = 479
-[4] new y = 478
-[5] new y = 477
-[6] new y = 476
-[0] new y = 475
-[1] new y = 474
-[2] new y = 473
-[3] new y = 472
-[4] new y = 471
-[5] new y = 470
-[6] new y = 469
-[0] new y = 468
-[1] new y = 467
-[2] new y = 466
-[3] new y = 465
-[4] new y = 464
-[5] new y = 463
-[6] new y = 462
-[0] new y = 461
-[1] new y = 460
-[2] new y = 459
-[3] new y = 458
-[4] new y = 457
-[5] new y = 456
-[6] new y = 455
-[0] new y = 454
-[1] new y = 453
-[2] new y = 452
-[3] new y = 451
-[4] new y = 450
-[5] new y = 449
-[6] new y = 448
-[0] new y = 447
-[1] new y = 446
-[2] new y = 445
-[3] new y = 444
-[4] new y = 443
-[5] new y = 442
-[6] new y = 441
-[0] new y = 440
-[1] new y = 439
-[2] new y = 438
-[3] new y = 437
-[4] new y = 436
-[5] new y = 435
-[6] new y = 434
-[0] new y = 433
-[1] new y = 432
-[2] new y = 431
-[3] new y = 430
-[4] new y = 429
-[5] new y = 428
-[6] new y = 427
-[0] new y = 426
-[1] new y = 425
-[2] new y = 424
-[3] new y = 423
-[4] new y = 422
-[5] new y = 421
-[6] new y = 420
-[0] new y = 419
-[1] new y = 418
-[2] new y = 417
-[3] new y = 416
-[4] new y = 415
-[5] new y = 414
-[6] new y = 413
-[0] new y = 412
-[1] new y = 411
-[2] new y = 410
-[3] new y = 409
-[4] new y = 408
-[5] new y = 407
-[6] new y = 406
-[0] new y = 405
-[1] new y = 404
-[2] new y = 403
-[3] new y = 402
-[4] new y = 401
-[5] new y = 400
-[6] new y = 399
-[0] new y = 398
-[1] new y = 397
-[2] new y = 396
-[3] new y = 395
-[4] new y = 394
-[5] new y = 393
-[6] new y = 392
-[0] new y = 391
-[1] new y = 390
-[2] new y = 389
-[3] new y = 388
-[4] new y = 387
-[5] new y = 386
-[6] new y = 385
-[0] new y = 384
-[1] new y = 383
-[2] new y = 382
-[3] new y = 381
-[4] new y = 380
-[5] new y = 379
-[6] new y = 378
-[0] new y = 377
-[1] new y = 376
-[2] new y = 375
-[3] new y = 374
-[4] new y = 373
-[5] new y = 372
-[6] new y = 371
-[0] new y = 370
-[1] new y = 369
-[2] new y = 368
-[3] new y = 367
-[4] new y = 366
-[5] new y = 365
-[6] new y = 364
-[0] new y = 363
-[1] new y = 362
-[2] new y = 361
-[3] new y = 360
-[4] new y = 359
-[5] new y = 358
-[6] new y = 357
-[0] new y = 356
-[1] new y = 355
-[2] new y = 354
-[3] new y = 353
-[4] new y = 352
-[5] new y = 351
-[6] new y = 350
-[0] new y = 349
-[1] new y = 348
-[2] new y = 347
-[3] new y = 346
-[4] new y = 345
-[5] new y = 344
-[6] new y = 343
-[0] new y = 342
-[1] new y = 341
-[2] new y = 340
-[3] new y = 339
-[4] new y = 338
-[5] new y = 337
-[6] new y = 336
-[0] new y = 335
-[1] new y = 334
-[2] new y = 333
-[3] new y = 332
-[4] new y = 331
-[5] new y = 330
-[6] new y = 329
-[0] new y = 328
-[1] new y = 327
-[2] new y = 326
-[3] new y = 325
-[4] new y = 324
-[5] new y = 323
-[6] new y = 322
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-[0] new y = 321
-[1] new y = 320
-[2] new y = 319
-[3] new y = 318
-[4] new y = 317
-[5] new y = 316
-[6] new y = 315
-[0] new y = 314
-[1] new y = 313
-[2] new y = 312
-[3] new y = 311
-[4] new y = 310
-[5] new y = 309
-[6] new y = 308
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-5
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x03 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-4
-[0] new y = 307
-[1] new y = 306
-[2] new y = 305
-[3] new y = 304
-[4] new y = 303
-[5] new y = 302
-[6] new y = 301
-[0] new y = 300
-[1] new y = 299
-[2] new y = 298
-[3] new y = 297
-[4] new y = 296
-[5] new y = 295
-[6] new y = 294
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-4
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
-[0] new y = 293
-[1] new y = 292
-[2] new y = 291
-[3] new y = 290
-[4] new y = 289
-[5] new y = 288
-[6] new y = 287
-[0] new y = 286
-[1] new y = 285
-[2] new y = 284
-[3] new y = 283
-[4] new y = 282
-[5] new y = 281
-[6] new y = 280
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xf9 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-7
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x08 B3=0xf4 LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=-12
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
-[0] new y = 279
-[1] new y = 278
-[2] new y = 277
-[3] new y = 276
-[4] new y = 275
-[5] new y = 274
-[6] new y = 273
-[0] new y = 272
-[1] new y = 271
-[2] new y = 270
-[3] new y = 269
-[4] new y = 268
-[5] new y = 267
-[6] new y = 266
-B1=0x28 B2=0x02 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-2
-[0] new y = 265
-[1] new y = 264
-[2] new y = 263
-[3] new y = 262
-[4] new y = 261
-[5] new y = 260
-[6] new y = 259
-B1=0x28 B2=0x02 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-2
-[0] new y = 258
-[1] new y = 257
-[2] new y = 256
-[3] new y = 255
-[4] new y = 254
-[5] new y = 253
-[6] new y = 252
-[0] new y = 251
-[1] new y = 250
-[2] new y = 249
-[3] new y = 248
-[4] new y = 247
-[5] new y = 246
-[6] new y = 245
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-[0] new y = 244
-[1] new y = 243
-[2] new y = 242
-[3] new y = 241
-[4] new y = 240
-[5] new y = 239
-[6] new y = 238
-[0] new y = 237
-[1] new y = 236
-[2] new y = 235
-[3] new y = 234
-[4] new y = 233
-[5] new y = 232
-[6] new y = 231
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-[0] new y = 230
-[1] new y = 229
-[2] new y = 228
-[3] new y = 227
-[4] new y = 226
-[5] new y = 225
-[6] new y = 224
-[0] new y = 223
-[1] new y = 222
-[2] new y = 221
-[3] new y = 220
-[4] new y = 219
-[5] new y = 218
-[6] new y = 217
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-3
+door stuck
+Not in menu plz help
 B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-[0] new y = 216
-[1] new y = 215
-[2] new y = 214
-[3] new y = 213
-[4] new y = 212
-[5] new y = 211
-[6] new y = 210
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-[0] new y = 209
-[1] new y = 208
-[2] new y = 207
-[3] new y = 206
-[4] new y = 205
-[5] new y = 204
-[6] new y = 203
-[0] new y = 202
-[1] new y = 201
-[2] new y = 200
-[3] new y = 199
-[4] new y = 198
-[5] new y = 197
-[6] new y = 196
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-[0] new y = 195
-[1] new y = 194
-[2] new y = 193
-[3] new y = 192
-[4] new y = 191
-[5] new y = 190
-[6] new y = 189
-[0] new y = 188
-[1] new y = 187
-[2] new y = 186
-[3] new y = 185
-[4] new y = 184
-[5] new y = 183
-[6] new y = 182
-[0] new y = 181
-[1] new y = 180
-[2] new y = 179
-[3] new y = 178
-[4] new y = 177
-[5] new y = 176
-[6] new y = 175
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-[0] new y = 174
-[1] new y = 173
-[2] new y = 172
-[3] new y = 171
-[4] new y = 170
-[5] new y = 169
-[6] new y = 168
-[0] new y = 167
-[1] new y = 166
-[2] new y = 165
-[3] new y = 164
-[4] new y = 163
-[5] new y = 162
-[6] new y = 161
-[0] new y = 160
-[1] new y = 159
-[2] new y = 158
-[3] new y = 157
-[4] new y = 156
-[5] new y = 155
-[6] new y = 154
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-[0] new y = 153
-[1] new y = 152
-[2] new y = 151
-[3] new y = 150
-[4] new y = 149
-[5] new y = 148
-[6] new y = 147
-[0] new y = 146
-[1] new y = 145
-[2] new y = 144
-[3] new y = 143
-[4] new y = 142
-[5] new y = 141
-[6] new y = 140
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-[0] new y = 139
-[1] new y = 138
-[2] new y = 137
-[3] new y = 136
-[4] new y = 135
-[5] new y = 134
-[6] new y = 133
-[0] new y = 132
-[1] new y = 131
-[2] new y = 130
-[3] new y = 129
-[4] new y = 128
-[5] new y = 127
-[6] new y = 126
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-[0] new y = 125
-[1] new y = 124
-[2] new y = 123
-[3] new y = 122
-[4] new y = 121
-[5] new y = 120
-[6] new y = 119
-[0] new y = 118
-[1] new y = 117
-[2] new y = 116
-[3] new y = 115
-[4] new y = 114
-[5] new y = 113
-[6] new y = 112
-B1=0x28 B2=0x02 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-2
-[0] new y = 111
-[1] new y = 110
-[2] new y = 109
-[3] new y = 108
-[4] new y = 107
-[5] new y = 106
-[6] new y = 105
-[0] new y = 104
-[1] new y = 103
-[2] new y = 102
-[3] new y = 101
-[4] new y = 100
-[5] new y = 99
-[6] new y = 98
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-[0] new y = 97
-[1] new y = 96
-[2] new y = 95
-[3] new y = 94
-[4] new y = 93
-[5] new y = 92
-[6] new y = 91
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-[0] new y = 90
-[1] new y = 89
-[2] new y = 88
-[3] new y = 87
-[4] new y = 86
-[5] new y = 85
-[6] new y = 84
-[0] new y = 83
-[1] new y = 82
-[2] new y = 81
-[3] new y = 80
-[4] new y = 79
-[5] new y = 78
-[6] new y = 77
-B1=0x28 B2=0x02 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-1
-[0] new y = 76
-[1] new y = 75
-[2] new y = 74
-[3] new y = 73
-[4] new y = 72
-[5] new y = 71
-[6] new y = 70
-[0] new y = 69
-[1] new y = 68
-[2] new y = 67
-[3] new y = 66
-[4] new y = 65
-[5] new y = 64
-[6] new y = 63
-[0] new y = 62
-[1] new y = 61
-[2] new y = 60
-[3] new y = 59
-[4] new y = 58
-[5] new y = 57
-[6] new y = 56
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-[0] new y = 55
-[1] new y = 54
-[2] new y = 53
-[3] new y = 52
-[4] new y = 51
-[5] new y = 50
-[6] new y = 49
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-[0] new y = 48
-[1] new y = 47
-[2] new y = 46
-[3] new y = 45
-[4] new y = 44
-[5] new y = 43
-[6] new y = 42
-[0] new y = 41
-[1] new y = 40
-[2] new y = 39
-[3] new y = 38
-[4] new y = 37
-[5] new y = 36
-[6] new y = 35
-B1=0x28 B2=0x02 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-1
-[0] new y = 34
-[1] new y = 33
-[2] new y = 32
-[3] new y = 31
-[4] new y = 30
-[5] new y = 29
-[6] new y = 28
-[0] new y = 27
-[1] new y = 26
-[2] new y = 25
-[3] new y = 24
-[4] new y = 23
-[5] new y = 22
-[6] new y = 21
-B1=0x28 B2=0x02 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-1
-[0] new y = 20
-[1] new y = 19
-[2] new y = 18
-[3] new y = 17
-[4] new y = 16
-[5] new y = 15
-[6] new y = 14
-[0] new y = 13
-[1] new y = 12
-[2] new y = 11
-[3] new y = 10
-[4] new y = 9
-[5] new y = 8
-[6] new y = 7
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
-[0] new y = 6
-[1] new y = 5
-[2] new y = 4
-[3] new y = 3
-[4] new y = 2
-[5] new y = 1
-[6] new y = 0
-deleted bullet -> index = 0
-deleted bullet -> index = 1
-deleted bullet -> index = 2
-deleted bullet -> index = 3
-deleted bullet -> index = 4
-deleted bullet -> index = 5
-deleted bullet -> index = 6
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x02 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x28 B2=0x02 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-1
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x28 B2=0x02 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-1
-B1=0x28 B2=0x02 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-1
-B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xf8 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-8
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x03 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-2
-B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
-B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
-B1=0x28 B2=0x04 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-1
-B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
-B1=0x28 B2=0x02 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-2
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x02 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x09 B3=0xf6 LB=0 MB=0 RB=0 XOV=0 X=9 YOV=0 Y=-10
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x07 B3=0xf8 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=-8
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x09 B3=0xf7 LB=0 MB=0 RB=0 XOV=0 X=9 YOV=0 Y=-9
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x07 B3=0xf9 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=-7
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xf9 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-7
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x07 B3=0xf9 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=-7
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x0b B3=0xf7 LB=0 MB=0 RB=0 XOV=0 X=11 YOV=0 Y=-9
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-3
+door stuck
+Not in menu plz help
 B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x28 B2=0x03 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x09 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=9 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x08 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x07 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x07 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x04 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-2
-B1=0x28 B2=0x04 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x0b B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=11 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x08 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x08 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-2
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-2
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x02 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x28 B2=0x01 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-3
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x01 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-3
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x01 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-3
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x01 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-3
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x01 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-3
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-3
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-3
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-3
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-3
-B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
-B1=0x28 B2=0x00 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-3
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-2
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x04 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-1
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x28 B2=0x02 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-1
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-2
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x05 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-1
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0xff B2=0x08 B3=0x02 LB=1 MB=1 RB=1 XOV=1 X=-248 YOV=1 Y=-254
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x06 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=0
-B1=0x08 B2=0x06 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=0
-B1=0x08 B2=0x07 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x06 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=0
-B1=0x08 B2=0x07 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=0
-B1=0x08 B2=0x07 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=0
-B1=0x08 B2=0x07 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=0
-B1=0x28 B2=0x08 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=-1
-B1=0x08 B2=0x06 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x06 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0xff B2=0x08 B3=0x01 LB=1 MB=1 RB=1 XOV=1 X=-248 YOV=1 Y=-255
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x28 B2=0x05 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-1
-B1=0x28 B2=0x05 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-1
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x06 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=0
-B1=0x08 B2=0x07 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=1
-B1=0x08 B2=0x07 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=1
-B1=0x08 B2=0x08 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=1
-B1=0x08 B2=0x07 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=0
-B1=0x08 B2=0x06 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=2
-B1=0x08 B2=0x05 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=1
-B1=0x08 B2=0x08 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=0
-B1=0x08 B2=0x07 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=0
-B1=0x08 B2=0x09 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=9 YOV=0 Y=0
-B1=0x08 B2=0x08 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=0
-B1=0x08 B2=0x06 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=0
-B1=0x08 B2=0x06 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=1
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x05 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x28 B2=0x05 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-1
-B1=0x08 B2=0x07 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=0
+door stuck
+Not in menu plz help
 B1=0x28 B2=0x07 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x06 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
+door stuck
+Not in menu plz help
 B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
-B1=0x28 B2=0x04 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
+door stuck
+Not in menu plz help
 B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
 B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x02 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=1
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
-B1=0x09 B2=0x00 B3=0x00 LB=1 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
-created bullet->index = 0, x = 549, y = 630
-created bullet->index = 1, x = 549, y = 630
-created bullet->index = 2, x = 549, y = 630
-created bullet->index = 3, x = 549, y = 630
-created bullet->index = 4, x = 549, y = 630
-created bullet->index = 5, x = 549, y = 630
-created bullet->index = 6, x = 549, y = 630
-[0] new y = 629
-[1] new y = 628
-[2] new y = 627
-[3] new y = 626
-[4] new y = 625
-[5] new y = 624
-[6] new y = 623
-[0] new y = 622
-[1] new y = 621
-[2] new y = 620
-[3] new y = 619
-[4] new y = 618
-[5] new y = 617
-[6] new y = 616
-[0] new y = 615
-[1] new y = 614
-[2] new y = 613
-[3] new y = 612
-[4] new y = 611
-[5] new y = 610
-[6] new y = 609
-[0] new y = 608
-[1] new y = 607
-[2] new y = 606
-[3] new y = 605
-[4] new y = 604
-[5] new y = 603
-[6] new y = 602
-[0] new y = 601
-[1] new y = 600
-[2] new y = 599
-[3] new y = 598
-[4] new y = 597
-[5] new y = 596
-[6] new y = 595
-[0] new y = 594
-[1] new y = 593
-[2] new y = 592
-[3] new y = 591
-[4] new y = 590
-[5] new y = 589
-[6] new y = 588
-[0] new y = 587
-[1] new y = 586
-[2] new y = 585
-[3] new y = 584
-[4] new y = 583
-[5] new y = 582
-[6] new y = 581
-[0] new y = 580
-[1] new y = 579
-[2] new y = 578
-[3] new y = 577
-[4] new y = 576
-[5] new y = 575
-[6] new y = 574
-[0] new y = 573
-[1] new y = 572
-[2] new y = 571
-[3] new y = 570
-[4] new y = 569
-[5] new y = 568
-[6] new y = 567
-[0] new y = 566
-[1] new y = 565
-[2] new y = 564
-[3] new y = 563
-[4] new y = 562
-[5] new y = 561
-[6] new y = 560
-[0] new y = 559
-[1] new y = 558
-[2] new y = 557
-[3] new y = 556
-[4] new y = 555
-[5] new y = 554
-[6] new y = 553
-B1=0x08 B2=0x00 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
-[0] new y = 552
-[1] new y = 551
-[2] new y = 550
-[3] new y = 549
-[4] new y = 548
-[5] new y = 547
-[6] new y = 546
-[0] new y = 545
-[1] new y = 544
-[2] new y = 543
-[3] new y = 542
-[4] new y = 541
-[5] new y = 540
-[6] new y = 539
-[0] new y = 538
-[1] new y = 537
-[2] new y = 536
-[3] new y = 535
-[4] new y = 534
-[5] new y = 533
-[6] new y = 532
-[0] new y = 531
-[1] new y = 530
-[2] new y = 529
-[3] new y = 528
-[4] new y = 527
-[5] new y = 526
-[6] new y = 525
-[0] new y = 524
-[1] new y = 523
-[2] new y = 522
-[3] new y = 521
-[4] new y = 520
-[5] new y = 519
-[6] new y = 518
-[0] new y = 517
-[1] new y = 516
-[2] new y = 515
-[3] new y = 514
-[4] new y = 513
-[5] new y = 512
-[6] new y = 511
-[0] new y = 510
-[1] new y = 509
-[2] new y = 508
-[3] new y = 507
-[4] new y = 506
-[5] new y = 505
-[6] new y = 504
-[0] new y = 503
-[1] new y = 502
-[2] new y = 501
-[3] new y = 500
-[4] new y = 499
-[5] new y = 498
-[6] new y = 497
-[0] new y = 496
-[1] new y = 495
-[2] new y = 494
-[3] new y = 493
-[4] new y = 492
-[5] new y = 491
-[6] new y = 490
-[0] new y = 489
-[1] new y = 488
-[2] new y = 487
-[3] new y = 486
-[4] new y = 485
-[5] new y = 484
-[6] new y = 483
-[0] new y = 482
-[1] new y = 481
-[2] new y = 480
-[3] new y = 479
-[4] new y = 478
-[5] new y = 477
-[6] new y = 476
-[0] new y = 475
-[1] new y = 474
-[2] new y = 473
-[3] new y = 472
-[4] new y = 471
-[5] new y = 470
-[6] new y = 469
-[0] new y = 468
-[1] new y = 467
-[2] new y = 466
-[3] new y = 465
-[4] new y = 464
-[5] new y = 463
-[6] new y = 462
-[0] new y = 461
-[1] new y = 460
-[2] new y = 459
-[3] new y = 458
-[4] new y = 457
-[5] new y = 456
-[6] new y = 455
-[0] new y = 454
-[1] new y = 453
-[2] new y = 452
-[3] new y = 451
-[4] new y = 450
-[5] new y = 449
-[6] new y = 448
-[0] new y = 447
-[1] new y = 446
-[2] new y = 445
-[3] new y = 444
-[4] new y = 443
-[5] new y = 442
-[6] new y = 441
-[0] new y = 440
-[1] new y = 439
-[2] new y = 438
-[3] new y = 437
-[4] new y = 436
-[5] new y = 435
-[6] new y = 434
-[0] new y = 433
-[1] new y = 432
-[2] new y = 431
-[3] new y = 430
-[4] new y = 429
-[5] new y = 428
-[6] new y = 427
-[0] new y = 426
-[1] new y = 425
-[2] new y = 424
-[3] new y = 423
-[4] new y = 422
-[5] new y = 421
-[6] new y = 420
-[0] new y = 419
-[1] new y = 418
-[2] new y = 417
-[3] new y = 416
-[4] new y = 415
-[5] new y = 414
-[6] new y = 413
-[0] new y = 412
-[1] new y = 411
-[2] new y = 410
-[3] new y = 409
-[4] new y = 408
-[5] new y = 407
-[6] new y = 406
-[0] new y = 405
-[1] new y = 404
-[2] new y = 403
-[3] new y = 402
-[4] new y = 401
-[5] new y = 400
-[6] new y = 399
-[0] new y = 398
-[1] new y = 397
-[2] new y = 396
-[3] new y = 395
-[4] new y = 394
-[5] new y = 393
-[6] new y = 392
-[0] new y = 391
-[1] new y = 390
-[2] new y = 389
-[3] new y = 388
-[4] new y = 387
-[5] new y = 386
-[6] new y = 385
-[0] new y = 384
-[1] new y = 383
-[2] new y = 382
-[3] new y = 381
-[4] new y = 380
-[5] new y = 379
-[6] new y = 378
-[0] new y = 377
-[1] new y = 376
-[2] new y = 375
-[3] new y = 374
-[4] new y = 373
-[5] new y = 372
-[6] new y = 371
-[0] new y = 370
-[1] new y = 369
-[2] new y = 368
-[3] new y = 367
-[4] new y = 366
-[5] new y = 365
-[6] new y = 364
-[0] new y = 363
-[1] new y = 362
-[2] new y = 361
-[3] new y = 360
-[4] new y = 359
-[5] new y = 358
-[6] new y = 357
-[0] new y = 356
-[1] new y = 355
-[2] new y = 354
-[3] new y = 353
-[4] new y = 352
-[5] new y = 351
-[6] new y = 350
-[0] new y = 349
-[1] new y = 348
-[2] new y = 347
-[3] new y = 346
-[4] new y = 345
-[5] new y = 344
-[6] new y = 343
-[0] new y = 342
-[1] new y = 341
-[2] new y = 340
-[3] new y = 339
-[4] new y = 338
-[5] new y = 337
-[6] new y = 336
-[0] new y = 335
-[1] new y = 334
-[2] new y = 333
-[3] new y = 332
-[4] new y = 331
-[5] new y = 330
-[6] new y = 329
-[0] new y = 328
-[1] new y = 327
-[2] new y = 326
-[3] new y = 325
-[4] new y = 324
-[5] new y = 323
-[6] new y = 322
-[0] new y = 321
-[1] new y = 320
-[2] new y = 319
-[3] new y = 318
-[4] new y = 317
-[5] new y = 316
-[6] new y = 315
-[0] new y = 314
-[1] new y = 313
-[2] new y = 312
-[3] new y = 311
-[4] new y = 310
-[5] new y = 309
-[6] new y = 308
-[0] new y = 307
-[1] new y = 306
-[2] new y = 305
-[3] new y = 304
-[4] new y = 303
-[5] new y = 302
-[6] new y = 301
-[0] new y = 300
-[1] new y = 299
-[2] new y = 298
-[3] new y = 297
-[4] new y = 296
-[5] new y = 295
-[6] new y = 294
-[0] new y = 293
-[1] new y = 292
-[2] new y = 291
-[3] new y = 290
-[4] new y = 289
-[5] new y = 288
-[6] new y = 287
-[0] new y = 286
-[1] new y = 285
-[2] new y = 284
-[3] new y = 283
-[4] new y = 282
-[5] new y = 281
-[6] new y = 280
-[0] new y = 279
-[1] new y = 278
-[2] new y = 277
-[3] new y = 276
-[4] new y = 275
-[5] new y = 274
-[6] new y = 273
-[0] new y = 272
-[1] new y = 271
-[2] new y = 270
-[3] new y = 269
-[4] new y = 268
-[5] new y = 267
-[6] new y = 266
-[0] new y = 265
-[1] new y = 264
-[2] new y = 263
-[3] new y = 262
-[4] new y = 261
-[5] new y = 260
-[6] new y = 259
-[0] new y = 258
-[1] new y = 257
-[2] new y = 256
-[3] new y = 255
-[4] new y = 254
-[5] new y = 253
-[6] new y = 252
-[0] new y = 251
-[1] new y = 250
-[2] new y = 249
-[3] new y = 248
-[4] new y = 247
-[5] new y = 246
-[6] new y = 245
-[0] new y = 244
-[1] new y = 243
-[2] new y = 242
-[3] new y = 241
-[4] new y = 240
-[5] new y = 239
-[6] new y = 238
-[0] new y = 237
-[1] new y = 236
-[2] new y = 235
-[3] new y = 234
-[4] new y = 233
-[5] new y = 232
-[6] new y = 231
-[0] new y = 230
-[1] new y = 229
-[2] new y = 228
-[3] new y = 227
-[4] new y = 226
-[5] new y = 225
-[6] new y = 224
-[0] new y = 223
-[1] new y = 222
-[2] new y = 221
-[3] new y = 220
-[4] new y = 219
-[5] new y = 218
-[6] new y = 217
-[0] new y = 216
-[1] new y = 215
-[2] new y = 214
-[3] new y = 213
-[4] new y = 212
-[5] new y = 211
-[6] new y = 210
-[0] new y = 209
-[1] new y = 208
-[2] new y = 207
-[3] new y = 206
-[4] new y = 205
-[5] new y = 204
-[6] new y = 203
-[0] new y = 202
-[1] new y = 201
-[2] new y = 200
-[3] new y = 199
-[4] new y = 198
-[5] new y = 197
-[6] new y = 196
-[0] new y = 195
-[1] new y = 194
-[2] new y = 193
-[3] new y = 192
-[4] new y = 191
-[5] new y = 190
-[6] new y = 189
-[0] new y = 188
-[1] new y = 187
-[2] new y = 186
-[3] new y = 185
-[4] new y = 184
-[5] new y = 183
-[6] new y = 182
-[0] new y = 181
-[1] new y = 180
-[2] new y = 179
-[3] new y = 178
-[4] new y = 177
-[5] new y = 176
-[6] new y = 175
-[0] new y = 174
-[1] new y = 173
-[2] new y = 172
-[3] new y = 171
-[4] new y = 170
-[5] new y = 169
-[6] new y = 168
-[0] new y = 167
-[1] new y = 166
-[2] new y = 165
-[3] new y = 164
-[4] new y = 163
-[5] new y = 162
-[6] new y = 161
-[0] new y = 160
-[1] new y = 159
-[2] new y = 158
-[3] new y = 157
-[4] new y = 156
-[5] new y = 155
-[6] new y = 154
-[0] new y = 153
-[1] new y = 152
-[2] new y = 151
-[3] new y = 150
-[4] new y = 149
-[5] new y = 148
-[6] new y = 147
-[0] new y = 146
-[1] new y = 145
-[2] new y = 144
-[3] new y = 143
-[4] new y = 142
-[5] new y = 141
-[6] new y = 140
-[0] new y = 139
-[1] new y = 138
-[2] new y = 137
-[3] new y = 136
-[4] new y = 135
-[5] new y = 134
-[6] new y = 133
-[0] new y = 132
-[1] new y = 131
-[2] new y = 130
-[3] new y = 129
-[4] new y = 128
-[5] new y = 127
-[6] new y = 126
-[0] new y = 125
-[1] new y = 124
-[2] new y = 123
-[3] new y = 122
-[4] new y = 121
-[5] new y = 120
-[6] new y = 119
-[0] new y = 118
-[1] new y = 117
-[2] new y = 116
-[3] new y = 115
-[4] new y = 114
-[5] new y = 113
-[6] new y = 112
-[0] new y = 111
-[1] new y = 110
-[2] new y = 109
-[3] new y = 108
-[4] new y = 107
-[5] new y = 106
-[6] new y = 105
-[0] new y = 104
-[1] new y = 103
-[2] new y = 102
-[3] new y = 101
-[4] new y = 100
-[5] new y = 99
-[6] new y = 98
-[0] new y = 97
-[1] new y = 96
-[2] new y = 95
-[3] new y = 94
-[4] new y = 93
-[5] new y = 92
-[6] new y = 91
-[0] new y = 90
-[1] new y = 89
-[2] new y = 88
-[3] new y = 87
-[4] new y = 86
-[5] new y = 85
-[6] new y = 84
-[0] new y = 83
-[1] new y = 82
-[2] new y = 81
-[3] new y = 80
-[4] new y = 79
-[5] new y = 78
-[6] new y = 77
-[0] new y = 76
-[1] new y = 75
-[2] new y = 74
-[3] new y = 73
-[4] new y = 72
-[5] new y = 71
-[6] new y = 70
-[0] new y = 69
-[1] new y = 68
-[2] new y = 67
-[3] new y = 66
-[4] new y = 65
-[5] new y = 64
-[6] new y = 63
-[0] new y = 62
-[1] new y = 61
-[2] new y = 60
-[3] new y = 59
-[4] new y = 58
-[5] new y = 57
-[6] new y = 56
-[0] new y = 55
-[1] new y = 54
-[2] new y = 53
-[3] new y = 52
-[4] new y = 51
-[5] new y = 50
-[6] new y = 49
-[0] new y = 48
-[1] new y = 47
-[2] new y = 46
-[3] new y = 45
-[4] new y = 44
-[5] new y = 43
-[6] new y = 42
-[0] new y = 41
-[1] new y = 40
-[2] new y = 39
-[3] new y = 38
-[4] new y = 37
-[5] new y = 36
-[6] new y = 35
-[0] new y = 34
-[1] new y = 33
-[2] new y = 32
-[3] new y = 31
-[4] new y = 30
-[5] new y = 29
-[6] new y = 28
-[0] new y = 27
-[1] new y = 26
-[2] new y = 25
-[3] new y = 24
-[4] new y = 23
-[5] new y = 22
-[6] new y = 21
-[0] new y = 20
-[1] new y = 19
-[2] new y = 18
-[3] new y = 17
-[4] new y = 16
-[5] new y = 15
-[6] new y = 14
-[0] new y = 13
-[1] new y = 12
-[2] new y = 11
-[3] new y = 10
-[4] new y = 9
-[5] new y = 8
-[6] new y = 7
-[0] new y = 6
-[1] new y = 5
-[2] new y = 4
-[3] new y = 3
-[4] new y = 2
-[5] new y = 1
-[6] new y = 0
-deleted bullet -> index = 0
-deleted bullet -> index = 1
-deleted bullet -> index = 2
-deleted bullet -> index = 3
-deleted bullet -> index = 4
-deleted bullet -> index = 5
-deleted bullet -> index = 6
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xfe B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0xff B2=0x00 B3=0xff LB=1 MB=1 RB=1 XOV=1 X=-256 YOV=1 Y=-1
-created bullet->index = 0, x = 549, y = 630
-created bullet->index = 1, x = 549, y = 630
-created bullet->index = 2, x = 549, y = 630
-created bullet->index = 3, x = 549, y = 630
-created bullet->index = 4, x = 549, y = 630
-created bullet->index = 5, x = 549, y = 630
-created bullet->index = 6, x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-[0] new y = 629
-[1] new y = 628
-[2] new y = 627
-[3] new y = 626
-[4] new y = 625
-[5] new y = 624
-[6] new y = 623
-[0] new y = 622
-[1] new y = 621
-[2] new y = 620
-[3] new y = 619
-[4] new y = 618
-[5] new y = 617
-[6] new y = 616
-[0] new y = 615
-[1] new y = 614
-[2] new y = 613
-[3] new y = 612
-[4] new y = 611
-[5] new y = 610
-[6] new y = 609
-[0] new y = 608
-[1] new y = 607
-[2] new y = 606
-[3] new y = 605
-[4] new y = 604
-[5] new y = 603
-[6] new y = 602
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 601
-[1] new y = 600
-[2] new y = 599
-[3] new y = 598
-[4] new y = 597
-[5] new y = 596
-[6] new y = 595
-[0] new y = 594
-[1] new y = 593
-[2] new y = 592
-[3] new y = 591
-[4] new y = 590
-[5] new y = 589
-[6] new y = 588
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-[0] new y = 587
-[1] new y = 586
-[2] new y = 585
-[3] new y = 584
-[4] new y = 583
-[5] new y = 582
-[6] new y = 581
-[0] new y = 580
-[1] new y = 579
-[2] new y = 578
-[3] new y = 577
-[4] new y = 576
-[5] new y = 575
-[6] new y = 574
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 573
-[1] new y = 572
-[2] new y = 571
-[3] new y = 570
-[4] new y = 569
-[5] new y = 568
-[6] new y = 567
-[0] new y = 566
-[1] new y = 565
-[2] new y = 564
-[3] new y = 563
-[4] new y = 562
-[5] new y = 561
-[6] new y = 560
-B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
-[0] new y = 559
-[1] new y = 558
-[2] new y = 557
-[3] new y = 556
-[4] new y = 555
-[5] new y = 554
-[6] new y = 553
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-[0] new y = 552
-[1] new y = 551
-[2] new y = 550
-[3] new y = 549
-[4] new y = 548
-[5] new y = 547
-[6] new y = 546
-[0] new y = 545
-[1] new y = 544
-[2] new y = 543
-[3] new y = 542
-[4] new y = 541
-[5] new y = 540
-[6] new y = 539
-[0] new y = 538
-[1] new y = 537
-[2] new y = 536
-[3] new y = 535
-[4] new y = 534
-[5] new y = 533
-[6] new y = 532
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-[0] new y = 531
-[1] new y = 530
-[2] new y = 529
-[3] new y = 528
-[4] new y = 527
-[5] new y = 526
-[6] new y = 525
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-[0] new y = 524
-[1] new y = 523
-[2] new y = 522
-[3] new y = 521
-[4] new y = 520
-[5] new y = 519
-[6] new y = 518
-[0] new y = 517
-[1] new y = 516
-[2] new y = 515
-[3] new y = 514
-[4] new y = 513
-[5] new y = 512
-[6] new y = 511
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-[0] new y = 510
-[1] new y = 509
-[2] new y = 508
-[3] new y = 507
-[4] new y = 506
-[5] new y = 505
-[6] new y = 504
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 503
-[1] new y = 502
-[2] new y = 501
-[3] new y = 500
-[4] new y = 499
-[5] new y = 498
-[6] new y = 497
-[0] new y = 496
-[1] new y = 495
-[2] new y = 494
-[3] new y = 493
-[4] new y = 492
-[5] new y = 491
-[6] new y = 490
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 489
-[1] new y = 488
-[2] new y = 487
-[3] new y = 486
-[4] new y = 485
-[5] new y = 484
-[6] new y = 483
-[0] new y = 482
-[1] new y = 481
-[2] new y = 480
-[3] new y = 479
-[4] new y = 478
-[5] new y = 477
-[6] new y = 476
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-[0] new y = 475
-[1] new y = 474
-[2] new y = 473
-[3] new y = 472
-[4] new y = 471
-[5] new y = 470
-[6] new y = 469
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 468
-[1] new y = 467
-[2] new y = 466
-[3] new y = 465
-[4] new y = 464
-[5] new y = 463
-[6] new y = 462
-[0] new y = 461
-[1] new y = 460
-[2] new y = 459
-[3] new y = 458
-[4] new y = 457
-[5] new y = 456
-[6] new y = 455
-[0] new y = 454
-[1] new y = 453
-[2] new y = 452
-[3] new y = 451
-[4] new y = 450
-[5] new y = 449
-[6] new y = 448
-[0] new y = 447
-[1] new y = 446
-[2] new y = 445
-[3] new y = 444
-[4] new y = 443
-[5] new y = 442
-[6] new y = 441
-[0] new y = 440
-[1] new y = 439
-[2] new y = 438
-[3] new y = 437
-[4] new y = 436
-[5] new y = 435
-[6] new y = 434
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-[0] new y = 433
-[1] new y = 432
-[2] new y = 431
-[3] new y = 430
-[4] new y = 429
-[5] new y = 428
-[6] new y = 427
-B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
-[0] new y = 426
-[1] new y = 425
-[2] new y = 424
-[3] new y = 423
-[4] new y = 422
-[5] new y = 421
-[6] new y = 420
-[0] new y = 419
-[1] new y = 418
-[2] new y = 417
-[3] new y = 416
-[4] new y = 415
-[5] new y = 414
-[6] new y = 413
+door stuck
+Not in menu plz help
 B1=0x18 B2=0xff B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=3
-[0] new y = 412
-[1] new y = 411
-[2] new y = 410
-[3] new y = 409
-[4] new y = 408
-[5] new y = 407
-[6] new y = 406
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x07 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=7
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfc B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=6
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=6
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfc B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=6
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=6
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=3
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=3
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=3
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=3
+door stuck
+Not in menu plz help
 B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
-[0] new y = 405
-[1] new y = 404
-[2] new y = 403
-[3] new y = 402
-[4] new y = 401
-[5] new y = 400
-[6] new y = 399
-[0] new y = 398
-[1] new y = 397
-[2] new y = 396
-[3] new y = 395
-[4] new y = 394
-[5] new y = 393
-[6] new y = 392
-B1=0x18 B2=0xff B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=3
-[0] new y = 391
-[1] new y = 390
-[2] new y = 389
-[3] new y = 388
-[4] new y = 387
-[5] new y = 386
-[6] new y = 385
-[0] new y = 384
-[1] new y = 383
-[2] new y = 382
-[3] new y = 381
-[4] new y = 380
-[5] new y = 379
-[6] new y = 378
+door stuck
+Not in menu plz help
 B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
-[0] new y = 377
-[1] new y = 376
-[2] new y = 375
-[3] new y = 374
-[4] new y = 373
-[5] new y = 372
-[6] new y = 371
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-[0] new y = 370
-[1] new y = 369
-[2] new y = 368
-[3] new y = 367
-[4] new y = 366
-[5] new y = 365
-[6] new y = 364
-[0] new y = 363
-[1] new y = 362
-[2] new y = 361
-[3] new y = 360
-[4] new y = 359
-[5] new y = 358
-[6] new y = 357
-[0] new y = 356
-[1] new y = 355
-[2] new y = 354
-[3] new y = 353
-[4] new y = 352
-[5] new y = 351
-[6] new y = 350
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 349
-[1] new y = 348
-[2] new y = 347
-[3] new y = 346
-[4] new y = 345
-[5] new y = 344
-[6] new y = 343
-[0] new y = 342
-[1] new y = 341
-[2] new y = 340
-[3] new y = 339
-[4] new y = 338
-[5] new y = 337
-[6] new y = 336
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-[0] new y = 335
-[1] new y = 334
-[2] new y = 333
-[3] new y = 332
-[4] new y = 331
-[5] new y = 330
-[6] new y = 329
-[0] new y = 328
-[1] new y = 327
-[2] new y = 326
-[3] new y = 325
-[4] new y = 324
-[5] new y = 323
-[6] new y = 322
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-[0] new y = 321
-[1] new y = 320
-[2] new y = 319
-[3] new y = 318
-[4] new y = 317
-[5] new y = 316
-[6] new y = 315
-[0] new y = 314
-[1] new y = 313
-[2] new y = 312
-[3] new y = 311
-[4] new y = 310
-[5] new y = 309
-[6] new y = 308
-[0] new y = 307
-[1] new y = 306
-[2] new y = 305
-[3] new y = 304
-[4] new y = 303
-[5] new y = 302
-[6] new y = 301
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 300
-[1] new y = 299
-[2] new y = 298
-[3] new y = 297
-[4] new y = 296
-[5] new y = 295
-[6] new y = 294
-[0] new y = 293
-[1] new y = 292
-[2] new y = 291
-[3] new y = 290
-[4] new y = 289
-[5] new y = 288
-[6] new y = 287
-B1=0x18 B2=0xfe B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=2
-[0] new y = 286
-[1] new y = 285
-[2] new y = 284
-[3] new y = 283
-[4] new y = 282
-[5] new y = 281
-[6] new y = 280
-B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
-[0] new y = 279
-[1] new y = 278
-[2] new y = 277
-[3] new y = 276
-[4] new y = 275
-[5] new y = 274
-[6] new y = 273
-[0] new y = 272
-[1] new y = 271
-[2] new y = 270
-[3] new y = 269
-[4] new y = 268
-[5] new y = 267
-[6] new y = 266
-B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
-[0] new y = 265
-[1] new y = 264
-[2] new y = 263
-[3] new y = 262
-[4] new y = 261
-[5] new y = 260
-[6] new y = 259
-B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
-[0] new y = 258
-[1] new y = 257
-[2] new y = 256
-[3] new y = 255
-[4] new y = 254
-[5] new y = 253
-[6] new y = 252
-[0] new y = 251
-[1] new y = 250
-[2] new y = 249
-[3] new y = 248
-[4] new y = 247
-[5] new y = 246
-[6] new y = 245
-B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
-[0] new y = 244
-[1] new y = 243
-[2] new y = 242
-[3] new y = 241
-[4] new y = 240
-[5] new y = 239
-[6] new y = 238
-[0] new y = 237
-[1] new y = 236
-[2] new y = 235
-[3] new y = 234
-[4] new y = 233
-[5] new y = 232
-[6] new y = 231
-B1=0x18 B2=0xfe B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=2
-[0] new y = 230
-[1] new y = 229
-[2] new y = 228
-[3] new y = 227
-[4] new y = 226
-[5] new y = 225
-[6] new y = 224
-[0] new y = 223
-[1] new y = 222
-[2] new y = 221
-[3] new y = 220
-[4] new y = 219
-[5] new y = 218
-[6] new y = 217
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 216
-[1] new y = 215
-[2] new y = 214
-[3] new y = 213
-[4] new y = 212
-[5] new y = 211
-[6] new y = 210
-[0] new y = 209
-[1] new y = 208
-[2] new y = 207
-[3] new y = 206
-[4] new y = 205
-[5] new y = 204
-[6] new y = 203
+door stuck
+Not in menu plz help
 B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-[0] new y = 202
-[1] new y = 201
-[2] new y = 200
-[3] new y = 199
-[4] new y = 198
-[5] new y = 197
-[6] new y = 196
-[0] new y = 195
-[1] new y = 194
-[2] new y = 193
-[3] new y = 192
-[4] new y = 191
-[5] new y = 190
-[6] new y = 189
-[0] new y = 188
-[1] new y = 187
-[2] new y = 186
-[3] new y = 185
-[4] new y = 184
-[5] new y = 183
-[6] new y = 182
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-[0] new y = 181
-[1] new y = 180
-[2] new y = 179
-[3] new y = 178
-[4] new y = 177
-[5] new y = 176
-[6] new y = 175
-[0] new y = 174
-[1] new y = 173
-[2] new y = 172
-[3] new y = 171
-[4] new y = 170
-[5] new y = 169
-[6] new y = 168
-B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
-[0] new y = 167
-[1] new y = 166
-[2] new y = 165
-[3] new y = 164
-[4] new y = 163
-[5] new y = 162
-[6] new y = 161
-[0] new y = 160
-[1] new y = 159
-[2] new y = 158
-[3] new y = 157
-[4] new y = 156
-[5] new y = 155
-[6] new y = 154
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-[0] new y = 153
-[1] new y = 152
-[2] new y = 151
-[3] new y = 150
-[4] new y = 149
-[5] new y = 148
-[6] new y = 147
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-[0] new y = 146
-[1] new y = 145
-[2] new y = 144
-[3] new y = 143
-[4] new y = 142
-[5] new y = 141
-[6] new y = 140
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 139
-[1] new y = 138
-[2] new y = 137
-[3] new y = 136
-[4] new y = 135
-[5] new y = 134
-[6] new y = 133
-[0] new y = 132
-[1] new y = 131
-[2] new y = 130
-[3] new y = 129
-[4] new y = 128
-[5] new y = 127
-[6] new y = 126
-[0] new y = 125
-[1] new y = 124
-[2] new y = 123
-[3] new y = 122
-[4] new y = 121
-[5] new y = 120
-[6] new y = 119
-B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-[0] new y = 118
-[1] new y = 117
-[2] new y = 116
-[3] new y = 115
-[4] new y = 114
-[5] new y = 113
-[6] new y = 112
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-[0] new y = 111
-[1] new y = 110
-[2] new y = 109
-[3] new y = 108
-[4] new y = 107
-[5] new y = 106
-[6] new y = 105
-[0] new y = 104
-[1] new y = 103
-[2] new y = 102
-[3] new y = 101
-[4] new y = 100
-[5] new y = 99
-[6] new y = 98
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-[0] new y = 97
-[1] new y = 96
-[2] new y = 95
-[3] new y = 94
-[4] new y = 93
-[5] new y = 92
-[6] new y = 91
-[0] new y = 90
-[1] new y = 89
-[2] new y = 88
-[3] new y = 87
-[4] new y = 86
-[5] new y = 85
-[6] new y = 84
+door stuck
+Not in menu plz help
 B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-[0] new y = 83
-[1] new y = 82
-[2] new y = 81
-[3] new y = 80
-[4] new y = 79
-[5] new y = 78
-[6] new y = 77
-[0] new y = 76
-[1] new y = 75
-[2] new y = 74
-[3] new y = 73
-[4] new y = 72
-[5] new y = 71
-[6] new y = 70
-B1=0x18 B2=0xfe B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=1
-[0] new y = 69
-[1] new y = 68
-[2] new y = 67
-[3] new y = 66
-[4] new y = 65
-[5] new y = 64
-[6] new y = 63
-[0] new y = 62
-[1] new y = 61
-[2] new y = 60
-[3] new y = 59
-[4] new y = 58
-[5] new y = 57
-[6] new y = 56
-B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
-[0] new y = 55
-[1] new y = 54
-[2] new y = 53
-[3] new y = 52
-[4] new y = 51
-[5] new y = 50
-[6] new y = 49
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-[0] new y = 48
-[1] new y = 47
-[2] new y = 46
-[3] new y = 45
-[4] new y = 44
-[5] new y = 43
-[6] new y = 42
-[0] new y = 41
-[1] new y = 40
-[2] new y = 39
-[3] new y = 38
-[4] new y = 37
-[5] new y = 36
-[6] new y = 35
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=3
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=3
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfc B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfc B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfc B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=4
+door stuck
+Not in menu plz help
 B1=0x18 B2=0xfe B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=2
-[0] new y = 34
-[1] new y = 33
-[2] new y = 32
-[3] new y = 31
-[4] new y = 30
-[5] new y = 29
-[6] new y = 28
-[0] new y = 27
-[1] new y = 26
-[2] new y = 25
-[3] new y = 24
-[4] new y = 23
-[5] new y = 22
-[6] new y = 21
+door stuck
+Not in menu plz help
 B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
-[0] new y = 20
-[1] new y = 19
-[2] new y = 18
-[3] new y = 17
-[4] new y = 16
-[5] new y = 15
-[6] new y = 14
+door stuck
+Not in menu plz help
 B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-[0] new y = 13
-[1] new y = 12
-[2] new y = 11
-[3] new y = 10
-[4] new y = 9
-[5] new y = 8
-[6] new y = 7
-[0] new y = 6
-[1] new y = 5
-[2] new y = 4
-[3] new y = 3
-[4] new y = 2
-[5] new y = 1
-[6] new y = 0
-B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
-deleted bullet -> index = 0
-deleted bullet -> index = 1
-deleted bullet -> index = 2
-deleted bullet -> index = 3
-deleted bullet -> index = 4
-deleted bullet -> index = 5
-deleted bullet -> index = 6
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
+door stuck
+Not in menu plz help
 B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
+door stuck
+Not in menu plz help
 B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
-B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
+door stuck
+Not in menu plz help
 B1=0x18 B2=0xfe B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=1
-B1=0x18 B2=0xfd B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=1
-B1=0x18 B2=0xfc B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=1
-B1=0x18 B2=0xfc B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=1
-B1=0x18 B2=0xfb B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-5 YOV=0 Y=0
-B1=0x18 B2=0xfd B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=1
-B1=0x18 B2=0xfc B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=1
-B1=0x18 B2=0xfd B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=0
-B1=0x18 B2=0xfc B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=1
-B1=0x18 B2=0xfc B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=1
-B1=0x18 B2=0xfa B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-6 YOV=0 Y=1
-B1=0x18 B2=0xfb B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-5 YOV=0 Y=0
-B1=0x18 B2=0xfa B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-6 YOV=0 Y=1
-B1=0x18 B2=0xfd B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
+door stuck
+Not in menu plz help
 B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
+door stuck
+Not in menu plz help
 B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
+door stuck
+Not in menu plz help
 B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xfe B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=0
-B1=0x18 B2=0xfc B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=0
-B1=0x18 B2=0xfc B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=0
-B1=0x18 B2=0xfb B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-5 YOV=0 Y=1
-B1=0x18 B2=0xfb B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-5 YOV=0 Y=1
-B1=0x18 B2=0xfe B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xfc B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=0
-B1=0x18 B2=0xfd B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=0
-B1=0x18 B2=0xfe B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=0
-B1=0x18 B2=0xfd B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x38 B2=0xff B3=0xff LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=-1
-B1=0x38 B2=0xfe B3=0xff LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=-1
-B1=0x38 B2=0xfe B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=-2
-B1=0x38 B2=0xfe B3=0xff LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=-1
-B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
-B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=1
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=2
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=1
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
+door stuck
+Not in menu plz help
 B1=0x09 B2=0x00 B3=0x00 LB=1 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
-created bullet->index = 0, x = 549, y = 630
-created bullet->index = 1, x = 549, y = 630
-created bullet->index = 2, x = 549, y = 630
-created bullet->index = 3, x = 549, y = 630
-created bullet->index = 4, x = 549, y = 630
-created bullet->index = 5, x = 549, y = 630
-created bullet->index = 6, x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-draw bullet: x = 549, y = 630
-=======
+door stuck
 Not in menu plz help
 Creating bullet
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0B1=0x08 B2=0x00 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
+Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0B1=0x09 B2=0x00 B3=0x00 LB=1 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
 Not in menu plz help
 Creating bullet
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0B1=0x08 B2=0x00 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
+Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0B1=0x09 B2=0x00 B3=0x00 LB=1 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
 Not in menu plz help
 Creating bullet
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0B1=0x08 B2=0x00 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
 Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
-Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0B1=0x09 B2=0x00 B3=0x00 LB=1 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
 Not in menu plz help
 Creating bullet
->>>>>>> 5788e8ac389b8dffa4290e92890cd1b35969dd59
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0B1=0x08 B2=0x00 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
+Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0B1=0x09 B2=0x00 B3=0x00 LB=1 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
+Not in menu plz help
+Creating bullet
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0B1=0x08 B2=0x00 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
+Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0

@@ -140,20 +140,19 @@ int (send_mouse_command)(uint8_t cmd){
 
     return 0;
 }
-
+/*
 static int clamp(int min, int max, int value) {
     if (value < min) return min;
     if (value > max) return max;
     return value;
 }
-
+*/
 void (updateMouse)(struct packet *pp, Mouse *mouse) {
-
+/*
     mouse->x = clamp(0, X_RES - mouse->img.width - 1, mouse->x + pp->delta_x/5);
     mouse->y = clamp(0, Y_RES - mouse->img.height - 1, mouse->y - pp->delta_y/5);
 
     mouse->lb_pressed = pp->lb;
-<<<<<<< HEAD
 */
 
     if (pp->delta_x > 0) {
@@ -182,8 +181,6 @@ void (updateMouse)(struct packet *pp, Mouse *mouse) {
     }
 
     mouse->lb_pressed = pp->lb;
-=======
->>>>>>> 5788e8ac389b8dffa4290e92890cd1b35969dd59
 }
 
 int vg_drawrectangle(int x, int y, int width, int height){

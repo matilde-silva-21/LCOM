@@ -274,6 +274,7 @@ int (mouse_test_gesture)(uint8_t lineXLen, uint8_t tolerance) {
 
   return 0;
 }
+
 /*
 =======
   uint32_t mouse_bit_no = BIT(mouse_hookid);
