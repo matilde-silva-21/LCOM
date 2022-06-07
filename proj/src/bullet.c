@@ -137,3 +137,20 @@ void destroyAlienBullet(AlienBullet *alienBullet) {
 
     alienBullet = NULL;
 }
+
+
+void verifyAlienAndBulletCollision(Alien *a1){
+   
+    for(int j = 0; j < MAX_SHIP_BULLETS; j++){
+
+        if(shipBullets[j] == NULL){continue;}
+        if(a1->x < shipBullets[j]->x && ((a1->x + a1->width) > shipBullets[j]->x && a1->alive)){
+            a1->alive = false;
+            removeShipBulletbyIndex(j);
+            return;
+        }
+    } 
+    
+}
+
+

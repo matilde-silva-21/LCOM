@@ -15,7 +15,9 @@ typedef struct{
   int height;
   xpm_image_t img;
   xpm_image_t img_mov;
+  bool alive;
 }Alien;
+
 
 void change_alien_x_coordinates(Alien *a1, const int xf);
 
@@ -38,5 +40,6 @@ int alien_get_width(Alien *a1);
 int alien_get_height(Alien* a1);
 
 void change_all_y(Alien aliens[], int yf, int size_array);
+
 
 //Alien [] createAliens();

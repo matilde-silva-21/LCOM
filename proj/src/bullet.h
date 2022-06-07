@@ -51,6 +51,7 @@ void updateAlienBulletPosition(AlienBullet *alienBullet);
 
 void destroyAlienBullet(AlienBullet* alienBullet);
 
-//void checkCollisions
+void verifyAlienAndBulletCollision(Alien *a1);
+
 
 #endif //PROJ_BULLET_H
