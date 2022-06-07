@@ -21,6 +21,7 @@ int row = 0;
 
 int (game_loop)() {
 
+    int killCount = 0;
     bool exit = false;
     uint16_t mode = 0x105;
     initMenuXpm();
@@ -136,21 +137,22 @@ int (game_loop)() {
                             if ((mouse_scancode & BIT(3)) == 0) {
                                 continue; // if the bit(3) is different from 1 wait for the next interrupt
                             }
-                            currentByte = 2; // for the next iteration
+                            currentByte = 2;
                             mouseBytes[0] = mouse_scancode;
                         } else if (currentByte == 2) {
+                            // 2 byte do packet
                             currentByte = 3;
                             mouseBytes[1] = mouse_scancode;
                         } else if (currentByte == 3) {
+                            // 3 byte do packet
                             currentByte = 1;
                             mouseBytes[2] = mouse_scancode;
                             getMousePacket(&pp, mouseBytes);
-                            mouse_print_packet(&pp);
-                            //printf("x = %d     y = %d\n", mouse->x, mouse->y);
+                            //mouse_print_packet(&pp);
+                
                             ///====================MENU====================
                             updateMouse(&pp,mouse); // updates mouse coordinates and rb_pressed variable according to the given packet
                             if (menuDisplay) {
-                                printf("door stuck\n");
                                 button = getButton(mouse->x, mouse->y);
                                 if (drawMenu(button)) {
                                     return 1;
@@ -179,6 +181,7 @@ int (game_loop)() {
                                     }
                                 }
                             }
+
                             ///====================Instructions====================
                             if(instructionDisplay){
                                 instruction_button = getInstructionButton(mouse->x, mouse->y);
@@ -197,6 +200,7 @@ int (game_loop)() {
                                 }
                                 
                             }
+                            
                             ///====================SHIP SHOOT====================
                             else {
                                 //printf("Not in menu plz help\n");
@@ -255,18 +259,6 @@ int (game_loop)() {
                     if (msg.m_notify.interrupts & BIT(timer_bit_no)) {
                         updateShipBulletPosition();
                         timer_int_handler();
-
-/*
-                        if (!menuDisplay) {
-
-                        if (mouse->lb_pressed ){//&& ship->canShoot) {
-                            createShipBullet(ship->x + ship->img.width / 2, ship->y,
-                                             SHIP_BULLET_SPEED, shipBullet_img);
-                            //shipShoot(shipBullets, shipBullet);
-                            //ship->canShoot = false;
-                            //drawShipBullets(shipBullets);
-                        }
-*/
                         if (!menuDisplay && !instructionDisplay) {
 
                             drawBackground(background);
@@ -284,8 +276,6 @@ int (game_loop)() {
             //displayScreen();
             if (timer_counter >= ipf) {
 
-                int killCount = 0;
-
                 updateShipBulletPosition();
                 frame_counter++;
                 drawBackground(background);
@@ -296,10 +286,11 @@ int (game_loop)() {
 
                 for (int i = 0; i < sizeOfAliens; i++) {
                     Alien *a = &aliens[i];
-                    if(!a->alive) {killCount++;continue;}
+                    if(!(a->alive)) {continue;}
                     if (right_mov) {
                         change_alien_x_coordinates(a, speed);
-                        verifyAlienAndBulletCollision(a);
+                        verifyAlienAndBulletCollision(a, &killCount);
+                        printf("\nkill count: %d", killCount);
                         drawAlien(a, mov_img);
                         if ((a->x + a->width) >= x_right_border) {
                             right_mov = false;
@@ -311,7 +302,8 @@ int (game_loop)() {
                         }
                     } else {
                         change_alien_x_coordinates(a, -speed);
-                        verifyAlienAndBulletCollision(a);
+                        verifyAlienAndBulletCollision(a, &killCount);
+                        printf("\nkill count: %d", killCount);
                         drawAlien(a, mov_img);
                         if (a->x <= x_left_border) {
                             change_all_y(aliens, 20, sizeOfAliens);

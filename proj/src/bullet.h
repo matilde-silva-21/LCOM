@@ -55,6 +55,6 @@ void destroyAlienBullet(AlienBullet* alienBullet);
 
 //void checkCollisions
 
-void verifyAlienAndBulletCollision(Alien *a1);
+void verifyAlienAndBulletCollision(Alien *a1, int *killCount);
 
 #endif //PROJ_BULLET_H

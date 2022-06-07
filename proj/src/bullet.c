@@ -106,12 +106,13 @@ void destroyAlienBullet(AlienBullet *alienBullet) {
     alienBullet = NULL;
 }
 
-void verifyAlienAndBulletCollision(Alien *a1){
+void verifyAlienAndBulletCollision(Alien *a1, int *killCount){
    
     for(int j = 0; j < MAX_SHIP_BULLETS; j++){
         if(shipBullets[j] == NULL){continue;}
         if(a1->x < shipBullets[j]->x && ((a1->x + a1->width) > shipBullets[j]->x && a1->alive) && shipBullets[j]->y > a1->y  && shipBullets[j]->y < (a1->y+a1->height)){
             a1->alive = false;
+            (*killCount)++;
             removeShipBulletbyIndex(j);
             return;
         }
