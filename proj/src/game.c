@@ -11,10 +11,11 @@ extern int timer_counter;
 extern void *video_mem;
 extern void *display_mem;
 
+bool menuDisplay = false;
+bool instructionDisplay = false;
 extern ShipBullet *shipBullets[MAX_SHIP_BULLETS];
 //extern Alien *aliens[ROW_ALIENS * COL_ALIENS];
 
-bool menuDisplay = false;
 bool gameOver = false;
 int row = 0;
 
@@ -69,6 +70,7 @@ int (game_loop)() {
     uint8_t kbdBytes[2];
 
     Button button = Initial;
+    bool instruction_button = false;
 
     xpm_image_t background = loadBackground();
     xpm_image_t shipBullet_img = loadShipBulletXpm();
@@ -143,8 +145,7 @@ int (game_loop)() {
                             currentByte = 1;
                             mouseBytes[2] = mouse_scancode;
                             getMousePacket(&pp, mouseBytes);
-
-                            //mouse_print_packet(&pp);
+                            mouse_print_packet(&pp);
                             //printf("x = %d     y = %d\n", mouse->x, mouse->y);
                             ///====================MENU====================
                             updateMouse(&pp,mouse); // updates mouse coordinates and rb_pressed variable according to the given packet
@@ -164,6 +165,8 @@ int (game_loop)() {
                                             drawShip(ship);
                                             break;
                                         case InstructionsButton:
+                                            menuDisplay = false;
+                                            instructionDisplay = true;
                                             displayInstructions();
                                             break;
                                         case HallOfFameButton:
@@ -176,7 +179,24 @@ int (game_loop)() {
                                     }
                                 }
                             }
-
+                            ///====================Instructions====================
+                            if(instructionDisplay){
+                                instruction_button = getInstructionButton(mouse->x, mouse->y);
+                                if(drawInstructions(instruction_button)){
+                                    return 1;
+                                }
+                                drawMouse(mouse);
+                                if (mouse->lb_pressed) {
+                                    if(instruction_button){
+                                        menuDisplay = true;
+                                        instructionDisplay = false;
+                                        button = Initial;
+                                        drawMenu(button);
+                                    }
+                                
+                                }
+                                
+                            }
                             ///====================SHIP SHOOT====================
                             else {
                                 //printf("Not in menu plz help\n");
@@ -194,6 +214,10 @@ int (game_loop)() {
                             }
                         }
                     }
+                    else if(mouse_statuscode & OBF_BIT){
+                        util_sys_inb(OUT_BUF, &mouse_scancode);
+                        ih_error = 0;
+                    }
                     if (msg.m_notify.interrupts & BIT(kbd_bit_no)) {
                         kbc_ih();
                         if (twoBytes(keyboard_scancode)) {
@@ -207,7 +231,7 @@ int (game_loop)() {
                             kbdBytes[1] = keyboard_scancode;
                         }
                         size = 1;
-                        if (!menuDisplay) {
+                        if (!menuDisplay && !instructionDisplay) {
                             switch (keyboard_scancode) {
                                 case 0x1E:
                                     key = A_Pressed;
@@ -232,7 +256,19 @@ int (game_loop)() {
                         updateShipBulletPosition();
                         timer_int_handler();
 
+/*
                         if (!menuDisplay) {
+
+                        if (mouse->lb_pressed ){//&& ship->canShoot) {
+                            createShipBullet(ship->x + ship->img.width / 2, ship->y,
+                                             SHIP_BULLET_SPEED, shipBullet_img);
+                            //shipShoot(shipBullets, shipBullet);
+                            //ship->canShoot = false;
+                            //drawShipBullets(shipBullets);
+                        }
+*/
+                        if (!menuDisplay && !instructionDisplay) {
+
                             drawBackground(background);
                             drawShip(ship);
                             drawShipBullets();
@@ -244,7 +280,7 @@ int (game_loop)() {
                     break;
             }
         }
-        if (!gameOver && !menuDisplay) {
+        if (!gameOver && !menuDisplay && !instructionDisplay) {
             //displayScreen();
             if (timer_counter >= ipf) {
 

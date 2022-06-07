@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 kill count: 0
@@ -299,222 +300,698 @@ kill count: 0
 kill count: 0
 kill count: 0
 kill count: 0Not in menu plz help
+=======
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x03 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=2
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x05 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x09 B3=0x07 LB=0 MB=0 RB=0 XOV=0 X=9 YOV=0 Y=7
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x0a B3=0x0b LB=0 MB=0 RB=0 XOV=0 X=10 YOV=0 Y=11
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x0d B3=0x14 LB=0 MB=0 RB=0 XOV=0 X=13 YOV=0 Y=20
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x0a B3=0x12 LB=0 MB=0 RB=0 XOV=0 X=10 YOV=0 Y=18
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x02 B3=0x07 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=7
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x00 B3=0x08 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=8
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x00 B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x0d B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=13 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x0c B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=12 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x15 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=21 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x17 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=23 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x14 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=20 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x09 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=9 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xf9 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-7
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xf9 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-7
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x08 B3=0xf4 LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=-12
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xf8 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-8
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x09 B3=0xf6 LB=0 MB=0 RB=0 XOV=0 X=9 YOV=0 Y=-10
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x07 B3=0xf8 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=-8
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x09 B3=0xf7 LB=0 MB=0 RB=0 XOV=0 X=9 YOV=0 Y=-9
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x07 B3=0xf9 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=-7
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xf9 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-7
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x07 B3=0xf9 LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=-7
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x0b B3=0xf7 LB=0 MB=0 RB=0 XOV=0 X=11 YOV=0 Y=-9
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x09 B3=0xfa LB=0 MB=0 RB=0 XOV=0 X=9 YOV=0 Y=-6
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x08 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x07 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x07 B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x0b B3=0xfb LB=0 MB=0 RB=0 XOV=0 X=11 YOV=0 Y=-5
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x08 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x08 B3=0xfc LB=0 MB=0 RB=0 XOV=0 X=8 YOV=0 Y=-4
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x00 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x01 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x04 B3=0xfd LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=-3
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x06 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x07 B3=0xfe LB=0 MB=0 RB=0 XOV=0 X=7 YOV=0 Y=-2
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x06 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=6 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x05 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=5 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x02 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x03 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x02 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=2 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x04 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=4 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x28 B2=0x03 B3=0xff LB=0 MB=0 RB=0 XOV=0 X=3 YOV=0 Y=-1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x01 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xff B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=3
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x07 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=7
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfc B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=6
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=6
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfc B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=6
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x06 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=6
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=3
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=3
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=3
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=3
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x00 B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=2
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=3
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x03 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=3
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfc B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfc B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x05 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=5
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfd B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-3 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfc B3=0x04 LB=0 MB=0 RB=0 XOV=0 X=-4 YOV=0 Y=4
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=2
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=1
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xff B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=2
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xff B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=0
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=1
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x02 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=2
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xfe B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-2 YOV=0 Y=1
+door stuck
+Not in menu plz help
+B1=0x18 B2=0xff B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=-1 YOV=0 Y=1
+door stuck
+Not in menu plz help
+B1=0x08 B2=0x00 B3=0x01 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=1
+door stuck
+Not in menu plz help
+B1=0x09 B2=0x00 B3=0x00 LB=1 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
+door stuck
+Not in menu plz help
+>>>>>>> dc367bc2ff8d7b3c2d173210318c21f899622d83
 Creating bullet
 
 kill count: 0
 kill count: 0
-kill count: 0Not in menu plz help
-
 kill count: 0
 kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
+kill count: 0B1=0x08 B2=0x00 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
 Not in menu plz help
 
 kill count: 0
-kill count: 0Not in menu plz help
-Creating bullet
-
 kill count: 0
-kill count: 0Not in menu plz help
-
 kill count: 0
-kill count: 0Not in menu plz help
-
 kill count: 0
 kill count: 0
 kill count: 0
@@ -543,14 +1020,8 @@ kill count: 0
 kill count: 0
 kill count: 0
 kill count: 0
-kill count: 0Not in menu plz help
-
 kill count: 0
-kill count: 0Not in menu plz help
-
 kill count: 0
-kill count: 0Not in menu plz help
-
 kill count: 0
 kill count: 0
 kill count: 0
@@ -668,861 +1139,430 @@ kill count: 0
 kill count: 0
 kill count: 0
 kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-Creating bullet
-
-kill count: 0
-kill count: 0Not in menu plz help
-Creating bullet
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-Creating bullet
-
-kill count: 0
-kill count: 0Not in menu plz help
-Creating bullet
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-Creating bullet
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-Creating bullet
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-Creating bullet
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
+kill count: 0B1=0x09 B2=0x00 B3=0x00 LB=1 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
+Not in menu plz help
 Creating bullet
 
 kill count: 0
 kill count: 0
-kill count: 0Not in menu plz help
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0B1=0x08 B2=0x00 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
+Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0B1=0x09 B2=0x00 B3=0x00 LB=1 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
+Not in menu plz help
 Creating bullet
 
 kill count: 0
-kill count: 0Not in menu plz help
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0B1=0x08 B2=0x00 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
+Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0B1=0x09 B2=0x00 B3=0x00 LB=1 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
+Not in menu plz help
 Creating bullet
 
 kill count: 0
-kill count: 0Not in menu plz help
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0B1=0x08 B2=0x00 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
+Not in menu plz help
+
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0B1=0x09 B2=0x00 B3=0x00 LB=1 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
+Not in menu plz help
 Creating bullet
 
 kill count: 0
 kill count: 0
-kill count: 0Not in menu plz help
-Creating bullet
-
 kill count: 0
-kill count: 0Not in menu plz help
-Creating bullet
-
 kill count: 0
-kill count: 0Not in menu plz help
-Creating bullet
-
 kill count: 0
-kill count: 0Not in menu plz help
-Creating bullet
-
-kill count: 0
-kill count: 0Not in menu plz help
-Creating bullet
-
-kill count: 0
-kill count: 0Not in menu plz help
-Creating bullet
-
-kill count: 0
-kill count: 0Not in menu plz help
-Creating bullet
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
-kill count: 0
-kill count: 0Not in menu plz help
-Creating bullet
-
-kill count: 0Not in menu plz help
-Creating bullet
-
-kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
+kill count: 0B1=0x08 B2=0x00 B3=0x00 LB=0 MB=0 RB=0 XOV=0 X=0 YOV=0 Y=0
+Not in menu plz help
 
 kill count: 0
 kill count: 0
-kill count: 0Not in menu plz help
-
-kill count: 0Not in menu plz help
-
 kill count: 0
-kill count: 0Not in menu plz help
-
 kill count: 0
+<<<<<<< HEAD
 kill count: 0Not in menu plz help
 Creating bullet
 
 kill count: 0
 >>>>>>> 33a1315592c7943c95815c9fe2e2a28a7f7c0040
+=======
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+kill count: 0
+>>>>>>> dc367bc2ff8d7b3c2d173210318c21f899622d83

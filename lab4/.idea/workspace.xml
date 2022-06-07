@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1944c41d-ab88-4333-b16e-30d99a96c14f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/lab4" beforeDir="false" afterPath="$PROJECT_DIR$/lab4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4.c" beforeDir="false" afterPath="$PROJECT_DIR$/lab4.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab4.o" beforeDir="false" afterPath="$PROJECT_DIR$/lab4.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mouse.c" beforeDir="false" afterPath="$PROJECT_DIR$/mouse.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mouse.o" beforeDir="false" afterPath="$PROJECT_DIR$/mouse.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/alien.c" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/alien.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/alien.h" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/alien.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/alien.o" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/alien.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/bullet.c" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/bullet.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/bullet.h" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/bullet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/bullet.o" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/bullet.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/game.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/game.o" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/game.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/graphic.o" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/graphic.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/keyboard.o" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/keyboard.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/macros.h" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/macros.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/menu.o" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/menu.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/mouse.c" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/mouse.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/mouse.o" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/mouse.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/proj" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/proj.o" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/proj.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/ship.c" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/ship.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/ship.h" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/ship.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/ship.o" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/ship.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/timer.o" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/timer.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/trace.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/trace.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj/src/utils.o" beforeDir="false" afterPath="$PROJECT_DIR$/../proj/src/utils.o" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2A6pUBa2XOQlVVH2oiw3WgAfov4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.overridden" value="true" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1944c41d-ab88-4333-b16e-30d99a96c14f" name="Changes" comment="" />
+      <created>1654339903284</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654339903284</updated>
+      <workItem from="1654339904537" duration="540000" />
+      <workItem from="1654534122601" duration="887000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

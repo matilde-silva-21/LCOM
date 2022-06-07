@@ -10,8 +10,6 @@ CPPFLAGS += -pedantic -DLAB4
 
 # list of library dependencies (for Lab 2, only LCF library)
 DPADD += ${LIBLCF}
-DPADD += ${liblm.a}
-DPADD += ${libxpm.a}
 LDADD += -llcf
 
 # include LCOM's makefile that does all the "heavy lifting"

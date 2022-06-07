@@ -10,12 +10,17 @@ xpm_image_t menu_hallOfFame_xpm;
 xpm_image_t menu_exit_xpm ;
 xpm_image_t menu_xpm;
 
+xpm_image_t instructions_xpm;
+xpm_image_t instructions_back_xpm;
+
 void initMenuXpm(){
     xpm_load(menu_start, XPM_INDEXED, &menu_start_xpm);
     xpm_load(menu_instructions, XPM_INDEXED, &menu_instructions_xpm);
     xpm_load(menu_hallOfFame_1, XPM_INDEXED, &menu_hallOfFame_xpm);
     xpm_load(menu_exit, XPM_INDEXED, &menu_exit_xpm);
     xpm_load(menu2, XPM_INDEXED, &menu_xpm);
+    xpm_load(instructions, XPM_INDEXED, &instructions_xpm);
+    xpm_load(instructions_back, XPM_INDEXED, &instructions_back_xpm);
 
     /*
     menu_start_xpm = loadXpm(menu_start);
@@ -39,6 +44,12 @@ Button getButton(uint16_t x, uint16_t y) {
     } else {
         return Initial;
     }
+}
+
+bool getInstructionButton(uint16_t x, uint16_t y) {
+    if(x > 912 && x < 992 && y > 672 && y < 736)
+        return true;
+    return false;
 }
 
 //draws menu according to the mouse's position
@@ -66,6 +77,19 @@ int drawMenu(Button button) {
     return 0;
 }
 
-void displayInstructions(){
+int drawInstructions(bool button) {
+    xpm_image_t menu;
 
+    if(button){
+        menu = instructions_back_xpm;
+    }
+    else menu = instructions_xpm;
+
+    drawBackground(menu);
+    return 0;
+}
+
+void displayInstructions(){
+    xpm_image_t menu;
+    drawBackground(menu);
 }

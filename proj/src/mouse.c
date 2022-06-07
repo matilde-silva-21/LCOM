@@ -28,13 +28,15 @@ int (mouse_unsubscribe_int)() {
 }
 
 void (mouse_ih)() {
-    util_sys_inb(STAT_REG, &mouse_statuscode);
-
-    if ((mouse_statuscode & (PARITY_BIT | TIMEOUT_BIT)) == 0 && (mouse_statuscode & OBF_BIT)) {
-        util_sys_inb(OUT_BUF, &mouse_scancode);
-        ih_error = 0;
-    }else
+    if(util_sys_inb(STAT_REG, &mouse_statuscode)){
         ih_error = 1;
+    }
+
+    if(!((mouse_statuscode & (PARITY_BIT | TIMEOUT_BIT)) == 0 && (mouse_statuscode & OBF_BIT))){
+        mouse_scancode = 0;
+        ih_error = 1;
+        return;
+    }
 
     util_sys_inb(OUT_BUF, &mouse_scancode);
 }
@@ -42,23 +44,25 @@ void (mouse_ih)() {
 void (getMousePacket)(struct packet *pp, uint8_t bytes[3]) {
     // bytes
     pp->bytes[0] = bytes[0];
-    pp->bytes[1] = (int16_t)bytes[1];
-    pp->bytes[2] = (int16_t)bytes[2];
+    pp->bytes[1] = bytes[1];
+    pp->bytes[2] = bytes[2];
 
     // buttons
     pp->lb = bytes[0] & LEFT;
-    pp->rb = bytes[0] & RIGHT;
-    pp->mb = bytes[0] & MIDDLE;
+    pp->rb = (bytes[0] & RIGHT) >> 1;
+    pp->mb = (bytes[0] & MIDDLE) >> 2;
 
     // x and y displacement
-    if (bytes[0] & X_SIGN)
-        pp->delta_x |= FILLMSB;
-    if (bytes[0] & Y_SIGN)
-        pp->delta_y |= FILLMSB;
+    if(bytes[0] & Y_SIGN)
+        pp->delta_y = bytes[2] | FILLMSB;
+    else pp->delta_y = bytes[2];
+    if(bytes[0] & X_SIGN)
+        pp->delta_x = bytes[1] | FILLMSB;
+    else pp->delta_x = bytes[1];
 
     // x and y overflow
-    pp->x_ov = bytes[0] & X_OVFL;
-    pp->y_ov = bytes[0] & Y_OVFL;
+     pp->x_ov = (bytes[0] & X_OVFL) >> 6;
+     pp->y_ov = (bytes[0] & Y_OVFL) >> 7;
 }
 /*
 int (write_command)(int port, uint8_t cmd){
@@ -77,40 +81,33 @@ int (write_command)(int port, uint8_t cmd){
 */
 /*
 int (send_mouse_command)(uint8_t cmd) {
-
-    if (sys_irqdisable(&mouse_hookid))
-        return 1;
-
     uint8_t ack;
-    do {
-        if (util_sys_inb(STAT_REG, &mouse_statuscode))
-            return 1;
-        if (mouse_statuscode & IBF_BIT) // checks if we can write
-            continue;
-        if (sys_outb(STAT_REG, MOUSE_COMMAND))
-            return 1;
+  do{
+    if(util_sys_inb(STAT_REG, &mouse_statuscode))
+      return 1;
+    if (mouse_statuscode & IBF_BIT) // checks if we can write
+      continue;
+    if(sys_outb(STAT_REG, MOUSE_COMMAND))
+      return 1;
 
-        if (util_sys_inb(STAT_REG, &mouse_statuscode))
-            return 1;
-        if (mouse_statuscode & IBF_BIT) // checks if we can write
-            continue;
-        if (sys_outb(ARGS_REG, cmd))
-            return 1;
+    if(util_sys_inb(STAT_REG, &mouse_statuscode))
+      return 1;
+    if (mouse_statuscode & IBF_BIT) // checks if we can write
+      continue;
+    if(sys_outb(ARGS_REG, cmd))
+      return 1;
 
-        tickdelay(micros_to_ticks(20000));
+    tickdelay(micros_to_ticks(20000));
 
-        if (util_sys_inb(OUT_BUF, &ack))
-            return 1;
+    if(util_sys_inb(OUT_BUF, &ack))
+      return 1;
 
-        if (ack == ACK_ERROR)
-            return 1;
+    if(ack == ACK_ERROR)
+      return 1;
 
-    } while (ack != ACK);
+  }while(ack != ACK);
 
-    if (sys_irqenable(&mouse_hookid))
-        return 1;
-
-    return 0;
+  return 0;
 }
 */
 
@@ -143,17 +140,45 @@ int (send_mouse_command)(uint8_t cmd){
 
     return 0;
 }
-
+/*
 static int clamp(int min, int max, int value) {
     if (value < min) return min;
     if (value > max) return max;
     return value;
 }
-
+*/
 void (updateMouse)(struct packet *pp, Mouse *mouse) {
-
+/*
     mouse->x = clamp(0, X_RES - mouse->img.width - 1, mouse->x + pp->delta_x/5);
     mouse->y = clamp(0, Y_RES - mouse->img.height - 1, mouse->y - pp->delta_y/5);
+
+    mouse->lb_pressed = pp->lb;
+*/
+
+    if (pp->delta_x > 0) {
+        if (mouse->x + pp->delta_x > (int)X_RES - mouse->img.width)
+            mouse->x = (int)X_RES - mouse->img.width;
+        else
+            mouse->x += pp->delta_x;
+    }
+    else if (pp->delta_x < 0) {
+        if (mouse->x + pp->delta_x < 0)
+            mouse->x = 0;
+        else
+            mouse->x += pp->delta_x;
+    }
+    if (pp->delta_y < 0) {
+        if (mouse->y + mouse->img.height - pp->delta_y > (int)Y_RES)
+            mouse->y = (int)Y_RES - mouse->img.height;
+        else
+            mouse->y -= pp->delta_y;
+    }
+    else if (pp->delta_y > 0) {
+        if (mouse->y - pp->delta_y < 0)
+            mouse->y = 0;
+        else
+            mouse->y -= pp->delta_y;
+    }
 
     mouse->lb_pressed = pp->lb;
 }

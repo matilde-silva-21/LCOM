@@ -24,6 +24,10 @@ int drawMenu(Button button);
 
 Button getButton(uint16_t x, uint16_t y);
 
+bool getInstructionButton(uint16_t x, uint16_t y);
+
 void displayInstructions();
+
+int drawInstructions(bool button);
 
 #endif //PROJ_MENU_H
