@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 B1=0xfa B2=0x28 B3=0x00 LB=0 MB=0 RB=1 XOV=1 X=-216 YOV=1 Y=-256
 B1=0xfa B2=0x28 B3=0x00 LB=0 MB=0 RB=1 XOV=1 X=-216 YOV=1 Y=-256
 B1=0xfc B2=0x28 B3=0x00 LB=0 MB=1 RB=0 XOV=1 X=-216 YOV=1 Y=-256
@@ -6001,3 +6002,61 @@ draw bullet: x = 549, y = 630
 draw bullet: x = 549, y = 630
 draw bullet: x = 549, y = 630
 draw bullet: x = 549, y = 630
+=======
+Not in menu plz help
+Creating bullet
+Not in menu plz help
+Creating bullet
+Not in menu plz help
+Creating bullet
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Not in menu plz help
+Creating bullet
+>>>>>>> 5788e8ac389b8dffa4290e92890cd1b35969dd59

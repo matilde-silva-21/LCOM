@@ -70,6 +70,12 @@ void (mouse_getPacket)(uint8_t bytes[3], struct packet* pp){
   pp->y_ov = (bytes[0] & Y_OVFL) >> 7;
 }
 
+int(mouseStatus)(uint8_t *st) {
+  if (util_sys_inb(STAT_REG, st))
+    return 1;
+  return 0;
+}
+
 int (send_mouse_command)(uint8_t cmd){
   uint8_t ack;
   do{
