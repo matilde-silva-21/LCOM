@@ -80,9 +80,21 @@ int (game_loop)() {
     initShipBullets(shipBullets);
 
     Alien aliens[] = {
-            createAlien(24, 20, alien1, alien1_m),
-            createAlien(300, 20, alien2, alien2_m),
-            createAlien(600, 20, alien3, alien3_m)
+        createAlien(170, 20, alien1, alien1_m),
+        createAlien(320, 20, alien1, alien1_m),
+        createAlien(470, 20, alien1, alien1_m),
+        createAlien(620, 20, alien1, alien1_m),
+        createAlien(770, 20, alien1, alien1_m),
+        createAlien(170, 100, alien2, alien2_m),
+        createAlien(320, 100, alien2, alien2_m),
+        createAlien(470, 100, alien2, alien2_m),
+        createAlien(620, 100, alien2, alien2_m),
+        createAlien(770, 100, alien2, alien2_m),
+        createAlien(170, 180, alien3, alien3_m),
+        createAlien(320, 180, alien3, alien3_m),
+        createAlien(470, 180, alien3, alien3_m),
+        createAlien(620, 180, alien3, alien3_m),
+        createAlien(770, 180, alien3, alien3_m)
     };
 
     //printf("A");
@@ -242,8 +254,6 @@ int (game_loop)() {
                 drawShip(ship);
                 drawShipBullets();
 
-                printf("\nkill count: %d", killCount);
-
                 for (int i = 0; i < sizeOfAliens; i++) {
                     Alien *a = &aliens[i];
                     if(!a->alive) {killCount++;}
@@ -254,6 +264,7 @@ int (game_loop)() {
                         if ((a->x + a->width) >= x_right_border) {
                             right_mov = false;
                             change_all_y(aliens, 20, sizeOfAliens);
+                            row++;
                             if (row % 3 == 0) {
                                 speed++;
                                 frames_per_state--;
@@ -266,13 +277,13 @@ int (game_loop)() {
                         if (a->x <= x_left_border) {
                             change_all_y(aliens, 20, sizeOfAliens);
                             right_mov = true;
+                            row++;
                             if (row % 3 == 0) {
                                 speed++;
                                 frames_per_state--;
                             }
                         }
                     }
-                    row++;
                     if ((a->y + a->height) >= territory || killCount == sizeOfAliens) {
                         gameOver = true;
                         //drawBackground(img);
@@ -284,6 +295,7 @@ int (game_loop)() {
                     mov_img = !mov_img;
                     frame_counter = 0;
                 }
+
             }
         }
     }

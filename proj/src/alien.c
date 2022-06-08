@@ -51,8 +51,8 @@ void change_all_y(Alien aliens[], int yf, int size_array) {
     }
 }
 
-/*
-Alien * createAliens() {
+
+/*Alien* createAliens() {
     Alien aliens[ROW_ALIENS * COL_ALIENS];
     int xi = 24, yi = 20;
     for (int column = 0; column < COL_ALIENS; column++) {
