@@ -19,7 +19,7 @@ typedef struct {
     int speed;
     xpm_image_t img;
     int lives;
-    //bool canShoot, isShot;
+    bool isShot;
 } Ship;
 
 typedef enum {

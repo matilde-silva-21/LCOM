@@ -5,12 +5,6 @@ static uint16_t Yres; // vertical resolution
 static int bitsPerPixel;
 
 static uint8_t color_mode;
-static uint8_t redMask;
-static uint8_t redFieldPos;
-static uint8_t greenMask;
-static uint8_t greenFieldPos;
-static uint8_t blueMask;
-static uint8_t blueFieldPos;
 
 void *video_mem;
 void *display_mem;
@@ -28,16 +22,6 @@ int vg_get_mode_info(uint16_t *mode, vbe_mode_info_t *info) {
     Xres = info->XResolution;
     Yres = info->YResolution;
     bitsPerPixel = info->BitsPerPixel;
-
-    //color info - para o draw pattern
-    redMask = info->RedMaskSize;
-    redFieldPos = info->RedFieldPosition;
-
-    greenMask = info->GreenMaskSize;
-    greenFieldPos = info->GreenFieldPosition;
-
-    blueMask = info->BlueMaskSize;
-    blueFieldPos = info->BlueFieldPosition;
 
     color_mode = info->MemoryModel;
 

@@ -5,24 +5,20 @@
 
 #include <stdbool.h>
 #include <stdint.h>
+//#include <stdlib.h>
 
 #include "graphic.h"
 #include "resources.h"
 #include "macros.h"
+//#include "ship.h"
 
+///SHIP BULLETS
 typedef struct {
     int x, y;
     int speed;
     xpm_image_t img;
-    //bool moving;
-    //int id;
+    bool hitAlien;
 } ShipBullet;
-
-typedef struct {
-    int x, y;
-    int speed;
-    xpm_image_t img;
-} AlienBullet;
 
 xpm_image_t loadShipBulletXpm();
 
@@ -41,20 +37,31 @@ void shipShoot(ShipBullet *shipBullet);
 
 void removeShipBulletbyIndex(int ind);
 
-//void destroyShipBullet(ShipBullet* shipBullet);
+void verifyAlienAndBulletCollision(Alien *a1, int *killCount);
+
+///ALIEN BULLETS
+/*
+typedef struct {
+    int x, y;
+    int speed;
+    xpm_image_t img;
+    bool active;
+} AlienBullet;
 
 xpm_image_t loadAlienBulletXpm();
 
-AlienBullet *createAlienBullet(int x, int y, int speed, xpm_image_t img);
+void createAlienBullet(int x, int y, int speed, xpm_image_t img);
+
+void initAlienBullet(xpm_image_t img);
 
 void updateAlienBulletPosition(AlienBullet *alienBullet);
 
-void destroyAlienBullet(AlienBullet* alienBullet);
+void clearAlienBullet();
 
-//void checkShipBulletCollision(Alien *aliens[]);
+bool verifyShipAndBulletCollision(Ship *ship);
 
-//void checkCollisions
+int generateALienBullet(Alien aliens[]);
 
-void verifyAlienAndBulletCollision(Alien *a1);
-
+void drawAlienBullet();
+*/
 #endif //PROJ_BULLET_H
