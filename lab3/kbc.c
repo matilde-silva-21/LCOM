@@ -1,3 +1,4 @@
+#include <lcom/lcf.h>
 #include "kbc.h"
 
 int kbd_hookid = 1;

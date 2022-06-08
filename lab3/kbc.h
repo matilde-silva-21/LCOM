@@ -1,8 +1,6 @@
 #ifndef LAB3_KBC_H
 #define LAB3_KBC_H
 
-#include <lcom/lcf.h>
-
 #include <stdbool.h>
 #include <stdint.h>
 

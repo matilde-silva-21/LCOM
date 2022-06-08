@@ -4,11 +4,11 @@
 #include <stdint.h>
 #include <stdio.h>
 
-// Any header files included below this line should have been created by you
-
+#include "i8042.h"
 #include "mouse.h"
 #include "timer.h"
 
+// Any header files included below this line should have been created by you
 extern int mouse_hookid, hookid, timer_counter;
 extern uint8_t scancode, statuscode;
 extern int ih_error;
@@ -18,6 +18,7 @@ extern bool existEvent;
 extern state_t pattern_state;
 extern struct packet previousPacket;
 extern int timer_counter;
+
 
 
 int main(int argc, char *argv[]) {
@@ -44,23 +45,23 @@ int main(int argc, char *argv[]) {
   return 0;
 }
 
-int (mouse_test_packet)(uint32_t cnt) {
-  uint32_t mouse_bit_no = BIT(mouse_hookid);
+int(mouse_test_packet)(uint32_t cnt) {
 
-  if (mouse_subscribe_int(&mouse_hookid)) {
+  uint8_t bit_no;
+
+  if(send_mouse_command(ENABLE_MOUSE))
     return 1;
-  }
 
-  if(send_mouse_command(ENABLE_MOUSE)) {
+  if (mouse_subscribe_int(&bit_no))
     return 1;
-  }
 
-
-  int ipc_status, r;//, pack_count = 0;
-  message msg;
-  struct packet pp;
-  int currentByte = 1;
+  int currenByte = 1;
   uint8_t bytes[3];
+
+  struct packet pp;
+
+  int ipc_status, r;
+  message msg;
 
   while (cnt > 0) {
     if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
@@ -70,54 +71,51 @@ int (mouse_test_packet)(uint32_t cnt) {
     if (is_ipc_notify(ipc_status)) {
       switch (_ENDPOINT_P(msg.m_source)) {
         case HARDWARE:
-          if (msg.m_notify.interrupts & mouse_bit_no) {
-            mouse_ih(); // read 1 byte per interrupt -> a packet has 3 bytes
-            if(ih_error)
+          if (msg.m_notify.interrupts & BIT(bit_no)) {
+            mouse_ih();
+            if (ih_error)
               continue;
-            
-            if(currentByte == 1){
-              //1º byte do packet
-              if((scancode & BIT(3)) == 0){
-                continue;//if the bit(3) is different from 1 wait for the next interrupt
-              }
-              currentByte = 2; // for the next iteration
+            if (currenByte == 1) {
+              if ((scancode & BIT(3)) == 0)
+                continue;
               bytes[0] = scancode;
+              currenByte = 2;
             }
-            else if(currentByte == 2) {
-              currentByte = 3;
+            else if (currenByte == 2) {
               bytes[1] = scancode;
+              currenByte = 3;
             }
-            else if(currentByte == 3) {
-              currentByte = 1;
-              cnt--;
+            else if (currenByte == 3) {
               bytes[2] = scancode;
-              getMousePacket(&pp, bytes);
+              currenByte = 1;
+              mouse_getPacket(bytes, &pp);
               mouse_print_packet(&pp);
+              cnt--;
             }
           }
           break;
         default:
           break;
       }
-    } else {
+    }
+    else {
     }
   }
 
-  if (send_mouse_command(DISABLE_MOUSE))
+  if (mouse_unsubscribe_int())
     return 1;
-  
 
-  if(mouse_unsubscribe_int())
+  if(send_mouse_command(DISABLE_MOUSE))
     return 1;
 
   return 0;
 }
 
-int (mouse_test_async)(uint8_t idle_time) {
+int(mouse_test_async)(uint8_t idle_time) {
 
-uint8_t timer_bit_no = BIT(hookid);
-uint32_t mouse_bit_no = BIT(mouse_hookid);
+  uint8_t mouse_bit_no, timer_bit_no;
 
+  if(send_mouse_command(ENABLE_MOUSE))
 if (mouse_subscribe_int(&mouse_hookid)) {
   return 1;
 }
@@ -276,6 +274,7 @@ int (mouse_test_gesture)(uint8_t lineXLen, uint8_t tolerance) {
 
   return 0;
 }
+
 /*
 =======
   uint32_t mouse_bit_no = BIT(mouse_hookid);
@@ -283,24 +282,23 @@ int (mouse_test_gesture)(uint8_t lineXLen, uint8_t tolerance) {
 
   if (mouse_subscribe_int(&mouse_hookid)) {
     return 1;
-  }
 
-  if(timer_subscribe_int(&timer_hookid)){
+  if (mouse_subscribe_int(&bit_no))
     return 1;
-  }
 
-  if(send_mouse_command(ENABLE_MOUSE)) {
+  if (timer_subscribe_int(&timer_bit_no))
     return 1;
-  }
 
-
-  int ipc_status, r;
-  message msg;
-  struct packet pp;
-  int currentByte = 1;
+  int currenByte = 1;
   uint8_t bytes[3];
 
-  while (timer_counter < idle_time * (int)sys_hz()) {
+  struct packet pp;
+
+  int aux_counter = 0;
+  int ipc_status, r;
+  message msg;
+
+  while (aux_counter <= idle_time) {
     if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0) {
       printf("driver_receive failed with: %d", r);
       continue;
@@ -308,65 +306,52 @@ int (mouse_test_gesture)(uint8_t lineXLen, uint8_t tolerance) {
     if (is_ipc_notify(ipc_status)) {
       switch (_ENDPOINT_P(msg.m_source)) {
         case HARDWARE:
-          if (msg.m_notify.interrupts & mouse_bit_no) {
-            timer_counter = 0;
-            mouse_ih(); // read 1 byte per interrupt -> a packet has 3 bytes
-            if(ih_error)
+          if (msg.m_notify.interrupts & BIT(bit_no)) {
+            mouse_ih();
+            if (ih_error)
               continue;
-            
-            if(currentByte == 1){
-              //1º byte do packet
-              if((scancode & BIT(3)) == 0){
-                continue;//if the bit(3) is different from 1 wait for the next interrupt
-              }
-              currentByte = 2; // for the next iteration
+            if (currenByte == 1) {
+              if ((scancode & BIT(3)) == 0)
+                continue;
               bytes[0] = scancode;
+              currenByte = 2;
             }
-            else if(currentByte == 2) {
-              currentByte = 3;
+            else if (currenByte == 2) {
               bytes[1] = scancode;
+              currenByte = 3;
             }
-            else if(currentByte == 3) {
-              currentByte = 1;
+            else if (currenByte == 3) {
               bytes[2] = scancode;
-              getMousePacket(&pp, bytes);
+              currenByte = 1;
+              mouse_getPacket(bytes, &pp);
               mouse_print_packet(&pp);
             }
+            aux_counter = 0;
+            timer_counter = 0;
           }
-
-          if (msg.m_notify.interrupts & BIT(timer_hookid)){
+          if (msg.m_notify.interrupts & BIT(timer_bit_no)) {
+            if(timer_counter % 60 == 0)
+              aux_counter ++;
             timer_int_handler();
-
           }
           break;
         default:
           break;
       }
-    } else {
+    }
+    else {
     }
   }
 
-  if (send_mouse_command(DISABLE_MOUSE))
+  if(timer_unsubscribe_int())
     return 1;
 
-  if(mouse_unsubscribe_int())
+  if (mouse_unsubscribe_int())
     return 1;
 
-  if(timer_unsubscribe_int()){return 1;}
+  if(send_mouse_command(DISABLE_MOUSE))
+    return 1;
 
   return 0;
 }
 */
-/*int (mouse_test_gesture)() {
-    printf("%s: under construction\n", __func__);
-    return 1;
-}
-
-int (mouse_test_remote)(uint16_t period, uint8_t cnt) {
-    //This year you need not implement this. 
-    printf("%s(%u, %u): under construction\n", __func__, period, cnt);
-    return 1;
-}*/
-
-
-

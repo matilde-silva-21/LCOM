@@ -15,12 +15,12 @@
 
 #define SHIP_BULLET_SPEED 3
 
-#define sizeOfAliens 15
+#define sizeOfAliens 21
 
 #define x_left_border 20
 #define x_right_border 1004
 
-#define territory 600//668
+#define territory 500//668
 
 #define ROW_ALIENS 3
 #define COL_ALIENS 7
