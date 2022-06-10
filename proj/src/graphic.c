@@ -113,6 +113,19 @@ int drawXpm(int x, int y, xpm_image_t img) {
     return 0;
 }
 
+void drawMouse(Mouse *mouse){
+    int counter = 0;
+
+    for (int i = mouse->y; i < mouse->img.height + mouse->y; i++) {
+        for (int j = mouse->x; j < mouse->img.width + mouse->x; j++) {
+            if(mouse->img.bytes[counter] != 0)
+                drawPixel(j, i, mouse->img.bytes[counter]);
+            counter++;
+        }
+    }
+}
+
+
 //double buffer
 void displayScreen() {
     int bytes = (bitsPerPixel + 7) >> 3;

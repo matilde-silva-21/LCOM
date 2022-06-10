@@ -43,8 +43,8 @@ int generateAlienBullet(Alien aliens[]) {
 }
 
 bool verifyShipAndBulletCollision(Ship *ship) {
-    if (ship->x < alienBullet->x && ((ship->x + ship->img.width) > alienBullet->x) &&
-        ship->y <= alienBullet->y && ship->y >= (alienBullet->y + alienBullet->img.height)) {
+    if (ship->x <= alienBullet->x && ((ship->x + ship->img.width) >= (alienBullet->x + alienBullet->img.width)) &&
+        ship->y <= alienBullet->y && (ship->y + ship->img.height) >= (alienBullet->y + alienBullet->img.height)) {
         ship->isShot = true;
         ship->lives --;
         alienBullet->active = false;

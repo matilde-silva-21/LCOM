@@ -167,11 +167,11 @@ Mouse *(createMouse)(int x, int y){
 
     return mouse;
 }
-
+/*
 void (drawMouse)(Mouse *mouse) {
     drawXpm(mouse->x, mouse->y, mouse->img);
 }
-
+*/
 void (removeMouse)(Mouse *mouse){
     free(mouse);
     mouse = NULL;

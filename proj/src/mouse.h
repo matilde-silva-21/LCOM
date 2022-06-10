@@ -8,7 +8,7 @@
 
 #include "i8042.h"
 #include "utils.h"
-#include "graphic.h"
+//#include "graphic.h"
 #include "macros.h"
 
 #include "resources.h"
@@ -33,7 +33,7 @@ Mouse *(createMouse)(int x, int y);
 
 void (updateMouse)(struct packet *pp, Mouse *mouse);
 
-void (drawMouse)(Mouse *mouse);
+//void (drawMouse)(Mouse *mouse);
 
 void (removeMouse)(Mouse *mouse);
 

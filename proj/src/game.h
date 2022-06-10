@@ -31,6 +31,8 @@ typedef enum{
     Exit
 }game_state;
 
+void (initGame)(Ship *ship);
+
 int (game_loop)();
 
 #endif //PROJ_GAME_H
