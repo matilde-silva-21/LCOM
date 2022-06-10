@@ -33,11 +33,11 @@ void (initGame)(Ship *ship){
     for (int column = 0; column < COL_ALIENS; column++) {
         for (int row = 0; row < ROW_ALIENS; row++) {
             if (row == 0) {
-                aliens[indice] = createAlien(xi, yi, alien3, alien3_m);
+                aliens[indice] = createAlien(xi, yi, alien3, alien3_m, 30);
             } else if (row == 1) {
-                aliens[indice] = createAlien(xi, yi, alien1, alien1_m);
+                aliens[indice] = createAlien(xi, yi, alien1, alien1_m, 20);
             } else {
-                aliens[indice] = createAlien(xi, yi, alien2, alien2_m);
+                aliens[indice] = createAlien(xi, yi, alien2, alien2_m, 10);
             }
             yi += 60;
             indice++;
@@ -266,6 +266,8 @@ int (game_loop)() {
                                 drawShip(ship);
                                 drawShipBullets();
                                 drawAlienBullet();
+                                drawLives(ship);
+                                drawScore(ship);
 
                                 printf("\nkill count: %d", killCount);
 
@@ -274,7 +276,7 @@ int (game_loop)() {
                                     if (!(a->alive)) { continue; }
                                     if (right_mov) {
                                         change_alien_x_coordinates(a, speed);
-                                        verifyAlienAndBulletCollision(a, &killCount);
+                                        verifyAlienAndBulletCollision(a, &killCount, ship);
                                         printf("\nkill count: %d", killCount);
                                         drawAlien(a, mov_img);
                                         if ((a->x + a->width) >= x_right_border) {
@@ -287,7 +289,7 @@ int (game_loop)() {
                                         }
                                     } else {
                                         change_alien_x_coordinates(a, -speed);
-                                        verifyAlienAndBulletCollision(a, &killCount);
+                                        verifyAlienAndBulletCollision(a, &killCount, ship);
                                         printf("\nkill count: %d", killCount);
                                         drawAlien(a, mov_img);
                                         if (a->x <= x_left_border) {

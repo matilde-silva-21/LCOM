@@ -31,7 +31,7 @@ void updateShipBulletPosition();
 
 void removeShipBullet(ShipBullet *shipBullet);
 
-void verifyAlienAndBulletCollision(Alien *a1, int *killCount);
+void verifyAlienAndBulletCollision(Alien *a1, int *killCount, Ship *ship);
 
 void removeAllShipBullets();
 

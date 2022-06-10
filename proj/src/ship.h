@@ -42,4 +42,7 @@ void removeShip(Ship *ship);
 void drawScore(Ship *ship);
 
 void drawLives(Ship *ship);
+
+void increaseScore(int scoreToAdd, Ship *ship);
+
 #endif //PROJ_SHIP_H
