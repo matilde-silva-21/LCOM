@@ -281,6 +281,7 @@ int (game_loop)() {
                 drawBackground(background);
                 drawShip(ship);
                 drawShipBullets();
+                drawLives(ship);
 
                 printf("\nkill count: %d", killCount);
 

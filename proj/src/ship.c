@@ -58,3 +58,25 @@ void destroyShip(Ship *ship) {
     free(ship);
     ship = NULL;
 }
+
+void drawScore(Ship *ship){
+
+}
+
+void drawLives(Ship *ship){
+    xpm_image_t live;
+    switch(ship->lives){
+        case 1:
+            xpm_load(one, XPM_INDEXED, &live);
+            drawXpm(1029, 741, live);
+            break;
+        case 2:
+            xpm_load(two, XPM_INDEXED, &live);
+            drawXpm(1029, 741, live);
+            break;
+        case 3:
+            xpm_load(three, XPM_INDEXED, &live);
+            drawXpm(1029, 741, live);
+            break;
+    }
+}

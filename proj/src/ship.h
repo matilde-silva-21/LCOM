@@ -20,6 +20,7 @@ typedef struct {
     xpm_image_t img;
     int lives;
     //bool canShoot, isShot;
+    int score;
 } Ship;
 
 typedef enum {
@@ -42,4 +43,7 @@ void destroyShip(Ship *ship);
 
 //void checkCollision(AlienBullet * alienBullet);
 
+void drawScore(Ship *ship);
+
+void drawLives(Ship *ship);
 #endif //PROJ_SHIP_H
