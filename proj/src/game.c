@@ -48,7 +48,6 @@ void (initGame)(Ship *ship){
 }
 
 int (game_loop)() {
-
     uint16_t mode = 0x105;
     int mouse_bit_no;
     uint8_t kbd_bit_no;
@@ -185,6 +184,7 @@ int (game_loop)() {
                                     }
                                 }
                             }
+                            
                             ///====================SHIP SHOOT====================
                             else {
                                 if (mouse->lb_pressed) {
@@ -316,6 +316,7 @@ int (game_loop)() {
 
                             }
                         }
+
                     }
                     break;
                 default:
