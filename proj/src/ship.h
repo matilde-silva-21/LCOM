@@ -19,7 +19,7 @@ typedef struct {
     int speed;
     xpm_image_t img;
     int lives;
-    //bool canShoot, isShot;
+    bool isShot;
     int score;
 } Ship;
 
@@ -35,13 +35,9 @@ Ship *createShip(int x, int y, int speed);
 
 void drawShip(Ship *ship);
 
-//void eraseShip(Ship *ship);
-
 Ship *updateShipPosition(Ship *ship, KeyActivity key);
 
-void destroyShip(Ship *ship);
-
-//void checkCollision(AlienBullet * alienBullet);
+void removeShip(Ship *ship);
 
 void drawScore(Ship *ship);
 

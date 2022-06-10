@@ -7,6 +7,7 @@
 #include <stdint.h>
 
 #include "alien.h"
+#include "mouse.h"
 
 #include "resources/background.xpm"
 
@@ -29,5 +30,7 @@ void drawBackground();
 void displayScreen();
 
 int drawAlien(Alien *a1, bool mov);
+
+void drawMouse(Mouse *mouse);
 
 #endif //PROJ_GRAPHIC_H
