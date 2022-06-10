@@ -12,7 +12,7 @@
 #include "macros.h"
 #include "graphic.h"
 
-#include "resources/ship.xpm"
+#include "../resources/"
 
 typedef struct {
     int x, y;

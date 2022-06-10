@@ -22,6 +22,8 @@
 
 #include "macros.h"
 
+#include "resources/"
+
 typedef enum{
     Menu_Display,
     Instructions_Display,
