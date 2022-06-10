@@ -14,6 +14,7 @@
 #define MAX_SHIP_BULLETS 7
 
 #define SHIP_BULLET_SPEED 2
+#define ALIEN_BULLET_SPEED 4
 
 #define sizeOfAliens 24
 

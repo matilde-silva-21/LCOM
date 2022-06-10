@@ -34,12 +34,8 @@ Ship *createShip(int x, int y, int speed);
 
 void drawShip(Ship *ship);
 
-//void eraseShip(Ship *ship);
-
 Ship *updateShipPosition(Ship *ship, KeyActivity key);
 
-void destroyShip(Ship *ship);
-
-//void checkCollision(AlienBullet * alienBullet);
+void removeShip(Ship *ship);
 
 #endif //PROJ_SHIP_H

@@ -21,14 +21,6 @@ void initMenuXpm(){
     xpm_load(menu2, XPM_INDEXED, &menu_xpm);
     xpm_load(instructions, XPM_INDEXED, &instructions_xpm);
     xpm_load(instructions_back, XPM_INDEXED, &instructions_back_xpm);
-
-    /*
-    menu_start_xpm = loadXpm(menu_start);
-    menu_instructions_xpm = loadXpm(menu_instructions);
-    menu_hallOfFame_xpm = loadXpm(menu_hallOfFame_1);
-    menu_exit_xpm = loadXpm(menu_exit);
-    menu_xpm = loadXpm(menu2);
-     */
 }
 
 //verificar a posiçao do rato no ecra do menu

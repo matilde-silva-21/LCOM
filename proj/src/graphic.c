@@ -113,24 +113,22 @@ int drawXpm(int x, int y, xpm_image_t img) {
     return 0;
 }
 
-//double buffer thingy - nao sei se esta alguma coisa de jeito
+//double buffer
 void displayScreen() {
     int bytes = (bitsPerPixel + 7) >> 3;
     memcpy(display_mem, video_mem, Yres * Xres * bytes);
 }
 
 int drawAlien(Alien *a1, bool mov) {
-    if(a1 == NULL)///!!!!!!!!!!!!!!!!!
-        return 0;
     
-    if(!a1->alive){return 1;}
+    if(!a1->alive){
+        return 1;
+    }
     if (mov) {
-        //xpm_image_t img = loadXpm(a1->img_mov);
         a1->width = a1->img_mov.width;
         a1->height = a1->img_mov.height;
         return drawXpm(a1->x, a1->y, a1->img_mov);
     } else {
-        //xpm_image_t img = loadXpm(a1->img);
         a1->width = a1->img.width;
         a1->height = a1->img.height;
         return drawXpm(a1->x, a1->y, a1->img);

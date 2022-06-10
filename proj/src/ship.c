@@ -52,9 +52,7 @@ Ship *updateShipPosition(Ship *ship, KeyActivity key) {
     return ship;
 }
 
-void destroyShip(Ship *ship) {
-    if (ship == NULL)
-        return;
+void removeShip(Ship *ship) {
     free(ship);
     ship = NULL;
 }

@@ -23,20 +23,18 @@ int (mouse_subscribe_int)(int *bit_no);
 
 int (mouse_unsubscribe_int)();
 
-int vg_drawrectangle(int x, int y, int width, int height);
-
-Mouse *(createMouse)(int x, int y);
-
 void (mouse_ih)();
 
 void (getMousePacket)(struct packet *pp, uint8_t bytes[3]);
 
 int (send_mouse_command)(uint8_t cmd);
 
+Mouse *(createMouse)(int x, int y);
+
 void (updateMouse)(struct packet *pp, Mouse *mouse);
 
 void (drawMouse)(Mouse *mouse);
 
-void (destroyMouse)(Mouse *mouse);
+void (removeMouse)(Mouse *mouse);
 
 #endif //PROJ_MOUSE_H
