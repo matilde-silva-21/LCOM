@@ -19,10 +19,9 @@
 #include "shipBullet.h"
 #include "alienBullet.h"
 #include "alien.h"
+#include "rtc.h"
 
 #include "macros.h"
-
-#include "resources/"
 
 typedef enum{
     Menu_Display,

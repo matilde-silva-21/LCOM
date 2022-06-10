@@ -20,7 +20,6 @@
 typedef enum {
     StartButton,
     InstructionsButton,
-    HallOfFameButton,
     ExitButton,
     Initial
 } Button;

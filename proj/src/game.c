@@ -1,7 +1,6 @@
-
 #include "game.h"
 
-extern int mouse_hookid, timer_hookid, kbd_hookid;
+extern int mouse_hookid, timer_hookid, kbd_hookid, rtc_hook_id;
 
 extern uint8_t keyboard_scancode, keyboard_statuscode;
 extern uint8_t mouse_scancode, mouse_statuscode;
@@ -11,6 +10,10 @@ extern int timer_counter;
 
 extern void *video_mem;
 extern void *display_mem;
+
+bool playing = false;
+extern int frames_per_state;
+extern int speed;
 
 extern ShipBullet *shipBullets[MAX_SHIP_BULLETS];
 extern AlienBullet *alienBullet;
@@ -51,6 +54,7 @@ int (game_loop)() {
     uint16_t mode = 0x105;
     int mouse_bit_no;
     uint8_t kbd_bit_no;
+    uint8_t rtc_bit_no;
     uint8_t timer_bit_no;
     vbe_mode_info_t info;
     int ipc_status, r;
@@ -60,15 +64,18 @@ int (game_loop)() {
     uint8_t mouseBytes[3];
     int size = 1;
     uint8_t kbdBytes[2];
+    playing = false;
 
     Button button = Initial;
     bool instruction_button = false;
     int killCount = 0;
     //bool exit = false;
     KeyActivity key;
-    int ipf = ((int) sys_hz()) / 60, speed = 1; // 60 = frame rate
+    int ipf = ((int) sys_hz()) / 60;
+    speed = 1; // 60 = frame rate
     bool mov_img = false, right_mov = true;
-    int frame_counter = 0, frames_per_state = 20;
+    int frame_counter = 0;
+    frames_per_state = 20;
     game_state gameState = Menu_Display;
 
     Mouse *mouse = createMouse(50, 700);
@@ -99,6 +106,9 @@ int (game_loop)() {
         return 1;
 
     if (timer_subscribe_int(&timer_bit_no))
+        return 1;
+
+    if(rtc_enable(&rtc_bit_no))
         return 1;
 
     if (drawMenu(button))
@@ -152,16 +162,17 @@ int (game_loop)() {
                                         case StartButton:
                                             ///start game
                                             gameState = Playing;
+                                            playing = true;
                                             initGame(ship);
                                             break;
                                         case InstructionsButton:
                                             gameState = Instructions_Display;
+                                            playing = false;
                                             displayInstructions();
-                                            break;
-                                        case HallOfFameButton:
                                             break;
                                         case ExitButton:
                                             gameState = Exit;
+                                            playing = false;
                                             break;
                                         case Initial:
                                             break;
@@ -179,6 +190,7 @@ int (game_loop)() {
                                 if (mouse->lb_pressed) {
                                     if (instruction_button) {
                                         gameState = Menu_Display;
+                                        playing = false;
                                         button = Initial;
                                         drawMenu(button);
                                     }
@@ -215,6 +227,7 @@ int (game_loop)() {
 
                         if(keyboard_scancode == ESC_BREAK){
                             gameState = Exit;
+                            playing = false;
                             continue;
                         }
                         if (gameState == Playing) {
@@ -238,6 +251,9 @@ int (game_loop)() {
                             ship = updateShipPosition(ship, key);
                         }
                     }
+                    if (msg.m_notify.interrupts & BIT(rtc_bit_no)){
+                        rtc_ih();
+                    }
                     ///TIMER
                     if (msg.m_notify.interrupts & BIT(timer_bit_no)) {
                         updateShipBulletPosition();
@@ -255,6 +271,7 @@ int (game_loop)() {
                                 verifyShipAndBulletCollision(ship);
                                 if(ship->lives == 0){
                                     gameState = Menu_Display;
+                                    playing = false;
                                     continue;
                                 }
                             }
@@ -280,10 +297,12 @@ int (game_loop)() {
                                         if ((a->x + a->width) >= x_right_border) {
                                             right_mov = false;
                                             change_all_y(aliens, 20, sizeOfAliens);
+                                            /*
                                             if (row % 3 == 0) {
                                                 speed++;
                                                 frames_per_state--;
                                             }
+                                            */
                                         }
                                     } else {
                                         change_alien_x_coordinates(a, -speed);
@@ -293,18 +312,22 @@ int (game_loop)() {
                                         if (a->x <= x_left_border) {
                                             change_all_y(aliens, 20, sizeOfAliens);
                                             right_mov = true;
+                                            /*
                                             if (row % 3 == 0) {
                                                 speed++;
                                                 frames_per_state--;
                                             }
+                                            */
                                         }
                                     }
-                                    row++;
+                                    //row++;
                                     if ((a->y + a->height) >= territory) {
                                         gameState = Player_Lost;
+                                        playing = false;
                                     }
                                     else if(killCount == sizeOfAliens){
                                         gameState = Player_Won;
+                                        playing = false;
                                     }
                                 }
 
@@ -331,6 +354,9 @@ int (game_loop)() {
     removeAlienBullet();
 
     if (timer_unsubscribe_int())
+        return 1;
+
+    if(rtc_disable())
         return 1;
 
     if (send_mouse_command(DISABLE_MOUSE))
