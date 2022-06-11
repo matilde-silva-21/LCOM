@@ -1,0 +1,104 @@
+enablecond
+
+kill count: 1
+kill count: 2
+kill count: 3
+kill count: 4
+kill count: 5
+kill count: 6
+kill count: 7
+kill count: 8
+kill count: 9
+kill count: 10
+kill count: 11
+kill count: 12
+kill count: 13
+kill count: 14
+kill count: 15
+kill count: 16
+kill count: 17
+kill count: 18
+kill count: 19
+kill count: 20
+kill count: 21
+kill count: 22
+kill count: 23
+kill count: 24alien indice = 0
+alien indice = 1
+alien indice = 2
+alien indice = 3
+alien indice = 4
+alien indice = 5
+alien indice = 6
+alien indice = 7
+alien indice = 8
+alien indice = 9
+alien indice = 10
+alien indice = 11
+alien indice = 12
+alien indice = 13
+alien indice = 14
+alien indice = 15
+alien indice = 16
+alien indice = 17
+alien indice = 18
+alien indice = 19
+alien indice = 20
+alien indice = 21
+alien indice = 22
+alien indice = 23
+
+kill count: 1
+kill count: 2
+kill count: 3
+kill count: 4
+kill count: 5
+kill count: 6
+kill count: 7
+kill count: 8
+kill count: 9
+kill count: 10
+kill count: 11
+kill count: 12
+kill count: 13
+kill count: 14
+kill count: 15
+kill count: 16
+kill count: 17
+kill count: 18colisao
+
+kill count: 19
+kill count: 20
+kill count: 21
+kill count: 22
+kill count: 23
+kill count: 24alien indice = 0
+alien indice = 1
+alien indice = 2
+alien indice = 3
+alien indice = 4
+alien indice = 5
+alien indice = 6
+alien indice = 7
+alien indice = 8
+alien indice = 9
+alien indice = 10
+alien indice = 11
+alien indice = 12
+alien indice = 13
+alien indice = 14
+alien indice = 15
+alien indice = 16
+alien indice = 17
+alien indice = 18
+alien indice = 19
+alien indice = 20
+alien indice = 21
+alien indice = 22
+alien indice = 23
+
+kill count: 1
+kill count: 2
+kill count: 3
+kill count: 4
+kill count: 5

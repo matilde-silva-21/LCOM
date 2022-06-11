@@ -65,6 +65,7 @@ void verifyAlienAndBulletCollision(Alien *a1, int *killCount) {
             shipBullets[j]->y > a1->y && shipBullets[j]->y < (a1->y + a1->height) && !shipBullets[j]->hitAlien) {
             a1->alive = false;
             (*killCount)++;
+            printf("\nkill count: %d", *killCount);
             shipBullets[j]->hitAlien = true;
             removeShipBullet(shipBullets[j]);
             return;

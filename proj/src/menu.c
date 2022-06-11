@@ -4,7 +4,6 @@ extern xpm_image_t menu;
 
 xpm_image_t menu_start_xpm;
 xpm_image_t menu_instructions_xpm;
-xpm_image_t menu_hallOfFame_xpm;
 xpm_image_t menu_exit_xpm ;
 xpm_image_t menu_xpm;
 
@@ -14,7 +13,6 @@ xpm_image_t instructions_back_xpm;
 void initMenuXpm(){
     xpm_load(menu_start, XPM_INDEXED, &menu_start_xpm);
     xpm_load(menu_instructions, XPM_INDEXED, &menu_instructions_xpm);
-    xpm_load(menu_hallOfFame_1, XPM_INDEXED, &menu_hallOfFame_xpm);
     xpm_load(menu_exit, XPM_INDEXED, &menu_exit_xpm);
     xpm_load(menu2, XPM_INDEXED, &menu_xpm);
     xpm_load(instructions, XPM_INDEXED, &instructions_xpm);
@@ -75,6 +73,6 @@ int drawInstructions(bool button) {
 }
 
 void displayInstructions(){
-    xpm_image_t menu;
+    xpm_image_t menu = instructions_xpm;
     drawBackground(menu);
 }
