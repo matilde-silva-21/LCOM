@@ -7,12 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd8950eb-97c7-45f9-b76e-28fa0a9d32ca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/proj" beforeDir="false" afterPath="$PROJECT_DIR$/src/proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rtc.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/rtc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rtc.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/rtc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trace.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/trace.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,8 @@
       <workItem from="1654809231919" duration="5315000" />
       <workItem from="1654847645367" duration="37055000" />
       <workItem from="1654936695212" duration="4516000" />
-      <workItem from="1654941506588" duration="5087000" />
+      <workItem from="1654941506588" duration="5622000" />
+      <workItem from="1654950051447" duration="369000" />
     </task>
     <servers />
   </component>

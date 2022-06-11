@@ -11,7 +11,7 @@ extern int timer_counter;
 extern void *video_mem;
 extern void *display_mem;
 
-bool playing = false;
+bool nextRound = false;
 extern int frames_per_state;
 extern int speed;
 
@@ -76,7 +76,7 @@ int (game_loop)() {
     uint8_t mouseBytes[3];
     int size = 1;
     uint8_t kbdBytes[2];
-    playing = false;
+    //playing = false;
 
     Button button = INITIAL;
     bool instruction_button = false;
@@ -108,12 +108,12 @@ int (game_loop)() {
 
     if (mouse_subscribe_int(&mouse_bit_no))
         return 1;
-
+/*
     if (send_mouse_command(ENABLE_MOUSE)) {
         return 1;
     }
-
-    //mouse_enable_data_reporting();
+*/
+    mouse_enable_data_reporting();
 
     if (kbd_subscribe_int(&kbd_bit_no))
         return 1;
@@ -178,17 +178,17 @@ int (game_loop)() {
                                         case START_BUTTON:
                                             ///start game
                                             //gameState = PLAYING;
-                                            playing = true;
+                                            //playing = true;
                                             initGame(ship);
                                             break;
                                         case INSTRUCTIONS_BUTTON:
                                             gameState = INSTRUCTIONS_DISPLAY;
-                                            playing = false;
+                                            //playing = false;
                                             displayInstructions();
                                             break;
                                         case EXIT_BUTTON:
                                             gameState = EXIT;
-                                            playing = false;
+                                            //playing = false;
                                             break;
                                         case INITIAL:
                                             break;
@@ -212,7 +212,7 @@ int (game_loop)() {
                                     if (instruction_button) {
                                         gameState = MENU_DISPLAY;
                                         button = INITIAL;
-                                        playing = false;
+                                        //playing = false;
                                         drawMenu(button);
                                     }
                                 }
@@ -248,7 +248,7 @@ int (game_loop)() {
 
                         if(keyboard_scancode == ESC_BREAK){
                             gameState = EXIT;
-                            playing = false;
+                            //playing = false;
                             continue;
                         }
                         if (gameState == PLAYING) {
@@ -276,10 +276,11 @@ int (game_loop)() {
 
                     ///RTC INTERRUPT
                     if (msg.m_notify.interrupts & BIT(rtc_bit_no)){
-                        if(changeSpeed) {
+                        if(nextRound) {
                             rtc_ih();
                             printf("%d\n", speed);
-                            changeSpeed = false;
+                            //changeSpeed = false;
+                            nextRound = false;
                         }
                     }
 
@@ -307,7 +308,7 @@ int (game_loop)() {
 
                                 if(ship->lives == 0){
                                     gameState = MENU_DISPLAY;
-                                    playing = false;
+                                    //playing = false;
                                     continue;
                                 }
                             }
@@ -332,7 +333,7 @@ int (game_loop)() {
 //                                            change_all_y(aliens, 6, SIZE_OF_ALIENS);
 
                                             if (row % 3 == 0) {
-                                                changeSpeed = true;
+                                                //changeSpeed = true;
 //                                                speed++;
 //                                                frames_per_state--;
                                             }
@@ -348,7 +349,7 @@ int (game_loop)() {
                                                 changeDir = true;
 
                                             if (row % 3 == 0) {
-                                                changeSpeed = true;
+                                                //changeSpeed = true;
 //                                                speed++;
 //                                                frames_per_state--;
                                             }
@@ -395,7 +396,8 @@ int (game_loop)() {
 
                             initGame(ship);
                             //gameState = PLAYING;
-                            speed = INITIAL_ALIEN_SPEED + roundNum;
+                            //speed = INITIAL_ALIEN_SPEED + roundNum;
+                            nextRound = true;
                         }
                         //printf("Timer8\n");
                     }

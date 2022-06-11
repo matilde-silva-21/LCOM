@@ -1,3 +1,1 @@
-enablecond
-
-kill count: 1
+cond
