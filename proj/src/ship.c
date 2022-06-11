@@ -72,13 +72,12 @@ void drawScore(Ship *ship){
         div /= 10; 
         count++;
     }
-    printf("%d\n", count);
     xpm_image_t* score; 
     score = (xpm_image_t*)malloc(sizeof(xpm_image_t)*count);
     int x = 120;
     int res;
     div = ship->score;
-    //printf("Drawing score\n");
+    int aux = count;
     while(count != 0){
         res = div%10; 
         div /= 10; 
@@ -115,11 +114,9 @@ void drawScore(Ship *ship){
                 break;
         }
         score[count-1] = temp;
-        printf("%d\n", count);
         count--;
     }
-    printf("%d\n", count);
-    for(unsigned int i = 0; i < sizeof(score)-1; i++){
+    for(int i = 0; i < aux; i++){
         drawXpm(x, 735, score[i]);
         x+=24;
     }
