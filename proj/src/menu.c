@@ -1,12 +1,9 @@
 #include "menu.h"
 
-//extern Mouse * mouse;
-
 extern xpm_image_t menu;
 
 xpm_image_t menu_start_xpm;
 xpm_image_t menu_instructions_xpm;
-xpm_image_t menu_hallOfFame_xpm;
 xpm_image_t menu_exit_xpm ;
 xpm_image_t menu_xpm;
 
@@ -16,7 +13,6 @@ xpm_image_t instructions_back_xpm;
 void initMenuXpm(){
     xpm_load(menu_start, XPM_INDEXED, &menu_start_xpm);
     xpm_load(menu_instructions, XPM_INDEXED, &menu_instructions_xpm);
-    xpm_load(menu_hallOfFame_1, XPM_INDEXED, &menu_hallOfFame_xpm);
     xpm_load(menu_exit, XPM_INDEXED, &menu_exit_xpm);
     xpm_load(menu2, XPM_INDEXED, &menu_xpm);
     xpm_load(instructions, XPM_INDEXED, &instructions_xpm);
@@ -26,15 +22,13 @@ void initMenuXpm(){
 //verificar a posiçao do rato no ecra do menu
 Button getButton(uint16_t x, uint16_t y) {
     if (x > 392 && x < 632 && y > 288 && y < 345) {
-        return StartButton;
+        return START_BUTTON;
     } else if (x > 208 && x < 817 && y > 400 && y < 457) {
-        return InstructionsButton;
-    } else if (x > 256 && x < 777 && y > 512 && y < 569) {
-        return HallOfFameButton;
-    } else if (x > 408 && x < 609 && y > 624 && y < 681) {
-        return ExitButton;
+        return INSTRUCTIONS_BUTTON;
+    } else if (x > 408 && x < 609 &&  y > 512 && y < 569) {
+        return EXIT_BUTTON;
     } else {
-        return Initial;
+        return INITIAL;
     }
 }
 
@@ -49,16 +43,13 @@ int drawMenu(Button button) {
     xpm_image_t menu;
 
     switch (button) {
-        case StartButton:
+        case START_BUTTON:
             menu = menu_start_xpm;
             break;
-        case InstructionsButton:
+        case INSTRUCTIONS_BUTTON:
             menu = menu_instructions_xpm;
             break;
-        case HallOfFameButton:
-            menu = menu_hallOfFame_xpm;
-            break;
-        case ExitButton:
+        case EXIT_BUTTON:
             menu = menu_exit_xpm;
             break;
         default:
@@ -82,6 +73,6 @@ int drawInstructions(bool button) {
 }
 
 void displayInstructions(){
-    xpm_image_t menu;
+    xpm_image_t menu = instructions_xpm;
     drawBackground(menu);
 }
