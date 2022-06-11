@@ -4,6 +4,7 @@ int rtc_hook_id = 8;
 int speed = 1;
 int frames_per_state = 20;
 extern bool playing;
+extern int roundNum;
 
 int (rtc_subscribe_int)(uint8_t *bit_no) {
 
@@ -100,7 +101,7 @@ void (rtc_ih)() {
         }
          */
 
-        speed++;
+        speed = speed + (roundNum * roundNum);
         frames_per_state--;
     }
 }

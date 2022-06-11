@@ -17,6 +17,7 @@ typedef struct{
     xpm_image_t img;
     xpm_image_t img_mov;
     bool alive;
+    int value; 
 }Alien;
 
 
@@ -24,7 +25,7 @@ void change_alien_x_coordinates(Alien *a1, const int xf);
 
 void change_alien_y_coordinates(Alien *a1, const int yf);
 
-Alien createAlien(int xi, int yi, xpm_map_t img, xpm_map_t img_mov);
+Alien createAlien(int xi, int yi, xpm_map_t img, xpm_map_t img_mov, int value);
 
 void decrement_alien_x_coordinates(Alien *a1);
 
