@@ -46,8 +46,6 @@ void drawShipBullets() {
 }
 
 void removeShipBullet(ShipBullet *shipBullet) {
-    if (shipBullet == NULL)
-        return;
     free(shipBullet);
     shipBullet = NULL;
 }
