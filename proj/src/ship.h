@@ -24,25 +24,39 @@
 #include "resources/8.xpm"
 #include "resources/9.xpm"
 
-xpm_image_t zero_xpm, one_xpm, two_xpm, three_xpm, four_xpm, five_xpm, six_xpm, seven_xpm, eight_xpm, nine_xpm;
+xpm_image_t zero_xpm, one_xpm, two_xpm, three_xpm, four_xpm, five_xpm, six_xpm, seven_xpm,eight_xpm, nine_xpm; /*!< XPMs of the numbers */
 
+/**
+ * @brief Struct with the information of the player's ship
+ */
 typedef struct {
-    int x, y;
-    int speed;
-    xpm_image_t img;
-    int lives;
-    bool isShot;
-    int score;
+    int x, y; /*!< Coordinates of the ship*/
+    int speed; /*!< Number of pixels the ship moves each interrupt of the keyboard/timer*/
+    xpm_image_t img; /*!< xpm_image_t with the loaded xpm of the ship */
+    int lives; /*!< Number of lives of the ship i.e. the number of times ship can still be hit by an alien bullet */
+    int score; /*!< Current score of the ship */
 } Ship;
 
+/**
+ * @brief Enumerated type for identifying the key being pressed/released
+ * 
+ */
 typedef enum {
-    A_Pressed,
-    A_Released,
-    D_Pressed,
-    D_Released,
-    Invalid_key
+    A_Pressed, /*!< Key A is being pressed*/ 
+    A_Released, /*!< Key A is being released*/ 
+    D_Pressed, /*!< Key D is being pressed*/ 
+    D_Released, /*!< Key A is being released*/ 
+    Invalid_key /*!< Invalid key is being used*/ 
 } KeyActivity;
 
+/**
+ * @brief Allocates memory and creates a Ship object
+ * 
+ * @param x X coordinate of the ship
+ * @param y Y coordinate of the ship
+ * @param speed Initial speed of the ship
+ * @return Ship* 
+ */
 Ship *createShip(int x, int y, int speed);
 
 void drawShip(Ship *ship);

@@ -280,12 +280,12 @@ int (game_loop)() {
                     ///RTC INTERRUPT
                     if (msg.m_notify.interrupts & BIT(rtc_bit_no)){
                         printf("Next round:%d\n", nextRound);
-                        if(nextRound) {
+                        //if(nextRound) {
                             rtc_ih();
                             printf("%d\n", speed);
                             //changeSpeed = false;
                             nextRound = false;
-                        }
+                        //}
                     }
 
                     ///TIMER INTERRUPT

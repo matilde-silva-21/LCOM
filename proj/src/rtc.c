@@ -1,6 +1,6 @@
 #include "rtc.h"
 
-int rtc_hook_id = 8;
+int rtc_hook_id = 29;
 int speed = 1;
 int frames_per_state = 20;
 extern bool playing;
@@ -46,7 +46,7 @@ int (rtc_enable)(uint8_t *bit_no) {
         return 1;
     }
 
-    data |= RS3;
+    data |= RS3 | RS2 | RS1 | RS0;
 
     if (rtc_write(data, REG_A)) {
         return 1;
@@ -76,7 +76,7 @@ int (rtc_disable)() {
         return 1;
     }
 
-    data &= ~(RS3);
+    data &= ~(RS3 & RS2 & RS1 & RS0);
 
     if (rtc_write(data, REG_A)) {
         return 1;
