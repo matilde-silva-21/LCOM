@@ -8,7 +8,7 @@ Ship *createShip(int x, int y, int speed) {
     ship->lives = NUMLIVES;
     ship->isShot = false;
     ship->speed = speed;
-    ship->score = 0;
+    ship->score = 0; 
 
     xpm_image_t ship_xpm;
     xpm_load(ship_image, XPM_INDEXED, &ship_xpm);
@@ -16,19 +16,6 @@ Ship *createShip(int x, int y, int speed) {
     ship->img = ship_xpm;
 
     return ship;
-}
-
-void initNumbers(){
-    xpm_load(zero, XPM_INDEXED, &zero_xpm);
-    xpm_load(one, XPM_INDEXED, &one_xpm);
-    xpm_load(two, XPM_INDEXED, &two_xpm);
-    xpm_load(three, XPM_INDEXED, &three_xpm);
-    xpm_load(four, XPM_INDEXED, &four_xpm);
-    xpm_load(five, XPM_INDEXED, &five_xpm);
-    xpm_load(six, XPM_INDEXED, &six_xpm);
-    xpm_load(seven, XPM_INDEXED, &seven_xpm);
-    xpm_load(eight, XPM_INDEXED, &eight_xpm);
-    xpm_load(nine, XPM_INDEXED, &nine_xpm);
 }
 
 void drawShip(Ship *ship) {
@@ -91,7 +78,7 @@ void drawScore(Ship *ship){
     int x = 120;
     int res;
     div = ship->score;
-    printf("Drawing score\n");
+    //printf("Drawing score\n");
     while(count != 0){
         res = div%10; 
         div /= 10; 
@@ -158,4 +145,17 @@ void drawLives(Ship *ship){
 
 void increaseScore(int scoreToAdd, Ship* ship){
     ship->score += scoreToAdd;
+}
+
+void initNumbers(){
+    xpm_load(zero, XPM_INDEXED, &zero_xpm);
+    xpm_load(one, XPM_INDEXED, &one_xpm);
+    xpm_load(two, XPM_INDEXED, &two_xpm);
+    xpm_load(three, XPM_INDEXED, &three_xpm);
+    xpm_load(four, XPM_INDEXED, &four_xpm);
+    xpm_load(five, XPM_INDEXED, &five_xpm);
+    xpm_load(six, XPM_INDEXED, &six_xpm);
+    xpm_load(seven, XPM_INDEXED, &seven_xpm);
+    xpm_load(eight, XPM_INDEXED, &eight_xpm);
+    xpm_load(nine, XPM_INDEXED, &nine_xpm);
 }

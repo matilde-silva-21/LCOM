@@ -96,6 +96,12 @@ xpm_image_t loadBackground(){
     background_img = loadXpm(background);
     return background_img;
 }
+xpm_image_t loadInitialScreen(){
+    xpm_image_t initial_screen_img;
+    initial_screen_img = loadXpm(initial_screen);
+    return initial_screen_img;
+}
+
 
 void drawBackground(xpm_image_t img) {
     memcpy(video_mem, img.bytes, img.height * img.width);

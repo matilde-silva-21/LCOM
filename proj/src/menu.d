@@ -49,6 +49,7 @@ menu.o: menu.c menu.h /usr/include/lcom/lcf.h /usr/include/stdbool.h \
   macros.h resources/alien1.xpm resources/alien1_m.xpm \
   resources/alien2.xpm resources/alien2_m.xpm resources/alien3.xpm \
   resources/alien3_m.xpm mouse.h i8042.h utils.h resources/mouse.xpm \
-  resources/background.xpm resources/instructions.xpm \
-  resources/instructions_back.xpm resources/menu_instructions.xpm \
-  resources/menu_exit.xpm resources/menu_start.xpm resources/menu.xpm
+  resources/background.xpm resources/initial_screen.xpm \
+  resources/instructions.xpm resources/instructions_back.xpm \
+  resources/menu_instructions.xpm resources/menu_exit.xpm \
+  resources/menu_start.xpm resources/menu.xpm

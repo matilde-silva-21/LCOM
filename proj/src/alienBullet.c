@@ -21,7 +21,7 @@ void createAlienBullet(int x, int y, int speed, xpm_image_t img) {
 }
 
 void updateAlienBulletPosition() {
-    if (alienBullet->y + alienBullet->speed + alienBullet->img.height >= Y_RES) {
+    if (alienBullet->y + alienBullet->speed + alienBullet->img.height >= 720) {
         alienBullet->active = false;
         return;
     }
@@ -37,7 +37,7 @@ int generateAlienBullet(Alien aliens[]) {
     int randNum;
     srand(time(NULL));
     do {
-        randNum = rand() % sizeOfAliens;
+        randNum = rand() % SIZE_OF_ALIENS;
     } while (!aliens[randNum].alive);
     return randNum;
 }

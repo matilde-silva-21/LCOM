@@ -22,7 +22,7 @@ typedef struct{
     xpm_image_t img;
     xpm_image_t img_mov;
     bool alive;
-    int value;
+    int value; 
 }Alien;
 
 

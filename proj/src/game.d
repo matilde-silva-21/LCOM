@@ -49,12 +49,12 @@ game.o: game.c game.h /usr/include/lcom/lcf.h /usr/include/stdbool.h \
   macros.h resources/alien1.xpm resources/alien1_m.xpm \
   resources/alien2.xpm resources/alien2_m.xpm resources/alien3.xpm \
   resources/alien3_m.xpm mouse.h i8042.h utils.h resources/mouse.xpm \
-  resources/background.xpm i8254.h keyboard.h menu.h \
-  resources/instructions.xpm resources/instructions_back.xpm \
-  resources/menu_instructions.xpm resources/menu_exit.xpm \
-  resources/menu_start.xpm resources/menu.xpm ship.h resources.h \
-  resources/ship.xpm resources/0.xpm resources/1.xpm resources/2.xpm \
-  resources/3.xpm resources/4.xpm resources/5.xpm resources/6.xpm \
-  resources/7.xpm resources/8.xpm resources/9.xpm timer.h shipBullet.h \
-  resources/ship_bullet.xpm alienBullet.h resources/alien_bullet.xpm \
-  rtc.h /usr/include/util.h
+  resources/background.xpm resources/initial_screen.xpm i8254.h \
+  keyboard.h menu.h resources/instructions.xpm \
+  resources/instructions_back.xpm resources/menu_instructions.xpm \
+  resources/menu_exit.xpm resources/menu_start.xpm resources/menu.xpm \
+  ship.h resources.h resources/ship.xpm resources/0.xpm resources/1.xpm \
+  resources/2.xpm resources/3.xpm resources/4.xpm resources/5.xpm \
+  resources/6.xpm resources/7.xpm resources/8.xpm resources/9.xpm \
+  timer.h shipBullet.h resources/ship_bullet.xpm alienBullet.h \
+  resources/alien_bullet.xpm rtc.h /usr/include/util.h

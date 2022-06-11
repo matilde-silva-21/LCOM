@@ -33,8 +33,6 @@ Mouse *(createMouse)(int x, int y);
 
 void (updateMouse)(struct packet *pp, Mouse *mouse);
 
-//void (drawMouse)(Mouse *mouse);
-
 void (removeMouse)(Mouse *mouse);
 
 #endif //PROJ_MOUSE_H

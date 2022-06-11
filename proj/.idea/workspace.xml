@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cd8950eb-97c7-45f9-b76e-28fa0a9d32ca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.vscode/configurationCache.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/dryrun.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/targets.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/0.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/1.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/2.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/3.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/4.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/5.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/6.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/7.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/8.xpm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/9.xpm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alien.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/alien.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alien.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/alien.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alien.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/alien.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alienBullet.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/alienBullet.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/proj" beforeDir="false" afterPath="$PROJECT_DIR$/src/proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/proj.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/proj.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rtc.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/rtc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rtc.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/rtc.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ship.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/ship.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ship.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ship.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ship.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/ship.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shipBullet.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/shipBullet.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shipBullet.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/shipBullet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shipBullet.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/shipBullet.o" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29zkDUYYv8L4ls4OyEpjjIKxXqR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.advertisement.text.has.clang-format" value="true" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cd8950eb-97c7-45f9-b76e-28fa0a9d32ca" name="Changes" comment="" />
+      <created>1654123181680</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654123181680</updated>
+      <workItem from="1654123182914" duration="3209000" />
+      <workItem from="1654157969926" duration="29379000" />
+      <workItem from="1654245026330" duration="2664000" />
+      <workItem from="1654284209693" duration="8374000" />
+      <workItem from="1654333458452" duration="6164000" />
+      <workItem from="1654340447727" duration="5073000" />
+      <workItem from="1654353841597" duration="12000" />
+      <workItem from="1654375062154" duration="6633000" />
+      <workItem from="1654420242826" duration="24909000" />
+      <workItem from="1654506006215" duration="36430000" />
+      <workItem from="1654590252545" duration="15309000" />
+      <workItem from="1654677342729" duration="7000" />
+      <workItem from="1654684834141" duration="11038000" />
+      <workItem from="1654716760615" duration="209000" />
+      <workItem from="1654718466774" duration="110000" />
+      <workItem from="1654809231919" duration="5315000" />
+      <workItem from="1654847645367" duration="37055000" />
+      <workItem from="1654936695212" duration="4516000" />
+      <workItem from="1654941506588" duration="5622000" />
+      <workItem from="1654950051447" duration="5352000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

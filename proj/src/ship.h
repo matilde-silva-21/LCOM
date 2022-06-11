@@ -26,7 +26,6 @@
 
 xpm_image_t zero_xpm, one_xpm, two_xpm, three_xpm, four_xpm, five_xpm, six_xpm, seven_xpm, eight_xpm, nine_xpm;
 
-
 typedef struct {
     int x, y;
     int speed;
@@ -46,8 +45,6 @@ typedef enum {
 
 Ship *createShip(int x, int y, int speed);
 
-void initNumbers();
-
 void drawShip(Ship *ship);
 
 Ship *updateShipPosition(Ship *ship, KeyActivity key);
@@ -60,5 +57,6 @@ void drawLives(Ship *ship);
 
 void increaseScore(int scoreToAdd, Ship *ship);
 
+void initNumbers();
 
 #endif //PROJ_SHIP_H

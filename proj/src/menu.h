@@ -18,10 +18,10 @@
 //#include "mouse.h"
 
 typedef enum {
-    StartButton,
-    InstructionsButton,
-    ExitButton,
-    Initial
+    START_BUTTON,
+    INSTRUCTIONS_BUTTON,
+    EXIT_BUTTON,
+    INITIAL
 } Button;
 
 void initMenuXpm();
