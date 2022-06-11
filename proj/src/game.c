@@ -27,7 +27,6 @@ void (initGame)(Ship *ship){
     createShip(512, SHIP_YPOS, 15);
     initAlienBullet();
     initShipBullets(shipBullets);
-    initNumbers();
     drawBackground(background);
     drawShip(ship);
 
@@ -37,11 +36,11 @@ void (initGame)(Ship *ship){
     for (int column = 0; column < COL_ALIENS; column++) {
         for (int row = 0; row < ROW_ALIENS; row++) {
             if (row == 0) {
-                aliens[indice] = createAlien(xi, yi, alien3, alien3_m, 30);
+                aliens[indice] = createAlien(xi, yi, alien3, alien3_m,30);
             } else if (row == 1) {
                 aliens[indice] = createAlien(xi, yi, alien1, alien1_m, 20);
             } else {
-                aliens[indice] = createAlien(xi, yi, alien2, alien2_m, 10);
+                aliens[indice] = createAlien(xi, yi, alien2, alien2_m,10);
             }
             yi += 60;
             indice++;
@@ -290,8 +289,6 @@ int (game_loop)() {
                                 drawShip(ship);
                                 drawShipBullets();
                                 drawAlienBullet();
-                                drawLives(ship);
-                                drawScore(ship);
 
                                 for (int i = 0; i < sizeOfAliens; i++) {
                                     Alien *a = &aliens[i];
