@@ -7,8 +7,10 @@
 #include <stdint.h>
 
 #include "alien.h"
+#include "mouse.h"
 
 #include "resources/background.xpm"
+#include "resources/initial_screen.xpm"
 
 int vg_get_mode_info(uint16_t *mode, vbe_mode_info_t* info);
 
@@ -24,10 +26,14 @@ int drawXpm(int x, int y, xpm_image_t img);
 
 xpm_image_t loadBackground();
 
+xpm_image_t loadInitialScreen();
+
 void drawBackground();
 
 void displayScreen();
 
 int drawAlien(Alien *a1, bool mov);
+
+void drawMouse(Mouse *mouse);
 
 #endif //PROJ_GRAPHIC_H

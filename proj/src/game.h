@@ -16,10 +16,23 @@
 #include "mouse.h"
 #include "ship.h"
 #include "timer.h"
-#include "bullet.h"
+#include "shipBullet.h"
+#include "alienBullet.h"
 #include "alien.h"
+#include "rtc.h"
 
 #include "macros.h"
+
+typedef enum {
+    MENU_DISPLAY,
+    INSTRUCTIONS_DISPLAY,
+    PLAYING,
+    PLAYER_LOST,
+    NEXT_ROUND,
+    EXIT
+} game_state;
+
+void (initGame)(Ship *ship);
 
 int (game_loop)();
 

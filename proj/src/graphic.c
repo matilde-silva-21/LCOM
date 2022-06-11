@@ -5,12 +5,6 @@ static uint16_t Yres; // vertical resolution
 static int bitsPerPixel;
 
 static uint8_t color_mode;
-static uint8_t redMask;
-static uint8_t redFieldPos;
-static uint8_t greenMask;
-static uint8_t greenFieldPos;
-static uint8_t blueMask;
-static uint8_t blueFieldPos;
 
 void *video_mem;
 void *display_mem;
@@ -28,16 +22,6 @@ int vg_get_mode_info(uint16_t *mode, vbe_mode_info_t *info) {
     Xres = info->XResolution;
     Yres = info->YResolution;
     bitsPerPixel = info->BitsPerPixel;
-
-    //color info - para o draw pattern
-    redMask = info->RedMaskSize;
-    redFieldPos = info->RedFieldPosition;
-
-    greenMask = info->GreenMaskSize;
-    greenFieldPos = info->GreenFieldPosition;
-
-    blueMask = info->BlueMaskSize;
-    blueFieldPos = info->BlueFieldPosition;
 
     color_mode = info->MemoryModel;
 
@@ -112,6 +96,12 @@ xpm_image_t loadBackground(){
     background_img = loadXpm(background);
     return background_img;
 }
+xpm_image_t loadInitialScreen(){
+    xpm_image_t initial_screen_img;
+    initial_screen_img = loadXpm(initial_screen);
+    return initial_screen_img;
+}
+
 
 void drawBackground(xpm_image_t img) {
     memcpy(video_mem, img.bytes, img.height * img.width);
@@ -129,24 +119,35 @@ int drawXpm(int x, int y, xpm_image_t img) {
     return 0;
 }
 
-//double buffer thingy - nao sei se esta alguma coisa de jeito
+void drawMouse(Mouse *mouse){
+    int counter = 0;
+
+    for (int i = mouse->y; i < mouse->img.height + mouse->y; i++) {
+        for (int j = mouse->x; j < mouse->img.width + mouse->x; j++) {
+            if(mouse->img.bytes[counter] != 0)
+                drawPixel(j, i, mouse->img.bytes[counter]);
+            counter++;
+        }
+    }
+}
+
+
+//double buffer
 void displayScreen() {
     int bytes = (bitsPerPixel + 7) >> 3;
     memcpy(display_mem, video_mem, Yres * Xres * bytes);
 }
 
 int drawAlien(Alien *a1, bool mov) {
-    if(a1 == NULL)///!!!!!!!!!!!!!!!!!
-        return 0;
     
-    if(!a1->alive){return 1;}
+    if(!a1->alive){
+        return 1;
+    }
     if (mov) {
-        //xpm_image_t img = loadXpm(a1->img_mov);
         a1->width = a1->img_mov.width;
         a1->height = a1->img_mov.height;
         return drawXpm(a1->x, a1->y, a1->img_mov);
     } else {
-        //xpm_image_t img = loadXpm(a1->img);
         a1->width = a1->img.width;
         a1->height = a1->img.height;
         return drawXpm(a1->x, a1->y, a1->img);

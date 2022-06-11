@@ -7,15 +7,21 @@
 #include <stdint.h>
 
 #include "graphic.h"
-#include "resources.h"
+#include "resources/instructions.xpm"
+#include "resources/instructions_back.xpm"
+#include "resources/menu_instructions.xpm"
+#include "resources/menu_exit.xpm"
+#include "resources/menu_start.xpm"
+#include "resources/menu.xpm"
+
+//#include "resources.h"
 //#include "mouse.h"
 
 typedef enum {
-    StartButton,
-    InstructionsButton,
-    HallOfFameButton,
-    ExitButton,
-    Initial
+    START_BUTTON,
+    INSTRUCTIONS_BUTTON,
+    EXIT_BUTTON,
+    INITIAL
 } Button;
 
 void initMenuXpm();

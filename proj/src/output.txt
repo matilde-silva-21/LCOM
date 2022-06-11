@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 row = 0; col = 0; ind = 0; x = 24; y = 20
 row = 1; col = 0; ind = 1; x = 24; y = 80
@@ -9229,3 +9230,6 @@ kill count: 3
 kill count: 3
 kill count: 3
 >>>>>>> 29a4de63f464e5940bfe276698165c694f9fabfb
+=======
+cond
+>>>>>>> 27d4d8b6b3f2393692eaa7936dfe6b2770a938ff
