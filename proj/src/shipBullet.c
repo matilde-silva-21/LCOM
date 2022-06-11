@@ -73,7 +73,7 @@ void verifyAlienAndBulletCollision(Alien *a1, int *killCount) {
 }
 
 void removeAllShipBullets(){
-    for(int i = 0; i < sizeOfAliens; i++){
+    for(int i = 0; i < SIZE_OF_ALIENS; i++){
         removeShipBullet(shipBullets[i]);
     }
 }

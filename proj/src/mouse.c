@@ -5,7 +5,6 @@ int mouse_hookid = 12;
 uint8_t mouse_scancode = 0, mouse_statuscode = 0;
 int ih_error = 0;
 
-//Mouse *mouse;
 uint16_t Xres;
 
 int (mouse_subscribe_int)(int *bit_no) {
@@ -27,15 +26,19 @@ int (mouse_unsubscribe_int)() {
 void (mouse_ih)() {
     if(util_sys_inb(STAT_REG, &mouse_statuscode)){
         ih_error = 1;
-    }
-
-    if(!((mouse_statuscode & (PARITY_BIT | TIMEOUT_BIT)) == 0 && (mouse_statuscode & OBF_BIT))){
-        mouse_scancode = 0;
-        ih_error = 1;
+        printf("sys_inb\n");
         return;
     }
 
+    if(!((mouse_statuscode & (PARITY_BIT | TIMEOUT_BIT)) == 0 && (mouse_statuscode & OBF_BIT))){
+
+        mouse_scancode = 0;
+        ih_error = 1;
+        printf("cond\n");
+        return;
+    }
     util_sys_inb(OUT_BUF, &mouse_scancode);
+
 }
 
 void (getMousePacket)(struct packet *pp, uint8_t bytes[3]) {
@@ -46,8 +49,8 @@ void (getMousePacket)(struct packet *pp, uint8_t bytes[3]) {
 
     // buttons
     pp->lb = bytes[0] & LEFT;
-    pp->rb = (bytes[0] & RIGHT) >> 1;
-    pp->mb = (bytes[0] & MIDDLE) >> 2;
+    pp->rb = bytes[0] & RIGHT;
+    pp->mb = bytes[0] & MIDDLE;
 
     // x and y displacement
     if(bytes[0] & Y_SIGN)
@@ -62,37 +65,6 @@ void (getMousePacket)(struct packet *pp, uint8_t bytes[3]) {
      pp->y_ov = (bytes[0] & Y_OVFL) >> 7;
 }
 
-/*
-int (send_mouse_command)(uint8_t cmd) {
-    uint8_t ack;
-  do{
-    if(util_sys_inb(STAT_REG, &mouse_statuscode))
-      return 1;
-    if (mouse_statuscode & IBF_BIT) // checks if we can write
-      continue;
-    if(sys_outb(STAT_REG, MOUSE_COMMAND))
-      return 1;
-
-    if(util_sys_inb(STAT_REG, &mouse_statuscode))
-      return 1;
-    if (mouse_statuscode & IBF_BIT) // checks if we can write
-      continue;
-    if(sys_outb(ARGS_REG, cmd))
-      return 1;
-
-    tickdelay(micros_to_ticks(20000));
-
-    if(util_sys_inb(OUT_BUF, &ack))
-      return 1;
-
-    if(ack == ACK_ERROR)
-      return 1;
-
-  }while(ack != ACK);
-
-  return 0;
-}
-*/
 
 int (send_mouse_command)(uint8_t cmd){
     uint8_t ack;
@@ -119,39 +91,40 @@ int (send_mouse_command)(uint8_t cmd){
         if(ack == ACK_ERROR)
             return 1;
 
+        if(ack == NACK)
+            continue;
+
     }while(ack != ACK);
 
     return 0;
 }
 
-
-
 void (updateMouse)(struct packet *pp, Mouse *mouse) {
-    if (pp->delta_x > 0) {
-        if (mouse->x + pp->delta_x > X_RES - mouse->img.width)
-            mouse->x = X_RES - mouse->img.width;
-        else
-            mouse->x += pp->delta_x;
-    }
-    else{
+    if (pp->bytes[0] & X_SIGN) { // checks if x movement is negative
         if (mouse->x + pp->delta_x < 0)
             mouse->x = 0;
         else
-            mouse->x += pp->delta_x;
+            mouse->x = mouse->x + pp->delta_x;
     }
-    if (pp->delta_y < 0) {
+    else{
+        if (mouse->x + pp->delta_x > X_RES - mouse->img.width)
+            mouse->x = X_RES - mouse->img.width;
+        else
+            mouse->x = mouse->x + pp->delta_x;
+    }
+
+    if (pp->bytes[0] & Y_SIGN) { // checks if y movement is negative
         if (mouse->y + mouse->img.height - pp->delta_y > Y_RES)
             mouse->y = Y_RES - mouse->img.height;
         else
-            mouse->y -= pp->delta_y;
+            mouse->y = mouse->y - pp->delta_y;
     }
     else {
-        if (mouse->y - pp->delta_y < 0)
+        if (mouse->y - pp->delta_y< 0)
             mouse->y = 0;
         else
-            mouse->y -= pp->delta_y;
+            mouse->y = mouse->y - pp->delta_y;
     }
-
     mouse->lb_pressed = pp->lb;
 }
 
@@ -167,11 +140,7 @@ Mouse *(createMouse)(int x, int y){
 
     return mouse;
 }
-/*
-void (drawMouse)(Mouse *mouse) {
-    drawXpm(mouse->x, mouse->y, mouse->img);
-}
-*/
+
 void (removeMouse)(Mouse *mouse){
     free(mouse);
     mouse = NULL;

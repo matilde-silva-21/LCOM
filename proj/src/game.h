@@ -22,14 +22,14 @@
 
 #include "macros.h"
 
-typedef enum{
-    Menu_Display,
-    Instructions_Display,
-    Playing,
-    Player_Lost,
-    Player_Won,
-    Exit
-}game_state;
+typedef enum {
+    MENU_DISPLAY,
+    INSTRUCTIONS_DISPLAY,
+    PLAYING,
+    PLAYER_LOST,
+    NEXT_ROUND,
+    EXIT
+} game_state;
 
 void (initGame)(Ship *ship);
 

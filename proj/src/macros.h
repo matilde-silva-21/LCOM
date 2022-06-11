@@ -3,7 +3,6 @@
 
 #define NUMLIVES 3
 
-//!!!!!!!!!!!!!!!!!!!!!!
 #define SHIP_YPOS 630
 #define X_MAX 1000
 #define X_MIN 30
@@ -16,12 +15,14 @@
 #define SHIP_BULLET_SPEED 2
 #define ALIEN_BULLET_SPEED 4
 
-#define sizeOfAliens 24
+#define SIZE_OF_ALIENS 24
 
-#define x_left_border 20
-#define x_right_border 1004
+#define X_LEFT_BORDER 20
+#define X_RIGHT_BORDER 1004
 
-#define territory 500//668
+#define INITIAL_ALIEN_SPEED 1
+
+#define TERRITORY 650
 
 #define ROW_ALIENS 3
 #define COL_ALIENS 8
