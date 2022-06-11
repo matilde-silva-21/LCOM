@@ -24,7 +24,8 @@ int(rtc_unsubscribe_int)(){
 int (rtc_enable)(uint8_t *bit_no){
 
     printf("enable");
-    if(rtc_subscribe_int(bit_no))
+    *bit_no = rtc_hook_id;
+    if(sys_irqsetpolicy(IRQ_RTC, IRQ_REENABLE, &rtc_hook_id))
         return 1;
 
     uint8_t data;
@@ -94,6 +95,7 @@ void (rtc_ih)(){
             printf("playing!!!!!\n");
             speed++;
             frames_per_state--;
+            printf("speed: %d\n", speed);
         }
     }
 }
