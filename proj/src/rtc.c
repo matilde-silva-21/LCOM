@@ -30,6 +30,7 @@ int (rtc_enable)(uint8_t *bit_no) {
         return 1;
 
     uint8_t data;
+    printf("bit: %d\n", *bit_no);
 
     if (rtc_read(&data, REG_B)) {
         return 1;
@@ -45,7 +46,7 @@ int (rtc_enable)(uint8_t *bit_no) {
         return 1;
     }
 
-    data |= RS3 | RS2 | RS1 | RS0;
+    data |= RS3;
 
     if (rtc_write(data, REG_A)) {
         return 1;
@@ -75,7 +76,7 @@ int (rtc_disable)() {
         return 1;
     }
 
-    data &= ~(RS3 | RS2 | RS1 | RS0);
+    data &= ~(RS3);
 
     if (rtc_write(data, REG_A)) {
         return 1;
@@ -90,19 +91,9 @@ void (rtc_ih)() {
     sys_outb(RTC_ADDR_REG, REG_C);
     util_sys_inb(RTC_DATA_REG, &regC);
     if (regC & PF) {
-//        printf("Recieved PF interrupt\n");
-//        printf("Playing: %s\n", playing ? "true" : "false");
-        /*
-        if(playing){
-            printf("playing!!!!!\n");
-            speed++;
-            frames_per_state--;
-            printf("speed: %d\n", speed);
-        }
-         */
-
         speed = speed + (roundNum * roundNum);
         frames_per_state--;
+        printf("speed: %d\n", speed);
     }
 }
 

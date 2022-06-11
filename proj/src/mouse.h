@@ -11,7 +11,7 @@
 //#include "graphic.h"
 #include "macros.h"
 
-#include "resources.h"
+#include "resources/mouse.xpm"
 
 typedef struct {
     int x, y;

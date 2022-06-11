@@ -94,6 +94,7 @@ int (game_loop)() {
     xpm_image_t background = loadBackground();
     xpm_image_t shipBullet_img = loadShipBulletXpm();
     xpm_image_t alienBullet_img = loadAlienBulletXpm();
+    xpm_image_t initialScreen = loadInitialScreen();
     initMenuXpm();
 
     initAlienBullet();
@@ -125,10 +126,16 @@ int (game_loop)() {
     if(rtc_enable(&rtc_bit_no))
         return 1;
 
+
+    drawBackground(initialScreen);
+    displayScreen();
+
+    sleep(4);
+
     if (drawMenu(button))
         return 1;
 
-    drawMouse(mouse);
+    //drawMouse(mouse);
 
     while (gameState != EXIT) {
         displayScreen();
@@ -209,7 +216,6 @@ int (game_loop)() {
                                     if (instruction_button) {
                                         gameState = MENU_DISPLAY;
                                         button = INITIAL;
-                                        //playing = false;
                                         drawMenu(button);
                                     }
                                 }
@@ -273,6 +279,7 @@ int (game_loop)() {
 
                     ///RTC INTERRUPT
                     if (msg.m_notify.interrupts & BIT(rtc_bit_no)){
+                        printf("Next round:%d\n", nextRound);
                         if(nextRound) {
                             rtc_ih();
                             printf("%d\n", speed);
@@ -338,7 +345,6 @@ int (game_loop)() {
                                         }
                                     } else {
                                         change_alien_x_coordinates(a, -speed);
-                                        verifyAlienAndBulletCollision(a, &killCount, ship);
                                         drawAlien(a, mov_img);
                                         if (a->x <= X_LEFT_BORDER) {
                                             //change_all_y(aliens, 6, SIZE_OF_ALIENS);

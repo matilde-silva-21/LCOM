@@ -13,6 +13,16 @@
 #include "graphic.h"
 
 #include "resources/ship.xpm"
+#include "resources/0.xpm"
+#include "resources/1.xpm"
+#include "resources/2.xpm"
+#include "resources/3.xpm"
+#include "resources/4.xpm"
+#include "resources/5.xpm"
+#include "resources/6.xpm"
+#include "resources/7.xpm"
+#include "resources/8.xpm"
+#include "resources/9.xpm"
 
 xpm_image_t zero_xpm, one_xpm, two_xpm, three_xpm, four_xpm, five_xpm, six_xpm, seven_xpm, eight_xpm, nine_xpm;
 
@@ -48,6 +58,5 @@ void drawLives(Ship *ship);
 void increaseScore(int scoreToAdd, Ship *ship);
 
 void initNumbers();
-
 
 #endif //PROJ_SHIP_H

@@ -4,7 +4,7 @@ ShipBullet *shipBullets[MAX_SHIP_BULLETS];
 
 xpm_image_t loadShipBulletXpm() {
     xpm_image_t shipBullet_xpm;
-    xpm_load(bullet, XPM_INDEXED, &shipBullet_xpm);
+    xpm_load(ship_bullet, XPM_INDEXED, &shipBullet_xpm);
     return shipBullet_xpm;
 }
 
@@ -64,6 +64,7 @@ void verifyAlienAndBulletCollision(Alien *a1, int *killCount, Ship *ship) {
             a1->alive = false;
             (*killCount)++;
             increaseScore(a1->value, ship);
+            printf("\nkill count: %d", *killCount);
             shipBullets[j]->hitAlien = true;
             removeShipBullet(shipBullets[j]);
             return;

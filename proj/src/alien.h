@@ -7,7 +7,12 @@
 #include <stdio.h>
 
 #include "macros.h"
-#include "resources.h"
+#include "resources/alien1.xpm"
+#include "resources/alien1_m.xpm"
+#include "resources/alien2.xpm"
+#include "resources/alien2_m.xpm"
+#include "resources/alien3.xpm"
+#include "resources/alien3_m.xpm"
 
 typedef struct{
     int x;
