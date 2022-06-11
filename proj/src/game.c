@@ -235,6 +235,7 @@ int (game_loop)() {
                     }
 
                     ///KEYBOARD INTERRUPT
+                    
                     if (msg.m_notify.interrupts & BIT(kbd_bit_no)) {
                         kbc_ih();
                         if (twoBytes(keyboard_scancode)) {
@@ -278,14 +279,15 @@ int (game_loop)() {
                     }
 
                     ///RTC INTERRUPT
+                    printf("PRIMEIRO %d", msg.m_notify.interrupts);
                     if (msg.m_notify.interrupts & BIT(rtc_bit_no)){
                         printf("Next round:%d\n", nextRound);
-                        if(nextRound) {
-                            rtc_ih();
-                            printf("%d\n", speed);
-                            //changeSpeed = false;
-                            nextRound = false;
-                        }
+                        //if(nextRound) {
+                        rtc_ih();
+                        printf("%d\n", speed);
+                        //changeSpeed = false;
+                        //nextRound = false;
+                       // }
                     }
 
                     ///TIMER INTERRUPT
