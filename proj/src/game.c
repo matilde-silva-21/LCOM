@@ -26,6 +26,7 @@ void (initGame)(Ship *ship){
     initShipBullets(shipBullets);
     drawBackground(background);
     drawShip(ship);
+    initNumbers();
 
     int xi = 24, yi = 20;
     int indice = 0;

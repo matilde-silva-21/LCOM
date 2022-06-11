@@ -61,7 +61,7 @@ void removeShip(Ship *ship) {
 void drawScore(Ship *ship){
     xpm_image_t temp;
     if(ship->score == 0){
-        xpm_load(zero, XPM_INDEXED, &temp);
+        temp = zero_xpm;
         drawXpm(120, 735, temp);
         return; 
     }
@@ -72,51 +72,53 @@ void drawScore(Ship *ship){
         div /= 10; 
         count++;
     }
-    
+    printf("%d\n", count);
     xpm_image_t* score; 
     score = (xpm_image_t*)malloc(sizeof(xpm_image_t)*count);
     int x = 120;
     int res;
     div = ship->score;
-    while(div>0){
+    printf("Drawing score\n");
+    while(count != 0){
         res = div%10; 
         div /= 10; 
         switch(res){
             case 0:
-                xpm_load(zero, XPM_INDEXED, &temp);
+                temp = zero_xpm;
                 break;
             case 1:
-                xpm_load(one, XPM_INDEXED, &temp);
+                temp = one_xpm;
                 break;
             case 2:
-                xpm_load(two, XPM_INDEXED, &temp);
+                temp = two_xpm;
                 break;
             case 3:
-                xpm_load(three, XPM_INDEXED, &temp);
+                temp = three_xpm;
                 break;
             case 4:
-                xpm_load(four, XPM_INDEXED, &temp);
+                temp = four_xpm;
                 break;
             case 5:
-                xpm_load(five, XPM_INDEXED, &temp);
+                temp = five_xpm;
                 break;
             case 6:
-                xpm_load(six, XPM_INDEXED, &temp);
+                temp = six_xpm;
                 break;
             case 7:
-                xpm_load(seven, XPM_INDEXED, &temp);
+                temp = seven_xpm;
                 break;
             case 8:
-                xpm_load(eight, XPM_INDEXED, &temp);
+                temp = eight_xpm;
                 break;
             case 9: 
-                xpm_load(nine, XPM_INDEXED, &temp);
+                temp = nine_xpm;
                 break;
         }
         score[count-1] = temp;
+        printf("%d\n", count);
         count--;
     }
-    
+    printf("%d\n", count);
     for(unsigned int i = 0; i < sizeof(score)-1; i++){
         drawXpm(x, 735, score[i]);
         x+=24;
@@ -129,20 +131,31 @@ void drawLives(Ship *ship){
     xpm_image_t live;
     switch(ship->lives){
         case 1:
-            xpm_load(one, XPM_INDEXED, &live);
-            drawXpm(1000, 735, live);
+            live = one_xpm;
             break;
         case 2:
-            xpm_load(two, XPM_INDEXED, &live);
-            drawXpm(1000, 735, live);
+            live = two_xpm;
             break;
         case 3:
-            xpm_load(three, XPM_INDEXED, &live);
-            drawXpm(1000, 735, live);
+            live = three_xpm;
             break;
     }
+    drawXpm(1000, 735, live);
 }
 
 void increaseScore(int scoreToAdd, Ship* ship){
     ship->score += scoreToAdd;
+}
+
+void initNumbers(){
+    xpm_load(zero, XPM_INDEXED, &zero_xpm);
+    xpm_load(one, XPM_INDEXED, &one_xpm);
+    xpm_load(two, XPM_INDEXED, &two_xpm);
+    xpm_load(three, XPM_INDEXED, &three_xpm);
+    xpm_load(four, XPM_INDEXED, &four_xpm);
+    xpm_load(five, XPM_INDEXED, &five_xpm);
+    xpm_load(six, XPM_INDEXED, &six_xpm);
+    xpm_load(seven, XPM_INDEXED, &seven_xpm);
+    xpm_load(eight, XPM_INDEXED, &eight_xpm);
+    xpm_load(nine, XPM_INDEXED, &nine_xpm);
 }
