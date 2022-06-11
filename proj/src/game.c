@@ -168,6 +168,7 @@ int (game_loop)() {
                                         case InstructionsButton:
                                             gameState = Instructions_Display;
                                             playing = false;
+                                            printf("HEEERE\n");
                                             displayInstructions();
                                             break;
                                         case ExitButton:
@@ -182,8 +183,11 @@ int (game_loop)() {
 
                             ///====================Instructions====================
                             if (gameState == Instructions_Display) {
+                                printf("Instructions\n");
                                 instruction_button = getInstructionButton(mouse->x, mouse->y);
+                                printf("Instructions button\n");
                                 if (drawInstructions(instruction_button)) {
+                                    printf("Not drawing instructions\n");
                                     return 1;
                                 }
                                 drawMouse(mouse);
@@ -251,8 +255,10 @@ int (game_loop)() {
                             ship = updateShipPosition(ship, key);
                         }
                     }
+                    //RTC
                     if (msg.m_notify.interrupts & BIT(rtc_bit_no)){
                         rtc_ih();
+                        printf("%d\n", speed);
                     }
                     ///TIMER
                     if (msg.m_notify.interrupts & BIT(timer_bit_no)) {
@@ -284,15 +290,12 @@ int (game_loop)() {
                                 drawShipBullets();
                                 drawAlienBullet();
 
-                                printf("\nkill count: %d", killCount);
-
                                 for (int i = 0; i < sizeOfAliens; i++) {
                                     Alien *a = &aliens[i];
                                     if (!(a->alive)) { continue; }
                                     if (right_mov) {
                                         change_alien_x_coordinates(a, speed);
                                         verifyAlienAndBulletCollision(a, &killCount);
-                                        printf("\nkill count: %d", killCount);
                                         drawAlien(a, mov_img);
                                         if ((a->x + a->width) >= x_right_border) {
                                             right_mov = false;
@@ -307,7 +310,6 @@ int (game_loop)() {
                                     } else {
                                         change_alien_x_coordinates(a, -speed);
                                         verifyAlienAndBulletCollision(a, &killCount);
-                                        printf("\nkill count: %d", killCount);
                                         drawAlien(a, mov_img);
                                         if (a->x <= x_left_border) {
                                             change_all_y(aliens, 20, sizeOfAliens);
