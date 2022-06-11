@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 #include "graphic.h"
-#include "resources.h"
+#include "resources/alien_bullet.xpm"
 #include "macros.h"
 #include "ship.h"
 

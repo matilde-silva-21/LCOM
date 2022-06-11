@@ -27,6 +27,7 @@ void (initGame)(Ship *ship){
     createShip(512, SHIP_YPOS, 15);
     initAlienBullet();
     initShipBullets(shipBullets);
+    initNumbers();
     drawBackground(background);
     drawShip(ship);
 
@@ -36,11 +37,11 @@ void (initGame)(Ship *ship){
     for (int column = 0; column < COL_ALIENS; column++) {
         for (int row = 0; row < ROW_ALIENS; row++) {
             if (row == 0) {
-                aliens[indice] = createAlien(xi, yi, alien3, alien3_m);
+                aliens[indice] = createAlien(xi, yi, alien3, alien3_m, 30);
             } else if (row == 1) {
-                aliens[indice] = createAlien(xi, yi, alien1, alien1_m);
+                aliens[indice] = createAlien(xi, yi, alien1, alien1_m, 20);
             } else {
-                aliens[indice] = createAlien(xi, yi, alien2, alien2_m);
+                aliens[indice] = createAlien(xi, yi, alien2, alien2_m, 10);
             }
             yi += 60;
             indice++;
@@ -289,13 +290,15 @@ int (game_loop)() {
                                 drawShip(ship);
                                 drawShipBullets();
                                 drawAlienBullet();
+                                drawLives(ship);
+                                drawScore(ship);
 
                                 for (int i = 0; i < sizeOfAliens; i++) {
                                     Alien *a = &aliens[i];
                                     if (!(a->alive)) { continue; }
                                     if (right_mov) {
                                         change_alien_x_coordinates(a, speed);
-                                        verifyAlienAndBulletCollision(a, &killCount);
+                                        verifyAlienAndBulletCollision(a, &killCount, ship);
                                         drawAlien(a, mov_img);
                                         if ((a->x + a->width) >= x_right_border) {
                                             right_mov = false;
@@ -309,7 +312,7 @@ int (game_loop)() {
                                         }
                                     } else {
                                         change_alien_x_coordinates(a, -speed);
-                                        verifyAlienAndBulletCollision(a, &killCount);
+                                        verifyAlienAndBulletCollision(a, &killCount, ship);
                                         drawAlien(a, mov_img);
                                         if (a->x <= x_left_border) {
                                             change_all_y(aliens, 20, sizeOfAliens);

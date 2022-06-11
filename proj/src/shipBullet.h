@@ -8,7 +8,7 @@
 #include <stdlib.h>
 
 #include "graphic.h"
-#include "resources.h"
+#include "resources/ship_bullet.xpm"
 #include "macros.h"
 #include "ship.h"
 
@@ -31,7 +31,7 @@ void updateShipBulletPosition();
 
 void removeShipBullet(ShipBullet *shipBullet);
 
-void verifyAlienAndBulletCollision(Alien *a1, int *killCount);
+void verifyAlienAndBulletCollision(Alien *a1, int *killCount, Ship *ship);
 
 void removeAllShipBullets();
 

@@ -2,13 +2,11 @@
   
 #include <stddef.h>
 
-/* XPM */
-static xpm_row_t const alien1[] = {
-/* columns rows colors chars-per-pixel */
+/* XPM 
+static xpm_row_t const alien1[] = { 
 "60 40 2",
 "  0",
 ". 27",
-/* pixels */
 "          .....                         .....               ",
 "          .....                         .....               ",
 "          .....                         .....               ",
@@ -50,15 +48,13 @@ static xpm_row_t const alien1[] = {
 "               ..........     ..........                    ",
 "               ..........     ..........                    "
 };
+*/
 
-
-/* XPM */
-static xpm_row_t const alien1_m[] = {
-/* columns rows colors chars-per-pixel */
+/* XPM 
+static xpm_row_t const alien1_m[] = { 
 "60 40 2",
 "  0",
 ". 27",
-/* pixels */
 "          .....                         .....               ",
 "          .....                         .....               ",
 "          .....                         .....               ",
@@ -100,15 +96,13 @@ static xpm_row_t const alien1_m[] = {
 "     .....                                   .....          ",
 "     .....                                   .....          "
 };
+*/
 
-
-/* XPM */
+/* XPM 
 static xpm_row_t const alien2_m[] = {
-/* columns rows colors chars-per-pixel */
 "60 40 2",
 "  0",
 ". 45",
-/* pixels */
 "                    ....................                    ",
 "                    ....................                    ",
 "                    ....................                    ",
@@ -150,16 +144,14 @@ static xpm_row_t const alien2_m[] = {
 "          ..........                    ..........          ",
 "          ..........                    ..........          "
 };
+*/
 
 
-
-/* XPM */
+/* XPM 
 static xpm_row_t const alien2[] = {
-/* columns rows colors chars-per-pixel */
 "60 40 2",
 "  0",
 ". 45",
-/* pixels */
 "                    ....................                    ",
 "                    ....................                    ",
 "                    ....................                    ",
@@ -201,14 +193,13 @@ static xpm_row_t const alien2[] = {
 "..........                                        ..........",
 "..........                                        .........."
 };
+*/
 
-/* XPM */
+/* XPM 
 static xpm_row_t const alien3_m[] = {
-/* columns rows colors chars-per-pixel */
 "60 40 2",
 "  0",
 ". 54",
-/* pixels */
 "                         ..........                         ",
 "                         ..........                         ",
 "                         ..........                         ",
@@ -250,15 +241,13 @@ static xpm_row_t const alien3_m[] = {
 "               .....                    .....               ",
 "               .....                    .....               "
 };
+*/
 
-
-/* XPM */
+/* XPM 
 static xpm_row_t const alien3[] = {
-/* columns rows colors chars-per-pixel */
 "60 40 2",
 "  0",
 ". 54",
-/* pixels */
 "                         ..........                         ",
 "                         ..........                         ",
 "                         ..........                         ",
@@ -300,14 +289,13 @@ static xpm_row_t const alien3[] = {
 "          .....     .....          .....     .....          ",
 "          .....     .....          .....     .....          "
 };
+*/
 
-/* XPM */
+/* XPM 
 static xpm_row_t const ufo[] = {
-/* columns rows colors chars-per-pixel */
 "80 35 2",
 "  0",
 ". 36",
-/* pixels */
 "                         ..............................                         ",
 "                         ..............................                         ",
 "                         ..............................                         ",
@@ -344,15 +332,14 @@ static xpm_row_t const ufo[] = {
 "               .....                                        .....               ",
 "               .....                                        .....               "
 };
+*/
 
-/* XPM */
+/* XPM 
 static xpm_row_t const mouse_xpm[] = {
-/* columns rows colors chars-per-pixel */
 "25 34 3",
 "  0",
 ". 0",
 "X 63",
-/* pixels */
 " ..                      ",
 " ..                      ",
 " ....                    ",
@@ -388,10 +375,10 @@ static xpm_row_t const mouse_xpm[] = {
 " ....                    ",
 " ....                    "
 };
+*/
 
 /* XPM
 static xpm_row_t const ship_image[] = {
-
 "75 80 4",
 "  0",
 ". 36",
@@ -481,12 +468,10 @@ static xpm_row_t const ship_image[] = {
 };
 */
 
-/* XPM */
+/* XPM 
 static xpm_row_t const bullet[] = {
-/* columns rows colors chars-per-pixel */
 "5 20 1 ",
 "  36",
-/* pixels */
 "     ",
 "     ",
 "     ",
@@ -508,3 +493,4 @@ static xpm_row_t const bullet[] = {
 "     ",
 "     "
 };
+*/

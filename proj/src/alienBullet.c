@@ -4,7 +4,7 @@ AlienBullet *alienBullet;
 
 xpm_image_t loadAlienBulletXpm() {
     xpm_image_t alienBullet_xpm;
-    xpm_load(bullet, XPM_INDEXED, &alienBullet_xpm);
+    xpm_load(alien_bullet, XPM_INDEXED, &alienBullet_xpm);
     return alienBullet_xpm;
 }
 
