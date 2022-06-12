@@ -315,6 +315,7 @@ int (game_loop)() {
                                 verifyShipAndBulletCollision(ship);
 
                                 if(ship->lives == 0){
+                                    ship = createShip(512, SHIP_YPOS, 15);
                                     gameState = MENU_DISPLAY;
                                     break;
                                 }
