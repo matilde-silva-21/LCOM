@@ -32,26 +32,24 @@
 #define REG_B 11
 #define REG_C 12
 
-#define RS3 BIT(3)
-#define RS2 BIT(2)
-#define RS1 BIT(1)
-#define RS0 BIT(0)
 
 #define PF BIT(6)
 
 int (rtc_subscribe_int)(uint8_t *bit_no);
 
-int(rtc_unsubscribe_int)();
+int (rtc_unsubscribe_int)();
 
-void rtc_ih();
+int (rtc_ih)();
 
 int (rtc_enable)(uint8_t *bit_no);
 
 int (rtc_disable)();
 
-int rtc_read(uint8_t *data, int reg);
+int (rtc_read)(uint8_t *data, uint8_t reg);
 
-int rtc_write(uint8_t data, int reg);
+int (rtc_write)(uint8_t data, int reg);
+
+int (setPeriodicInterrupts)();
 
 
 #endif
