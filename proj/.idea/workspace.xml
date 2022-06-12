@@ -8,47 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cd8950eb-97c7-45f9-b76e-28fa0a9d32ca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.depend" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alien.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alien.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/alien.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alien.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/alien.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alienBullet.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/alienBullet.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alienBullet.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alienBullet.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/alienBullet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/alienBullet.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/alienBullet.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphic.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphic.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphic.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graphic.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/graphic.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyboard.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/keyboard.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/keyboard.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/macros.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/macros.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mouse.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mouse.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/mouse.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/proj" beforeDir="false" afterPath="$PROJECT_DIR$/src/proj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/proj.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/proj.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/proj.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rtc.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/rtc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rtc.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rtc.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/rtc.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ship.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ship.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/ship.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ship.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/ship.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shipBullet.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/shipBullet.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shipBullet.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shipBullet.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/shipBullet.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/timer.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/timer.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/timer.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trace.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/trace.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.d" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mouse.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mouse.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +71,9 @@
       <workItem from="1654986930720" duration="6019000" />
       <workItem from="1655024719835" duration="1214000" />
       <workItem from="1655038012044" duration="57000" />
-      <workItem from="1655055648342" duration="5774000" />
+      <workItem from="1655055648342" duration="6543000" />
+      <workItem from="1655069256640" duration="22000" />
+      <workItem from="1655073037813" duration="572000" />
     </task>
     <servers />
   </component>

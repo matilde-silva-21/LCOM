@@ -50,9 +50,9 @@ void (mouse_ih)();
 void (getMousePacket)(struct packet *pp, uint8_t bytes[3]);
 
 /**
- * @brief 
+ * @brief Sends the given cmd to the keyboard controller
  * 
- * @param cmd
+ * @param cmd command to be sent
  * @return 0 on success or 1 otherwise
  */
 int (send_mouse_command)(uint8_t cmd);
