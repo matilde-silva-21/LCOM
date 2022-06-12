@@ -39,7 +39,6 @@ typedef struct {
 
 /**
  * @brief Enumerated type for identifying the key being pressed/released
- * 
  */
 typedef enum {
     A_Pressed, /*!< Key A is being pressed*/ 
@@ -55,22 +54,57 @@ typedef enum {
  * @param x X coordinate of the ship
  * @param y Y coordinate of the ship
  * @param speed Initial speed of the ship
- * @return Ship* 
+ * @return Pointer of the newly created ship with all the specified values
  */
 Ship *createShip(int x, int y, int speed);
 
+/**
+ * @brief Calls the fuction that draws XPMs to draw the ship
+ * 
+ * @param ship Pointer to the ship object
+ */
 void drawShip(Ship *ship);
 
+/**
+ * @brief Updates the ship's position based on the key being currently pressed/released
+ * 
+ * @param ship Pointer to the ship object
+ * @param key Key being currently pressed/released
+ * @return Pointer to the ship object that has been altered
+ */
 Ship *updateShipPosition(Ship *ship, KeyActivity key);
 
+/**
+ * @brief Frees the memory that was allocated for the ship
+ * 
+ * @param ship Pointer to the ship object to be removed
+ */
 void removeShip(Ship *ship);
 
+/**
+ * @brief Draws the score of the ship (based on how many and on the type of aliens that were killed)
+ * 
+ * @param ship Pointer to the ship object (contains the score)
 void drawScore(Ship *ship);
 
+/**
+ * @brief Draws the current number of lives of the ship (based on how many times the ship was hit)
+ * 
+ * @param ship Pointer to the ship object (contains the number of lives)
+ */
 void drawLives(Ship *ship);
 
+/**
+ * @brief Increases the score of the ship
+ * 
+ * @param scoreToAdd Amount of points to be added to the current score
+ * @param ship Pointer to the ship object (contains the score)
+ */
 void increaseScore(int scoreToAdd, Ship *ship);
 
+/**
+ * @brief Initializes the xpms of the numbers 0-9
+ */
 void initNumbers();
 
 #endif //PROJ_SHIP_H

@@ -12,8 +12,6 @@
 #include "macros.h"
 #include "ship.h"
 
-ShipBullet *shipBullets[MAX_SHIP_BULLETS]; /* Array with at most MAX_SHIP_BULLETS bullets */
-
 /**
  * @brief Struct for keeping track of a bullet of ship
  */
@@ -24,10 +22,12 @@ typedef struct {
     bool hitAlien; /* Bool containing information on whether the bullet has or has not hit an alien*/
 } ShipBullet;
 
+ShipBullet *shipBullets[MAX_SHIP_BULLETS]; /* Array with at most MAX_SHIP_BULLETS bullets */
+
 /**
  * @brief Loads the xpm for the ship bullet
  * 
- * @return a xpm_image_t of the loaded xpm
+ * @return xpm_image_t of the loaded xpm
  */
 xpm_image_t loadShipBulletXpm();
 

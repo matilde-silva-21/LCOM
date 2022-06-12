@@ -5,8 +5,8 @@
 
 #include "i8254.h"
 
-int timer_hookid = 0;
-int timer_counter = 0;
+int timer_hookid = 0; /*!< Timer's hook id */
+int timer_counter = 0; /*!< Counter for the timer */
 
 int(timer_subscribe_int)(uint8_t *bit_no) {
   *bit_no = timer_hookid;
