@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 row = 0; col = 0; ind = 0; x = 24; y = 20
 row = 1; col = 0; ind = 1; x = 24; y = 80
@@ -10970,6 +10971,11 @@ kill count: 233
 3
 
 kill count: 24alien indice = 0
+=======
+enablebit: 29
+cond
+alien indice = 0
+>>>>>>> e4348b7b3d58848ab86d6672bc287def9717a2c5
 alien indice = 1
 alien indice = 2
 alien indice = 3
@@ -10993,6 +10999,7 @@ alien indice = 20
 alien indice = 21
 alien indice = 22
 alien indice = 23
+<<<<<<< HEAD
 3
 3
 3
@@ -14515,3 +14522,5 @@ kill count: 54
 4
 4
 >>>>>>> 713e9287a5c90adff07f43ab04a26b0156156079
+=======
+>>>>>>> e4348b7b3d58848ab86d6672bc287def9717a2c5

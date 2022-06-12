@@ -6,7 +6,6 @@ Ship *createShip(int x, int y, int speed) {
     ship->x = x;
     ship->y = y;
     ship->lives = NUMLIVES;
-    ship->isShot = false;
     ship->speed = speed;
     ship->score = 0; 
 

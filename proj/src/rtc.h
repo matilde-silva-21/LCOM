@@ -49,9 +49,9 @@ int (rtc_enable)(uint8_t *bit_no);
 
 int (rtc_disable)();
 
-int rtc_read(uint8_t *data, uint8_t reg);
+int rtc_read(uint8_t *data, int reg);
 
-int rtc_write(uint8_t data, uint8_t reg);
+int rtc_write(uint8_t data, int reg);
 
 
 #endif

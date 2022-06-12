@@ -71,8 +71,3 @@ int drawInstructions(bool button) {
     drawBackground(menu);
     return 0;
 }
-
-void displayInstructions(){
-    xpm_image_t menu = instructions_xpm;
-    drawBackground(menu);
-}
