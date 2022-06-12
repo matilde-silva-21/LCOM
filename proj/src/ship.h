@@ -7,7 +7,6 @@
 #include <stdint.h>
 
 #include "graphic.h"
-#include "resources.h"
 
 #include "macros.h"
 #include "graphic.h"
@@ -85,6 +84,7 @@ void removeShip(Ship *ship);
  * @brief Draws the score of the ship (based on how many and on the type of aliens that were killed)
  * 
  * @param ship Pointer to the ship object (contains the score)
+ */
 void drawScore(Ship *ship);
 
 /**

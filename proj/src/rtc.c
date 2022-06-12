@@ -1,6 +1,6 @@
 #include "rtc.h"
 
-int rtc_hook_id = 29;
+int rtc_hook_id = 8;
 int speed = 1;
 int frames_per_state = 20;
 extern bool playing;
@@ -24,13 +24,7 @@ int (rtc_unsubscribe_int)() {
 
 int (rtc_enable)(uint8_t *bit_no) {
 
-    printf("enable");
-    *bit_no = rtc_hook_id;
-    if (sys_irqsetpolicy(IRQ_RTC, IRQ_REENABLE | IRQ_EXCLUSIVE, &rtc_hook_id))
-        return 1;
-
     uint8_t data;
-    printf("bit: %d\n", *bit_no);
 
     if (rtc_read(&data, REG_B)) {
         return 1;
@@ -42,6 +36,7 @@ int (rtc_enable)(uint8_t *bit_no) {
         return 1;
     }
 
+/*
     if (rtc_read(&data, REG_A)) {
         return 1;
     }
@@ -51,14 +46,11 @@ int (rtc_enable)(uint8_t *bit_no) {
     if (rtc_write(data, REG_A)) {
         return 1;
     }
-
+*/
     return 0;
 }
 
 int (rtc_disable)() {
-
-    if (rtc_unsubscribe_int())
-        return 1;
 
     uint8_t data;
 
@@ -72,6 +64,7 @@ int (rtc_disable)() {
         return 1;
     }
 
+/*
     if (rtc_read(&data, REG_A)) {
         return 1;
     }
@@ -81,7 +74,7 @@ int (rtc_disable)() {
     if (rtc_write(data, REG_A)) {
         return 1;
     }
-
+*/
     return 0;
 }
 

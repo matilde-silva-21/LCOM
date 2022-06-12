@@ -1,26 +1,188 @@
-enablebit: 29
+8
+256
 cond
-alien indice = 0
-alien indice = 1
-alien indice = 2
-alien indice = 3
-alien indice = 4
-alien indice = 5
-alien indice = 6
-alien indice = 7
-alien indice = 8
-alien indice = 9
-alien indice = 10
-alien indice = 11
-alien indice = 12
-alien indice = 13
-alien indice = 14
-alien indice = 15
-alien indice = 16
-alien indice = 17
-alien indice = 18
-alien indice = 19
-alien indice = 20
-alien indice = 21
-alien indice = 22
-alien indice = 23
+colisao
+colisao
+colisao
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button
+instructions
+Instructions button

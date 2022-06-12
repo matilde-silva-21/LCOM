@@ -28,9 +28,9 @@
 #define IRQF BIT(7)
 #define PF BIT(6)
 
-#define REG_A 10
-#define REG_B 11
-#define REG_C 12
+#define REG_A 0x10
+#define REG_B 0x11
+#define REG_C 0x12
 
 #define RS3 BIT(3)
 #define RS2 BIT(2)
@@ -45,7 +45,7 @@ int(rtc_unsubscribe_int)();
 
 void rtc_ih();
 
-int (rtc_enable)(uint8_t *bit_no);
+int (rtc_enable)();
 
 int (rtc_disable)();
 

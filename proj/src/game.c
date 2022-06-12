@@ -123,7 +123,13 @@ int (game_loop)() {
     if (timer_subscribe_int(&timer_bit_no))
         return 1;
 
-    if(rtc_enable(&rtc_bit_no))
+    if(rtc_subscribe_int(&rtc_bit_no))
+        return 1;
+
+    printf("%d\n", rtc_bit_no);
+    printf("%d\n", BIT(rtc_bit_no));
+
+    if(rtc_enable())
         return 1;
 
 
@@ -426,10 +432,13 @@ int (game_loop)() {
     removeShip(ship);
     removeAlienBullet();
 
-    if (timer_unsubscribe_int())
+    if(rtc_disable())
         return 1;
 
-    if(rtc_disable())
+    if(rtc_unsubscribe_int())
+        return 1;
+
+    if (timer_unsubscribe_int())
         return 1;
 
     if (send_mouse_command(DISABLE_MOUSE))

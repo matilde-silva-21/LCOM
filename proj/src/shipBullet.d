@@ -50,7 +50,7 @@ shipBullet.o: shipBullet.c shipBullet.h /usr/include/lcom/lcf.h \
   resources/alien2.xpm resources/alien2_m.xpm resources/alien3.xpm \
   resources/alien3_m.xpm mouse.h i8042.h utils.h resources/mouse.xpm \
   resources/background.xpm resources/initial_screen.xpm \
-  resources/ship_bullet.xpm ship.h resources.h resources/ship.xpm \
-  resources/0.xpm resources/1.xpm resources/2.xpm resources/3.xpm \
-  resources/4.xpm resources/5.xpm resources/6.xpm resources/7.xpm \
-  resources/8.xpm resources/9.xpm
+  resources/ship_bullet.xpm ship.h resources/ship.xpm resources/0.xpm \
+  resources/1.xpm resources/2.xpm resources/3.xpm resources/4.xpm \
+  resources/5.xpm resources/6.xpm resources/7.xpm resources/8.xpm \
+  resources/9.xpm
