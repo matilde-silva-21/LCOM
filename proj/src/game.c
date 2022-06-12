@@ -63,9 +63,11 @@ void (initGame)(Ship *ship) {
     frame_counter = 0;
     changeSpeed = false;
     changeDir = false;
+    
 }
 
 int (game_loop)() {
+    ///AUXILIARY INTERRUPT VARIABLES
     uint16_t mode = 0x105;
     int mouse_bit_no;
     uint8_t kbd_bit_no;
@@ -80,6 +82,7 @@ int (game_loop)() {
     int size = 1;
     uint8_t kbdBytes[2];
 
+    ///GAME VARIABLES
     Button button = INITIAL;
     bool instruction_button = false;
     KeyActivity key;

@@ -27,7 +27,6 @@ typedef enum {
     MENU_DISPLAY,
     INSTRUCTIONS_DISPLAY,
     PLAYING,
-    PLAYER_LOST,
     NEXT_ROUND,
     EXIT
 } game_state;
