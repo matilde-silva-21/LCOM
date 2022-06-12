@@ -23,15 +23,23 @@
 
 #include "macros.h"
 
+/**
+ * @brief Enum with the possible game states.
+ */
 typedef enum {
-    MENU_DISPLAY,
-    INSTRUCTIONS_DISPLAY,
-    PLAYING,
-    PLAYER_LOST,
-    NEXT_ROUND,
-    EXIT
+    MENU_DISPLAY, /*!<Menu display screen*/
+    INSTRUCTIONS_DISPLAY, /*!<Instructions display screen*/
+    PLAYING, /*!<User is playing*/
+    PLAYER_LOST, /*!<Player lost the game*/
+    NEXT_ROUND, /*!<Player moves on to the next round*/
+    EXIT/*!<Exit game*/
 } game_state;
 
+/**
+ * @brief Function that initiates game objects (Aliens, Alien Bullets, Ship Bullets, etc.)
+ * 
+ * @param ship Ship object to be initialized
+ */
 void (initGame)(Ship *ship);
 
 int (game_loop)();
