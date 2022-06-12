@@ -22,7 +22,7 @@
 
 #define INITIAL_ALIEN_SPEED 1 /*!< Alien speed at the start of the game */
 
-#define TERRITORY 650 /*!< If the aliens cross this y coordinate the game ends */
+#define TERRITORY 600 /*!< If the aliens cross this y coordinate the game ends */
 
 #define ROW_ALIENS 3 /*!< max number of rows of aliens on screen at the same time */
 #define COL_ALIENS 8/*!< max number of columns of aliens on screen at the same time */
