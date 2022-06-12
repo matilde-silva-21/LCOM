@@ -4,52 +4,78 @@
 #include <lcom/lcf.h>
 #include "util.h"
 
-#define IRQ_RTC 8
+#define IRQ_RTC 8 /* !< Interrupt line for RTC */
 
-#define RTC_ADDR_REG 0x70
-#define RTC_DATA_REG 0x71
+#define RTC_ADDR_REG 0x70 /* !< Address to access the RTC */
+#define RTC_DATA_REG 0x71 /* !< Address to transfer data to/from the RTC's register in question */
 
 //Control/Status Register A
-#define UIP BIT(7)
-#define RS3 BIT(3)
-#define RS2 BIT(2)
-#define RS1 BIT(1)
-#define RS0 BIT(0)  
+#define RS3 BIT(3) /* !< Rate selector for bit 3 of register A */
+#define RS2 BIT(2) /* !< Rate selector for bit 2 of register A */
+#define RS1 BIT(1) /* !< Rate selector for bit 1 of register A */
+#define RS0 BIT(0) /* !< Rate selector for bit 0 of register A */
 
 //Control/Status Register B
-#define SET BIT(7)
-#define PIE BIT(6)
-#define SQWE BIT(3)
-#define DM BIT(2)
-#define RANGE BIT(1)
-#define DSE BIT(0)
+#define PIE BIT(6) /* !< Enable Periodic Interrupt */
 
 //Control/Status Register C
-#define IRQF BIT(7)
-#define PF BIT(6)
+#define IRQF BIT(7) /* !< If set to 1, indicates that one of the interrupt sources has triggered */ 
+#define PF BIT(6) /* !< If set to 1, if a periodic interrupt occurred */
 
-#define REG_A 10
-#define REG_B 11
-#define REG_C 12
+#define REG_A 0x10 /* !< address of the rtc's register A */
+#define REG_B 0x11 /* !< address of the rtc's register B */
+#define REG_C 0x12 /* !< address of the rtc's register C */
 
-
-#define PF BIT(6)
-
+/**
+ * @brief Subscribes the rtc's interrupt
+ * 
+ * @param bit_no
+ * @return 1 on failure or 0 on success
+ */
 int (rtc_subscribe_int)(uint8_t *bit_no);
 
-int (rtc_unsubscribe_int)();
+/**
+ * @brief Unsubscribes the rtc's interrupt
+ * 
+ * @return 1 on failure or 0 on success
+ */
+int(rtc_unsubscribe_int)();
 
-int (rtc_ih)();
+/**
+ * @brief Loads information from register C and handles the interruption
+ */
+void rtc_ih();
 
-int (rtc_enable)(uint8_t *bit_no);
+/**
+ * @brief Enables the rtc Periodic Interruptions
+ * 
+ * @return 1 on failure or 0 on success
+ */
+int (rtc_enable)();  
 
+/**
+ * @brief Disables the rtc Periodic Interruptions
+ * 
+ * @return 1 on failure or 0 on success
+ */
 int (rtc_disable)();
 
-int (rtc_read)(uint8_t *data, uint8_t reg);
+/**
+ * @brief Reads information from the register to the data value
+ * 
+ * @param data Data to be read to
+ * @param reg Register to be read from
+ * @return 1 on failure or 0 on success
+ */
+int rtc_read(uint8_t *data, int reg);
 
-int (rtc_write)(uint8_t data, int reg);
-
-int (setPeriodicInterrupts)();
-
+/**
+ * @brief Writes the data to the register
+ * 
+ * @param data Data to be written
+ * @param reg Register to be written to
+ * @return 1 on failure or 0 on success
+ */
+int rtc_write(uint8_t data, int reg);
 
 #endif

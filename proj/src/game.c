@@ -31,8 +31,6 @@ void (initGame)(Ship *ship) {
     xpm_image_t background = loadBackground();
     if(gameState != NEXT_ROUND)
         createShip(512, SHIP_YPOS, 15);
-    initShipBullets(shipBullets);
-    initNumbers();
     drawBackground(background);
     drawShip(ship);
 
@@ -63,6 +61,8 @@ void (initGame)(Ship *ship) {
     frame_counter = 0;
     changeSpeed = false;
     changeDir = false;
+
+    speed = INITIAL_ALIEN_SPEED + (2 * roundNum);
 }
 
 int (game_loop)() {
@@ -85,7 +85,6 @@ int (game_loop)() {
     KeyActivity key;
     int ipf = ((int) sys_hz()) / 60; // 60 = frame rate
     bool mov_img = false, right_mov = true;
-    speed = INITIAL_ALIEN_SPEED; // 60 = frame rate
     frames_per_state = 20;
 
     Mouse *mouse = createMouse(50, 700);
@@ -97,6 +96,8 @@ int (game_loop)() {
     xpm_image_t initialScreen = loadInitialScreen();
     initMenuXpm();
 
+    initShipBullets(shipBullets);
+    initNumbers();
     initAlienBullet();
     alienBullet->active = false;
 
@@ -110,12 +111,12 @@ int (game_loop)() {
 
     if (mouse_subscribe_int(&mouse_bit_no))
         return 1;
-/*
+
     if (send_mouse_command(ENABLE_MOUSE)) {
         return 1;
     }
-*/
-    mouse_enable_data_reporting();
+
+    //mouse_enable_data_reporting();
 
     if (kbd_subscribe_int(&kbd_bit_no))
         return 1;
@@ -123,7 +124,13 @@ int (game_loop)() {
     if (timer_subscribe_int(&timer_bit_no))
         return 1;
 
-    if(rtc_enable(&rtc_bit_no))
+    if(rtc_subscribe_int(&rtc_bit_no))
+        return 1;
+
+    printf("%d\n", rtc_bit_no);
+    printf("%d\n", BIT(rtc_bit_no));
+
+    if(rtc_enable())
         return 1;
 
 
@@ -134,8 +141,6 @@ int (game_loop)() {
 
     if (drawMenu(button))
         return 1;
-
-    //drawMouse(mouse);
 
     while (gameState != EXIT) {
         displayScreen();
@@ -172,8 +177,8 @@ int (game_loop)() {
                             //mouse_print_packet(&pp);
 
                             ///====================MENU====================
-                            updateMouse(&pp, mouse); // updates mouse coordinates and lb_pressed variable according
-                            // to the given packet
+                            updateMouse(&pp, mouse); // updates mouse coordinates and lb_pressed 
+                            // variable according to the given packet
                             if (gameState == MENU_DISPLAY) {
 
                                 button = getButton(mouse->x, mouse->y);
@@ -252,7 +257,6 @@ int (game_loop)() {
 
                         if(keyboard_scancode == ESC_BREAK){
                             gameState = EXIT;
-                            //playing = false;
                             continue;
                         }
                         if (gameState == PLAYING) {
@@ -279,16 +283,13 @@ int (game_loop)() {
                     }
 
                     ///RTC INTERRUPT
-                    //printf("PRIMEIRO %d", msg.m_notify.interrupts);
+                    /*
+                    Doesn't work
                     if (msg.m_notify.interrupts & BIT(rtc_bit_no)){
-                        printf("Next round:%d\n", nextRound);
-                        //if(nextRound) {
                         rtc_ih();
                         printf("%d\n", speed);
-                        //changeSpeed = false;
-                        //nextRound = false;
-                       // }
                     }
+                    */
 
                     ///TIMER INTERRUPT
                     if (msg.m_notify.interrupts & BIT(timer_bit_no)) {
@@ -315,8 +316,7 @@ int (game_loop)() {
 
                                 if(ship->lives == 0){
                                     gameState = MENU_DISPLAY;
-                                    //playing = false;
-                                    continue;
+                                    break;
                                 }
                             }
 
@@ -327,7 +327,6 @@ int (game_loop)() {
                                 for (int i = 0; i < SIZE_OF_ALIENS; i++) {
                                     Alien *a = &aliens[i];
                                     if (!(a->alive)) {
-                                        //killCount++;
                                         continue;
                                     }
                                     if (right_mov) {
@@ -335,33 +334,17 @@ int (game_loop)() {
                                         drawAlien(a, mov_img);
                                         if ((a->x + a->width) >= X_RIGHT_BORDER) {
                                             changeDir = true;
-                                            //right_mov = false;
-                                            //change_all_y(aliens, 6, SIZE_OF_ALIENS);
-
-                                            if (row % 3 == 0) {
-                                                //changeSpeed = true;
-//                                                speed++;
-//                                                frames_per_state--;
-                                            }
-
                                         }
                                     } else {
                                         change_alien_x_coordinates(a, -speed);
                                         drawAlien(a, mov_img);
                                         if (a->x <= X_LEFT_BORDER) {
-                                            //change_all_y(aliens, 6, SIZE_OF_ALIENS);
-                                            //right_mov = true;
                                             changeDir = true;
-
-                                            if (row % 3 == 0) {
-                                                //changeSpeed = true;
-//                                                speed++;
-//                                                frames_per_state--;
-                                            }
-
                                         }
                                     }
+
                                     verifyAlienAndBulletCollision(a, &killCount, ship);
+
                                     if ((a->y + a->height) >= TERRITORY) {
                                         gameState = MENU_DISPLAY;
                                     } else if (killCount == SIZE_OF_ALIENS) {
@@ -369,13 +352,7 @@ int (game_loop)() {
                                         roundNum++;
                                     }
                                 }
-/*
-                                if(changeSpeed) {
-                                    frames_per_state--;
-                                    speed++;
-                                    changeSpeed = false;
-                                }
-*/
+
                                 if(changeDir) {
                                     change_all_y(aliens, 20, SIZE_OF_ALIENS);
                                     right_mov = !right_mov;
@@ -393,15 +370,9 @@ int (game_loop)() {
 
                         ///====================NEW ROUND====================
                         else if(gameState == NEXT_ROUND){
-
-                            //removeMouse(mouse);
-                            //removeShip(ship);
-                            //removeAllShipBullets();
-                            //removeAlienBullet();
-
                             initGame(ship);
-                            //gameState = PLAYING;
-                            //speed = INITIAL_ALIEN_SPEED + roundNum;
+                            gameState = PLAYING;
+                            speed = INITIAL_ALIEN_SPEED + roundNum;
                             nextRound = true;
                         }
 
@@ -412,7 +383,6 @@ int (game_loop)() {
                             }
                             drawMouse(mouse);
                         }
-                        //printf("Timer8\n");
                     }
                     break;
 
@@ -426,10 +396,13 @@ int (game_loop)() {
     removeShip(ship);
     removeAlienBullet();
 
-    if (timer_unsubscribe_int())
+    if(rtc_disable())
         return 1;
 
-    if(rtc_disable())
+    if(rtc_unsubscribe_int())
+        return 1;
+
+    if (timer_unsubscribe_int())
         return 1;
 
     if (send_mouse_command(DISABLE_MOUSE))

@@ -30,7 +30,6 @@ typedef enum {
     MENU_DISPLAY, /*!<Menu display screen*/
     INSTRUCTIONS_DISPLAY, /*!<Instructions display screen*/
     PLAYING, /*!<User is playing*/
-    PLAYER_LOST, /*!<Player lost the game*/
     NEXT_ROUND, /*!<Player moves on to the next round*/
     EXIT/*!<Exit game*/
 } game_state;
@@ -42,6 +41,11 @@ typedef enum {
  */
 void (initGame)(Ship *ship);
 
+/**
+ * @brief Function containing the main interrupt loop
+ *
+ * @return 0 if the function ends successfully or 1 otherwise
+ */
 int (game_loop)();
 
 #endif //PROJ_GAME_H

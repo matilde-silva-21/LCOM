@@ -14,9 +14,6 @@
 #include "resources/menu_start.xpm"
 #include "resources/menu.xpm"
 
-//#include "resources.h"
-//#include "mouse.h"
-
 /**
  * @brief Enumerated type for identifying the cuttons of the menu
  * 
