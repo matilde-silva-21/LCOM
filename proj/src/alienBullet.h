@@ -24,7 +24,6 @@ typedef struct {
 
 AlienBullet *alienBullet; /*!< Pointer to the alien bullet object */
 
-
 /**
  * @brief Loads the xpm of the bullet to the given xpm_image_t
  * 

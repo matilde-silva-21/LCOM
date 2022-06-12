@@ -84,7 +84,7 @@ void (rtc_ih)() {
     sys_outb(RTC_ADDR_REG, REG_C);
     util_sys_inb(RTC_DATA_REG, &regC);
     if (regC & PF) {
-        speed += 20;
+        speed += 2;
         frames_per_state--;
         printf("speed: %d\n", speed);
     }

@@ -131,7 +131,6 @@ void drawMouse(Mouse *mouse){
     }
 }
 
-
 //double buffer
 void displayScreen() {
     int bytes = (bitsPerPixel + 7) >> 3;

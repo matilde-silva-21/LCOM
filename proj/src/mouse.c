@@ -100,6 +100,7 @@ int (send_mouse_command)(uint8_t cmd){
 }
 
 void (updateMouse)(struct packet *pp, Mouse *mouse) {
+
     if (pp->bytes[0] & X_SIGN) { // checks if x movement is negative
         if (mouse->x + pp->delta_x < 0)
             mouse->x = 0;
@@ -125,6 +126,7 @@ void (updateMouse)(struct packet *pp, Mouse *mouse) {
         else
             mouse->y = mouse->y - pp->delta_y;
     }
+
     mouse->lb_pressed = pp->lb;
 }
 
