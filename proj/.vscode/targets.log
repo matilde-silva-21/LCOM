@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun 10 16:41:07 2022
+# Make data base, printed on Sat Jun 11 22:17:58 2022
 
 # Variables
 
@@ -47,7 +47,7 @@ CURDIR := /home/alexandre/Downloads/MINIX-LCOM/shared/proj
 # makefile
 SHELL = /bin/sh
 # environment
-SNAP_DATA = /var/snap/code/97
+SNAP_DATA = /var/snap/code/98
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
@@ -75,7 +75,7 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-_ = /snap/code/97/usr/share/code/code
+_ = /snap/code/98/usr/share/code/code
 # environment
 LC_CTYPE = pt_PT.UTF-8
 # environment
@@ -87,7 +87,7 @@ LC_NAME = pt_PT.UTF-8
 # environment
 VSCODE_CWD = /home/alexandre
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/97/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/98/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -101,9 +101,9 @@ XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/alexandre/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-SNAP = /snap/code/97
+SNAP = /snap/code/98
 # environment
-SNAP_VERSION = c3511e6c
+SNAP_VERSION = 4af164ea
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -115,7 +115,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 INVOCATION_ID = dc69ce4f7f874981a397d506705754db
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/97/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/98/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -125,7 +125,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 3478
+GIO_LAUNCHED_DESKTOP_FILE_PID = 20679
 # automatic
 %F = $(notdir $%)
 # environment
@@ -153,7 +153,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/alexandre/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+VSCODE_CODE_CACHE_PATH = /home/alexandre/.config/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
 # environment
 LOGNAME = alexandre
 # environment
@@ -185,19 +185,19 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SNAP_USER_DATA = /home/alexandre/snap/code/97
+SNAP_USER_DATA = /home/alexandre/snap/code/98
 # environment
 SHLVL = 0
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-10c82bdb-102c-4cc2-8ce3-4706a8a6346b.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-474fb251-5477-4a5e-a985-cf88ab68f23b.sock
 # default
 MAKE_VERSION := 4.2.1
 # environment
 USER = alexandre
 # environment
-SNAP_REVISION = 97
+SNAP_REVISION = 98
 # environment
 LC_MONETARY = pt_PT.UTF-8
 # makefile
@@ -215,7 +215,7 @@ MAKE_COMMAND := make
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-489c886b-1.67.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-489c886b-1.68.0-main.sock
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # makefile
@@ -271,7 +271,7 @@ LC_ADDRESS = pt_PT.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 3530
+VSCODE_PID = 20725
 # variable set hash-table stats:
 # Load=130/1024=13%, Rehash=0, Collisions=25/152=16%
 
@@ -281,10 +281,9 @@ VSCODE_PID = 3530
 
 # Directories
 
- 
-# . (device 2050, inode 11420274): 6 files, no impossibilities.
+# . (device 2050, inode 11420274): 5 files, no impossibilities.
 
-# 6 files, no impossibilities in 1 directories.
+# 5 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -310,6 +309,7 @@ Makefile:
 makefile:
 #  Implicit rule search has been done.
 #  File does not exist.
+ 
 #  File has been updated.
 #  Failed to be updated.
 
@@ -334,12 +334,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 14 / storage = 112 B / avg = 8 B
-# current buf: size = 8162 B / used = 112 B / count = 14 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 13 / storage = 108 B / avg = 8 B
+# current buf: size = 8162 B / used = 108 B / count = 13 / avg = 8 B
 
-# strcache performance: lookups = 17 / hit rate = 17%
+# strcache performance: lookups = 16 / hit rate = 18%
 # hash-table stats:
-# Load=14/8192=0%, Rehash=0, Collisions=1/17=6%
-# Finished Make data base on Fri Jun 10 16:41:07 2022
+# Load=13/8192=0%, Rehash=0, Collisions=1/16=6%
+# Finished Make data base on Sat Jun 11 22:17:58 2022
 
  

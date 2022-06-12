@@ -1,7 +1,5 @@
 #include "alienBullet.h"
 
-AlienBullet *alienBullet;
-
 xpm_image_t loadAlienBulletXpm() {
     xpm_image_t alienBullet_xpm;
     xpm_load(alien_bullet, XPM_INDEXED, &alienBullet_xpm);
@@ -45,7 +43,6 @@ int generateAlienBullet(Alien aliens[]) {
 bool verifyShipAndBulletCollision(Ship *ship) {
     if (ship->x <= alienBullet->x && ((ship->x + ship->img.width) >= (alienBullet->x + alienBullet->img.width)) &&
         ship->y <= alienBullet->y && (ship->y + ship->img.height) >= (alienBullet->y + alienBullet->img.height)) {
-        ship->isShot = true;
         ship->lives --;
         alienBullet->active = false;
         printf("colisao\n");
