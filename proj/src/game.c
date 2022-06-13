@@ -305,6 +305,7 @@ int (game_loop)() {
                                 if(ship->lives == 0){
                                     ship = createShip(512, SHIP_YPOS, 15);
                                     speed = INITIAL_ALIEN_SPEED;
+                                    roundNum = 0;
                                     gameState = MENU_DISPLAY;
                                     break;
                                 }
@@ -338,6 +339,7 @@ int (game_loop)() {
                                     if ((a->y + a->height) >= TERRITORY) {
                                         ship = createShip(512, SHIP_YPOS, 15);
                                         speed = INITIAL_ALIEN_SPEED;
+                                        roundNum = 0;
                                         gameState = MENU_DISPLAY;
                                     } else if (killCount == SIZE_OF_ALIENS) {
                                         gameState = NEXT_ROUND;
