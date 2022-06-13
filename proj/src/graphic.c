@@ -48,7 +48,6 @@ int vg_get_mode_info(uint16_t *mode, vbe_mode_info_t *info) {
 }
 
 int vg_set_mode(uint16_t *mode) {
-    //nao sei se isto é necessário
     if (*mode != 0x105 && *mode != 0x110 && *mode != 0x115 && *mode != 0x11A && *mode != 0x14C) {
         return 1;
     }

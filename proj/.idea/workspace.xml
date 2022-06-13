@@ -8,7 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="cd8950eb-97c7-45f9-b76e-28fa0a9d32ca" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mouse.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/mouse.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/alienBullet.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/alienBullet.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/proj" beforeDir="false" afterPath="$PROJECT_DIR$/src/proj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rtc.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/rtc.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shipBullet.o" beforeDir="false" afterPath="$PROJECT_DIR$/src/shipBullet.o" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +43,13 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -74,6 +85,7 @@
       <workItem from="1655055648342" duration="6543000" />
       <workItem from="1655069256640" duration="22000" />
       <workItem from="1655073037813" duration="572000" />
+      <workItem from="1655106349164" duration="310000" />
     </task>
     <servers />
   </component>
@@ -90,5 +102,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

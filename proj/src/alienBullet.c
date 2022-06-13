@@ -45,7 +45,7 @@ bool verifyShipAndBulletCollision(Ship *ship) {
         ship->y <= alienBullet->y && (ship->y + ship->img.height) >= (alienBullet->y + alienBullet->img.height)) {
         ship->lives --;
         alienBullet->active = false;
-        printf("colisao\n");
+        //printf("colisao\n");
         return true;
     }
     return false;

@@ -3,7 +3,6 @@
 int rtc_hook_id = 8;
 int speed = 1;
 int frames_per_state = 20;
-extern bool playing;
 extern int roundNum;
 
 int (rtc_subscribe_int)(uint8_t *bit_no) {
@@ -36,17 +35,6 @@ int (rtc_enable)(uint8_t *bit_no) {
         return 1;
     }
 
-/*
-    if (rtc_read(&data, REG_A)) {
-        return 1;
-    }
-
-    data |= RS0 | RS1 | RS2 | RS3;
-
-    if (rtc_write(data, REG_A)) {
-        return 1;
-    }
-*/
     return 0;
 }
 
@@ -63,30 +51,16 @@ int (rtc_disable)() {
     if (rtc_write(data, REG_B)) {
         return 1;
     }
-
-/*
-    if (rtc_read(&data, REG_A)) {
-        return 1;
-    }
-
-    data &= ~(RS0 | RS1 | RS2 | RS3);
-
-    if (rtc_write(data, REG_A)) {
-        return 1;
-    }
-*/
     return 0;
 }
 
 void (rtc_ih)() {
-    printf("Entered rtc\n");
     uint8_t regC;
     sys_outb(RTC_ADDR_REG, REG_C);
     util_sys_inb(RTC_DATA_REG, &regC);
     if (regC & PF) {
         speed += 2;
         frames_per_state--;
-        printf("speed: %d\n", speed);
     }
 }
 

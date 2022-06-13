@@ -39,8 +39,6 @@ void (initGame)(Ship *ship) {
 
     for (int column = 0; column < COL_ALIENS; column++) {
         for (int row = 0; row < ROW_ALIENS; row++) {
-            if(gameState == NEXT_ROUND)
-                printf("alien indice = %d\n", indice);
             if (row == 0) {
                 aliens[indice] = createAlien(xi, yi, alien3, alien3_m, 30);
             } else if (row == 1) {
@@ -83,7 +81,7 @@ int (game_loop)() {
     Button button = INITIAL;
     bool instruction_button = false;
     KeyActivity key;
-    int ipf = ((int) sys_hz()) / 60; // 60 = frame rate
+    int ipf = ((int) sys_hz()) / 60;
     bool mov_img = false, right_mov = true;
     frames_per_state = 20;
 
@@ -116,8 +114,6 @@ int (game_loop)() {
         return 1;
     }
 
-    //mouse_enable_data_reporting();
-
     if (kbd_subscribe_int(&kbd_bit_no))
         return 1;
 
@@ -127,12 +123,8 @@ int (game_loop)() {
     if(rtc_subscribe_int(&rtc_bit_no))
         return 1;
 
-    printf("%d\n", rtc_bit_no);
-    printf("%d\n", BIT(rtc_bit_no));
-
     if(rtc_enable())
         return 1;
-
 
     drawBackground(initialScreen);
     displayScreen();
@@ -174,7 +166,6 @@ int (game_loop)() {
                             currentByte = 1;
                             mouseBytes[2] = mouse_scancode;
                             getMousePacket(&pp, mouseBytes);
-                            //mouse_print_packet(&pp);
 
                             ///====================MENU====================
                             updateMouse(&pp, mouse); // updates mouse coordinates and lb_pressed 
@@ -209,12 +200,9 @@ int (game_loop)() {
 
                             ///====================Instructions====================
                             else if (gameState == INSTRUCTIONS_DISPLAY) {
-                                printf("instructions\n");
                                 instruction_button = getInstructionButton(mouse->x, mouse->y);
-                                printf("Instructions button\n");
                                 if (drawInstructions(instruction_button)) {
-                                    printf("Not drawing instructions\n");
-                                    return 1;
+                                    continue;
                                 }
                                 drawMouse(mouse);
                                 if (mouse->lb_pressed) {
